@@ -21,17 +21,17 @@
 				<key>AddPNLF</key>
 				<false/>
 				<key>FixHPET</key>
-				<false/>
+				<true/>
 				<key>FixIPIC</key>
 				<false/>
 				<key>FixMutex</key>
 				<false/>
 				<key>FixRTC</key>
-				<false/>
+				<true/>
 				<key>FixRegions</key>
 				<false/>
 				<key>FixTMR</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -87,18 +87,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>I2C1:_STA to XSTA</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>X1NUQQ==</data>
-					<key>Replace</key>
-					<data>WFNUQQ==</data>
-					<key>TgtBridge</key>
-					<data>STJDMQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>GPRW to XPRW</string>
 					<key>Disabled</key>
 					<false/>
@@ -106,26 +94,6 @@
 					<data>R1BSVwI=</data>
 					<key>Replace</key>
 					<data>WFBSVwI=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>_PTS to ZPTS(1,N)</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>X1BUUwE=</data>
-					<key>Replace</key>
-					<data>WlBUUwE=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>_WAK to ZWAK(1,S)</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>X1dBSwk=</data>
-					<key>Replace</key>
-					<data>WldBSwk=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -138,16 +106,6 @@
 					<data>WFNUQQ==</data>
 					<key>TgtBridge</key>
 					<data>R1BJMA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>I2C0.TPAD:_STA to XSTA</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>X1NUQQ==</data>
-					<key>Replace</key>
-					<data>WFNUQQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -165,13 +123,6 @@
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
-		<key>DropTables</key>
-		<array>
-			<dict>
-				<key>Signature</key>
-				<string>DMAR</string>
-			</dict>
-		</array>
 		<key>FixHeaders</key>
 		<false/>
 		<key>FixMCFG</key>
@@ -200,13 +151,15 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>keepsyms=1 igfxcflbklt=1 enable-cfl-backlight-fix -lilubetaall abm_firstpolldelay=16000 brcmfx-country=HK alcid=15</string>
+		<string>keepsyms=1 -lilubetaall alcid=15 brcmfx-country=#a dart=0 -igfxmlr -v slide=0</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
 		<string>Macintosh HD</string>
+		<key>Legacy</key>
+		<string>LegacyBiosDefault</string>
 		<key>NeverHibernate</key>
-		<true/>
+		<false/>
 		<key>NoEarlyProgress</key>
 		<true/>
 		<key>Secure</key>
@@ -214,7 +167,7 @@
 		<key>Timeout</key>
 		<integer>3</integer>
 		<key>XMPDetection</key>
-		<false/>
+		<string>Yes</string>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -234,6 +187,8 @@
 			<key>ResetHDA</key>
 			<false/>
 		</dict>
+		<key>LANInjection</key>
+		<false/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
@@ -260,8 +215,6 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
-				<key>#no-controller-patch</key>
-				<data>AQAAAA==</data>
 				<key>device-id</key>
 				<data>cKEAAA==</data>
 				<key>hda-gfx</key>
@@ -330,7 +283,7 @@
 			<key>AddClockID</key>
 			<false/>
 			<key>FixOwnership</key>
-			<true/>
+			<false/>
 			<key>HighCurrent</key>
 			<false/>
 			<key>Inject</key>
@@ -345,18 +298,13 @@
 		<array>
 			<string>Preboot</string>
 			<string>Recovery</string>
-			<string>#WEFI</string>
 		</array>
 		<key>Mouse</key>
 		<dict>
-			<key>DoubleClick</key>
-			<integer>500</integer>
 			<key>Enabled</key>
 			<false/>
 			<key>Mirror</key>
 			<false/>
-			<key>Speed</key>
-			<integer>8</integer>
 		</dict>
 		<key>PlayAsync</key>
 		<false/>
@@ -367,14 +315,14 @@
 			<key>Legacy</key>
 			<false/>
 			<key>Linux</key>
-			<true/>
+			<false/>
 			<key>Tool</key>
 			<true/>
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>Lenovo</string>
+		<string>Catalina</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -393,7 +341,7 @@
 		<key>AppleIntelCPUPM</key>
 		<false/>
 		<key>AppleRTC</key>
-		<true/>
+		<false/>
 		<key>Debug</key>
 		<false/>
 		<key>DellSMBIOSPatch</key>
@@ -412,7 +360,7 @@
 				<key>Comment</key>
 				<string>Disable AppleIntelLpssI2C (credit by Coolstar)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>SU9LaXQ=</data>
 				<key>InfoPlistPatch</key>
@@ -426,7 +374,7 @@
 				<key>Comment</key>
 				<string>Disable AppleIntelLpssI2CCOntroller (credit by Coolstar)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>SU9LaXQ=</data>
 				<key>InfoPlistPatch</key>
@@ -440,7 +388,7 @@
 				<key>Comment</key>
 				<string>USB port limit patch #1 10.15.x modify by DalianSky(credit ydeng)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
@@ -454,7 +402,7 @@
 				<key>Comment</key>
 				<string>USB port limit patch #2 10.15.x modify by DalianSky(credit PMHeart)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g+MP0w==</data>
 				<key>InfoPlistPatch</key>
@@ -468,7 +416,7 @@
 				<key>Comment</key>
 				<string>USB Port limit patch #3 10.15.x modify by DalianSky</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g/kPDw==</data>
 				<key>InfoPlistPatch</key>
@@ -477,6 +425,22 @@
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>g/k/Dw==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.15.x</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>D4KnAwAA</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
+				<key>Name</key>
+				<string>AppleIntelCFLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>D4IAAAAA</data>
 			</dict>
 		</array>
 	</dict>
@@ -539,7 +503,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Yes</string>
+		<string>Detect</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
