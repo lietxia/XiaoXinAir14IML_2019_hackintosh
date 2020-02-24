@@ -94,7 +94,7 @@
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.12</string>
+	<string>10.13</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 CoolStar. All rights reserved.</string>
 	<key>OSBundleCompatibleVersion</key>
