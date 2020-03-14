@@ -115,7 +115,7 @@ sudo kextcache -i /
 | BrcmBluetoothInjector.kext      | dw1820相关 蓝牙    |      | √    |
 | BrcmFirmwareData.kext           | dw1820相关         |      | √    |
 | BrcmPatchRAM2.kext              | dw1820相关         |      | √    |
-| CPUFriend.kext                  | cpu变频            |      | √    |
+| CPUFriend.kext                  | cpu变频            | √    |      |
 | CPUFriendDataProvider.kext      | cpu变频数据        | √    |      |
 | FakePCIID_Intel_HDMI_Audio.kext | HDMI以及声卡       | √    |      |
 | FakePCIID.kext                  | HDMI以及声卡       | √    |      |
