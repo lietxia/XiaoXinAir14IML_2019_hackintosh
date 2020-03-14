@@ -94,12 +94,14 @@
 				<key>FixHDA</key>
 				<false/>
 				<key>FixHPET</key>
-				<true/>
+				<false/>
 				<key>FixIPIC</key>
 				<false/>
 				<key>FixRTC</key>
 				<false/>
 				<key>FixRegions</key>
+				<false/>
+				<key>FixSATA</key>
 				<false/>
 				<key>FixShutdown</key>
 				<false/>
@@ -120,26 +122,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>_Q11 to XQ11</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1ExMQ==</data>
-					<key>Replace</key>
-					<data>WFExMQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>_Q12 to XQ12</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1ExMg==</data>
-					<key>Replace</key>
-					<data>WFExMg==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>GPRW to XPRW</string>
 					<key>Disabled</key>
 					<false/>
@@ -147,26 +129,6 @@
 					<data>R1BSVwI=</data>
 					<key>Replace</key>
 					<data>WFBSVwI=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Name_S3 to XS3</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1MzXw==</data>
-					<key>Replace</key>
-					<data>WFMzXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>_Q50 to XQ50</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1E1MA==</data>
-					<key>Replace</key>
-					<data>WFE1MA==</data>
 				</dict>
 			</array>
 			<key>SlpSmiAtWake</key>
@@ -206,7 +168,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>brcmfx-country=HK alcid=15</string>
+		<string>brcmfx-country=#a alcid=15 -wegnoegpu</string>
 		<key>CustomLogo</key>
 		<string>Alternate</string>
 		<key>DefaultVolume</key>
@@ -224,7 +186,7 @@
 		<key>Timeout</key>
 		<integer>3</integer>
 		<key>XMPDetection</key>
-		<false/>
+		<string>Yes</string>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -301,40 +263,22 @@
 				<string>Internal@0,2,0</string>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
-				<key>disable-external-gpu</key>
-				<data>AQAAAA==</data>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con0-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con0-pipe</key>
-				<data>EgAAAA==</data>
-				<key>framebuffer-con1-busid</key>
-				<data>BAAAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-pipe</key>
-				<data>EgAAAA==</data>
-				<key>framebuffer-con1-type</key>
+				<key>enable-lspcon-support</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-busid</key>
 				<data>AgAAAA==</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-con2-has-lspcon</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-pipe</key>
 				<data>EgAAAA==</data>
 				<key>framebuffer-con2-type</key>
 				<data>AAgAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
+				<key>model</key>
+				<string>Intel UHD Graphics 630 (Mobile)</string>
 			</dict>
 		</dict>
 		<key>SetIntelBacklight</key>
@@ -426,7 +370,7 @@
 				<key>Comment</key>
 				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.15.x</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>D4KnAwAA</data>
 				<key>InfoPlistPatch</key>
@@ -442,7 +386,7 @@
 				<key>Comment</key>
 				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.15.x</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>D4KPAwAA</data>
 				<key>InfoPlistPatch</key>
@@ -478,7 +422,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>FVF047207CD0000A8</string>
+		<string>FVF006104GU0000FB</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -508,9 +452,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro15,4</string>
 		<key>SerialNumber</key>
-		<string>FVFDQ1YXL40Y</string>
+		<string>FVFC70F9L40Y</string>
 		<key>SmUUID</key>
-		<string>0D1A2801-73FC-41F3-91DC-6B00D182362D</string>
+		<string>D722272B-07FB-4DB1-9C7E-CD64345BAEBC</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
