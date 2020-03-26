@@ -168,7 +168,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>brcmfx-country=#a alcid=15 -wegnoegpu</string>
+		<string>brcmfx-country=#a alcid=15</string>
 		<key>CustomLogo</key>
 		<string>Alternate</string>
 		<key>DefaultVolume</key>
@@ -219,7 +219,7 @@
 				<key>AAPL,slot-name</key>
 				<string>WLAN</string>
 				<key>compatible</key>
-				<string>pci14e4,4331</string>
+				<string>pci14e4,43a0</string>
 				<key>device_type</key>
 				<string>Airport Extreme</string>
 				<key>model</key>
@@ -239,6 +239,10 @@
 				<string>Media controller</string>
 				<key>model</key>
 				<string>O2 Micro SD card reader</string>
+				<key>name</key>
+				<string>SD/MMC Card Reader</string>
+				<key>subsystem-vendor-id</key>
+				<data>axAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
@@ -263,6 +267,8 @@
 				<string>Internal@0,2,0</string>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
+				<key>disable-external-gpu</key>
+				<data>AQAAAA==</data>
 				<key>enable-lspcon-support</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-busid</key>
@@ -271,12 +277,12 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-has-lspcon</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con2-pipe</key>
-				<data>EgAAAA==</data>
 				<key>framebuffer-con2-type</key>
 				<data>AAgAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
 				<key>model</key>
 				<string>Intel UHD Graphics 630 (Mobile)</string>
 			</dict>
@@ -422,7 +428,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>FVF006104GU0000FB</string>
+		<string>FVF924100CD0000JA</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -452,9 +458,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro15,4</string>
 		<key>SerialNumber</key>
-		<string>FVFC70F9L40Y</string>
+		<string>FVFYVLYHL40Y</string>
 		<key>SmUUID</key>
-		<string>D722272B-07FB-4DB1-9C7E-CD64345BAEBC</string>
+		<string>03049EB3-8AB7-4FD1-B271-1EB026682130</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

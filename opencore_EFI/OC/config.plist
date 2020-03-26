@@ -64,14 +64,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Trackpad</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>AIR14-TPAD.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Sleep</string>
 				<key>Enabled</key>
 				<true/>
@@ -88,6 +80,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Trackpad</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>AIR14-TPAD.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>keyborad</string>
 				<key>Enabled</key>
 				<true/>
@@ -101,14 +101,6 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-DMAC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HPTE</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-HPTE.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -266,6 +258,8 @@
 			<dict>
 				<key>device-id</key>
 				<data>cKEAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>layout-id</key>
 				<data>DwAAAA==</data>
 			</dict>
@@ -273,6 +267,8 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AACbPg==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
 				<key>disable-external-gpu</key>
@@ -285,12 +281,31 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-has-lspcon</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con2-pipe</key>
-				<data>EgAAAA==</data>
 				<key>framebuffer-con2-type</key>
 				<data>AAgAAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
+				<key>model</key>
+				<string>Intel UHD Graphics 630 (Mobile)</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1d,0x7)/Pci(0x0,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1D,0x6)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>WLAN</string>
+				<key>compatible</key>
+				<string>pci14e4,43a0</string>
+				<key>device_type</key>
+				<string>Airport Extreme</string>
+				<key>model</key>
+				<string>BCM4350 802.11ac Wireless Network Adapter</string>
+				<key>name</key>
+				<string>Airport</string>
+				<key>pci-aspm-default</key>
+				<integer>0</integer>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1D,0x7)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Built-in</string>
@@ -300,6 +315,10 @@
 				<string>Media controller</string>
 				<key>model</key>
 				<string>O2 Micro SD card reader</string>
+				<key>name</key>
+				<string>SD/MMC Card Reader</string>
+				<key>subsystem-vendor-id</key>
+				<data>axAAAA==</data>
 			</dict>
 		</dict>
 	</dict>
@@ -460,6 +479,22 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Keyboard</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>VoodooInput.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooInput</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -659,6 +694,22 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>NoTouchID.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/NoTouchID</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -826,7 +877,7 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -840,26 +891,9 @@
 			<integer>3</integer>
 			<key>#Target</key>
 			<integer>67</integer>
-			<key>AppleDebug</key>
-			<false/>
 		</dict>
 		<key>Entries</key>
-		<array>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<false/>
-				<key>Comment</key>
-				<string>Windows10</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Name</key>
-				<string>U-Win10</string>
-				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x14,0x0)/USB(0xF,0x0)/USB(0x1,0x0)/HD(1,GPT,86A2AF4A-9044-4BEF-AA82-0EB074533A3C,0x28,0x64000)/\EFI-win10\Microsoft\Boot\bootmgfw.efi</string>
-			</dict>
-		</array>
+		<array/>
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
@@ -954,14 +988,14 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,4</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFC70F9L40Y</string>
+			<string>FVFZW4Z2L40Y</string>
 			<key>SystemUUID</key>
-			<string>D722272B-07FB-4DB1-9C7E-CD64345BAEBC</string>
+			<string>8E1BC68A-4DED-486C-BA10-51A9D30ADFD4</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>FVF9529024N0000A8</string>
+			<string>FVF952102GU0000A8</string>
 			<key>ROM</key>
 			<data>W8PSrbx9</data>
 			<key>SpoofVendor</key>
@@ -969,9 +1003,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,4</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFZW08PL40Y</string>
+			<string>FVFZW4Z2L40Y</string>
 			<key>SystemUUID</key>
-			<string>99F54722-AF80-438D-919C-22FDAF2BE14B</string>
+			<string>8E1BC68A-4DED-486C-BA10-51A9D30ADFD4</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -982,7 +1016,7 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>P/8f/wAAAAA=</data>
 			<key>MLB</key>
-			<string>FVF9529024N0000A8</string>
+			<string>FVF952102GU0000A8</string>
 			<key>ROM</key>
 			<data>W8PSrbx9</data>
 		</dict>
@@ -1003,7 +1037,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-53FDB3D8DB8CA971</string>
 			<key>BoardSerialNumber</key>
-			<string>FVF006104GU0000FB</string>
+			<string>FVF952102GU0000A8</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -1013,7 +1047,7 @@
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>FVFZW08PL40Y</string>
+			<string>FVFZW4Z2L40Y</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
@@ -1037,9 +1071,9 @@
 			<key>SystemSKUNumber</key>
 			<string>Mac-53FDB3D8DB8CA971</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFZW08PL40Y</string>
+			<string>FVFZW4Z2L40Y</string>
 			<key>SystemUUID</key>
-			<string>C749EEA6-C07B-59F3-8E1B-A395BB08AD75</string>
+			<string>8E1BC68A-4DED-486C-BA10-51A9D30ADFD4</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -1061,7 +1095,6 @@
 			<string>HfsPlus.efi</string>
 			<string>ApfsDriverLoader.efi</string>
 			<string>FwRuntimeServices.efi</string>
-			<string>#AudioDxe.efi</string>
 		</array>
 		<key>Audio</key>
 		<dict>
@@ -1098,8 +1131,6 @@
 			<string></string>
 			<key>TimerResolution</key>
 			<integer>50000</integer>
-			<key>KeyFiltering</key>
-			<false/>
 		</dict>
 		<key>Output</key>
 		<dict>
@@ -1123,8 +1154,6 @@
 			<false/>
 			<key>SanitiseClearScreen</key>
 			<false/>
-			<key>DirectGopCacheMode</key>
-			<string></string>
 		</dict>
 		<key>Protocols</key>
 		<dict>
@@ -1153,8 +1182,6 @@
 			<key>OSInfo</key>
 			<false/>
 			<key>UnicodeCollation</key>
-			<false/>
-			<key>AppleDebugLog</key>
 			<false/>
 		</dict>
 		<key>Quirks</key>
