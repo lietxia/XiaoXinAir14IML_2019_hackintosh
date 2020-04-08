@@ -44,6 +44,7 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 > 现阶段推荐使用CLOVER版,虽然吹OC的很多- -|||
 
 #### 更新小记
+* 更新clover到5019 更新了lilu等等kext……没看到什么可观的变化，可以无视这个更新
 * 2020-03-26 11:05 更新触摸板驱动，多指更加灵敏，更新kext到最新版，OC换成魔改版，开机节目更加美观，clover升级到最最新版
 * 2020-03-10 14:00 修复了FN+F11 FN+F12调亮度的功能,更新了kext
 * 2020-02-21 21:00 小更新，如果进不去系统，进备用efi引导，进去后打开命令行输入 `sudo nvram -c` 清除了nvram后这个efi能进去
