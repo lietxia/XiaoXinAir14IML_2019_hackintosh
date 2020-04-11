@@ -69,7 +69,16 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 评价:非常安全,群里好多人进去了,但我从来没进去过
 
 #### 备用方法: windows直接改
-以后写
+参考 https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/DVMT  
+`DVMT`：  
+* 区域（area） : `SaSetup`
+* 偏移（offset） : `0x107`
+* `01` to `02`
+
+`CFG LOCK`：  
+* 区域（area） : `CpuSetup`
+* 偏移（offset） : `0x3E`
+* `01` to `00`
 
 ## TIPS
 ### 1. 触摸板挂了
