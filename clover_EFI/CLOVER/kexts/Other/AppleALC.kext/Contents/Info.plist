@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19E266</string>
+	<string>19E287</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -9525,10 +9525,9 @@
 					<integer>351346566</integer>
 					<key>ConfigData</key>
 					<data>
-					AWccMAFnHRABZx4rAWcfAgFnDAIBdxxAAXcd
-					AQF3HhcBdx+QAXcMAgGHHPABhx0AAYceAAGH
-					H0ABlxxwAZcdEAGXHqsBlx8CAacccAGnHQEB
-					px6GAacfkAIXHPACFx0AAhceAAIXH0A=
+					AXccEAF3HQABdx4XAXcfkQF3DAIBpxwgAacd
+					AAGnHqYBpx+QAZccMAGXHRABlx6BAZcfAAFn
+					HEABZx0QAWceIQFnHwABZwwC
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
