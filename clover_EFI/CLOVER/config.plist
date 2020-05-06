@@ -190,8 +190,6 @@
 	</dict>
 	<key>CPU</key>
 	<dict>
-		<key>Type</key>
-		<string>0x0705</string>
 		<key>UseARTFrequency</key>
 		<false/>
 	</dict>
@@ -214,6 +212,16 @@
 		<false/>
 		<key>Properties</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
+			<dict>
+				<key>pci-aspm-default</key>
+				<data>AgAAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>pci-aspm-default</key>
+				<data>AgEAAA==</data>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1D,0x6)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -418,35 +426,35 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>01/05/2020</string>
+		<string>03/17/2020</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP154.88Z.F000.B00.2001052048</string>
+		<string>J230K.88Z.F000.B00.2003170036</string>
 		<key>Board-ID</key>
-		<string>Mac-53FDB3D8DB8CA971</string>
+		<string>Mac-0CFF9C7C2B63DF8D</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>FVF924100CD0000JA</string>
+		<string>FVF001303QX0000AD</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
 		<string>1.0</string>
 		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
+		<string>Air-Enclosure</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>1037.80.41.0.0</string>
+		<string>1037.100.359.0.0</string>
 		<key>Family</key>
-		<string>MacBook Pro</string>
+		<string>MacBook Air</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
+		<string>0xFD8FF42E</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
+		<string>0xFF9FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
@@ -454,13 +462,13 @@
 		<key>Mobile</key>
 		<true/>
 		<key>PlatformFeature</key>
-		<string>0x02</string>
+		<string>0x3A</string>
 		<key>ProductName</key>
-		<string>MacBookPro15,4</string>
+		<string>MacBookAir9,1</string>
 		<key>SerialNumber</key>
-		<string>FVFYVLYHL40Y</string>
+		<string>FVFC20L5MNHP</string>
 		<key>SmUUID</key>
-		<string>03049EB3-8AB7-4FD1-B271-1EB026682130</string>
+		<string>3C6D20E1-85C8-43E5-A837-DB96FAF5FD3F</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
@@ -469,7 +477,7 @@
 		<key>#BacklightLevel</key>
 		<integer>0</integer>
 		<key>CustomUUID</key>
-		<string>C749EEA6-C07B-59F3-8E1B-A395BB08AD75</string>
+		<string>088C3EC1-F3AE-411A-BF4D-79DB0FC97713</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>

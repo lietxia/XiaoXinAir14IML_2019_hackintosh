@@ -45,6 +45,7 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 > 现阶段推荐使用CLOVER版,虽然吹OC的很多- -|||
 
 #### 更新小记
+* 2020-05-06 21:36 SSDT-OCPublic-Merge.aml 合并 SSDT-EC.aml、SSDT-RTC0.aml、SSDT-USBX.aml、SSDT-ALS0.aml、SSDT-MCHC.aml 更新 kexts 更新opencore和clover
 * 2020-04-11 08:39 修正了无法静音的bug，更新kext
 * 更新clover到5019 更新了lilu等等kext……没看到什么可观的变化，可以无视这个更新
 * 2020-03-26 11:05 更新触摸板驱动，多指更加灵敏，更新kext到最新版，OC换成魔改版，开机节目更加美观，clover升级到最最新版
