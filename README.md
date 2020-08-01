@@ -68,6 +68,11 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 ### 改DVMT和 CFG Lock
 #### 推荐方法: 进隐藏BIOS  
 参考 https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh/blob/master/Advanced/ReadMe.md  
+文章让从F1开始，经过测试，从F4开始即可，正确顺序：
+F4->4->R->F->V
+F5->5->T->G->B
+F6->6->Y->H->N
+然后按F2进隐藏bios
 评价:非常安全,群里好多人进去了,但我从来没进去过
 
 #### 备用方法: windows直接改
