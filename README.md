@@ -1,31 +1,33 @@
 # 联想小新 Air-14 2019 (Intel平台：IML版)
 
-|   规格   |                  详细信息                  |
-| :------: | :----------------------------------------: |
-| 电脑型号 |            联想 81Q2 笔记本电脑            |
-|  处理器  |    英特尔 Core i5-10210U @ 1.60GHz 四核    |
-|   主板   |              联想 LNVNB161216              |
-|   显卡   |       Nvidia GeForce MX250 ( 2 GB )        |
-|   内存   |               12 GB ( 三星 )               |
-|   硬盘   | 512GB 2242 SATA固态 + 原装三星PM981A 512GB |
-|  显示器  |         友达 AUO353D ( 14 英寸  )          |
-|   声卡   |              Conexant CX8070               |
-|   网卡   |          英特尔 Wireless-AC 9462           |
-|  读卡器  | O2 Micro SD card reader(有概率读卡器不同)  |
+|   规格   |                      详细信息                      |
+| :------: | :------------------------------------------------: |
+| 电脑型号 |           Lenovo XiaoXin Air14 IML 2019            |
+|  处理器  |        intel Core i5-10210U @ 1.60GHz 4core        |
+|   主板   |                 lenovo LNVNB161216                 |
+|   显卡   |           Nvidia GeForce MX250 ( 2 GB )            |
+|   内存   |                   12 GB ( 三星 )                   |
+|   硬盘   |    512GB 2242 SATA固态 + HIKVISION c2000Pro 1TB    |
+|  显示器  |             友达 AUO353D ( 14 英寸  )              |
+|   声卡   |                  Conexant CX8070                   |
+|   网卡   | intel Wireless-AC 9560(可驱动，但我换成了DW 1820A) |
+|  读卡器  |     O2 Micro SD card reader(有概率读卡器不同)      |
 
 ## 目前状态：
-* 系统：10.15.4正式版(强烈推荐，10.15.X之前触摸板跑不起来，10.15.4之前开机会卡顿)
+* 系统：10.15.6正式版(强烈推荐，10.15.X之前触摸板跑不起来，10.15.4之前开机会卡顿)
 * 硬盘：三星PM981A目前苹果下有问题,但是还有个短的SSD位(规格是2242的)固态,顺便一提:这个机型2个SSD卡槽都可以装双面颗粒的SSD, 同时支持PCIE协议和SATA协议
 * 独立显卡：屏蔽了（反正驱动不了）
-* 集成显卡：成功驱动
-* 触摸板：成功驱动（支持手势，最多识别5点）
+* 集成显卡：成功
+* 触摸板：成功（支持手势，最多识别5点）
 * 声卡：仿冒layout-id 15成功，无爆音
-* wifi：自带网卡无解,已换DW1820A(只要对黑苹果有了解,内置无线网卡99%要换) WIFI做更名已经可以和iPad随航
-* 蓝牙：自带蓝牙可驱动,但已换为DW1820A(DW1820A是唯一价位低于100元,还是单面颗粒,同时带蓝牙的网卡,不过并不是免驱,但很好驱动起来)能用apple Watch解锁账户登陆。
-* HDMI外接：正常(可输出4k30帧,和win表现一致)
+* wifi：已换DW1820A,正常
+* 蓝牙：已换DW1820A,正常
+* HDMI：正常(可输出4k30帧,和win表现一致)
 * 摄像头:正常(USB摄像头还是很好驱动的)
 * 读卡器:正常(联想居然弄了个走PCI通道的读卡器..有小概率型号不一样)
 * 睡眠:支持原生休眠
+
+原装网卡Intel Wireless-AC 9560 已经能驱动，可以照搬ax201的方法，具体见：https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/AX201%E6%88%96AX200
 
 ## 不正常的：
 * `指纹`无法驱动
@@ -40,11 +42,14 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 
 ## TIPS  
 > 小新AIR14-2019 i5-10210u QQ群号1032311345  
-> 推荐系统为 macOS 10.15.3 因为10.14以及他之前的系统,触摸板无解  
-> 姑且做了OC的版本,但不推荐(使用OC要关掉超线程,不然进不去)  
-> 现阶段推荐使用CLOVER版,虽然吹OC的很多- -|||
+> 如果你使用openCore，BIOS请使用1.0.2之外的版本（1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
 
 #### 更新小记
+* 2020-08-07 10:15
+    * OpenCore更新到0.6.0，Clover更新到r5120。
+    * 因为AppleAlc更新，所以删除FakePCIID_Intel_HDMI_Audio.kext和FakePCIID.kext
+    * 机型换成MacBookPro13 2020(和之前没什么区别)
+    * kext更新到最新版
 * 2020-06-13 16:38 更新opencore成0.5.9官方正式版。更新clover到v5.0 r5119。更新kexts。
 * 2020-05-06 21:36 SSDT-OCPublic-Merge.aml 合并 SSDT-EC.aml、SSDT-RTC0.aml、SSDT-USBX.aml、SSDT-ALS0.aml、SSDT-MCHC.aml 更新 kexts 更新opencore和clover，机型改为MacBook Air2020 ，删掉 CPUFriend.kext、CPUFriendDataProvider.kext
 * 2020-04-11 08:39 修正了无法静音的bug，更新kext
@@ -57,7 +62,11 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 
 
 ## 安装方法
-1. 完全按照 联想小新Pro13 的方法安装一次 https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html
+1. 完全按照 联想小新Pro13 的方法安装一次 
+    https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html
+
+    https://www.bilibili.com/video/BV1A54y1X78F
+   
 2. 安装成功后,把EFI换成这个 
 
 ## 建议
@@ -67,13 +76,12 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 
 ### 改DVMT和 CFG Lock
 #### 推荐方法: 进隐藏BIOS  
+文章让从F1开始，经过测试，从F4开始即可，正确顺序    
+F4->4->R->F->V  
+F5->5->T->G->B  
+F6->6->Y->H->N   
+然后按F2进隐藏bios  
 参考 https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh/blob/master/Advanced/ReadMe.md  
-文章让从F1开始，经过测试，从F4开始即可，正确顺序：
-F4->4->R->F->V
-F5->5->T->G->B
-F6->6->Y->H->N
-然后按F2进隐藏bios
-评价:非常安全,群里好多人进去了,但我从来没进去过
 
 #### 备用方法: windows直接改
 参考 https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/DVMT  
@@ -99,10 +107,11 @@ sudo kextcache -i /
 ```
 
 ### 2. 声卡挂了
-从win直接重启切换到mac,会导致声卡挂掉,这时候需要关机,再开机,声卡就恢复了  
-咨询得到到回答:win的重启是热启动,会跳过硬件检测,直接win重启进黑苹果会出问题
-* 建议: 从win切换到mac,不要用重启,先关机,再开机
-* mac重启mac,不会掉声卡
+AppleALC1.5.1没有这种问题了。
+~~从win直接重启切换到mac,会导致声卡挂掉,这时候需要关机,再开机,声卡就恢复了~~  
+~~咨询得到到回答:win的重启是热启动,会跳过硬件检测,直接win重启进黑苹果会出问题~~
+* ~~建议: 从win切换到mac,不要用重启,先关机,再开机~~
+* ~~mac重启mac,不会掉声卡~~
 
 
 ## 如何更爽一点?
@@ -111,47 +120,44 @@ sudo kextcache -i /
 
 
 ### 热补丁
-| 补丁          | 说明                           | 必备 | 建议 | 可选 |
-| ------------- | ------------------------------ | ---- | ---- | ---- |
-| AIR14-TPAD    | I2C 触摸板补丁                 | √    |      |      |
-| SSDT-DMAC     | 仿冒 DMA 控制器                |      |      | √    |
-| SSDT-EC       | 仿冒 EC 设备                   | √    |      |      |
-| SSDT-GPRW     | 防秒醒:0D / 6D 睡了即醒补丁    | √    |      |      |
-| SSDT-HPTE     | 屏蔽 HPET 补丁                 |      |      | √    |
-| SSDT-MCHC     | 仿冒 MCHC 设备                 |      | √    |      |
-| SSDT-PNLF-CFL | Coffee Lake 亮度控制补丁       | √    |      |      |
-| SSDT-PR00     | (X86)CPU电源管理补丁(开启XCPM) | √    |      |      |
-| SSDT-RMCF     | PS2 按键映射补丁               | √    |      |      |
-| SSDT-SBUS     | 仿冒 BUS0 , DVL0 设备          |      | √    |      |
-| SSDT-UIAC     | 定制USB                        |      | √    |      |
-| SSDT-USBX     | USB 电源补丁                   | √    |      |      |
-| SSDT-XSPI     | 仿冒 XSPI 设备                 |      |      | √    |
+| 补丁                | 说明                                            | 必备 | 建议 | 可选 |
+| ------------------- | ----------------------------------------------- | ---- | ---- | ---- |
+| SSDT-OCPublic-Merge | SSDT-EC+SSDT-RTC0+SSDT-USBX+SSDT-ALS0+SSDT-MCHC | √    |      |      |
+| AIR14-TPAD          | I2C 触摸板补丁                                  | √    |      |      |
+| SSDT-DMAC           | 仿冒 DMA 控制器                                 |      |      | √    |
+| ~~SSDT-EC~~         | (已并入OCPublic-Merge)仿冒 EC 设备              | √    |      |      |
+| SSDT-GPRW           | 防秒醒:0D / 6D 睡了即醒补丁                     | √    |      |      |
+| SSDT-HPTE           | 屏蔽 HPET 补丁                                  |      |      | √    |
+| ~~SSDT-MCHC~~       | (已并入OCPublic-Merge)仿冒 MCHC 设备            |      | √    |      |
+| SSDT-PNLF-CFL       | Coffee Lake 亮度控制补丁                        | √    |      |      |
+| SSDT-PR00           | (X86)CPU电源管理补丁(开启XCPM)                  | √    |      |      |
+| SSDT-RMCF           | PS2 按键映射补丁                                | √    |      |      |
+| SSDT-SBUS           | 仿冒 BUS0 , DVL0 设备                           |      | √    |      |
+| SSDT-UIAC           | 定制USB                                         |      | √    |      |
+| ~~SSDT-USBX~~       | (已并入OCPublic-Merge)USB 电源补丁              | √    |      |      |
+| SSDT-XSPI           | 仿冒 XSPI 设备                                  |      |      | √    |
 
 ### KEXT
-| KEXT                            | 说明               | 必备 | 可选 |
-| ------------------------------- | ------------------ | ---- | ---- |
-| AirportBrcmFixup.kext           | dw1820相关 wifi    |      | √    |
-| AppleALC.kext                   | HDMI以及声卡       | √    |      |
-| BrcmBluetoothInjector.kext      | dw1820相关 蓝牙    |      | √    |
-| BrcmFirmwareData.kext           | dw1820相关         |      | √    |
-| BrcmPatchRAM2.kext              | dw1820相关         |      | √    |
-| CPUFriend.kext                  | cpu变频            | √    |      |
-| CPUFriendDataProvider.kext      | cpu变频数据        | √    |      |
-| FakePCIID_Intel_HDMI_Audio.kext | HDMI以及声卡       | √    |      |
-| FakePCIID.kext                  | HDMI以及声卡       | √    |      |
-| Lilu.kext                       | 驱动扩展库(超重要) | √    |      |
-| NoTouchID.kext                  | 取消指纹           |      | √    |
-| SMCBatteryManager.kext          | SMC(超重要)        | √    |      |
-| SMCLightSensor.kext             | SMC(超重要)        | √    |      |
-| SMCProcessor.kext               | SMC-处理器         | √    |      |
-| SMCSuperIO.kext                 | SMC-超级读写       | √    |      |
-| USBPorts.kext                   | 定制USB            | √    |      |
-| VirtualSMC.kext                 | SMC(超重要)        | √    |      |
-| VoodooI2C.kext                  | 触摸板-核心        | √    |      |
-| VoodooI2CHID.kext               | HID类型触摸板      | √    |      |
-| VoodooPS2Controller.kext        | 键盘驱动           | √    |      |
-| WhateverGreen.kext              | 核显驱动           | √    |      |
-
-
-
-
+| KEXT                                | 说明               | 必备 | 可选 |
+| ----------------------------------- | ------------------ | ---- | ---- |
+| AirportBrcmFixup.kext               | dw1820相关 wifi    |      | √    |
+| AppleALC.kext                       | HDMI以及声卡       | √    |      |
+| BrcmBluetoothInjector.kext          | dw1820相关 蓝牙    |      | √    |
+| BrcmFirmwareData.kext               | dw1820相关         |      | √    |
+| BrcmPatchRAM2.kext                  | dw1820相关         |      | √    |
+| CPUFriend.kext                      | cpu变频            | √    |      |
+| CPUFriendDataProvider.kext          | cpu变频数据        | √    |      |
+| ~~FakePCIID_Intel_HDMI_Audio.kext~~ | ~~HDMI以及声卡~~   | √    |      |
+| ~~FakePCIID.kext~~                  | ~~HDMI以及声卡~~   | √    |      |
+| Lilu.kext                           | 驱动扩展库(超重要) | √    |      |
+| NoTouchID.kext                      | 取消指纹           |      | √    |
+| SMCBatteryManager.kext              | SMC(超重要)        | √    |      |
+| SMCLightSensor.kext                 | SMC(超重要)        | √    |      |
+| SMCProcessor.kext                   | SMC-处理器         | √    |      |
+| SMCSuperIO.kext                     | SMC-超级读写       | √    |      |
+| USBPorts.kext                       | 定制USB            | √    |      |
+| VirtualSMC.kext                     | SMC(超重要)        | √    |      |
+| VoodooI2C.kext                      | 触摸板-核心        | √    |      |
+| VoodooI2CHID.kext                   | HID类型触摸板      | √    |      |
+| VoodooPS2Controller.kext            | 键盘驱动           | √    |      |
+| WhateverGreen.kext                  | 核显驱动           | √    |      |
