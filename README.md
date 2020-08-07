@@ -6,7 +6,7 @@
 |  处理器  |        intel Core i5-10210U @ 1.60GHz 4core        |
 |   主板   |                 lenovo LNVNB161216                 |
 |   显卡   |           Nvidia GeForce MX250 ( 2 GB )            |
-|   内存   |                   12 GB ( 三星 )                   |
+|   内存   |     板载4GB 2666+可更换内存(被我换成16GB 2666)     |
 |   硬盘   |    512GB 2242 SATA固态 + HIKVISION c2000Pro 1TB    |
 |  显示器  |             友达 AUO353D ( 14 英寸  )              |
 |   声卡   |                  Conexant CX8070                   |
