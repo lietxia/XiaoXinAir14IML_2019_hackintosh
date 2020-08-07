@@ -42,7 +42,8 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 
 ## TIPS  
 > 小新AIR14-2019 i5-10210u QQ群号1032311345  
-> 如果你使用openCore，BIOS请使用1.0.2之外的版本（1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
+> 如果你使用openCore，BIOS请使用1.0.2之外的版本
+> （1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
 
 #### 更新小记
 * 2020-08-07 10:15
@@ -50,22 +51,30 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
     * 因为AppleAlc更新，所以删除FakePCIID_Intel_HDMI_Audio.kext和FakePCIID.kext
     * 机型换成MacBookPro13 2020(和之前没什么区别)
     * kext更新到最新版
-* 2020-06-13 16:38 更新opencore成0.5.9官方正式版。更新clover到v5.0 r5119。更新kexts。
-* 2020-05-06 21:36 SSDT-OCPublic-Merge.aml 合并 SSDT-EC.aml、SSDT-RTC0.aml、SSDT-USBX.aml、SSDT-ALS0.aml、SSDT-MCHC.aml 更新 kexts 更新opencore和clover，机型改为MacBook Air2020 ，删掉 CPUFriend.kext、CPUFriendDataProvider.kext
-* 2020-04-11 08:39 修正了无法静音的bug，更新kext
-* 更新clover到5019 更新了lilu等等kext……没看到什么可观的变化，可以无视这个更新
-* 2020-03-26 11:05 更新触摸板驱动，多指更加灵敏，更新kext到最新版，OC换成魔改版，开机节目更加美观，clover升级到最最新版
-* 2020-03-10 14:00 修复了FN+F11 FN+F12调亮度的功能,更新了kext
-* 2020-02-21 21:00 小更新，如果进不去系统，进备用efi引导，进去后打开命令行输入 `sudo nvram -c` 清除了nvram后这个efi能进去
-* 2020-02-21 00:00 更新所有kext到最新
-* 2020-02-24 14:00 大部分都正常了,加了openCore版
-
+* 2020-06-13 16:38 
+    * 更新opencore成0.5.9官方正式版。更新clover到v5.0 r5119。更新kexts。
+* 2020-05-06 21:36 
+    * SSDT-OCPublic-Merge.aml 合并 SSDT-EC.aml、SSDT-RTC0.aml、SSDT-USBX.aml、SSDT-ALS0.aml、SSDT-MCHC.aml 更新 kexts 更新opencore和clover，机型改为MacBook Air2020 ，删掉 CPUFriend.kext、CPUFriendDataProvider.kext
+* 2020-04-11 08:39 
+    * 修正了无法静音的bug，更新kext
+    * 更新clover到5019 更新了lilu等等kext……
+    * 没看到什么可观的变化，可以无视这个更新
+* 2020-03-26 11:05 
+    * 更新触摸板驱动，多指更加灵敏，更新kext到最新版，
+    * OC换成魔改版，开机节目更加美观，clover升级到最最新版
+* 2020-03-10 14:00 
+    * 修复了FN+F11 FN+F12调亮度的功能,更新了kext
+* 2020-02-21 21:00 
+    * 小更新，如果进不去系统，进备用efi引导，进去后打开命令行输入 `sudo nvram -c` 清除了nvram后这个efi能进去
+* 2020-02-21 00:00 
+    * 更新所有kext到最新
+* 2020-02-24 14:00 
+    * 大部分都正常了,加了openCore版
 
 ## 安装方法
 1. 完全按照 联想小新Pro13 的方法安装一次 
-    https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html
-
-    https://www.bilibili.com/video/BV1A54y1X78F
+    * https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html
+    * https://www.bilibili.com/video/BV1A54y1X78F
    
 2. 安装成功后,把EFI换成这个 
 
@@ -107,7 +116,7 @@ sudo kextcache -i /
 ```
 
 ### 2. 声卡挂了
-AppleALC1.5.1没有这种问题了。
+AppleALC1.5.1没有这种问题了  
 ~~从win直接重启切换到mac,会导致声卡挂掉,这时候需要关机,再开机,声卡就恢复了~~  
 ~~咨询得到到回答:win的重启是热启动,会跳过硬件检测,直接win重启进黑苹果会出问题~~
 * ~~建议: 从win切换到mac,不要用重启,先关机,再开机~~
