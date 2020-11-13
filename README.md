@@ -14,8 +14,8 @@
 |  读卡器  |     O2 Micro SD card reader(有概率读卡器不同)      |
 
 ## 目前状态：
-* 系统：10.15.6正式版(强烈推荐，10.15.X之前触摸板跑不起来，10.15.4之前开机会卡顿)
-* 硬盘：三星PM981A目前苹果下有问题,但是还有个短的SSD位(规格是2242的)固态,顺便一提:这个机型2个SSD卡槽都可以装双面颗粒的SSD, 同时支持PCIE协议和SATA协议
+* 系统：10.15.7运行正常，BigSur 11.0.1(20B29)运行正常(推荐macOS10.15.7。系统低于10.15.X触摸板跑不起来，系统低于10.15.4之前开机会卡顿)
+* 硬盘：如果你硬盘是三星PM981A，建议换掉（装不了），换其他硬盘都可以
 * 独立显卡：屏蔽了（反正驱动不了）
 * 集成显卡：成功
 * 触摸板：成功（支持手势，最多识别5点）
@@ -23,9 +23,9 @@
 * wifi：已换DW1820A,正常
 * 蓝牙：已换DW1820A,正常
 * HDMI：正常(可输出4k30帧,和win表现一致)
-* 摄像头:正常(USB摄像头还是很好驱动的)
-* 读卡器:正常(联想居然弄了个走PCI通道的读卡器..有小概率型号不一样)
-* 睡眠:支持原生休眠
+* 摄像头：正常(USB摄像头还是很好驱动的)
+* 读卡器：正常(联想居然弄了个走PCI通道的读卡器..有小概率型号不一样)
+* 睡眠：支持原生休眠
 
 原装网卡Intel Wireless-AC 9560 已经能驱动，可以照搬ax201的方法，具体见：https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/AX201%E6%88%96AX200
 
@@ -44,8 +44,20 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 > 小新AIR14-2019 i5-10210u QQ群号1032311345  
 > 如果你使用openCore，BIOS请使用1.0.2之外的版本
 > （1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
+### Big Sur 开启hidip（高分辨率）
+
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/mlch911/one-key-hidpi/master/hidpi.sh)"
+
+### Catalina 开启hidip（高分辨率）
+
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
 
 #### 更新小记
+* 2020-11-13 20:05
+    * 暂时放弃Clover支线的更新。OC版本能同时正常用于10.15.X（推荐10.15.7）和big Sur11.0.1
+    * OpenCore更新到0.6.3，各类kext更新到最新。
+    * 这个EFI是针对网卡换成DW1820A的，如果是原装intel网卡，用这个EFI网卡不能驱动，需要改一下，过一阵找人改一个。
+
 * 2020-08-07 10:15
     * OpenCore更新到0.6.0，Clover更新到r5120。
     * 因为AppleAlc更新，所以删除FakePCIID_Intel_HDMI_Audio.kext和FakePCIID.kext
