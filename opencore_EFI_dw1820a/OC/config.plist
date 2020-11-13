@@ -1057,7 +1057,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-5F9802EFE386AA28</string>
 			<key>BoardRevision</key>
-			<data></data>
+			<data>Aw==</data>
 			<key>DevicePathsSupported</key>
 			<integer>0</integer>
 			<key>FSBFrequency</key>
@@ -1069,7 +1069,7 @@
 			<key>SmcBranch</key>
 			<data></data>
 			<key>SmcPlatform</key>
-			<data></data>
+			<data>ajIxNGsAAAA=</data>
 			<key>SmcRevision</key>
 			<data></data>
 			<key>StartupPowerEvents</key>
@@ -1077,30 +1077,30 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DV1Z0ML7H</string>
+			<string>C02CWRYNML7H</string>
 			<key>SystemUUID</key>
-			<string>50E604DE-9999-472D-B110-59313B018D58</string>
+			<string>F83AF978-7B2E-4B8D-8CE6-0FAEDA009D21</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02051310GU0000JC</string>
+			<string>C02025306GU00001H</string>
 			<key>ProcessorType</key>
-			<integer>0</integer>
+			<integer>1793</integer>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>ROM</key>
-			<data>IOvkTbKn</data>
+			<data>IMc+khjG</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DV1Z0ML7H</string>
+			<string>C02CWRYNML7H</string>
 			<key>SystemUUID</key>
-			<string>50E604DE-9999-472D-B110-59313B018D58</string>
+			<string>F83AF978-7B2E-4B8D-8CE6-0FAEDA009D21</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -1111,66 +1111,9 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02051310GU0000JC</string>
+			<string>C02025306GU00001H</string>
 			<key>ROM</key>
-			<data>IOvkTbKn</data>
-		</dict>
-		<key>SMBIOS</key>
-		<dict>
-			<key>BIOSReleaseDate</key>
-			<string>05/13/2020</string>
-			<key>BIOSVendor</key>
-			<string></string>
-			<key>BIOSVersion</key>
-			<string>1037.120.87.0.0</string>
-			<key>BoardAssetTag</key>
-			<string></string>
-			<key>BoardLocationInChassis</key>
-			<string>Part Component</string>
-			<key>BoardManufacturer</key>
-			<string></string>
-			<key>BoardProduct</key>
-			<string>Mac-5F9802EFE386AA28</string>
-			<key>BoardSerialNumber</key>
-			<string>C02051310GU0000JC</string>
-			<key>BoardType</key>
-			<integer>10</integer>
-			<key>BoardVersion</key>
-			<string>1.0</string>
-			<key>ChassisAssetTag</key>
-			<string>MacBook-Aluminum</string>
-			<key>ChassisManufacturer</key>
-			<string></string>
-			<key>ChassisSerialNumber</key>
-			<string>C02DV1Z0ML7H</string>
-			<key>ChassisType</key>
-			<integer>9</integer>
-			<key>ChassisVersion</key>
-			<string>Mac-5F9802EFE386AA28</string>
-			<key>FirmwareFeatures</key>
-			<data>ZvCv/QAAAAA=</data>
-			<key>FirmwareFeaturesMask</key>
-			<data>f////wAAAAA=</data>
-			<key>PlatformFeature</key>
-			<integer>50</integer>
-			<key>ProcessorType</key>
-			<integer>0</integer>
-			<key>SmcVersion</key>
-			<data></data>
-			<key>SystemFamily</key>
-			<string>MacBook Pro</string>
-			<key>SystemManufacturer</key>
-			<string></string>
-			<key>SystemProductName</key>
-			<string>MacBookPro16,2</string>
-			<key>SystemSKUNumber</key>
-			<string>Mac-5F9802EFE386AA28</string>
-			<key>SystemSerialNumber</key>
-			<string>C02DV1Z0ML7H</string>
-			<key>SystemUUID</key>
-			<string>50E604DE-9999-472D-B110-59313B018D58</string>
-			<key>SystemVersion</key>
-			<string>1.0</string>
+			<data>IMc+khjG</data>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
