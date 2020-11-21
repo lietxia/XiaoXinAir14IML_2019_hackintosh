@@ -97,6 +97,7 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 
 ### 改DVMT和 CFG Lock
 #### 推荐方法: 进隐藏BIOS  
+BIOS里的 `onekeybattery` 需要关闭，才能进隐藏BIOS  
 文章让从F1开始，经过测试，从F4开始即可，正确顺序    
 F4->4->R->F->V  
 F5->5->T->G->B  
