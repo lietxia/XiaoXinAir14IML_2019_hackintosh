@@ -53,6 +53,10 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
 
 #### 更新小记
+* 2020-12-26 10:00
+    * 更新opencore到0.6.4
+    * kext更新
+    * 新版voodooPS2取消了option 和 command键的交换，所以修改了`SSDT-RMCF.aml`启用option 和 command键的交换。
 * 2020-11-13 20:05
     * 暂时放弃Clover支线的更新。OC版本能同时正常用于10.15.X（推荐10.15.7）和big Sur11.0.1
     * OpenCore更新到0.6.3，各类kext更新到最新。
