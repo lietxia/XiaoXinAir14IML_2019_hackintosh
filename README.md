@@ -14,20 +14,19 @@
 |  读卡器  |     O2 Micro SD card reader(有概率读卡器不同)      |
 
 ## 目前状态：
-* 系统：10.15.7运行正常，BigSur 11.0.1(20B29)运行正常(推荐macOS10.15.7。系统低于10.15.X触摸板跑不起来，系统低于10.15.4之前开机会卡顿)
+* 系统：10.15.7运行正常，Big Sur 11.2(20D5029f)运行正常(推荐macOS10.15.7。系统低于10.15.X触摸板跑不起来，系统低于10.15.4之前开机会卡顿)
 * 硬盘：如果你硬盘是三星PM981A，建议换掉（装不了），换其他硬盘都可以
 * 独立显卡：屏蔽了（反正驱动不了）
 * 集成显卡：成功
 * 触摸板：成功（支持手势，最多识别5点）
 * 声卡：仿冒layout-id 15成功，无爆音
-* wifi：已换DW1820A,正常
-* 蓝牙：已换DW1820A,正常
+* wifi：DW1820A正常,AC 9560速度较慢，已驱动
+* 蓝牙：DW1820A正常，AC 9560较不稳定
 * HDMI：正常(可输出4k30帧,和win表现一致)
 * 摄像头：正常(USB摄像头还是很好驱动的)
 * 读卡器：正常(联想居然弄了个走PCI通道的读卡器..有小概率型号不一样)
 * 睡眠：支持原生休眠
 
-原装网卡Intel Wireless-AC 9560 已经能驱动，可以照搬ax201的方法，具体见：https://github.com/daliansky/XiaoXinPro-13-hackintosh/wiki/AX201%E6%88%96AX200
 
 ## 不正常的：
 * `指纹`无法驱动
@@ -53,6 +52,9 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
 
 #### 更新小记
+* 2021-1-2 16:17
+    * 整合Intel网卡和博通网卡驱动，修复itlwm在Big Sur无log
+
 * 2020-12-27 23:00
     * 更新voodooI2C.kext voodooI2CHID.text
 
@@ -95,7 +97,7 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
     * https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html
     * https://www.bilibili.com/video/BV1A54y1X78F
    
-2. 安装成功后,把EFI换成这个 
+2. 安装成功后,把EFI换成这个 （可提前替换efi，安装过程一样）
 
 ## 建议
 * 因目前休眠无法正常唤醒 , 为避免影响到睡眠 , 终端使用命令关闭休眠 `sudo pmset -a hibernatemode 0`
@@ -105,12 +107,15 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 ### 改DVMT和 CFG Lock
 #### 推荐方法: 进隐藏BIOS  
 BIOS里的 `onekeybattery` 需要关闭，才能进隐藏BIOS  
-文章让从F1开始，经过测试，从F4开始即可，正确顺序    
-F4->4->R->F->V  
-F5->5->T->G->B  
-F6->6->Y->H->N   
-然后按F2进隐藏bios  
-参考 https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh/blob/master/Advanced/ReadMe.md  
+- 隐藏BIOS进入姿势
+  - 电源键开机 → F2进入正常BIOS → 电源键关机 → 然后顺序按下下列键
+    - `F4` → `4` → `R` → `F` → `V`
+    - `F5` → `5` → `T` → `G` → `B`
+    - `F6` → `6` → `Y` → `H` → `N`
+  - 电源键开机 → F2进入隐藏BIOS , 如不成功请加快手速再次尝试
+- 推荐设置选项
+  - `Advanced` → `Power & Performance` → `CPU - Power Management Control` → `CPU Lock Configuration` → `CFG Lock` → `Disabled`
+  - `Advanced` → `System Agent (SA) Configuration` → `Graphics Configuration` → `DVMT Pre-Allocated` → `64M`
 
 #### 备用方法: windows直接改
 参考 https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/DVMT  
@@ -174,19 +179,21 @@ AppleALC1.5.1没有这种问题了
 | BrcmBluetoothInjector.kext          | dw1820相关 蓝牙    |      | √    |
 | BrcmFirmwareData.kext               | dw1820相关         |      | √    |
 | BrcmPatchRAM2.kext                  | dw1820相关         |      | √    |
-| CPUFriend.kext                      | cpu变频            | √    |      |
-| CPUFriendDataProvider.kext          | cpu变频数据        | √    |      |
+| CPUFriend.kext                      | cpu变频            |      | √    |
+| CPUFriendDataProvider.kext          | cpu变频数据        |      | √    |
 | ~~FakePCIID_Intel_HDMI_Audio.kext~~ | ~~HDMI以及声卡~~   | √    |      |
 | ~~FakePCIID.kext~~                  | ~~HDMI以及声卡~~   | √    |      |
-| Lilu.kext                           | 驱动扩展库(超重要) | √    |      |
+| Lilu.kext                           | 驱动扩展库(超重要)  | √    |      |
 | NoTouchID.kext                      | 取消指纹           |      | √    |
 | SMCBatteryManager.kext              | SMC(超重要)        | √    |      |
-| SMCLightSensor.kext                 | SMC(超重要)        | √    |      |
 | SMCProcessor.kext                   | SMC-处理器         | √    |      |
-| SMCSuperIO.kext                     | SMC-超级读写       | √    |      |
-| USBPorts.kext                       | 定制USB            | √    |      |
+| SMCSuperIO.kext                     | SMC-超级读写       |      |  √   |
 | VirtualSMC.kext                     | SMC(超重要)        | √    |      |
 | VoodooI2C.kext                      | 触摸板-核心        | √    |      |
 | VoodooI2CHID.kext                   | HID类型触摸板      | √    |      |
 | VoodooPS2Controller.kext            | 键盘驱动           | √    |      |
 | WhateverGreen.kext                  | 核显驱动           | √    |      |
+| IntelBluetoothFirmware.kext         | AC9560蓝牙固件     |      |   √  |
+| IntelBluetoothInjector.kext         | AC9560蓝牙        |      |  √   |
+| AirportItlwm-Sur.kext               | AC9560 Wi-Fi Big Sur |      |  √   |
+| AirportItlwm-Cata.kext              | AC9560 Wi-Fi Catalina |      |  √   |
