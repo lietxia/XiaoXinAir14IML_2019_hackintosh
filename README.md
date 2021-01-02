@@ -53,6 +53,9 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
 
 #### 更新小记
+* 2020-12-27 23:00
+    * 更新voodooI2C.kext voodooI2CHID.text
+
 * 2020-12-26 10:00
     * 更新opencore到0.6.4
     * kext更新
