@@ -1,4 +1,4 @@
-# 联想小新 Air-14 2019 (Intel平台：IML版)
+# 联想小新 Air-14 2019IML
 ![air14iml](img/air14iml.png)
 以上截图软件：https://github.com/lihaoyun6/capXDR-plugins/  
 安装包在：app/capXDR.dmg  
@@ -37,6 +37,8 @@ QQ群号：1032311345
 * 小新air13iwl（i5-8265U / i7-8565U）https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh
 * 小新air14（i5-1035G1） http://bbs.pcbeta.com/viewthread-1873103-1-1.html
 * 小新air15（i5-1035G1） http://bbs.pcbeta.com/viewthread-1874022-1-1.html
+* 小新air15（i5-10210u） http://bbs.pcbeta.com/viewthread-1859586-1-1.html
+* Lenovo-Ideapad-S540-15IML（i5-10210U）https://github.com/3ig/IdeaPad-S540-15IML-hackintosh
 * Lenovo-Ideapad-S540-14IML（i5-10210U）https://github.com/marianopela/Lenovo-Ideapad-S540-14IML-Hackintosh
 * Lenovo-Ideapad-S540-14IML（i5-8265U）https://github.com/Hasodikis/Lenovo-Ideapad-s540-14IWL---Hackintosh
 
