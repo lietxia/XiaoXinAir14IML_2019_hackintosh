@@ -1,4 +1,9 @@
 # 联想小新 Air-14 2019 (Intel平台：IML版)
+![air14iml](img/air14iml.png)
+以上截图软件：https://github.com/lihaoyun6/capXDR-plugins/  
+安装包在：app/capXDR.dmg  
+模板：Lenovo-Air14IML (我做的)  
+QQ群号：1032311345
 
 |   规格   |                      详细信息                      |
 | :------: | :------------------------------------------------: |
@@ -27,6 +32,13 @@
 * 读卡器：正常(联想居然弄了个走PCI通道的读卡器..有小概率型号不一样)
 * 睡眠：支持原生休眠
 
+## 相关机型
+* 小新Pro13（i5-10210U / i7-10710U） https://github.com/daliansky/XiaoXinPro-13-hackintosh
+* 小新air13iwl（i5-8265U / i7-8565U）https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh
+* 小新air14（i5-1035G1） http://bbs.pcbeta.com/viewthread-1873103-1-1.html
+* 小新air15（i5-1035G1） http://bbs.pcbeta.com/viewthread-1874022-1-1.html
+* Lenovo-Ideapad-S540-14IML（i5-10210U）https://github.com/marianopela/Lenovo-Ideapad-S540-14IML-Hackintosh
+* Lenovo-Ideapad-S540-14IML（i5-8265U）https://github.com/Hasodikis/Lenovo-Ideapad-s540-14IWL---Hackintosh
 
 ## 不正常的：
 * `指纹`无法驱动
@@ -51,7 +63,12 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
 
-#### 更新小记
+#### 更新小记 (Changelog)
+* 2021-01-16 16:00
+    * 更新kext，更新opencore到0.6.5
+    * 新版whatEverGreen.kext需要增加启动参数`-w`才能正常运行
+    * 新增`SSDT-BATS-Air14IML.aml`能多显示一些电池信息(并没有什么用)
+
 * 2021-1-2 16:17
     * 整合Intel网卡和博通网卡驱动，修复itlwm在Big Sur无log
 
@@ -170,30 +187,33 @@ AppleALC1.5.1没有这种问题了
 | SSDT-UIAC           | 定制USB                                         |      | √    |      |
 | ~~SSDT-USBX~~       | (已并入OCPublic-Merge)USB 电源补丁              | √    |      |      |
 | SSDT-XSPI           | 仿冒 XSPI 设备                                  |      |      | √    |
+| SSDT-BATX-Air14IML  | 电池附加信息                                    |      |      | √    |
+
 
 ### KEXT
-| KEXT                                | 说明               | 必备 | 可选 |
-| ----------------------------------- | ------------------ | ---- | ---- |
-| AirportBrcmFixup.kext               | dw1820相关 wifi    |      | √    |
-| AppleALC.kext                       | HDMI以及声卡       | √    |      |
-| BrcmBluetoothInjector.kext          | dw1820相关 蓝牙    |      | √    |
-| BrcmFirmwareData.kext               | dw1820相关         |      | √    |
-| BrcmPatchRAM2.kext                  | dw1820相关         |      | √    |
-| CPUFriend.kext                      | cpu变频            |      | √    |
-| CPUFriendDataProvider.kext          | cpu变频数据        |      | √    |
-| ~~FakePCIID_Intel_HDMI_Audio.kext~~ | ~~HDMI以及声卡~~   | √    |      |
-| ~~FakePCIID.kext~~                  | ~~HDMI以及声卡~~   | √    |      |
-| Lilu.kext                           | 驱动扩展库(超重要)  | √    |      |
-| NoTouchID.kext                      | 取消指纹           |      | √    |
-| SMCBatteryManager.kext              | SMC(超重要)        | √    |      |
-| SMCProcessor.kext                   | SMC-处理器         | √    |      |
-| SMCSuperIO.kext                     | SMC-超级读写       |      |  √   |
-| VirtualSMC.kext                     | SMC(超重要)        | √    |      |
-| VoodooI2C.kext                      | 触摸板-核心        | √    |      |
-| VoodooI2CHID.kext                   | HID类型触摸板      | √    |      |
-| VoodooPS2Controller.kext            | 键盘驱动           | √    |      |
-| WhateverGreen.kext                  | 核显驱动           | √    |      |
-| IntelBluetoothFirmware.kext         | AC9560蓝牙固件     |      |   √  |
-| IntelBluetoothInjector.kext         | AC9560蓝牙        |      |  √   |
-| AirportItlwm-Sur.kext               | AC9560 Wi-Fi Big Sur |      |  √   |
-| AirportItlwm-Cata.kext              | AC9560 Wi-Fi Catalina |      |  √   |
+| KEXT                                | 说明                  | 必备 | 可选 |
+| ----------------------------------- | --------------------- | ---- | ---- |
+| AirportBrcmFixup.kext               | dw1820相关 wifi       |      | √    |
+| AppleALC.kext                       | HDMI以及声卡          | √    |      |
+| BrcmBluetoothInjector.kext          | dw1820相关 蓝牙       |      | √    |
+| BrcmFirmwareData.kext               | dw1820相关            |      | √    |
+| BrcmPatchRAM2.kext                  | dw1820相关            |      | √    |
+| CPUFriend.kext                      | cpu变频               |      | √    |
+| CPUFriendDataProvider.kext          | cpu变频数据           |      | √    |
+| ~~FakePCIID_Intel_HDMI_Audio.kext~~ | ~~HDMI以及声卡~~      | √    |      |
+| ~~FakePCIID.kext~~                  | ~~HDMI以及声卡~~      | √    |      |
+| Lilu.kext                           | 驱动扩展库(超重要)    | √    |      |
+| NoTouchID.kext                      | 取消指纹              |      | √    |
+| SMCBatteryManager.kext              | SMC(超重要)           | √    |      |
+| SMCProcessor.kext                   | SMC-处理器            | √    |      |
+| SMCSuperIO.kext                     | SMC-超级读写          |      | √    |
+| VirtualSMC.kext                     | SMC(超重要)           | √    |      |
+| VoodooI2C.kext                      | 触摸板-核心           | √    |      |
+| VoodooI2CHID.kext                   | HID类型触摸板         | √    |      |
+| VoodooPS2Controller.kext            | 键盘驱动              | √    |      |
+| WhateverGreen.kext                  | 核显驱动              | √    |      |
+| IntelBluetoothFirmware.kext         | AC9560蓝牙固件        |      | √    |
+| IntelBluetoothInjector.kext         | AC9560蓝牙            |      | √    |
+| AirportItlwm-Sur.kext               | AC9560 Wi-Fi Big Sur  |      | √    |
+| AirportItlwm-Cata.kext              | AC9560 Wi-Fi Catalina |      | √    |
+
