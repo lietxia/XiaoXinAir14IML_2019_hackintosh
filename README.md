@@ -1,5 +1,6 @@
 # 联想小新 Air-14 2019IML
 ![air14iml](img/air14iml.png)
+![air14iml-sur](img/air14iml-sur.png)
 以上截图软件：https://github.com/lihaoyun6/capXDR-plugins/  
 安装包在：app/capXDR.dmg  
 模板：Lenovo-Air14IML (我做的)  
@@ -67,7 +68,12 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
 
 #### 更新小记 (Changelog)
-* 2021-01-16 16:00
+* 2021-01-06 18:30
+    * 精简AirportItlwm，Big Sur和Catalina共5M（但只能使用AC9560网卡）
+    * 可能加快了AC 9560网卡的开机
+    * AIO版本在博通和Intel网卡中都适用
+    
+* 2021-01-06 16:00
     * 更新kext，更新opencore到0.6.5
     * 新版whatEverGreen.kext需要增加启动参数`-igfxblr`才能正常运行
     * 新增`SSDT-BATS-Air14IML.aml`能多显示一些电池信息(并没有什么用)
