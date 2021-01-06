@@ -1,5 +1,4 @@
 # 联想小新 Air-14 2019IML
-![air14iml](img/air14iml.png)
 ![air14iml-sur](img/air14iml-sur.png)
 以上截图软件：https://github.com/lihaoyun6/capXDR-plugins/  
 安装包在：app/capXDR.dmg  
