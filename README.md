@@ -66,7 +66,7 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 #### 更新小记 (Changelog)
 * 2021-01-16 16:00
     * 更新kext，更新opencore到0.6.5
-    * 新版whatEverGreen.kext需要增加启动参数`-w`才能正常运行
+    * 新版whatEverGreen.kext需要增加启动参数`-igfxblr`才能正常运行
     * 新增`SSDT-BATS-Air14IML.aml`能多显示一些电池信息(并没有什么用)
 
 * 2021-1-2 16:17
