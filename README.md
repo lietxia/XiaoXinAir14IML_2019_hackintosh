@@ -172,6 +172,9 @@ AppleALC1.5.1没有这种问题了
 * ~~建议: 从win切换到mac,不要用重启,先关机,再开机~~
 * ~~mac重启mac,不会掉声卡~~
 
+### 3. 进系统后黑屏了（01.06 EFI）
+新版WhatEverGreen.kext的bug  
+可通过重置nvram（如果改动efi后黑屏） , 退回WhatEverGreen.kext版本解决
 
 ## 如何更爽一点?
 * 截图键(PrintScreen PrtSC)在mac下是不能用的,我把他映射到F13,自己把截图快捷键改到F13即可(系统偏好设置  键盘  快捷键  截屏)
