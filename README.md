@@ -66,7 +66,7 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
     
-### DW1820A 驱动(DRIVER)
+### DW1820A WINDOWS10驱动(DRIVER)
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### 更新小记 (Changelog)
