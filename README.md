@@ -65,8 +65,11 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 ### Catalina 开启hidip（高分辨率）
 
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
+    
+### DW1820A 驱动(DRIVER)
+https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
-#### 更新小记 (Changelog)
+### 更新小记 (Changelog)
 * 2021-01-06 18:30
     * 精简AirportItlwm，Big Sur和Catalina共5M（但只能使用AC9560网卡）
     * 可能加快了AC 9560网卡的开机
