@@ -34,7 +34,8 @@ QQ群号：1032311345
 
 ## 相关机型
 * 小新Pro13（i5-10210U / i7-10710U） https://github.com/daliansky/XiaoXinPro-13-hackintosh
-* 小新air13iwl（i5-8265U / i7-8565U）https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh
+* 小新13IWL https://github.com/sun19970908/XiaoXin13IML_2020_hackintosh
+* 小新air13IWL（i5-8265U / i7-8565U）https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh
 * 小新air15IKBR（i5-8265U）https://github.com/czy1024/XiaoXin-Air15-IKBR-2018-EFI
 * 小新air14（i5-1035G1） http://bbs.pcbeta.com/viewthread-1873103-1-1.html
 * 小新air14（i7-1065G7） http://bbs.pcbeta.com/viewthread-1878378-1-1.html
@@ -42,7 +43,7 @@ QQ群号：1032311345
 * 小新air15（i5-10210u） http://bbs.pcbeta.com/viewthread-1859586-1-1.html
 * Lenovo-Ideapad-S540-15IML（i5-10210U）https://github.com/3ig/IdeaPad-S540-15IML-hackintosh
 * Lenovo-Ideapad-S540-14IML（i5-10210U）https://github.com/marianopela/Lenovo-Ideapad-S540-14IML-Hackintosh
-* Lenovo-Ideapad-S540-14IML（i5-8265U）https://github.com/Hasodikis/Lenovo-Ideapad-s540-14IWL---Hackintosh
+* Lenovo-Ideapad-S540-14IWL（i5-8265U）https://github.com/Hasodikis/Lenovo-Ideapad-s540-14IWL---Hackintosh
 
 
 ## 不正常的：
