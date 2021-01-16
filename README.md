@@ -73,6 +73,9 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### 更新小记 (Changelog)
+* 2021-01-16 22:06
+    * 更新Clover分支。Clover v5.1 r5128
+
 * 2021-01-06 18:30
     * 精简AirportItlwm，Big Sur和Catalina共5M（但只能使用AC9560网卡）
     * 可能加快了AC 9560网卡的开机
