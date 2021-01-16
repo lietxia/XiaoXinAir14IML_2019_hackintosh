@@ -61,11 +61,11 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 > 小新AIR14-2019 i5-10210u QQ群号1032311345  
 > 如果你使用openCore，BIOS请使用1.0.2之外的版本
 > （1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
-### Big Sur 开启hidip（高分辨率）
+### Big Sur 开启hidpi（高分辨率）
 
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/dev/hidpi.sh)"
 
-### Catalina 开启hidip（高分辨率）
+### Catalina 开启hidpi（高分辨率）
 
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
     
