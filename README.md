@@ -8,33 +8,33 @@ QQ群号：1032311345
 |   规格   |                      详细信息                      |
 | :------: | :------------------------------------------------: |
 | 电脑型号 |           Lenovo XiaoXin Air14 IML 2019            |
-|  处理器  |        intel Core i5-10210U @ 1.60GHz 4core        |
+|  CPU  |        intel Core i5-10210U @ 1.60GHz 4core        |
 |   主板   |                 lenovo LNVNB161216                 |
-|   显卡   |           Nvidia GeForce MX250 ( 2 GB )            |
+|   GPU👾   |           Nvidia GeForce MX250 ( 2 GB )            |
 |   内存   |     板载4GB 2666+可更换内存(被我换成16GB 2666)     |
-|   硬盘   |    512GB 2242 SATA固态 + HIKVISION c2000Pro 1TB    |
-|  显示器  |             友达 AUO353D ( 14 英寸  )              |
-|   声卡   |                  Conexant CX8070                   |
-|   网卡   | intel Wireless-AC 9560(可驱动，但我换成了DW 1820A) |
-|  读卡器  |     O2 Micro SD card reader(有概率读卡器不同)      |
+|   硬盘🖴   |    512GB 2242 SATA固态 + HIKVISION c2000Pro 1TB    |
+|  显示器🖥️  |             友达 AUO353D ( 14 英寸  )              |
+|   声卡🔊   |                  Conexant CX8070                   |
+|   网卡🌐   | intel Wireless-AC 9560(可驱动，但我换成了DW 1820A) |
+|  读卡器🗂️  |     O2 Micro SD card reader(有概率读卡器不同)      |
 
 ## 目前状态：
-* 系统：10.15.7运行正常，Big Sur 11.2 Beta 2(20D5042d)运行正常(推荐macOS10.15.7。系统低于10.15.X触摸板跑不起来，系统低于10.15.4之前开机会卡顿)
-* 硬盘：如果你硬盘是三星PM981A，建议换掉（装不了），换其他硬盘都可以
-* 独立显卡：屏蔽了（反正驱动不了）
-* 集成显卡：成功
-* 触摸板：成功（支持手势，最多识别5点）
-* 声卡：仿冒layout-id 15成功，无爆音
-* wifi：DW1820A正常,AC 9560速度较慢，已驱动
+* 系统🌌：10.15.7运行正常，Big Sur 11.2 Beta 2(20D5042d)运行正常(推荐macOS10.15.7。系统低于10.15.X触摸板跑不起来，系统低于10.15.4之前开机会卡顿)
+* 硬盘🖴：如果你硬盘是三星PM981A，建议换掉（装不了），换其他硬盘都可以
+* 独立显卡👾：屏蔽了（反正驱动不了）
+* 集成显卡👾：成功
+* 触摸板🖐️：成功（支持手势，最多识别5点）
+* 声卡🔊：仿冒layout-id 15成功，无爆音
+* wifi🌐：DW1820A正常,AC 9560速度较慢，已驱动
 * 蓝牙：DW1820A正常，AC 9560较不稳定
 * HDMI：正常(可输出4k30帧,和win表现一致)
-* 摄像头：正常(USB摄像头还是很好驱动的)
-* 读卡器：正常(联想居然弄了个走PCI通道的读卡器..有小概率型号不一样)
-* 睡眠：支持原生休眠
+* 摄像头🎦：正常(USB摄像头还是很好驱动的)
+* 读卡器🗂️：正常(联想居然弄了个走PCI通道的读卡器..有小概率型号不一样)
+* 睡眠😴：支持原生休眠
 
 ## 相关机型
 * 小新Pro13（i5-10210U / i7-10710U） https://github.com/daliansky/XiaoXinPro-13-hackintosh
-* 小新13IWL https://github.com/sun19970908/XiaoXin13IML_2020_hackintosh
+* 小新13IML https://github.com/sun19970908/XiaoXin13IML_2020_hackintosh
 * 小新air13IWL（i5-8265U / i7-8565U）https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh
 * 小新air15IKBR（i5-8265U）https://github.com/czy1024/XiaoXin-Air15-IKBR-2018-EFI
 * 小新air14（i5-1035G1） http://bbs.pcbeta.com/viewthread-1873103-1-1.html
