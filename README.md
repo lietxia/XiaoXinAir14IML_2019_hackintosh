@@ -127,12 +127,13 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
     * 大部分都正常了,加了openCore版
 
 ## 安装方法
-> 如果你使用openCore，BIOS请使用1.0.2之外的版本 （1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
-1. 完全按照 联想小新Pro13 的方法安装一次 
+1. 如果你使用openCore，BIOS请使用1.0.2之外的版本 （1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
+2. 改BIOS设置（推荐和必须的地方必须改） https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
+3. 完全按照 联想小新Pro13 的方法安装一次 
     * https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html
     * https://www.bilibili.com/video/BV1A54y1X78F
-2. 改DVMT和 CFG Lock（见下文，必须做）
-3. 安装成功后,把EFI换成这个 （可提前替换efi，安装过程一样）
+4. 改DVMT和 CFG Lock（见下文，必须做）
+5. 安装成功后,把EFI换成这个 （可提前替换efi，安装过程一样）
 
 ## 建议
 * 因目前休眠无法正常唤醒 , 为避免影响到睡眠 , 终端使用命令关闭休眠 `sudo pmset -a hibernatemode 0`
