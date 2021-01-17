@@ -5,13 +5,13 @@
 模板：Lenovo-Air14IML (我做的)  
 QQ群号：1032311345
 
-|   规格   |                      详细信息                      |
-| :------: | :------------------------------------------------: |
+|   规格    |                      详细信息                      |
+| :-------: | :------------------------------------------------: |
 | 电脑型号💻 |           Lenovo XiaoXin Air14 IML 2019            |
-|  CPU  |        intel Core i5-10210U @ 1.60GHz 4core        |
-|   主板   |                 lenovo LNVNB161216                 |
-|   GPU👾   |           Nvidia GeForce MX250 ( 2 GB )            |
-|   内存   |     板载4GB 2666+可更换内存(被我换成16GB 2666)     |
+|    CPU    |        intel Core i5-10210U @ 1.60GHz 4core        |
+|   主板    |                 lenovo LNVNB161216                 |
+|   GPU👾    |           Nvidia GeForce MX250 ( 2 GB )            |
+|   内存    |     板载4GB 2666+可更换内存(被我换成16GB 2666)     |
 |   硬盘🖴   |    512GB 2242 SATA固态 + HIKVISION c2000Pro 1TB    |
 |  显示器🖥️  |             友达 AUO353D ( 14 英寸  )              |
 |   声卡🔊   |                  Conexant CX8070                   |
@@ -130,15 +130,16 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 1. 完全按照 联想小新Pro13 的方法安装一次 
     * https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html
     * https://www.bilibili.com/video/BV1A54y1X78F
-   
-2. 安装成功后,把EFI换成这个 （可提前替换efi，安装过程一样）
+2. 改DVMT和 CFG Lock（见下文，必须做）
+3. 安装成功后,把EFI换成这个 （可提前替换efi，安装过程一样）
 
 ## 建议
 * 因目前休眠无法正常唤醒 , 为避免影响到睡眠 , 终端使用命令关闭休眠 `sudo pmset -a hibernatemode 0`
-* 强烈建议解锁 `CFG Lock` 开启电源管理更好
-* 强烈建议解锁 `DVMT` 让显存大小变成64M
 
 ### 改DVMT和 CFG Lock
+* 必须解锁 `CFG Lock` 不然无法使用opencore clover。 
+* 建议解锁 `DVMT` 让显存大小变成64M，没有什么坏处。 
+
 #### 推荐方法: 进隐藏BIOS  
 BIOS里的 `onekeybattery` 需要关闭，才能进隐藏BIOS  
 - 隐藏BIOS进入姿势
@@ -191,24 +192,26 @@ AppleALC1.5.1没有这种问题了
 
 
 ### 热补丁
-| 补丁                | 说明                                            | 必备 | 建议 | 可选 |
-| ------------------- | ----------------------------------------------- | ---- | ---- | ---- |
-| SSDT-OCPublic-Merge | SSDT-EC+SSDT-RTC0+SSDT-USBX+SSDT-ALS0+SSDT-MCHC | √    |      |      |
-| AIR14-TPAD          | I2C 触摸板补丁                                  | √    |      |      |
-| SSDT-DMAC           | 仿冒 DMA 控制器                                 |      |      | √    |
-| ~~SSDT-EC~~         | (已并入OCPublic-Merge)仿冒 EC 设备              | √    |      |      |
-| SSDT-GPRW           | 防秒醒:0D / 6D 睡了即醒补丁                     | √    |      |      |
-| SSDT-HPTE           | 屏蔽 HPET 补丁                                  |      |      | √    |
-| ~~SSDT-MCHC~~       | (已并入OCPublic-Merge)仿冒 MCHC 设备            |      | √    |      |
-| SSDT-PNLF-CFL       | Coffee Lake 亮度控制补丁                        | √    |      |      |
-| SSDT-PR00           | (X86)CPU电源管理补丁(开启XCPM)                  | √    |      |      |
-| SSDT-RMCF           | PS2 按键映射补丁                                | √    |      |      |
-| SSDT-SBUS           | 仿冒 BUS0 , DVL0 设备                           |      | √    |      |
-| SSDT-UIAC           | 定制USB                                         |      | √    |      |
-| ~~SSDT-USBX~~       | (已并入OCPublic-Merge)USB 电源补丁              | √    |      |      |
-| SSDT-XSPI           | 仿冒 XSPI 设备                                  |      |      | √    |
-| SSDT-BATX-Air14IML  | 电池附加信息                                    |      |      | √    |
-
+| 补丁                    | 说明                            | 必备 | 建议 | 可选 |
+| ----------------------- | ------------------------------- | ---- | ---- | ---- |
+| ~~SSDT-OCPublic-Merge~~ | EC+RTC0+USBX+ALS0+MCHC          |      |      | √    |
+| SSDT-TPAD-Air14IML      | I2C触摸板轮询补丁(AIR14IML专用) | √    |      |      |
+| SSDT-DMAC               | 仿冒 DMA 控制器                 |      |      | √    |
+| SSDT-EC                 | 仿冒 EC 设备                    | √    |      |      |
+| SSDT-GPRW               | 防秒醒:0D / 6D 睡了即醒补丁     | √    |      |      |
+| SSDT-HPTE               | 屏蔽 HPET 补丁                  |      |      | √    |
+| SSDT-MCHC               | 仿冒 MCHC 设备                  |      | √    |      |
+| SSDT-PNLF-CFL           | Coffee Lake 亮度控制补丁        | √    |      |      |
+| SSDT-PR00               | (X86)CPU电源管理补丁(开启XCPM)  | √    |      |      |
+| SSDT-RMCF               | PS2 按键映射补丁                | √    |      |      |
+| SSDT-SBUS               | 仿冒 BUS0 , DVL0 设备           |      | √    |      |
+| SSDT-UIAC               | 定制USB                         |      | √    |      |
+| SSDT-USBX               | USB 电源补丁                    | √    |      |      |
+| SSDT-XSPI               | 仿冒 XSPI 设备                  |      |      | √    |
+| SSDT-BATX-Air14IML      | 电池附加信息                    |      |      | √    |
+| SSDT-RTC_Y-AWAC_N       | “伪” RTC时钟                    |      | √    |      |
+| SSDT-ECRW               | yogaSMC的EC访问补丁             |      |      | √    |
+| SSDT-GPRW               | yogaSMC的Clamshell Mode所需补丁 |      |      | √    |
 
 ### KEXT
 | KEXT                                | 说明                  | 必备 | 可选 |
