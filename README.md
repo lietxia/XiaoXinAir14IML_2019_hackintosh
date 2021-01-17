@@ -127,6 +127,7 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
     * 大部分都正常了,加了openCore版
 
 ## 安装方法
+> 如果你使用openCore，BIOS请使用1.0.2之外的版本 （1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
 1. 完全按照 联想小新Pro13 的方法安装一次 
     * https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html
     * https://www.bilibili.com/video/BV1A54y1X78F
