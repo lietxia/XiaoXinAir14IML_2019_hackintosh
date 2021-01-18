@@ -42,8 +42,11 @@ QQ群号：1032311345
 * 小新air15（i5-1035G1） http://bbs.pcbeta.com/viewthread-1874022-1-1.html
 * 小新air15（i5-10210u） http://bbs.pcbeta.com/viewthread-1859586-1-1.html
 * Lenovo-Ideapad-S540-15IML（i5-10210U）https://github.com/3ig/IdeaPad-S540-15IML-hackintosh
+* Lenovo-Ideapad-S540-15IML（i5-10210U）https://github.com/ayush5harma/IdeaPad-S540-Hackintosh
+* Lenovo-Ideapad-S540-15IWL（i5-8265U）https://github.com/IvanAleksandrov94/Lenovo-s340-s540-Big-Sur-OpenCore-i5-8265u
 * Lenovo-Ideapad-S540-14IML（i5-10210U）https://github.com/marianopela/Lenovo-Ideapad-S540-14IML-Hackintosh
 * Lenovo-Ideapad-S540-14IWL（i5-8265U）https://github.com/Hasodikis/Lenovo-Ideapad-s540-14IWL---Hackintosh
+
 
 
 ## 不正常的：
