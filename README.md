@@ -97,7 +97,7 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### 更新小记 (Changelog)
 * 2021-01-21 11:30
-    * 更新Opencore分支，加入YogaSMC，itlwm更新至1.3.0_alpha精简版
+    * 更新Opencore分支，加入YogaSMC，itlwm更新至1.3.0_alpha精简版，更新voodooi2c
 
 * 2021-01-16 22:06
     * 更新Clover分支。Clover v5.1 r5128
