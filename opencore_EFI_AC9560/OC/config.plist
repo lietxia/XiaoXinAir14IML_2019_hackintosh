@@ -134,22 +134,6 @@
 				<key>Path</key>
 				<string>SSDT-BATS-Air14IML.aml</string>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>ECAccess</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-ECRW.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>YogaSMC</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-RCSM.aml</string>
-			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
@@ -422,42 +406,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>YogaSMC.kext</string>
-				<key>Comment</key>
-				<string>YogaSMC</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/YogaSMC</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>YogaSMCAlter.kext</string>
-				<key>Comment</key>
-				<string>YogaSMC</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/YogaSMCAlter</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1311,20 +1259,20 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02CV0GWML7H</string>
+			<string>C02DW0FHML7H</string>
 			<key>SystemUUID</key>
-			<string>1DB30BD5-C3EB-4F40-A7C1-920B15C10999</string>
+			<string>F83AF978-7B2E-4B8D-8CE6-0FAEDA009D21</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02024200J90000AD</string>
+			<string>C02025306GU00001H</string>
 			<key>ProcessorType</key>
 			<integer>1793</integer>
 			<key>ROM</key>
-			<data>hDNuGbbm</data>
+			<data>IMc+khjG</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -1332,9 +1280,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02CV0GWML7H</string>
+			<string>C02DW0FHML7H</string>
 			<key>SystemUUID</key>
-			<string>1DB30BD5-C3EB-4F40-A7C1-920B15C10999</string>
+			<string>F83AF978-7B2E-4B8D-8CE6-0FAEDA009D21</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -1345,11 +1293,11 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02024200J90000AD</string>
+			<string>C02025306GU00001H</string>
 			<key>ROM</key>
-			<data>hDNuGbbm</data>
+			<data>IMc+khjG</data>
 			<key>SystemUUID</key>
-			<string>1DB30BD5-C3EB-4F40-A7C1-920B15C10999</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
