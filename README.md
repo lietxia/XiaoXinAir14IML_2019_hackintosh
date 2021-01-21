@@ -239,7 +239,7 @@ AppleALC1.5.1没有这种问题了
 | SSDT-BATX-Air14IML      | 电池附加信息                    |      |      | √    |
 | SSDT-RTC_Y-AWAC_N       | “伪” RTC时钟                    |      | √    |      |
 | SSDT-ECRW               | yogaSMC的EC访问补丁             |      |      | √    |
-| SSDT-GPRW               | yogaSMC的Clamshell Mode所需补丁 |      |      | √    |
+| SSDT-RCSM               | yogaSMC的Clamshell Mode所需补丁 |      |      | √    |
 
 ### KEXT
 | KEXT                                | 说明                  | 必备 | 可选 |
