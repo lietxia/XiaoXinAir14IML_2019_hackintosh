@@ -72,6 +72,9 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 * ~~无法禁音,但是可以把音量调最小就没声音了~~(已经解决)
 * ~~开机会卡顿几秒~~(10.15.4解决)  
 * ~~触摸板使用轮询方式,最多识别5指,但轮询并不是彻底完美,会有小瞬间丢状态~~ (新触摸板驱动大幅改善)
+### YogaSMC `Experimental`
+* 正常的：风扇三种模式切换、麦克风静音、飞行模式、F10切换屏幕、触摸板开关有提示、键盘背光、Fn功能键切换
+* 不正常：摄像头有提示，但是关不掉、锁定功能用不了、Fn+Q不能修改、拔插电源会错误显示键盘背光、控制面板随机进不去、电池温度读不出来 
 
 # 触摸板
 如果触摸板(重建缓存触摸板仍不行，使用此方法)  
@@ -93,6 +96,9 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### 更新小记 (Changelog)
+* 2021-01-21 11:30
+    * 更新Opencore分支，加入YogaSMC，itlwm更新至1.3.0_alpha精简版
+
 * 2021-01-16 22:06
     * 更新Clover分支。Clover v5.1 r5128
 
@@ -259,6 +265,7 @@ AppleALC1.5.1没有这种问题了
 | WhateverGreen.kext                  | 核显驱动              | √    |      |
 | IntelBluetoothFirmware.kext         | AC9560蓝牙固件        |      | √    |
 | IntelBluetoothInjector.kext         | AC9560蓝牙            |      | √    |
-| AirportItlwm-Sur.kext               | AC9560 Wi-Fi Big Sur  |      | √    |
-| AirportItlwm-Cata.kext              | AC9560 Wi-Fi Catalina |      | √    |
-
+| AirportItlwm-Sur.kext               | AC9560 Wi-Fi Big Sur  |      | √   |
+| AirportItlwm-Cata.kext              | AC9560 Wi-Fi Catalina |      | √   |
+| YogaSMC.kext                        | YogaSMC               |      | √   |
+| YogaSMCAlter.kext                   | YogaSMC               |      | √   |
