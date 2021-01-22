@@ -38,7 +38,9 @@ QQ群号：1032311345
 * 小新air13IWL（i5-8265U / i7-8565U）https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh
 * 小新air15IKBR（i5-8265U）https://github.com/czy1024/XiaoXin-Air15-IKBR-2018-EFI
 * 小新air14（i5-1035G1） http://bbs.pcbeta.com/viewthread-1873103-1-1.html
+    - download [2020款小新air14_1035g1_EFI-OC0.6.2.zip](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/files/5853401/2020.air14_1035g1_EFI-OC0.6.2.zip)
 * 小新air14（i7-1065G7） http://bbs.pcbeta.com/viewthread-1878378-1-1.html
+    - download [XiaoXin Air14-2020-Intel-I7 1065G7.zip](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/files/5853570/XiaoXin.Air14-2020-Intel-I7.1065G7.zip)
 * 小新air15（i5-1035G1） http://bbs.pcbeta.com/viewthread-1874022-1-1.html
 * 小新air15（i5-10210u） http://bbs.pcbeta.com/viewthread-1859586-1-1.html
 * Lenovo-Ideapad-S540-15IML（i5-10210U）https://github.com/3ig/IdeaPad-S540-15IML-hackintosh
