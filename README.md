@@ -46,6 +46,7 @@ QQ群号：1032311345
 * Lenovo-Ideapad-S540-15IWL（i5-8265U）https://github.com/IvanAleksandrov94/Lenovo-s340-s540-Big-Sur-OpenCore-i5-8265u
 * Lenovo-Ideapad-S540-14IML（i5-10210U）https://github.com/marianopela/Lenovo-Ideapad-S540-14IML-Hackintosh
 * Lenovo-Ideapad-S540-14IWL（i5-8265U）https://github.com/Hasodikis/Lenovo-Ideapad-s540-14IWL---Hackintosh
+
 ## BIOS 
 https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=78312
 <details>
@@ -72,6 +73,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 * ~~无法禁音,但是可以把音量调最小就没声音了~~(已经解决)
 * ~~开机会卡顿几秒~~(10.15.4解决)  
 * ~~触摸板使用轮询方式,最多识别5指,但轮询并不是彻底完美,会有小瞬间丢状态~~ (新触摸板驱动大幅改善)
+
 ### YogaSMC `Experimental`
 * 正常的：风扇三种模式切换、麦克风静音、飞行模式、F10切换屏幕、触摸板开关有提示、键盘背光、Fn功能键切换
 * 不正常：摄像头有提示，但是关不掉、锁定功能用不了、Fn+Q不能修改、拔插电源会错误显示键盘背光、控制面板随机进不去、电池温度读不出来 
@@ -84,6 +86,7 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 > 小新AIR14-2019 i5-10210u QQ群号1032311345  
 > 如果你使用openCore，BIOS请使用1.0.2之外的版本
 > （1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
+
 ### Big Sur 开启hidpi（高分辨率）
 
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/dev/hidpi.sh)"
@@ -126,6 +129,9 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
     * 暂时放弃Clover支线的更新。OC版本能同时正常用于10.15.X（推荐10.15.7）和big Sur11.0.1
     * OpenCore更新到0.6.3，各类kext更新到最新。
     * 这个EFI是针对网卡换成DW1820A的，如果是原装intel网卡，用这个EFI网卡不能驱动，需要改一下，过一阵找人改一个。
+
+> win1010525 发布的AIO版本通用
+> 自从2021-01-16开始，Clover已经重新更新了
 
 * 2020-08-07 10:15
     * OpenCore更新到0.6.0，Clover更新到r5120。
@@ -220,7 +226,7 @@ AppleALC1.5.1没有这种问题了
 
 
 ### 热补丁
-| 补丁                    | 说明                            | 必备 | 建议 | 可选 |
+| 补丁                     | 说明                              | 必备 | 建议 | 可选 |
 | ----------------------- | ------------------------------- | ---- | ---- | ---- |
 | ~~SSDT-OCPublic-Merge~~ | EC+RTC0+USBX+ALS0+MCHC          |      |      | √    |
 | SSDT-TPAD-Air14IML      | I2C触摸板轮询补丁(AIR14IML专用) | √    |      |      |
