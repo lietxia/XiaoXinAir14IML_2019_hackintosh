@@ -5,6 +5,9 @@
 模板：Lenovo-Air14IML (我做的)  
 QQ群号：1032311345
 
+[中文](./README.md)  
+[ENGLISH](./README-en.md)  
+
 |   规格    |                      详细信息                      |
 | :-------: | :------------------------------------------------: |
 | 电脑型号💻 |           Lenovo XiaoXin Air14 IML 2019            |
@@ -86,6 +89,9 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 > 小新AIR14-2019 i5-10210u QQ群号1032311345  
 > 如果你使用openCore，BIOS请使用1.0.2之外的版本
 > （1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
+
+### macOS蓝牙与windows10同步
+https://github.com/lietxia/BT-LinkkeySync
 
 ### Big Sur 开启hidpi（高分辨率）
 
@@ -226,7 +232,7 @@ AppleALC1.5.1没有这种问题了
 
 
 ### 热补丁
-| 补丁                     | 说明                              | 必备 | 建议 | 可选 |
+| 补丁                    | 说明                            | 必备 | 建议 | 可选 |
 | ----------------------- | ------------------------------- | ---- | ---- | ---- |
 | ~~SSDT-OCPublic-Merge~~ | EC+RTC0+USBX+ALS0+MCHC          |      |      | √    |
 | SSDT-TPAD-Air14IML      | I2C触摸板轮询补丁(AIR14IML专用) | √    |      |      |
@@ -271,7 +277,7 @@ AppleALC1.5.1没有这种问题了
 | WhateverGreen.kext                  | 核显驱动              | √    |      |
 | IntelBluetoothFirmware.kext         | AC9560蓝牙固件        |      | √    |
 | IntelBluetoothInjector.kext         | AC9560蓝牙            |      | √    |
-| AirportItlwm-Sur.kext               | AC9560 Wi-Fi Big Sur  |      | √   |
-| AirportItlwm-Cata.kext              | AC9560 Wi-Fi Catalina |      | √   |
-| YogaSMC.kext                        | YogaSMC               |      | √   |
-| YogaSMCAlter.kext                   | YogaSMC               |      | √   |
+| AirportItlwm-Sur.kext               | AC9560 Wi-Fi Big Sur  |      | √    |
+| AirportItlwm-Cata.kext              | AC9560 Wi-Fi Catalina |      | √    |
+| YogaSMC.kext                        | YogaSMC               |      | √    |
+| YogaSMCAlter.kext                   | YogaSMC               |      | √    |

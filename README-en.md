@@ -5,18 +5,21 @@ The installer is in: app/capXDR.dmg
 Model：Lenovo-Air14IML (made by lietxia)  
 QQ group number：1032311345
 
-|     Info    |                      Details                      |
-| :-------: | :------------------------------------------------: |
-| Computer model💻 |           Lenovo XiaoXin Air14 IML 2019            |
-|    CPU    |        intel Core i5-10210U @ 1.60GHz 4core        |
-|   Motherboard    |                 lenovo LNVNB161216                 |
-|   GPU👾    |           Nvidia GeForce MX250 ( 2 GB )            |
-|   Memory    |     internal 4GB 2666+changeable mem ( I changed into 16GB 2666)     |
-|   Disks🖴   |    512GB 2242 SATA SSD + HIKVISION c2000Pro 1TB    |
-|  Screen🖥️  |              AUO353D ( 14-inches  )              |
-|   Audio Card🔊   |                  Conexant CX8070                   |
-|   Wireless🌐   | intel Wireless-AC 9560( able to use, but I changed into DW 1820A) |
-|  SD card reader🗂️  |     O2 Micro SD card reader( probably different)      |
+[中文](./README.md)  
+[ENGLISH](./README-en.md)  
+
+|      Info       |                              Details                              |
+| :-------------: | :---------------------------------------------------------------: |
+| Computer model💻 |                   Lenovo XiaoXin Air14 IML 2019                   |
+|       CPU       |               intel Core i5-10210U @ 1.60GHz 4core                |
+|   Motherboard   |                        lenovo LNVNB161216                         |
+|      GPU👾       |                   Nvidia GeForce MX250 ( 2 GB )                   |
+|     Memory      |   internal 4GB 2666+changeable mem ( I changed into 16GB 2666)    |
+|     Disks🖴      |           512GB 2242 SATA SSD + HIKVISION c2000Pro 1TB            |
+|     Screen🖥️     |                      AUO353D ( 14-inches  )                       |
+|   Audio Card🔊   |                          Conexant CX8070                          |
+|    Wireless🌐    | intel Wireless-AC 9560( able to use, but I changed into DW 1820A) |
+| SD card reader🗂️ |           O2 Micro SD card reader( probably different)            |
 
 ## Current Status：
 * System🌌：Works fine on both 10.15.7 and Big Sur 11.2 (20D53) (recommend macOS 10.15.7. It is system lower 10.15 that the trackpad won‘t work. System lower 10.15.4 may lag while startup)
@@ -85,6 +88,9 @@ https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.
 ## TIPS  
 > XiaoXin AIR14-2019 i5-10210u QQ group number: 1032311345  
 > If you are using OpenCore, Please use BIOS except for 1.0.2  (1.0.2 you need to turn off the Hyper-Threading to use OC.)
+
+### Synchronize bluetooth link keys from macOS to windows
+https://github.com/lietxia/BT-LinkkeySync
 
 ### Big Sur hidpi
 
@@ -238,49 +244,49 @@ It is by resetting nvram or downgrade WhatEverGreen.kext that won't face this is
 * Turn on HiDPI (see HiDPI part)
 
 ### SSDTs
-| SSDTs                   | Info                                         | Necessary | Recommended | Optional |
-| ----------------------- | -------------------------------------------- | --------- | ----------- | -------- |
-| SSDT-TPAD-Air14IML      | I2C Trachpad polling patch (AIR 14 IML only) | √         |             |          |
-| SSDT-DMAC               | Fake DMA controller                          |           |             | √        |
-| SSDT-EC                 | Fake EC device                               | √         |             |          |
-| SSDT-GPRW               | Anti immediate wakeup: 0D / 6D wakeup patch  | √         |             |          |
-| SSDT-HPTE               | Disable HPET patch                           |           |             | √        |
-| SSDT-MCHC               | Fake MCHC device                             |           | √           |          |
-| SSDT-PNLF-CFL           | Coffee Lake PNLF patch                       | √         |             |          |
-| SSDT-PR00               | X86 CPU Power Management (Enable XCPM)       | √         |             |          |
-| SSDT-RMCF               | PS2 key mapping patch                        | √         |             |          |
-| SSDT-SBUS               | Fake BUS0, DVL0 device                       |           | √           |          |
-| SSDT-UIAC               | Custom USB                                   |           | √           |          |
-| SSDT-USBX               | USB Power Patch                              | √         |             |          |
-| SSDT-XSPI               | Fake XSPI device                             |           |             | √        |
-| SSDT-BATX-Air14IML      | Battery extra info                           |           |             | √        |
-| SSDT-RTC_Y-AWAC_N       | “Fake” RTC timer                             |           | √           |          |
-| SSDT-ECRW               | YogaSMC EC accessibility                     |           |             | √        |
-| SSDT-RCSM               | YogaSMC Clamshell Mode patch                 |           |             | √        |
+| SSDTs              | Info                                         | Necessary | Recommended | Optional |
+| ------------------ | -------------------------------------------- | --------- | ----------- | -------- |
+| SSDT-TPAD-Air14IML | I2C Trachpad polling patch (AIR 14 IML only) | √         |             |          |
+| SSDT-DMAC          | Fake DMA controller                          |           |             | √        |
+| SSDT-EC            | Fake EC device                               | √         |             |          |
+| SSDT-GPRW          | Anti immediate wakeup: 0D / 6D wakeup patch  | √         |             |          |
+| SSDT-HPTE          | Disable HPET patch                           |           |             | √        |
+| SSDT-MCHC          | Fake MCHC device                             |           | √           |          |
+| SSDT-PNLF-CFL      | Coffee Lake PNLF patch                       | √         |             |          |
+| SSDT-PR00          | X86 CPU Power Management (Enable XCPM)       | √         |             |          |
+| SSDT-RMCF          | PS2 key mapping patch                        | √         |             |          |
+| SSDT-SBUS          | Fake BUS0, DVL0 device                       |           | √           |          |
+| SSDT-UIAC          | Custom USB                                   |           | √           |          |
+| SSDT-USBX          | USB Power Patch                              | √         |             |          |
+| SSDT-XSPI          | Fake XSPI device                             |           |             | √        |
+| SSDT-BATX-Air14IML | Battery extra info                           |           |             | √        |
+| SSDT-RTC_Y-AWAC_N  | “Fake” RTC timer                             |           | √           |          |
+| SSDT-ECRW          | YogaSMC EC accessibility                     |           |             | √        |
+| SSDT-RCSM          | YogaSMC Clamshell Mode patch                 |           |             | √        |
 
 ### Kexts
-| Kexts                               | Info                  | Necessary | Optional |
-| ----------------------------------- | --------------------- | --------- | -------- |
-| AirportBrcmFixup.kext               | DW1820A Wi-Fi         |           | √        |
-| AppleALC.kext                       | HDMI & Audio          | √         |          |
-| BrcmBluetoothInjector.kext          | DW1820A bluetooth     |           | √        |
-| BrcmFirmwareData.kext               | DW1820A               |           | √        |
-| BrcmPatchRAM2.kext                  | DW1820A               |           | √        |
-| Lilu.kext                           | Kernel extension      | √         |          |
-| NoTouchID.kext                      | No TouchID            |           | √        |
-| SMCBatteryManager.kext              | SMC battery           | √         |          |
-| SMCProcessor.kext                   | SMC-processor         | √         |          |
-| SMCSuperIO.kext                     | SMC-superIO           |           | √        |
-| VirtualSMC.kext                     | SMC(important)        | √         |          |
-| VoodooI2C.kext                      | Trackpad core         | √         |          |
-| VoodooI2CHID.kext                   | HID trackpad          | √         |          |
-| VoodooPS2Controller.kext            | Keyboard driver       | √         |          |
-| WhateverGreen.kext                  | IGPU driver           | √         |          |
-| IntelBluetoothFirmware.kext         | AC9560 Bluetooth      |           | √        |
-| IntelBluetoothInjector.kext         | AC9560 Bluetooth      |           | √        |
-| AirportItlwm-Sur.kext               | AC9560 Wi-Fi Big Sur  |           | √        |
-| AirportItlwm-Cata.kext              | AC9560 Wi-Fi Catalina |           | √        |
-| YogaSMC.kext                        | YogaSMC               |           | √        |
-| YogaSMCAlter.kext                   | YogaSMC               |           | √        |
+| Kexts                       | Info                  | Necessary | Optional |
+| --------------------------- | --------------------- | --------- | -------- |
+| AirportBrcmFixup.kext       | DW1820A Wi-Fi         |           | √        |
+| AppleALC.kext               | HDMI & Audio          | √         |          |
+| BrcmBluetoothInjector.kext  | DW1820A bluetooth     |           | √        |
+| BrcmFirmwareData.kext       | DW1820A               |           | √        |
+| BrcmPatchRAM2.kext          | DW1820A               |           | √        |
+| Lilu.kext                   | Kernel extension      | √         |          |
+| NoTouchID.kext              | No TouchID            |           | √        |
+| SMCBatteryManager.kext      | SMC battery           | √         |          |
+| SMCProcessor.kext           | SMC-processor         | √         |          |
+| SMCSuperIO.kext             | SMC-superIO           |           | √        |
+| VirtualSMC.kext             | SMC(important)        | √         |          |
+| VoodooI2C.kext              | Trackpad core         | √         |          |
+| VoodooI2CHID.kext           | HID trackpad          | √         |          |
+| VoodooPS2Controller.kext    | Keyboard driver       | √         |          |
+| WhateverGreen.kext          | IGPU driver           | √         |          |
+| IntelBluetoothFirmware.kext | AC9560 Bluetooth      |           | √        |
+| IntelBluetoothInjector.kext | AC9560 Bluetooth      |           | √        |
+| AirportItlwm-Sur.kext       | AC9560 Wi-Fi Big Sur  |           | √        |
+| AirportItlwm-Cata.kext      | AC9560 Wi-Fi Catalina |           | √        |
+| YogaSMC.kext                | YogaSMC               |           | √        |
+| YogaSMCAlter.kext           | YogaSMC               |           | √        |
 
 Translated by win1010525 on 2021/01/28.
