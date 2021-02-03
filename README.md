@@ -106,7 +106,7 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### 更新小记 (Changelog)
 * 2021-02-03 22:23
-    * 更新opencore到0.6.6，更新Clover到5129
+    * 更新opencore到0.6.6-MOD (补丁只对macOS生效)，更新Clover到5129
     * opencore做了整合，默认配置同时用于DW1820A和原装intelAC9560网卡，你也可以选择你网卡的专版，例如把`config-dw1920.plist`改成`config.plist`即可。
     * 更新lilu,appleALC,WEG,vSMC,voodooPS2,博通网卡的kext到最新版
     * 修改或重命名为opencore官方的DSDT
