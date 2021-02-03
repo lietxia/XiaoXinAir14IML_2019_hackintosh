@@ -36,19 +36,19 @@ QQ群号：1032311345
 * 睡眠😴：支持原生休眠
 
 ## 相关机型
-* 小新Pro13（i5-10210U / i7-10710U） https://github.com/daliansky/XiaoXinPro-13-hackintosh
-* 小新13IML https://github.com/sun19970908/XiaoXin13IML_2020_hackintosh
-* 小新air13IWL（i5-8265U / i7-8565U）https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh
-* 小新air15IKBR（i5-8265U）https://github.com/czy1024/XiaoXin-Air15-IKBR-2018-EFI
-* 小新air14（i5-1035G1） http://bbs.pcbeta.com/viewthread-1873103-1-1.html
-* 小新air14（i7-1065G7） http://bbs.pcbeta.com/viewthread-1878378-1-1.html
-* 小新air15（i5-1035G1） http://bbs.pcbeta.com/viewthread-1874022-1-1.html
-* 小新air15（i5-10210u） http://bbs.pcbeta.com/viewthread-1859586-1-1.html
-* Lenovo-Ideapad-S540-15IML（i5-10210U）https://github.com/3ig/IdeaPad-S540-15IML-hackintosh
-* Lenovo-Ideapad-S540-15IML（i5-10210U）https://github.com/ayush5harma/IdeaPad-S540-Hackintosh
-* Lenovo-Ideapad-S540-15IWL（i5-8265U）https://github.com/IvanAleksandrov94/Lenovo-s340-s540-Big-Sur-OpenCore-i5-8265u
-* Lenovo-Ideapad-S540-14IML（i5-10210U）https://github.com/marianopela/Lenovo-Ideapad-S540-14IML-Hackintosh
-* Lenovo-Ideapad-S540-14IWL（i5-8265U）https://github.com/Hasodikis/Lenovo-Ideapad-s540-14IWL---Hackintosh
+* [小新Pro13（i5-10210U / i7-10710U）](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
+* [小新13IML](https://github.com/sun19970908/XiaoXin13IML_2020_hackintosh)
+* [小新air13IWL（i5-8265U / i7-8565U）](https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh)
+* [小新air15IKBR（i5-8265U）](https://github.com/czy1024/XiaoXin-Air15-IKBR-2018-EFI)
+* [小新air14（i5-1035G1）](http://bbs.pcbeta.com/viewthread-1873103-1-1.html)
+* [小新air14（i7-1065G7）](http://bbs.pcbeta.com/viewthread-1878378-1-1.html)
+* [小新air15（i5-1035G1）](http://bbs.pcbeta.com/viewthread-1874022-1-1.html)
+* [小新air15（i5-10210U）](http://bbs.pcbeta.com/viewthread-1859586-1-1.html)
+* [Lenovo-Ideapad-S540-15IML（i5-10210U）](https://github.com/3ig/IdeaPad-S540-15IML-hackintosh)
+* [Lenovo-Ideapad-S540-15IML（i5-10210U）](https://github.com/ayush5harma/IdeaPad-S540-Hackintosh)
+* [Lenovo-Ideapad-S540-15IWL（i5-8265U）](https://github.com/IvanAleksandrov94/Lenovo-s340-s540-Big-Sur-OpenCore-i5-8265u)
+* [Lenovo-Ideapad-S540-14IML（i5-10210U）](https://github.com/marianopela/Lenovo-Ideapad-S540-14IML-Hackintosh)
+* [Lenovo-Ideapad-S540-14IWL（i5-8265U）](https://github.com/Hasodikis/Lenovo-Ideapad-s540-14IWL---Hackintosh)
 
 ## BIOS 
 https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=78312
@@ -281,3 +281,14 @@ AppleALC1.5.1没有这种问题了
 | AirportItlwm-Cata.kext              | AC9560 Wi-Fi Catalina |      | √    |
 | YogaSMC.kext                        | YogaSMC               |      | √    |
 | YogaSMCAlter.kext                   | YogaSMC               |      | √    |
+
+## 鸣谢
+- [Acidanthera](https://github.com/acidanthera) 开发的 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 和 [其他驱动](https://github.com/acidanthera)
+- [Apple](https://www.apple.com) 开发的 [macOS](https://www.apple.com/macos)
+- [lietxia](https://github.com/lietxia) 维护EFI
+- [zxystd](https://github.com/zxystd) 开发的 [itlwm](https://github.com/OpenIntelWireless/zxystd)
+- [Bat.bat](https://github.com/williambj1) 开发的 [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) 和 [HeliPort](https://github.com/OpenIntelWireless/HeliPort)
+- [alexandred](https://github.com/alexandred) 开发的 [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C)
+- [athlonreg](https://github.com/athlonreg/) 开发的 [ALCPlugFix](https://github.com/athlonreg/AppleALC-ALCPlugFix) 来修复耳麦一体耳机的问题
+- [win1010525](https://github.com/win1010525) 翻译英文readme并制作AIO版本EFI
+- [sun19970908](https://github.com/sun19970908) 提供ALC节点和修改ALCPlugFix

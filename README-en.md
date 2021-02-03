@@ -24,9 +24,9 @@ QQ group number：1032311345
 ## Current Status：
 * System🌌：Works fine on both 10.15.7 and Big Sur 11.2 (20D53) (recommend macOS 10.15.7. It is system lower 10.15 that the trackpad won‘t work. System lower 10.15.4 may lag while startup)
 * Disks🖴：If you are using Samsung PM981A, please consider to change. Or install by this way: http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
-* Discrete graphics👾：Blocked（Can't work anyway）
+* Discrete graphics👾：Blocked (Can't work anyway)
 * Internal graphics👾：Success
-* Trackpad🖐️：Success（support gesture, 5 fingers at most）
+* Trackpad🖐️：Success (support gesture, 5 fingers at most)
 * Audio Card🔊：Success with layout-id 15, no plosive
 * Wi-Fi🌐：DW1820A works fine with most of functions, AC 9560 can use some of AWDL functions.
 * Bluetooth：DW1820A works，AC 9560 works unsteadily.
@@ -36,19 +36,19 @@ QQ group number：1032311345
 * Sleep😴：Support native sleep.
 
 ## Related model
-* XiaoXin Pro13（i5-10210U / i7-10710U） https://github.com/daliansky/XiaoXinPro-13-hackintosh
-* XiaoXin13 IML https://github.com/sun19970908/XiaoXin13IML_2020_hackintosh
-* XiaoXin Air13 IWL（i5-8265U / i7-8565U）https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh
-* XiaoXin Air15 IKBR（i5-8265U）https://github.com/czy1024/XiaoXin-Air15-IKBR-2018-EFI
-* XiaoXin Air14（i5-1035G1） http://bbs.pcbeta.com/viewthread-1873103-1-1.html
-* XiaoXin Air14（i7-1065G7） http://bbs.pcbeta.com/viewthread-1878378-1-1.html
-* XiaoXin Air15（i5-1035G1） http://bbs.pcbeta.com/viewthread-1874022-1-1.html
-* XiaoXin Air15（i5-10210u） http://bbs.pcbeta.com/viewthread-1859586-1-1.html
-* Lenovo-Ideapad-S540-15IML（i5-10210U）https://github.com/3ig/IdeaPad-S540-15IML-hackintosh
-* Lenovo-Ideapad-S540-15IML（i5-10210U）https://github.com/ayush5harma/IdeaPad-S540-Hackintosh
-* Lenovo-Ideapad-S540-15IWL（i5-8265U）https://github.com/IvanAleksandrov94/Lenovo-s340-s540-Big-Sur-OpenCore-i5-8265u
-* Lenovo-Ideapad-S540-14IML（i5-10210U）https://github.com/marianopela/Lenovo-Ideapad-S540-14IML-Hackintosh
-* Lenovo-Ideapad-S540-14IWL（i5-8265U）https://github.com/Hasodikis/Lenovo-Ideapad-s540-14IWL---Hackintosh
+* [XiaoXin Pro13 (i5-10210U / i7-10710U)](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
+* [XiaoXin13 IML](https://github.com/sun19970908/XiaoXin13IML_2020_hackintosh)
+* [XiaoXin Air13 IWL (i5-8265U / i7-8565U)](https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh)
+* [XiaoXin Air15 IKBR (i5-8265U)](https://github.com/czy1024/XiaoXin-Air15-IKBR-2018-EFI)
+* [XiaoXin Air14 (i5-1035G1)](http://bbs.pcbeta.com/viewthread-1873103-1-1.html)
+* [XiaoXin Air14 (i7-1065G7)](http://bbs.pcbeta.com/viewthread-1878378-1-1.html)
+* [XiaoXin Air15 (i5-1035G1)](http://bbs.pcbeta.com/viewthread-1874022-1-1.html)
+* [XiaoXin Air15 (i5-10210U)](http://bbs.pcbeta.com/viewthread-1859586-1-1.html)
+* [Lenovo-Ideapad-S540-15IML (i5-10210U)](https://github.com/3ig/IdeaPad-S540-15IML-hackintosh)
+* [Lenovo-Ideapad-S540-15IML (i5-10210U)](https://github.com/ayush5harma/IdeaPad-S540-Hackintosh)
+* [Lenovo-Ideapad-S540-15IWL (i5-8265U)](https://github.com/IvanAleksandrov94/Lenovo-s340-s540-Big-Sur-OpenCore-i5-8265u)
+* [Lenovo-Ideapad-S540-14IML (i5-10210U)](https://github.com/marianopela/Lenovo-Ideapad-S540-14IML-Hackintosh)
+* [Lenovo-Ideapad-S540-14IWL (i5-8265U)](https://github.com/Hasodikis/Lenovo-Ideapad-s540-14IWL---Hackintosh)
 
 ## BIOS 
 https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=78312
@@ -75,7 +75,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 * Earphone integrated with microphone 🎧 , microphone doesn't work.🎤
 * ~~Can't mute, but you can switch it to the minimum.~~(Solved)
 * ~~Lag during boot.~~(Sloved in 10.15.4)  
-* ~~The touchpad uses polling mode, which can recognize 5 fingers at most. However, polling is not perfect, and there will be a small instant loss of status.~~ (New touch pad driver greatly improved)  
+* ~~The touchpad uses polling mode, which can recognize 5 fingers at most. However, polling is not perfect, and there will be a small instant loss of status.~~ (New touch pad driver greatly improved)
 
 ### YogaSMC： `Experimental`
 * Normal: Fan three modes switch, microphone mute, flight mode, F10 switch screen, touchpad switch hint, keyboard backlight, Fn function key switch.
@@ -235,7 +235,7 @@ AppleALC 1.5.1 and later doesn't have this issue anymore.
 * ~~Suggestion: switch from win to mac, do not restart, shut down first, and then turn on~~
 * ~~Restart from mac won't cause this.~~
 
-### 3. The screen went black after entering the system（01.06 EFI）
+### 3. The screen went black after entering the system (01.06 EFI)
 A bug of WhatEverGreen.kext
 It is by resetting nvram or downgrade WhatEverGreen.kext that won't face this issue.
 
@@ -246,7 +246,7 @@ It is by resetting nvram or downgrade WhatEverGreen.kext that won't face this is
 ### SSDTs
 | SSDTs              | Info                                         | Necessary | Recommended | Optional |
 | ------------------ | -------------------------------------------- | --------- | ----------- | -------- |
-| SSDT-TPAD-Air14IML | I2C Trachpad polling patch (AIR 14 IML only) | √         |             |          |
+| SSDT-TPAD-Air14IML | I2C Trachpad polling patch (AIR-14-IML only) | √         |             |          |
 | SSDT-DMAC          | Fake DMA controller                          |           |             | √        |
 | SSDT-EC            | Fake EC device                               | √         |             |          |
 | SSDT-GPRW          | Anti immediate wakeup: 0D / 6D wakeup patch  | √         |             |          |
@@ -289,4 +289,13 @@ It is by resetting nvram or downgrade WhatEverGreen.kext that won't face this is
 | YogaSMC.kext                | YogaSMC               |           | √        |
 | YogaSMCAlter.kext           | YogaSMC               |           | √        |
 
-Translated by win1010525 on 2021/01/28.
+## Credits
+- [Acidanthera](https://github.com/acidanthera) for [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [other kexts](https://github.com/acidanthera).
+- [Apple](https://www.apple.com) for [macOS](https://www.apple.com/macos).
+- [lietxia](https://github.com/lietxia) for the whole EFI.
+- [zxystd](https://github.com/zxystd) for developing [itlwm](https://github.com/OpenIntelWireless/zxystd).
+- [Bat.bat](https://github.com/williambj1) for developing [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) and [HeliPort](https://github.com/OpenIntelWireless/HeliPort).
+- [alexandred](https://github.com/alexandred) for developing [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C).
+- [athlonreg](https://github.com/athlonreg/) for developing [ALCPlugFix](https://github.com/athlonreg/AppleALC-ALCPlugFix) to fix microphone switch issue.
+- [win1010525](https://github.com/win1010525) for translating English readme and add AIO version EFI.
+- [sun19970908](https://github.com/sun19970908) for providing codec and modify ALCPlugFix.
