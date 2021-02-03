@@ -15,7 +15,7 @@ QQ群号：1032311345
 |   主板    |                 lenovo LNVNB161216                 |
 |   GPU👾    |           Nvidia GeForce MX250 ( 2 GB )            |
 |   内存    |     板载4GB 2666+可更换内存(被我换成16GB 2666)     |
-|   硬盘🖴   |    512GB 2242 SATA固态 + HIKVISION c2000Pro 1TB    |
+|   硬盘    |    512GB 2242 SATA固态 + HIKVISION c2000Pro 1TB    |
 |  显示器🖥️  |             友达 AUO353D ( 14 英寸  )              |
 |   声卡🔊   |                  Conexant CX8070                   |
 |   网卡🌐   | intel Wireless-AC 9560(可驱动，但我换成了DW 1820A) |
@@ -23,7 +23,7 @@ QQ群号：1032311345
 
 ## 目前状态：
 * 系统🌌：10.15.7运行正常，Big Sur 11.2 Beta 2(20D5042d)运行正常(推荐macOS10.15.7。系统低于10.15.X触摸板跑不起来，系统低于10.15.4之前开机会卡顿)
-* 硬盘🖴：如果你硬盘是三星PM981A，建议换掉。或者按此方法安装系统 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
+* 硬盘：如果你硬盘是三星PM981A，建议换掉。或者按此方法安装系统 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
 * 独立显卡👾：屏蔽了（反正驱动不了）
 * 集成显卡👾：成功
 * 触摸板🖐️：成功（支持手势，最多识别5点）
@@ -105,6 +105,19 @@ https://github.com/lietxia/BT-LinkkeySync
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### 更新小记 (Changelog)
+* 2021-02-03 22:23
+    * 更新opencore到0.6.6，更新Clover到5129
+    * opencore做了整合，默认配置同时用于DW1820A和原装intelAC9560网卡，你也可以选择你网卡的专版，例如把`config-dw1920.plist`改成`config.plist`即可。
+    * 更新lilu,appleALC,WEG,vSMC,voodooPS2,博通网卡的kext到最新版
+    * 修改或重命名为opencore官方的DSDT
+        * `SSDT-EC` + `SSDT-USBX` => `SSDT-EC-USBX` 
+        * `SSDT-SUBS` + `SSDT-MCHC` => `SSDT-SBUS-MCHC`
+        * `SSDT-PNLF-CFL` => `SSDT-PNLFCFL`
+        * `SSDT-PMCR` => `SSDT-PMC`
+        * `SSDT-RTC_Y-AWAC_N` => `SSDT-AWAC`
+    * 修改`SSDT-RMCF`为`不改变键位`(原先会交换option cmd)，并加上系统判断，在非macOS下不启用补丁，并改名为`SSDT-RMCF-Air14IML.aml`
+    * 添加`RestrictEvents.kext`，他可以屏蔽一些可能造成错误的加载项。
+    * 可选`YogaSMC`，因为在我电脑上有一些小问题，默认不启用。想启用就加载`YogaSMC.kext` `YogaSMCAlter.kext` `SSDT-RCSM` `SSDT-ECRW`
 * 2021-01-21 11:30
     * 更新Opencore分支，加入YogaSMC，itlwm更新至1.3.0_alpha精简版，更新voodooi2c
 
@@ -235,32 +248,35 @@ AppleALC1.5.1没有这种问题了
 | 补丁                    | 说明                            | 必备 | 建议 | 可选 |
 | ----------------------- | ------------------------------- | ---- | ---- | ---- |
 | ~~SSDT-OCPublic-Merge~~ | EC+RTC0+USBX+ALS0+MCHC          |      |      | √    |
+| SSDT-SBUS-MCHC.aml      | SBUS + MCHC                     |      | √    |      |
+| SSDT-EC-USBX.aml        | EC+USBX                         | √    |      |      |
 | SSDT-TPAD-Air14IML      | I2C触摸板轮询补丁(AIR14IML专用) | √    |      |      |
 | SSDT-DMAC               | 仿冒 DMA 控制器                 |      |      | √    |
 | SSDT-EC                 | 仿冒 EC 设备                    | √    |      |      |
 | SSDT-GPRW               | 防秒醒:0D / 6D 睡了即醒补丁     | √    |      |      |
+| SSDT-PMCR/SSDT-PMC/     | PMC 设备                        |      | √    |      |
 | SSDT-HPTE               | 屏蔽 HPET 补丁                  |      |      | √    |
 | SSDT-MCHC               | 仿冒 MCHC 设备                  |      | √    |      |
-| SSDT-PNLF-CFL           | Coffee Lake 亮度控制补丁        | √    |      |      |
+| SSDT-PNLFCFL            | Coffee Lake 亮度控制补丁        | √    |      |      |
 | SSDT-PR00               | (X86)CPU电源管理补丁(开启XCPM)  | √    |      |      |
-| SSDT-RMCF               | PS2 按键映射补丁                | √    |      |      |
+| SSDT-RMCF-Air14IML      | PS2 按键映射补丁                | √    |      |      |
 | SSDT-SBUS               | 仿冒 BUS0 , DVL0 设备           |      | √    |      |
 | SSDT-UIAC               | 定制USB                         |      | √    |      |
 | SSDT-USBX               | USB 电源补丁                    | √    |      |      |
 | SSDT-XSPI               | 仿冒 XSPI 设备                  |      |      | √    |
 | SSDT-BATX-Air14IML      | 电池附加信息                    |      |      | √    |
-| SSDT-RTC_Y-AWAC_N       | “伪” RTC时钟                    |      | √    |      |
+| SSDT-AWAC               | “伪” RTC时钟                    |      | √    |      |
 | SSDT-ECRW               | yogaSMC的EC访问补丁             |      |      | √    |
 | SSDT-RCSM               | yogaSMC的Clamshell Mode所需补丁 |      |      | √    |
 
 ### KEXT
 | KEXT                                | 说明                  | 必备 | 可选 |
 | ----------------------------------- | --------------------- | ---- | ---- |
-| AirportBrcmFixup.kext               | dw1820相关 wifi       |      | √    |
+| AirportBrcmFixup.kext               | dw1820_Wifi           |      | √    |
 | AppleALC.kext                       | HDMI以及声卡          | √    |      |
-| BrcmBluetoothInjector.kext          | dw1820相关 蓝牙       |      | √    |
-| BrcmFirmwareData.kext               | dw1820相关            |      | √    |
-| BrcmPatchRAM2.kext                  | dw1820相关            |      | √    |
+| BrcmBluetoothInjector.kext          | dw1820蓝牙            |      | √    |
+| BrcmFirmwareData.kext               | dw1820蓝牙            |      | √    |
+| BrcmPatchRAM3.kext                  | dw1820蓝牙>=10.15     |      | √    |
 | ~~CPUFriend.kext~~                  | cpu变频               |      | √    |
 | ~~CPUFriendDataProvider.kext~~      | cpu变频数据           |      | √    |
 | ~~FakePCIID_Intel_HDMI_Audio.kext~~ | ~~HDMI以及声卡~~      | √    |      |
@@ -281,6 +297,7 @@ AppleALC1.5.1没有这种问题了
 | AirportItlwm-Cata.kext              | AC9560 Wi-Fi Catalina |      | √    |
 | YogaSMC.kext                        | YogaSMC               |      | √    |
 | YogaSMCAlter.kext                   | YogaSMC               |      | √    |
+| RestrictEvents.kext                 | 屏蔽一些系统加载项    |      | √    |
 
 ## 鸣谢
 - [Acidanthera](https://github.com/acidanthera) 开发的 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 和 [其他驱动](https://github.com/acidanthera)
