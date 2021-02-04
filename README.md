@@ -6,7 +6,7 @@
 QQ群号：1032311345
 
 [中文](./README.md)  
-[ENGLISH](./README-en.md)  
+ENGLISH
 
 |   规格    |                      详细信息                      |
 | :-------: | :------------------------------------------------: |
@@ -250,24 +250,20 @@ AppleALC1.5.1没有这种问题了
 | ~~SSDT-OCPublic-Merge~~ | EC+RTC0+USBX+ALS0+MCHC          |      |      | √    |
 | SSDT-SBUS-MCHC.aml      | SBUS + MCHC                     |      | √    |      |
 | SSDT-EC-USBX.aml        | EC+USBX                         | √    |      |      |
-| SSDT-TPAD-Air14IML      | I2C触摸板轮询补丁(AIR14IML专用) | √    |      |      |
-| SSDT-DMAC               | 仿冒 DMA 控制器                 |      |      | √    |
-| SSDT-EC                 | 仿冒 EC 设备                    | √    |      |      |
-| SSDT-GPRW               | 防秒醒:0D / 6D 睡了即醒补丁     | √    |      |      |
-| SSDT-PMCR/SSDT-PMC/     | PMC 设备                        |      | √    |      |
-| SSDT-HPTE               | 屏蔽 HPET 补丁                  |      |      | √    |
-| SSDT-MCHC               | 仿冒 MCHC 设备                  |      | √    |      |
-| SSDT-PNLFCFL            | Coffee Lake 亮度控制补丁        | √    |      |      |
-| SSDT-PR00               | (X86)CPU电源管理补丁(开启XCPM)  | √    |      |      |
-| SSDT-RMCF-Air14IML      | PS2 按键映射补丁                | √    |      |      |
-| SSDT-SBUS               | 仿冒 BUS0 , DVL0 设备           |      | √    |      |
+| SSDT-TPAD-Air14IML      | I2C触摸板轮询补丁(AIR14IML专用)    | √    |      |      |
+| SSDT-DMAC               | 仿冒 DMA 控制器                   |      |      | √    |
+| SSDT-GPRW               | 防秒醒:0D / 6D 睡了即醒补丁        | √    |      |      |
+| SSDT-PMC                | PMC 设备                         |      | √    |      |
+| SSDT-HPTE               | 屏蔽 HPET 补丁                   |      |      | √    |
+| SSDT-PNLFCFL            | Coffee Lake 亮度控制补丁          | √    |      |      |
+| SSDT-PR00               | (X86)CPU电源管理补丁(开启XCPM)    | √    |      |      |
+| SSDT-RMCF-Air14IML      | PS2 按键映射补丁                  | √    |      |      |
 | SSDT-UIAC               | 定制USB                         |      | √    |      |
-| SSDT-USBX               | USB 电源补丁                    | √    |      |      |
-| SSDT-XSPI               | 仿冒 XSPI 设备                  |      |      | √    |
-| SSDT-BATX-Air14IML      | 电池附加信息                    |      |      | √    |
-| SSDT-AWAC               | “伪” RTC时钟                    |      | √    |      |
-| SSDT-ECRW               | yogaSMC的EC访问补丁             |      |      | √    |
-| SSDT-RCSM               | yogaSMC的Clamshell Mode所需补丁 |      |      | √    |
+| SSDT-XSPI               | 仿冒 XSPI 设备                   |      |      | √    |
+| SSDT-BATX-Air14IML      | 电池附加信息                      |      |      | √    |
+| SSDT-AWAC               | “伪” RTC时钟                     |      | √    |      |
+| SSDT-ECRW               | yogaSMC的EC访问补丁              |      |      | √    |
+| SSDT-RCSM               | yogaSMC的Clamshell Mode所需补丁  |      |      | √    |
 
 ### KEXT
 | KEXT                                | 说明                  | 必备 | 可选 |

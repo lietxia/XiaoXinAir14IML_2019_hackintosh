@@ -6,7 +6,7 @@ Model：Lenovo-Air14IML (made by lietxia)
 QQ group number：1032311345
 
 [中文](./README.md)  
-[ENGLISH](./README-en.md)  
+ENGLISH  
 
 |      Info       |                              Details                              |
 | :-------------: | :---------------------------------------------------------------: |
@@ -244,25 +244,25 @@ It is by resetting nvram or downgrade WhatEverGreen.kext that won't face this is
 * Turn on HiDPI (see HiDPI part)
 
 ### SSDTs
-| SSDTs              | Info                                         | Necessary | Recommended | Optional |
-| ------------------ | -------------------------------------------- | --------- | ----------- | -------- |
-| SSDT-TPAD-Air14IML | I2C Trachpad polling patch (AIR-14-IML only) | √         |             |          |
-| SSDT-DMAC          | Fake DMA controller                          |           |             | √        |
-| SSDT-EC            | Fake EC device                               | √         |             |          |
-| SSDT-GPRW          | Anti immediate wakeup: 0D / 6D wakeup patch  | √         |             |          |
-| SSDT-HPTE          | Disable HPET patch                           |           |             | √        |
-| SSDT-MCHC          | Fake MCHC device                             |           | √           |          |
-| SSDT-PNLF-CFL      | Coffee Lake PNLF patch                       | √         |             |          |
-| SSDT-PR00          | X86 CPU Power Management (Enable XCPM)       | √         |             |          |
-| SSDT-RMCF          | PS2 key mapping patch                        | √         |             |          |
-| SSDT-SBUS          | Fake BUS0, DVL0 device                       |           | √           |          |
-| SSDT-UIAC          | Custom USB                                   |           | √           |          |
-| SSDT-USBX          | USB Power Patch                              | √         |             |          |
-| SSDT-XSPI          | Fake XSPI device                             |           |             | √        |
-| SSDT-BATX-Air14IML | Battery extra info                           |           |             | √        |
-| SSDT-RTC_Y-AWAC_N  | “Fake” RTC timer                             |           | √           |          |
-| SSDT-ECRW          | YogaSMC EC accessibility                     |           |             | √        |
-| SSDT-RCSM          | YogaSMC Clamshell Mode patch                 |           |             | √        |
+| SSDTs                   | Info                                         | Necessary | Recommended | Optional |
+| ----------------------- | -------------------------------------------- | --------- | ----------- | -------- |
+| ~~SSDT-OCPublic-Merge~~ | EC+RTC0+USBX+ALS0+MCHC                       |           |             | √        |
+| SSDT-SBUS-MCHC          | Fake BUS0, DVL0, MCHC device                 |           | √           |          |
+| SSDT-EC-USBX            | Fake EC device, USB Power Patch              | √         |             |          |
+| SSDT-TPAD-Air14IML      | I2C Trachpad polling patch (AIR-14-IML only) | √         |             |          |
+| SSDT-DMAC               | Fake DMA controller                          |           |             | √        |
+| SSDT-GPRW               | Anti immediate wakeup: 0D / 6D wakeup patch  | √         |             |          |
+| SSDT-PMC                | Fake PMC device                              |           | √           |          |
+| SSDT-HPTE               | Disable HPET patch                           |           |             | √        |
+| SSDT-PNLFCFL            | Coffee Lake PNLF patch                       | √         |             |          |
+| SSDT-PR00               | X86 CPU Power Management (Enable XCPM)       | √         |             |          |
+| SSDT-RMCF-Air14IML      | PS2 key mapping patch                        | √         |             |          |
+| SSDT-UIAC               | Custom USB                                   |           | √           |          |
+| SSDT-XSPI               | Fake XSPI device                             |           |             | √        |
+| SSDT-BATX-Air14IML      | Battery extra info                           |           |             | √        |
+| SSDT-AWAC               | “Fake” RTC timer                             |           | √           |          |
+| SSDT-ECRW               | YogaSMC EC accessibility                     |           |             | √        |
+| SSDT-RCSM               | YogaSMC Clamshell Mode patch                 |           |             | √        |
 
 ### Kexts
 | Kexts                       | Info                  | Necessary | Optional |
@@ -270,8 +270,8 @@ It is by resetting nvram or downgrade WhatEverGreen.kext that won't face this is
 | AirportBrcmFixup.kext       | DW1820A Wi-Fi         |           | √        |
 | AppleALC.kext               | HDMI & Audio          | √         |          |
 | BrcmBluetoothInjector.kext  | DW1820A bluetooth     |           | √        |
-| BrcmFirmwareData.kext       | DW1820A               |           | √        |
-| BrcmPatchRAM2.kext          | DW1820A               |           | √        |
+| BrcmFirmwareData.kext       | DW1820A bluetooth     |           | √        |
+| BrcmPatchRAM3.kext          | DW1820A bluetooth     |           | √        |
 | Lilu.kext                   | Kernel extension      | √         |          |
 | NoTouchID.kext              | No TouchID            |           | √        |
 | SMCBatteryManager.kext      | SMC battery           | √         |          |
@@ -288,6 +288,7 @@ It is by resetting nvram or downgrade WhatEverGreen.kext that won't face this is
 | AirportItlwm-Cata.kext      | AC9560 Wi-Fi Catalina |           | √        |
 | YogaSMC.kext                | YogaSMC               |           | √        |
 | YogaSMCAlter.kext           | YogaSMC               |           | √        |
+| RestrictEvents.kext         | Shield system daemons |           | √        |
 
 ## Credits
 - [Acidanthera](https://github.com/acidanthera) for [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [other kexts](https://github.com/acidanthera).
