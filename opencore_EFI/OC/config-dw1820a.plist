@@ -72,14 +72,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>SSDT-OSYS.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>touchPad</string>
 				<key>Enabled</key>
 				<true/>
