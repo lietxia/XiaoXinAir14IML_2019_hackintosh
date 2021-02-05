@@ -72,7 +72,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 
 ## Abnormal：
 * `Fingerprint sensor` is unable to work.
-* Earphone integrated with microphone 🎧 , microphone doesn't work.🎤
+* ~~Earphone integrated with microphone 🎧 , microphone doesn't work.🎤~~ 2021-02-05:[Works now](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 * ~~Can't mute, but you can switch it to the minimum.~~(Solved)
 * ~~Lag during boot.~~(Sloved in 10.15.4)  
 * ~~The touchpad uses polling mode, which can recognize 5 fingers at most. However, polling is not perfect, and there will be a small instant loss of status.~~ (New touch pad driver greatly improved)

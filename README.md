@@ -72,7 +72,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 
 ## 不正常的：
 * `指纹`无法驱动
-* ~~耳麦一体的耳机🎧，麦克风🎤有问题~~ 2021-02-05:可以驱动了 => https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1
+* ~~耳麦一体的耳机🎧，麦克风🎤有问题~~ 2021-02-05:[可以驱动了](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 * ~~无法禁音,但是可以把音量调最小就没声音了~~(已经解决)
 * ~~开机会卡顿几秒~~(10.15.4解决)  
 * ~~触摸板使用轮询方式,最多识别5指,但轮询并不是彻底完美,会有小瞬间丢状态~~ (新触摸板驱动大幅改善)
