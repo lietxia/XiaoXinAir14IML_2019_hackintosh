@@ -1,0 +1,6 @@
+安装方法：
+1. opencore/clover加载 VerbStub.kext 
+2. 打开 install.command，输入密码
+
+卸载方法：
+1. 打开 uninstall.command，输入密码
