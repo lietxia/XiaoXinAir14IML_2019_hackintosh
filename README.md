@@ -105,6 +105,9 @@ https://github.com/lietxia/BT-LinkkeySync
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### 更新小记 (Changelog)
+* 2021-02-05 08:20
+    * 缩减itlwm和蓝牙固件，博通没有变化 
+
 * 2021-02-03 22:23
     * 更新opencore到0.6.6-MOD (补丁只对macOS生效)，更新Clover到5129
     * opencore做了整合，默认配置同时用于DW1820A和原装intelAC9560网卡，你也可以选择你网卡的专版，例如把`config-dw1920.plist`改成`config.plist`即可。
@@ -118,6 +121,7 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
     * 修改`SSDT-RMCF`为`不改变键位`(原先会交换option cmd)，并加上系统判断，在非macOS下不启用补丁，并改名为`SSDT-RMCF-Air14IML.aml`
     * 添加`RestrictEvents.kext`，他可以屏蔽一些可能造成错误的加载项。
     * 可选`YogaSMC`，因为在我电脑上有一些小问题，默认不启用。想启用就加载`YogaSMC.kext` `YogaSMCAlter.kext` `SSDT-RCSM` `SSDT-ECRW`
+
 * 2021-01-21 11:30
     * 更新Opencore分支，加入YogaSMC，itlwm更新至1.3.0_alpha精简版，更新voodooi2c
 

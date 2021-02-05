@@ -104,6 +104,24 @@ https://github.com/lietxia/BT-LinkkeySync
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### Changelog
+
+* 2021-02-05 08:20
+    * Reduce itlwm size, no changes for DW1820A.
+ 
+* 2021-02-03 22:23
+    * Update OpenCore to 0.6.6-MOD (ssdts only apply on macOS), update Clover to 5129.
+    * Combine opencore branches. Default config can both used on DW1820A and intelAC9560, you can use a specialized version as well, for example, change`config-dw1920.plist` into `config.plist`.
+    * Update lilu,appleALC,WEG,vSMC,voodooPS2,brcm kexts.
+    * Modify or rename to OpenCore's offical DSDT.
+        * `SSDT-EC` + `SSDT-USBX` => `SSDT-EC-USBX` 
+        * `SSDT-SUBS` + `SSDT-MCHC` => `SSDT-SBUS-MCHC`
+        * `SSDT-PNLF-CFL` => `SSDT-PNLFCFL`
+        * `SSDT-PMCR` => `SSDT-PMC`
+        * `SSDT-RTC_Y-AWAC_N` => `SSDT-AWAC`
+    * Change `SSDT-RMCF` into `not switching key position`(it would change option and cmd before), and add system judgment, it won't load on systems except macOS, and change name into `SSDT-RMCF-Air14IML.aml`.
+    * Add`RestrictEvents.kext`,it can block some add-ins that may cause error.
+    * Optional `YogaSMC`, Because there are some small problems on my computer, it is not enabled by default. If you want to load, please load`YogaSMC.kext` `YogaSMCAlter.kext` `SSDT-RCSM` `SSDT-ECRW` together.
+
 * 2021-01-21 11:30
     * Update Opencore branch, add YogaSMC, itlwm updated to 1.3.0_alpha, update VoodooI2C.
 
