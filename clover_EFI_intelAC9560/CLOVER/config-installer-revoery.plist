@@ -2,12 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>#Comment</key>
-	<string>This file is for 10.12.6+ with native KabyLake support</string>
 	<key>ACPI</key>
 	<dict>
-		<key>#Comment-SortedOrder</key>
-		<string>SortedOrder required if you have patched SSDTs in ACPI/patched</string>
+		<key>SSDT</key>
+		<dict>
+			<key>EnableC6</key>
+			<false/>
+			<key>Generate</key>
+			<dict>
+				<key>APSN</key>
+				<false/>
+				<key>PluginType</key>
+				<false/>
+				<key>PStates</key>
+				<false/>
+				<key>APLF</key>
+				<false/>
+				<key>CStates</key>
+				<false/>
+			</dict>
+			<key>DropOem</key>
+			<false/>
+			<key>EnableC7</key>
+			<false/>
+		</dict>
 		<key>#DropTables</key>
 		<array>
 			<dict>
@@ -19,148 +37,175 @@
 				<string>DMAR</string>
 			</dict>
 			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
 				<key>TableId</key>
 				<string>xh_rvp10</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>CpuPm</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>Cpu0Cst</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>Cpu0Ist</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>ApCst</string>
-			</dict>
-			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
+			</dict>
+			<dict>
 				<key>TableId</key>
 				<string>ApIst</string>
+				<key>Signature</key>
+				<string>SSDT</string>
 			</dict>
 		</array>
-		<key>AutoMerge</key>
-		<false/>
-		<key>DSDT</key>
-		<dict>
-			<key>Fixes</key>
-			<dict>
-				<key>#Comment-IRQ Fix</key>
-				<string>The following fixes may be needed for onboard audio/USB/etc</string>
-				<key>FixHPET</key>
-				<true/>
-				<key>FixIPIC</key>
-				<false/>
-				<key>FixRTC</key>
-				<true/>
-				<key>FixRegions</key>
-				<false/>
-				<key>FixShutdown</key>
-				<false/>
-				<key>FixTMR</key>
-				<true/>
-			</dict>
-			<key>Patches</key>
-			<array>
-				<dict>
-					<key>Comment</key>
-					<string>PNLF renamed XNLF</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>UE5MRg==</data>
-					<key>Replace</key>
-					<data>WE5MRg==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>_S3 to XS3</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1MzXw==</data>
-					<key>Replace</key>
-					<data>WFMzXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>GPRW to XPRW</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>R1BSVwI=</data>
-					<key>Replace</key>
-					<data>WFBSVwI=</data>
-				</dict>
-			</array>
-		</dict>
+		<key>#Comment-SortedOrder</key>
+		<string>SortedOrder required if you have patched SSDTs in ACPI/patched</string>
 		<key>FixHeaders</key>
 		<false/>
 		<key>FixMCFG</key>
 		<false/>
-		<key>HaltEnabler</key>
+		<key>AutoMerge</key>
 		<false/>
-		<key>SSDT</key>
+		<key>DSDT</key>
 		<dict>
-			<key>DropOem</key>
-			<false/>
-			<key>EnableC6</key>
-			<false/>
-			<key>EnableC7</key>
-			<false/>
-			<key>Generate</key>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Find</key>
+					<data>UE5MRg==</data>
+					<key>Replace</key>
+					<data>WE5MRg==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>PNLF renamed XNLF</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>X1MzXw==</data>
+					<key>Replace</key>
+					<data>WFMzXw==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>_S3 to XS3</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>R1BSVwI=</data>
+					<key>Replace</key>
+					<data>WFBSVwI=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>GPRW to XPRW</string>
+				</dict>
+			</array>
+			<key>Fixes</key>
 			<dict>
-				<key>APLF</key>
+				<key>FixHPET</key>
+				<true/>
+				<key>FixRTC</key>
+				<true/>
+				<key>FixTMR</key>
+				<true/>
+				<key>#Comment-IRQ Fix</key>
+				<string>The following fixes may be needed for onboard audio/USB/etc</string>
+				<key>FixShutdown</key>
 				<false/>
-				<key>APSN</key>
+				<key>FixIPIC</key>
 				<false/>
-				<key>CStates</key>
-				<false/>
-				<key>PStates</key>
-				<false/>
-				<key>PluginType</key>
+				<key>FixRegions</key>
 				<false/>
 			</dict>
 		</dict>
+		<key>HaltEnabler</key>
+		<false/>
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>Arguments</key>
-		<string>-v dart=0 keepsyms=1 slide=0 -lilubetaall -alcdbg alcid=100 -alcbeta -igfxmlr brcmfx-country=#a</string>
-		<key>CustomLogo</key>
-		<string>Apple</string>
-		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
-		<key>Legacy</key>
-		<string>LegacyBiosDefault</string>
-		<key>Log</key>
-		<false/>
-		<key>NeverHibernate</key>
-		<true/>
 		<key>NoEarlyProgress</key>
 		<true/>
+		<key>Legacy</key>
+		<string>LegacyBiosDefault</string>
+		<key>NeverHibernate</key>
+		<true/>
+		<key>CustomLogo</key>
+		<string>Apple</string>
 		<key>Secure</key>
 		<false/>
-		<key>Timeout</key>
-		<integer>3</integer>
+		<key>Arguments</key>
+		<string>-v dart=0 keepsyms=1 slide=0 -lilubetaall -alcdbg alcid=100 -alcbeta -igfxmlr brcmfx-country=#a</string>
+		<key>Log</key>
+		<false/>
 		<key>XMPDetection</key>
 		<string>Yes</string>
+		<key>Timeout</key>
+		<integer>3</integer>
+		<key>DefaultVolume</key>
+		<string>LastBootedVolume</string>
+	</dict>
+	<key>GUI</key>
+	<dict>
+		<key>Theme</key>
+		<string>Catalina</string>
+		<key>Mouse</key>
+		<dict>
+			<key>Enabled</key>
+			<false/>
+		</dict>
+		<key>Hide</key>
+		<array>
+			<string>Windows</string>
+		</array>
+		<key>Custom</key>
+		<dict>
+			<key>Entries</key>
+			<array>
+				<dict>
+					<key>FullTitle</key>
+					<string>UEFI internal</string>
+					<key>NoCaches</key>
+					<false/>
+					<key>Type</key>
+					<string>Other</string>
+					<key>Hidden</key>
+					<string>Always</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
+				</dict>
+			</array>
+		</dict>
+		<key>Scan</key>
+		<dict>
+			<key>Tool</key>
+			<true/>
+			<key>Entries</key>
+			<true/>
+			<key>Legacy</key>
+			<false/>
+			<key>Linux</key>
+			<false/>
+		</dict>
+		<key>#ScreenResolution</key>
+		<string>1920x1080</string>
 	</dict>
 	<key>BootGraphics</key>
 	<dict>
@@ -174,31 +219,25 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>SetIntelBacklight</key>
+		<false/>
+		<key>LANInjection</key>
+		<false/>
 		<key>Audio</key>
 		<dict>
+			<key>ResetHDA</key>
+			<true/>
 			<key>AFGLowPowerState</key>
 			<true/>
 			<key>Inject</key>
 			<string>No</string>
-			<key>ResetHDA</key>
-			<true/>
 		</dict>
-		<key>HDMIInjection</key>
-		<true/>
-		<key>LANInjection</key>
+		<key>SetIntelMaxBacklight</key>
 		<false/>
+		<key>UseIntelHDMI</key>
+		<true/>
 		<key>Properties</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
-			<dict>
-				<key>pci-aspm-default</key>
-				<data>AgAAAA==</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>pci-aspm-default</key>
-				<data>AgEAAA==</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>device-id</key>
@@ -206,103 +245,61 @@
 				<key>layout-id</key>
 				<data>ZAAAAA==</data>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
+			<dict>
+				<key>pci-aspm-default</key>
+				<data>AgAAAA==</data>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>EjRWeA==</data>
-				<key>device-id</key>
-				<data>mz4AAA==</data>
-				<key>dpcd-max-link-rate</key>
-				<data>CgAAAA==</data>
-				<key>enable-dpcd-max-link-rate-fix</key>
-				<data>AQAAAA==</data>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
-				<key>enable-lspcon-support</key>
-				<data>AQAAAA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
 				<key>framebuffer-con1-busid</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
+				<key>device-id</key>
+				<data>mz4AAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
 				<key>framebuffer-con1-has-lspcon</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-preferred-lspcon-mode</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
+				<key>enable-dpcd-max-link-rate-fix</key>
+				<data>AQAAAA==</data>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
+				<key>AAPL,ig-platform-id</key>
+				<data>EjRWeA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>enable-lspcon-support</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>dpcd-max-link-rate</key>
+				<data>CgAAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>pci-aspm-default</key>
+				<data>AgEAAA==</data>
 			</dict>
 		</dict>
-		<key>SetIntelBacklight</key>
-		<false/>
-		<key>SetIntelMaxBacklight</key>
-		<false/>
+		<key>HDMIInjection</key>
+		<true/>
 		<key>USB</key>
 		<dict>
-			<key>AddClockID</key>
-			<true/>
-			<key>FixOwnership</key>
-			<false/>
 			<key>HighCurrent</key>
 			<false/>
-		</dict>
-		<key>UseIntelHDMI</key>
-		<true/>
-	</dict>
-	<key>GUI</key>
-	<dict>
-		<key>#ScreenResolution</key>
-		<string>1920x1080</string>
-		<key>Custom</key>
-		<dict>
-			<key>Entries</key>
-			<array>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>FullTitle</key>
-					<string>UEFI internal</string>
-					<key>Hidden</key>
-					<string>Always</string>
-					<key>Ignore</key>
-					<false/>
-					<key>NoCaches</key>
-					<false/>
-					<key>Type</key>
-					<string>Other</string>
-				</dict>
-			</array>
-		</dict>
-		<key>Hide</key>
-		<array>
-			<string>Preboot</string>
-			<string>Windows</string>
-		</array>
-		<key>Mouse</key>
-		<dict>
-			<key>Enabled</key>
+			<key>FixOwnership</key>
 			<false/>
-		</dict>
-		<key>Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
-			<key>Legacy</key>
-			<false/>
-			<key>Linux</key>
-			<false/>
-			<key>Tool</key>
+			<key>AddClockID</key>
 			<true/>
 		</dict>
-		<key>Theme</key>
-		<string>Catalina</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -323,55 +320,55 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>AppleIntelCPUPM</key>
-		<false/>
 		<key>AppleRTC</key>
 		<false/>
-		<key>DellSMBIOSPatch</key>
-		<false/>
-		<key>FakeCPUID</key>
-		<string>0x0806EB</string>
-		<key>KernelCpu</key>
+		<key>KernelPm</key>
 		<false/>
 		<key>KernelLapic</key>
-		<false/>
-		<key>KernelPm</key>
 		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
-				<key>Comment</key>
-				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.15.x</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>D4KnAwAA</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.15,10.15.1,10.15.2,10.15.3</string>
-				<key>Name</key>
-				<string>AppleIntelCFLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>D4IAAAAA</data>
-			</dict>
-			<dict>
 				<key>Comment</key>
 				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.15.x</string>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>D4KPAwAA</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.15.4</string>
 				<key>Name</key>
 				<string>AppleIntelCFLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>D4IAAAAA</data>
+				<key>MatchOS</key>
+				<string>10.15,10.15.1,10.15.2,10.15.3</string>
+			</dict>
+			<dict>
+				<key>Find</key>
+				<data>D4KPAwAA</data>
+				<key>Comment</key>
+				<string>DVMT for AppleIntelCFLGraphicsFramebuffer﻿ (Credits DalianSky) for 10.15.x</string>
+				<key>Disabled</key>
+				<false/>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleIntelCFLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>D4IAAAAA</data>
+				<key>MatchOS</key>
+				<string>10.15.4</string>
 			</dict>
 		</array>
+		<key>FakeCPUID</key>
+		<string>0x0806EB</string>
+		<key>DellSMBIOSPatch</key>
+		<false/>
+		<key>AppleIntelCPUPM</key>
+		<false/>
+		<key>KernelCpu</key>
+		<false/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -394,5 +391,7 @@
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
+	<key>#Comment</key>
+	<string>This file is for 10.12.6+ with native KabyLake support</string>
 </dict>
 </plist>
