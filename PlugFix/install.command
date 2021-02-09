@@ -15,3 +15,4 @@ sudo chown root:wheel /usr/local/bin/ALCPlugFix
 sudo chown root:wheel /usr/local/bin/hda-verb
 sudo chown root:wheel /Library/LaunchAgents/good.win.ALCPlugFix.plist
 sudo launchctl load -w /Library/LaunchAgents/good.win.ALCPlugFix.plist
+exit 0
