@@ -27,7 +27,7 @@ QQ群号：1032311345
 * 独立显卡👾：屏蔽了（反正驱动不了）
 * 集成显卡👾：成功
 * 触摸板🖐️：成功（支持手势，最多识别5点）
-* 声卡🔊：仿冒layout-id 15成功，无爆音
+* 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 * wifi🌐：DW1820A正常,AC 9560速度较慢，已驱动
 * 蓝牙：DW1820A正常，AC 9560较不稳定
 * HDMI：正常(可输出4k30帧,和win表现一致)
@@ -72,6 +72,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 
 ## 不正常的：
 * `指纹`无法驱动
+* Nvidia MX250
 * ~~耳麦一体的耳机🎧，麦克风🎤有问题~~ 2021-02-05:[可以驱动了](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 * ~~无法禁音,但是可以把音量调最小就没声音了~~(已经解决)
 * ~~开机会卡顿几秒~~(10.15.4解决)  

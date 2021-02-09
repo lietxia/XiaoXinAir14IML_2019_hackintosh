@@ -27,7 +27,7 @@ ENGLISH
 * Discrete graphics👾：Blocked (Can't work anyway)
 * Internal graphics👾：Success
 * Trackpad🖐️：Success (support gesture, 5 fingers at most)
-* Audio Card🔊：Success with layout-id 15, no plosive
+* Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 * Wi-Fi🌐：DW1820A works fine with most of functions, AC 9560 can use some of AWDL functions.
 * Bluetooth：DW1820A works，AC 9560 works unsteadily.
 * HDMI：Success(4K@30FPS at most, same as Windows)
@@ -72,6 +72,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 
 ## Abnormal：
 * `Fingerprint sensor` is unable to work.
+* Nvida MX250
 * ~~Earphone integrated with microphone 🎧 , microphone doesn't work.🎤~~ 2021-02-05:[Works now](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 * ~~Can't mute, but you can switch it to the minimum.~~(Solved)
 * ~~Lag during boot.~~(Sloved in 10.15.4)  
