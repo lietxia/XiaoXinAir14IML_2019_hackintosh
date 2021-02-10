@@ -110,6 +110,8 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
     * 修复使用`YogaSMC`之后KP
     * 新增主题和开机音频
 
+> 测试发现还是没声
+
 * 2021-02-10 01:03
     * 添加`SSDT-NDGP_OFF-Air14IML.aml`用来屏蔽独立显卡
     * 触摸板`SSDT-TPAD-Air14IML.aml`改为GPIO中断模式，pin=`50`

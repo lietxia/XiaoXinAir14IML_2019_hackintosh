@@ -109,6 +109,8 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
     * Fix OC KP while using `YogaSMC`.
     * Add Theme and startup audio.
  
+> Still no sound after testing.
+
 * 2021-02-10 01:03
     * Add `SSDT-NDGP_OFF-Air14IML.aml` to block the Nvdia graphics card
     * Touchpad `SSDT-TPAD-Air14IML.aml` changed to GPIO mode, pin=`50`
