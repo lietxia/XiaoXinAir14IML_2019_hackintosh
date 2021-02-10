@@ -105,6 +105,10 @@ https://github.com/lietxia/BT-LinkkeySync
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### Changelog
+* 2021-02-10 12:00
+    * Fix OC KP while using `YogaSMC`.
+    * Add Theme and startup audio.
+ 
 * 2021-02-10 01:03
     * Add `SSDT-NDGP_OFF-Air14IML.aml` to block the Nvdia graphics card
     * Touchpad `SSDT-TPAD-Air14IML.aml` changed to GPIO mode, pin=`50`
