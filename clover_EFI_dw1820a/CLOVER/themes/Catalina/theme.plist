@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Badruzeus</string>
 	<key>Description</key>
-	<string>Clover theme with macOS Catalina look and feel. (Version: 1.0)</string>
+	<string>Clover theme with macOS Catalina look and feel. Version: 1.1</string>
 	<key>Theme</key>
 	<dict>
 		<key>Background</key>
@@ -82,7 +82,7 @@
 		</dict>
 	</dict>
 	<key>Version</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>Year</key>
 	<string>2019</string>
 </dict>

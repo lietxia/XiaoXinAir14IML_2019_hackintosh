@@ -176,7 +176,7 @@
 		<key>HibernationFixup</key>
 		<false/>
 		<key>Arguments</key>
-		<string>brcmfx-country=#a alcid=15 brcmfx-aspm</string>
+		<string>brcmfx-country=#a alcid=15 brcmfx-aspm msgbuf=1048576</string>
 		<key>Secure</key>
 		<false/>
 		<key>XMPDetection</key>
