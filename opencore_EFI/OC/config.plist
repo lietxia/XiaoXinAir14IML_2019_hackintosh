@@ -18,7 +18,7 @@
 				<key>Comment</key>
 				<string>disable nvidia GPU</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-NDGP_OFF-Air14IML.aml</string>
 			</dict>
@@ -292,6 +292,8 @@
 				<key>framebuffer-con2-type</key>
 				<data>AAgAAA==</data>
 				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>disable-external-gpu</key>
 				<data>AQAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1D,0x7)/Pci(0x0,0x0)</key>

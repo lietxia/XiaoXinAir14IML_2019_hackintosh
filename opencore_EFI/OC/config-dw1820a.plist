@@ -18,7 +18,7 @@
 				<key>Comment</key>
 				<string>disable nvidia GPU</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-NDGP_OFF-Air14IML.aml</string>
 			</dict>
@@ -277,6 +277,8 @@
 				<string>Internal@0,2,0</string>
 				<key>device-id</key>
 				<data>pj4AAA==</data>
+				<key>disable-external-gpu</key>
+				<data>AQAAAA==</data>
 				<key>enable-backlight-registers-fix</key>
 				<data>AQAAAA==</data>
 				<key>enable-lspcon-support</key>

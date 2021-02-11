@@ -105,6 +105,11 @@ https://github.com/lietxia/BT-LinkkeySync
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### Changelog
+
+* 2021-02-11 14:22
+    * Remove clover intel Wifi configuration
+    * Change back to use `WharEverGreen` to disable mx250 `disable-external-gpu`
+  
 * 2021-02-10 12:00
     * Fix OC KP while using `YogaSMC`.
     * Add Theme and startup audio.

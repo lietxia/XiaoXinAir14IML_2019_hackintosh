@@ -1,3 +1,13 @@
+* 2021-02-11 14:22
+    * 删除clover的intel Wifi配置
+    * 改回用`WharEverGreen`来屏蔽mx250 `disable-external-gpu`
+
+* 2021-02-10 12:00
+    * 修复使用`YogaSMC`之后KP
+    * 新增主题和开机音频
+
+> 测试发现还是没声
+
 * 2021-02-10 01:03
     * 添加`SSDT-NDGP_OFF-Air14IML.aml`用来屏蔽独立显卡
     * 触摸板`SSDT-TPAD-Air14IML.aml`改为GPIO中断模式，pin=`50`
@@ -6,6 +16,9 @@
     * 删掉不再需要的`SSDT-XSPI.aml`,`SSDT-UIAC.aml`,`SMCSuperIO.kext`,`NoTouchID.kext`
     * 修正Clover不能引导BigSur的问题(需要选Preboot来引导bigSur)
     * 小幅改动`ALCPlugFix`的`install.command`和`uninstall.command`脚本
+
+* 2021-02-05 08:20
+    * 缩减itlwm和蓝牙固件，博通没有变化 
 
 * 2021-02-03 22:23
     * 更新opencore到0.6.6-MOD (补丁只对macOS生效)，更新Clover到5129
