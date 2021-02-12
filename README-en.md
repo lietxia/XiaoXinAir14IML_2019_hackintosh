@@ -108,7 +108,7 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 * 2021-02-11 14:22
     * Remove clover intel Wifi configuration
-    * Change back to use `WharEverGreen` to disable mx250 `disable-external-gpu`
+    * Change back to use `WhatEverGreen` to disable mx250 `disable-external-gpu`
   
 * 2021-02-10 12:00
     * Fix OC KP while using `YogaSMC`.

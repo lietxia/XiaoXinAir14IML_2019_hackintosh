@@ -1,6 +1,6 @@
 * 2021-02-11 14:22
     * 删除clover的intel Wifi配置
-    * 改回用`WharEverGreen`来屏蔽mx250 `disable-external-gpu`
+    * 改回用`WhatEverGreen`来屏蔽mx250 `disable-external-gpu`
 
 * 2021-02-10 12:00
     * 修复使用`YogaSMC`之后KP

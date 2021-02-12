@@ -1,6 +1,6 @@
 * 2021-02-11 14:22
     * Remove clover intel Wifi configuration
-    * Change back to use `WharEverGreen` to disable mx250 `disable-external-gpu`
+    * Change back to use `WhatEverGreen` to disable mx250 `disable-external-gpu`
 
 * 2021-02-10 01:03
     * Add `SSDT-NDGP_OFF-Air14IML.aml` to block the Nvdia graphics card
