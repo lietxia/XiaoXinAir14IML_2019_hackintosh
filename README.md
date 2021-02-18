@@ -8,32 +8,31 @@ QQ群号：1032311345
 中文  
 [ENGLISH](./README-en.md)
 
-|   规格    |                      详细信息                      |
-| :-------: | :------------------------------------------------: |
-| 电脑型号💻 |           Lenovo XiaoXin Air14 IML 2019            |
-|    CPU    |        intel Core i5-10210U @ 1.60GHz 4core        |
-|   主板    |                 lenovo LNVNB161216                 |
-|   GPU👾    |           Nvidia GeForce MX250 ( 2 GB )            |
-|   内存    |     板载4GB 2666+可更换内存(被我换成16GB 2666)     |
-|   硬盘    |    512GB 2242 SATA固态 + HIKVISION c2000Pro 1TB    |
-|  显示器🖥️  |             友达 AUO353D ( 14 英寸  )              |
-|   声卡🔊   |                  Conexant CX8070                   |
-|   网卡🌐   | intel Wireless-AC 9560(可驱动，但我换成了DW 1820A) |
-|  读卡器🗂️  |     O2 Micro SD card reader(有概率读卡器不同)      |
+|   规格    | 状态 |            详细信息             |
+| :-------: | ---- | :-----------------------------: |
+|   型号💻   | ✅    |  Lenovo XiaoXin Air14 IML 2019  |
+|   系统🌌   | ✅    |   Catalina10.15 / BigSur11.3    |
+|   CPU🎛️    | ✅    |   Intel i5-10210U / i7-10510u   |
+|   主板🎛️   | ✅    |       lenovo LNVNB161216        |
+|   指纹🖐️   | ⛔    |          指纹无法工作           |
+|   GPU👾    | ⛔    |   Nvidia GeForce MX250(屏蔽)    |
+|   iGPU👾   | ✅    |          Intel UHD620           |
+|   内存    | ✅    |        4GB+8GB DDR4 2666        |
+|   硬盘    | ✅    |      Sumsung PM981a =>换成      |
+|   屏幕🖥️   | ✅    |          友达 AUO353D           |
+|   声卡🔊   | ✅    |         Conexant CX8070         |
+|   wifi🌐   | ✅    | intel Wireless-AC 9560/DW 1820A |
+| Bluetooth | ✅    |  DW1820A正常，AC 9560较不稳定   |
+|  读卡器🗂️  | ✅    |  O2 Micro SD card reader/other  |
+|  触摸板🖐️  | ✅    |     已运行在GPIO中断 Pin=50     |
+|   HDMI    | ✅    |   可输出4k30帧,和win表现一致    |
+|  摄像头🎦  | ✅    |     USB摄像头还是很好驱动的     |
+|   睡眠😴   | ✅    |          支持原生休眠           |
 
 ## 目前状态：
-* 系统🌌：10.15.7运行正常，Big Sur 11.2 Beta 2(20D5042d)运行正常(推荐macOS10.15.7。系统低于10.15.X触摸板跑不起来，系统低于10.15.4之前开机会卡顿)
+* 系统🌌：10.15.7运行正常，Big Sur 11.3 Beta 1运行正常(推荐macOS10.15.7。系统低于10.15.X触摸板跑不起来，系统低于10.15.4之前开机会卡顿)
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。或者按此方法安装系统 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
-* 独立显卡👾：屏蔽了（反正驱动不了）
-* 集成显卡👾：成功
-* 触摸板🖐️：成功（支持手势，最多识别5点）
-* 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
-* wifi🌐：DW1820A正常,AC 9560速度较慢，已驱动
-* 蓝牙：DW1820A正常，AC 9560较不稳定
-* HDMI：正常(可输出4k30帧,和win表现一致)
-* 摄像头🎦：正常(USB摄像头还是很好驱动的)
-* 读卡器🗂️：正常(联想居然弄了个走PCI通道的读卡器..有小概率型号不一样)
-* 睡眠😴：支持原生休眠
+* 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
 ## 相关机型
 * [小新Pro13（i5-10210U / i7-10710U）](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
@@ -70,14 +69,6 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 2019/12/16 Version: CKME01WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/67174/FW-CKME01WW.exe <br /> 
 </details>
 
-## 不正常的：
-* `指纹`无法驱动
-* Nvidia MX250
-* ~~耳麦一体的耳机🎧，麦克风🎤有问题~~ 2021-02-05:[可以驱动了](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
-* ~~无法禁音,但是可以把音量调最小就没声音了~~(已经解决)
-* ~~开机会卡顿几秒~~(10.15.4解决)  
-* ~~触摸板使用轮询方式,最多识别5指,但轮询并不是彻底完美,会有小瞬间丢状态~~ (新触摸板驱动大幅改善)
-
 ### YogaSMC `Experimental`
 * 正常的：风扇三种模式切换、麦克风静音、飞行模式、F10切换屏幕、触摸板开关有提示、键盘背光、Fn功能键切换
 * 不正常：摄像头有提示，但是关不掉、锁定功能用不了、Fn+Q不能修改、拔插电源会错误显示键盘背光、控制面板随机进不去、电池温度读不出来 
@@ -85,11 +76,6 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 # 触摸板
 如果触摸板(重建缓存触摸板仍不行，使用此方法)  
 https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.05
-
-## TIPS  
-> 小新AIR14-2019 i5-10210u QQ群号1032311345  
-> 如果你使用openCore，BIOS请使用1.0.2之外的版本
-> （1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
 
 ### macOS蓝牙与windows10同步
 https://github.com/lietxia/BT-LinkkeySync
@@ -106,6 +92,13 @@ https://github.com/lietxia/BT-LinkkeySync
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### 更新小记 (Changelog)
+* 2021-02-18 11:25
+    * OpenCore添加了图形界面，修改设置可以引导Windows
+    * Clover更新到r5130，不再需要`DataHubDex.efi`
+    * 重新修改`SSDT-BATX-Air14IML.aml`，让其显示电池剩余可用时间
+    * 重新添加`SSDT-UIAC.aml`(它可能影响睡眠?)
+    * YogaSMC更新到1.4.3，新版YogaSMC的`SSDT-ECRW.aml`发生了变化，做了更新。
+  
 * 2021-02-11 14:22
     * 删除clover的intel Wifi配置
     * 改回用`WhatEverGreen`来屏蔽mx250 `disable-external-gpu`
@@ -187,10 +180,6 @@ AppleALC1.5.1没有这种问题了
 ~~咨询得到到回答:win的重启是热启动,会跳过硬件检测,直接win重启进黑苹果会出问题~~
 * ~~建议: 从win切换到mac,不要用重启,先关机,再开机~~
 * ~~mac重启mac,不会掉声卡~~
-
-### 3. 进系统后黑屏了（01.06 EFI）
-新版WhatEverGreen.kext的bug  
-可通过重置nvram（如果改动efi后黑屏） , 退回WhatEverGreen.kext版本解决
 
 ## 如何更爽一点?
 * 截图键(PrintScreen PrtSC)在mac下是不能用的,我把他映射到F13,自己把截图快捷键改到F13即可(系统偏好设置  键盘  快捷键  截屏)

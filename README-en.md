@@ -105,6 +105,12 @@ https://github.com/lietxia/BT-LinkkeySync
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### Changelog
+* 2021-02-18 11:25
+    * OpenCore added GUI, It is now possible to boot Windows
+    * Clover updated to r5130, no longer need `DataHubDex.efi`
+    * Re-modified `SSDT-BATX-Air14IML.aml` to show battery remaining available time
+    * Re-add `SSDT-UIAC.aml` (it may affect sleep?)
+    * YogaSMC updated to 1.4.3, Synchronized update of `SSDT-ECRW.aml` .
 
 * 2021-02-11 14:22
     * Remove clover intel Wifi configuration

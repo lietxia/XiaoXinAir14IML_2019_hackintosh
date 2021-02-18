@@ -1,3 +1,10 @@
+* 2021-02-18 11:25
+    * OpenCore添加了图形界面，修改设置可以引导Windows
+    * Clover更新到r5130，不再需要`DataHubDex.efi`
+    * 重新修改`SSDT-BATX-Air14IML.aml`，让其显示电池剩余可用时间
+    * 重新添加`SSDT-UIAC.aml`(它可能影响睡眠?)
+    * YogaSMC更新到1.4.3，新版YogaSMC的`SSDT-ECRW.aml`发生了变化，做了更新。
+  
 * 2021-02-11 14:22
     * 删除clover的intel Wifi配置
     * 改回用`WhatEverGreen`来屏蔽mx250 `disable-external-gpu`
