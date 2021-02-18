@@ -19,7 +19,7 @@ QQ群号：1032311345
 |   iGPU👾   | ✅    |          Intel UHD620           |
 |   内存    | ✅    |        4GB+8GB DDR4 2666        |
 |   硬盘    | ✅    |      Sumsung PM981a =>换成      |
-|   屏幕🖥️   | ✅    |          友达 AUO353D           |
+|   屏幕🖥️   | ✅    |     友达 AUO353D 1920x1080      |
 |   声卡🔊   | ✅    |         Conexant CX8070         |
 |   wifi🌐   | ✅    | intel Wireless-AC 9560/DW 1820A |
 | Bluetooth | ✅    |  DW1820A正常，AC 9560较不稳定   |
@@ -165,8 +165,8 @@ BIOS里的 `onekeybattery` 需要关闭，才能进隐藏BIOS
 
 ## TIPS
 ### 1. 触摸板挂了
-升级系统之类或其他触摸板挂掉的情况,  
-需要重建缓存 , 使触摸板正常工作 , 终端执行以下命令之后重启
+~~升级系统之类或其他触摸板挂掉的情况, ~~
+~~需要重建缓存 , 使触摸板正常工作 , 终端执行以下命令之后重启~~
 
 ```
 sudo mount -uw /
@@ -200,7 +200,7 @@ AppleALC1.5.1没有这种问题了
 | SSDT-PNLFCFL            | Coffee Lake 亮度控制补丁        | √    |      |      |
 | SSDT-PR00               | (X86)CPU电源管理补丁(开启XCPM)  | √    |      |      |
 | SSDT-RMCF-Air14IML      | PS2 按键映射补丁                | √    |      |      |
-| ~~SSDT-UIAC~~           | 定制USB(不再需要)               |      | √    |      |
+| SSDT-UIAC               | 定制USB                         |      | √    |      |
 | ~~SSDT-XSPI~~           | 仿冒 XSPI 设备(不再推荐)        |      |      | √    |
 | SSDT-BATX-Air14IML      | 电池附加信息                    |      |      | √    |
 | SSDT-AWAC               | “伪” RTC时钟                    |      | √    |      |
@@ -237,6 +237,7 @@ AppleALC1.5.1没有这种问题了
 | YogaSMCAlter.kext                   | YogaSMC               |      | √    |
 | RestrictEvents.kext                 | 屏蔽一些系统加载项    |      | √    |
 | NVMeFix.kext                        | 改善nvme固态          |      | √    |
+| VerbStub.kext                       | 耳麦切换              |      | √    |
 
 ## 鸣谢
 - [Acidanthera](https://github.com/acidanthera) 开发的 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 和 [其他驱动](https://github.com/acidanthera)
