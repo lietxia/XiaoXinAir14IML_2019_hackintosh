@@ -8,32 +8,31 @@ QQ group number：1032311345
 [中文](./README.md)  
 ENGLISH  
 
-|      Info       |                              Details                              |
-| :-------------: | :---------------------------------------------------------------: |
-| Computer model💻 |                   Lenovo XiaoXin Air14 IML 2019                   |
-|       CPU       |               intel Core i5-10210U @ 1.60GHz 4core                |
-|   Motherboard   |                        lenovo LNVNB161216                         |
-|      GPU👾       |                   Nvidia GeForce MX250 ( 2 GB )                   |
-|     Memory      |   internal 4GB 2666+changeable mem ( I changed into 16GB 2666)    |
-|     Disks🖴      |           512GB 2242 SATA SSD + HIKVISION c2000Pro 1TB            |
-|     Screen🖥️     |                      AUO353D ( 14-inches  )                       |
-|   Audio Card🔊   |                          Conexant CX8070                          |
-|    Wireless🌐    | intel Wireless-AC 9560( able to use, but I changed into DW 1820A) |
-| SD card reader🗂️ |           O2 Micro SD card reader( probably different)            |
+|      Info         | Status  |                              Details                               |
+| :---------------: | :-----: | :----------------------------------------------------------------: |
+| Computer model💻  |  ✅    |                Lenovo XiaoXin Air14 IML 2019                       |
+|   System🌌        |  ✅    |                  Catalina10.15 / BigSur11.3                         |
+|       CPU         |  ✅    |                Intel Core i5-10210U @ 1.60GHz 4core                 |
+|   Motherboard     |  ✅     |                       lenovo LNVNB161216                           |
+|  Fingerprint🖐️    |  ⛔    |                   Fingerprint is unable to work                    |
+|      GPU👾        |  ⛔    |                   Nvidia GeForce MX250 ( 2 GB )                     |
+|     IGPU👾        |  ✅    |                            Intel UHD620                             |
+|     Memory        |  ✅     |     internal 4GB 2666+changeable mem ( I changed into 16GB 2666)   |
+|     Disks🖴       |  ✅     |            512GB 2242 SATA SSD + HIKVISION c2000Pro 1TB            |
+|     Screen🖥️      |  ✅     |                    AUO353D ( 14-inches  ) 1920x1080                |
+|   Audio Card🔊    |  ✅     |                          Conexant CX8070                           |
+|    Wireless🌐     |  ✅     |  intel Wireless-AC 9560( able to use, but I changed into DW 1820A) |
+|    Bluetooth       | ✅     |                  DW1820A works, AC 9560 is not stable.             |
+| SD card reader🗂️  |  ✅     |           O2 Micro SD card reader( probably different)             |
+|     TrackPad🖐️    |  ✅     |                   Works in GPIO mode with Pin=50                   |
+|        HDMI       |  ✅     |               able to output 4k@30fps, same as windows             |
+|      Camera🎦     |  ✅     |                it's pretty easy to drive USB camera                |
+|      Sleep😴      |  ✅     |                     Support native sleep.                          |
 
 ## Current Status：
 * System🌌：Works fine on both 10.15.7 and Big Sur 11.2 (20D53) (recommend macOS 10.15.7. It is system lower 10.15 that the trackpad won‘t work. System lower 10.15.4 may lag while startup)
 * Disks🖴：If you are using Samsung PM981A, please consider to change. Or install by this way: http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
-* Discrete graphics👾：Blocked (Can't work anyway)
-* Internal graphics👾：Success
-* Trackpad🖐️：Success (support gesture, 5 fingers at most)
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
-* Wi-Fi🌐：DW1820A works fine with most of functions, AC 9560 can use some of AWDL functions.
-* Bluetooth：DW1820A works，AC 9560 works unsteadily.
-* HDMI：Success(4K@30FPS at most, same as Windows)
-* Canera🎦：Success (it's pretty easy to drive USB camera)
-* SD card reader🗂️：Works (Lenovo got a PCI channel reader. There is a small probability that the reader is different)
-* Sleep😴：Support native sleep.
 
 ## Related model
 * [XiaoXin Pro13 (i5-10210U / i7-10710U)](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
@@ -70,14 +69,6 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 2019/12/16 Version: CKME01WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/67174/FW-CKME01WW.exe <br /> 
 </details>
 
-## Abnormal：
-* `Fingerprint sensor` is unable to work.
-* Nvida MX250
-* ~~Earphone integrated with microphone 🎧 , microphone doesn't work.🎤~~ 2021-02-05:[Works now](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
-* ~~Can't mute, but you can switch it to the minimum.~~(Solved)
-* ~~Lag during boot.~~(Sloved in 10.15.4)  
-* ~~The touchpad uses polling mode, which can recognize 5 fingers at most. However, polling is not perfect, and there will be a small instant loss of status.~~ (New touch pad driver greatly improved)
-
 ### YogaSMC： `Experimental`
 * Normal: Fan three modes switch, microphone mute, flight mode, F10 switch screen, touchpad switch hint, keyboard backlight, Fn function key switch.
 * Abnormal: the camera has a hint, but it can't be turned off, the lock function can't be used, FN + Q can't work, the keyboard backlight will be displayed incorrectly when the power is plugged in, the control panel can't be entered randomly, and the battery temperature can't be read out.
@@ -85,10 +76,6 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 ## Trackpad
 Use this way if rebuilding the cache touchpad still does not work:
 https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.05
-
-## TIPS  
-> XiaoXin AIR14-2019 i5-10210u QQ group number: 1032311345  
-> If you are using OpenCore, Please use BIOS except for 1.0.2  (1.0.2 you need to turn off the Hyper-Threading to use OC.)
 
 ### Synchronize bluetooth link keys from macOS to windows
 https://github.com/lietxia/BT-LinkkeySync
@@ -169,20 +156,24 @@ You need to disable`onekeybattery`in the BIOS to enter hidden bios.
 #### Backup solution: change in Windows
 Refer to https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/DVMT  
 `DVMT`：  
+
 * Area : `SaSetup`
 * Offset : `0x107`
 * `01` to `02`
 
 `CFG LOCK`：  
-* Area : `CpuSetup`
-* Offset : `0x3E`
+
+* Area : `CpuSetup`  
+* Offset : `0x3E`  
 * `01` to `00`
 
 ## TIPS
+> XiaoXin AIR14-2019 i5-10210u QQ group number: 1032311345  
+
 ### 1. Trackpad not working.
-Upgrading the system cause trackpad failures.
-The cache needs to be rebuilt to make the trackpad work normally. 
-Restart after running following commands.
+~~Upgrading the system cause trackpad failures.~~  
+~~The cache needs to be rebuilt to make the trackpad work normally. ~~  
+~~Restart after running following commands.~~
 
 ```
 sudo mount -uw /
@@ -199,7 +190,7 @@ AppleALC 1.5.1 and later doesn't have this issue anymore.
 * ~~Restart from mac won't cause this.~~
 
 ### 3. The screen went black after entering the system (01.06 EFI)
-A bug of WhatEverGreen.kext
+A bug of WhatEverGreen.kext  
 It is by resetting nvram or downgrade WhatEverGreen.kext that won't face this issue.
 
 ## How to make it better?
