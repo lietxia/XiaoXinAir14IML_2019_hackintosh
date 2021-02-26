@@ -18,7 +18,7 @@ QQ群号：1032311345
 |   GPU👾    | ⛔    |   Nvidia GeForce MX250(屏蔽)    |
 |   iGPU👾   | ✅    |          Intel UHD620           |
 |   内存    | ✅    |        4GB+8GB DDR4 2666        |
-|   硬盘    | ✅    |      Sumsung PM981a =>换成      |
+|   硬盘    | ✅    |   Sumsung PM981a =>换成C2000Pro  |
 |   屏幕🖥️   | ✅    |     友达 AUO353D 1920x1080      |
 |   声卡🔊   | ✅    |         Conexant CX8070         |
 |   wifi🌐   | ✅    | intel Wireless-AC 9560/DW 1820A |
@@ -32,6 +32,7 @@ QQ群号：1032311345
 ## 目前状态：
 * 系统🌌：10.15.7运行正常，Big Sur 11.3 Beta 1运行正常(推荐macOS10.15.7。系统低于10.15.X触摸板跑不起来，系统低于10.15.4之前开机会卡顿)
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。或者按此方法安装系统 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
+* CPU频率被限制在3.9GHz。[使用CPUFriend发挥最大性能](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2021.02.26)
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
 ## 相关机型
@@ -250,4 +251,5 @@ AppleALC1.5.1没有这种问题了
 - [alexandred](https://github.com/alexandred) 开发的 [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C)
 - [athlonreg](https://github.com/athlonreg/) 开发的 [ALCPlugFix](https://github.com/athlonreg/AppleALC-ALCPlugFix) 来修复耳麦一体耳机的问题
 - [win1010525](https://github.com/win1010525) 翻译英文readme并制作AIO版本EFI
-- [sun19970908](https://github.com/sun19970908) 提供ALC节点和修改ALCPlugFix
+- [sun19970908](https://github.com/sun19970908) 提供ALC节点，修改ALCPlugFix并测试CPUFriend
+- [stevezhengshiqi](https://github.com/stevezhengshiqi) 开发的 [one-key-cpufriend](https://github.com/stevezhengshiqi/one-key-cpufriend)
