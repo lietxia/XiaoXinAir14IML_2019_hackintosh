@@ -33,7 +33,7 @@ QQ群号：1032311345
 * 系统🌌：10.15.7运行正常，Big Sur 11.3 Beta 1运行正常(推荐macOS10.15.7。系统低于10.15.X触摸板跑不起来，系统低于10.15.4之前开机会卡顿)
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。或者尝试以下办法：<details>
 http://bbs.pcbeta.com/viewthread-1814806-1-1.html 此贴硬盘为pm981，批次为00000，此硬盘需要根据机型定制热补丁。据说pm981a不同批次（即000L2）对苹果的兼容性不同(且pm981的兼容性比pm981a要好)，因此有的批次可能确实无法安装。我的硬盘为mzvlb512hbjq-000l2（此批次无法更新固件），外接之后无论是否安装补丁都可以安装或使用macos。内置的情况下，如果安装补丁则无法安装或使用，反而不安装补丁则可以利用恢复法安装且进入系统。经测试性能很好，虽然偶尔内核崩溃且性能有一些不稳定，但是可满足非重度使用需求。
-</details>  
+![img](img/pm981a.jpg)</details>  
 
 * CPU频率被限制在3.9GHz。[使用CPUFriend发挥最大性能](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2021.02.26)
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
