@@ -8,26 +8,26 @@ QQ group number：1032311345
 [中文](./README.md)  
 ENGLISH  
 
-|      Info         | Status  |                              Details                               |
-| :---------------: | :-----: | :----------------------------------------------------------------: |
-| Computer model💻  |  ✅    |                Lenovo XiaoXin Air14 IML 2019                       |
-|   System🌌        |  ✅    |                  Catalina10.15 / BigSur11.3                         |
-|       CPU         |  ✅    |                Intel Core i5-10210U @ 1.60GHz 4core                 |
-|   Motherboard     |  ✅     |                       lenovo LNVNB161216                           |
-|  Fingerprint🖐️    |  ⛔    |                   Fingerprint is unable to work                    |
-|      GPU👾        |  ⛔    |                   Nvidia GeForce MX250 ( 2 GB )                     |
-|     IGPU👾        |  ✅    |                            Intel UHD620                             |
-|     Memory        |  ✅     |     internal 4GB 2666+changeable mem ( I changed into 16GB 2666)   |
-|     Disks🖴       |  ✅     |            512GB 2242 SATA SSD + HIKVISION c2000Pro 1TB            |
-|     Screen🖥️      |  ✅     |                    AUO353D ( 14-inches  ) 1920x1080                |
-|   Audio Card🔊    |  ✅     |                          Conexant CX8070                           |
-|    Wireless🌐     |  ✅     |  intel Wireless-AC 9560( able to use, but I changed into DW 1820A) |
-|    Bluetooth       | ✅     |                  DW1820A works, AC 9560 is not stable.             |
-| SD card reader🗂️  |  ✅     |           O2 Micro SD card reader( probably different)             |
-|     TrackPad🖐️    |  ✅     |                   Works in GPIO mode with Pin=50                   |
-|        HDMI       |  ✅     |               able to output 4k@30fps, same as windows             |
-|      Camera🎦     |  ✅     |                it's pretty easy to drive USB camera                |
-|      Sleep😴      |  ✅     |                     Support native sleep.                          |
+|      Info         | Status |                              Details                               |
+| :---------------: | :----: | :----------------------------------------------------------------: |
+| Computer model💻  |  ✅   |                    Lenovo XiaoXin Air14 IML 2019                    |
+|   System🌌        |  ✅   |                Catalina 10.15.7 / Big Sur 11.3 Beta 4              |
+|       CPU         |  ✅   |     Intel Core i5-10210U / i7-10510U @ 1.60 GHz /1.80 GHz 4Core     |
+|   Motherboard     |  ✅   |                           Lenovo LNVNB161216                        |
+|  Fingerprint🖐️    |  ⛔   |                      Fingerprint is unable to work                  |
+|      GPU👾        |  ⛔   |                   Nvidia GeForce MX250 ( 2 GB )                     |
+|     IGPU👾        |  ✅   |                             Intel UHD 620                           |
+|     Memory        |  ✅    |  Internal 4GB 2666 + Changeable memory (I changed into 16GB 2666)  |
+|     Disks🖴       |  ✅    |                        See Benchmarks/Disks                         |
+|     Screen🖥️      |  ✅    |                AUO353D/LGD05EC ( 14-inches ) 1920x1080             |
+|   Audio Card🔊    |  ✅    |                          Conexant CX8070                           |
+|    Wireless🌐     |  ✅    |  Intel Wireless-AC 9560 (able to use, but I changed into DW1820A)  |
+|    Bluetooth       | ✅    |                 DW1820A works, AC9560 is not that perfect          |
+| SD card reader🗂️  |  ✅    |           O2 Micro SD card reader (probably different)             |
+|     TrackPad🖐️    |  ✅    |                   Works in GPIO mode with Pin=50                   |
+|        HDMI       |  ✅    |               able to output 4k@30fps, same as windows             |
+|      Camera🎦     |  ✅    |                it's pretty easy to drive USB camera                |
+|      Sleep😴      |  ✅    |                     Support native sleep.                          |
 
 ## Current Status：
 * System🌌：Works fine on both 10.15.7 and Big Sur 11.2 (20D53) (recommend macOS 10.15.7. It is system lower 10.15 that the trackpad won‘t work. System lower 10.15.4 may lag while startup)

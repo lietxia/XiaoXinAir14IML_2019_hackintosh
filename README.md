@@ -8,26 +8,26 @@ QQ群号：1032311345
 中文  
 [ENGLISH](./README-en.md)
 
-|   规格    | 状态 |            详细信息             |
-| :-------: | ---- | :-----------------------------: |
-|   型号💻   | ✅    |  Lenovo XiaoXin Air14 IML 2019  |
-|   系统🌌   | ✅    |   Catalina10.15 / BigSur11.3    |
-|   CPU🎛️    | ✅    |   Intel i5-10210U / i7-10510u   |
-|   主板🎛️   | ✅    |       lenovo LNVNB161216        |
-|   指纹🖐️   | ⛔    |          指纹无法工作           |
-|   GPU👾    | ⛔    |   Nvidia GeForce MX250(屏蔽)    |
-|   iGPU👾   | ✅    |          Intel UHD620           |
-|   内存    | ✅    |        4GB+8GB DDR4 2666        |
-|   硬盘    | ✅    |   Sumsung PM981a =>换成C2000Pro  |
-|   屏幕🖥️   | ✅    |     友达 AUO353D 1920x1080      |
-|   声卡🔊   | ✅    |         Conexant CX8070         |
-|   wifi🌐   | ✅    | intel Wireless-AC 9560/DW 1820A |
-| Bluetooth | ✅    |  DW1820A正常，AC 9560较不稳定   |
-|  读卡器🗂️  | ✅    |  O2 Micro SD card reader/other  |
-|  触摸板🖐️  | ✅    |     已运行在GPIO中断 Pin=50     |
-|   HDMI    | ✅    |   可输出4k30帧,和win表现一致    |
-|  摄像头🎦  | ✅    |     USB摄像头还是很好驱动的     |
-|   睡眠😴   | ✅    |          支持原生休眠           |
+|   规格     |  状态  |                              详细信息                               |
+| :-------: | ------ | :-------------------------------------------------------------: |
+|   型号💻   | ✅    |                    Lenovo XiaoXin Air14 IML 2019                |
+|   系统🌌   | ✅    |               Catalina 10.15.7 / Big Sur 11.3 Beta 4            |
+|   CPU🎛️    | ✅    |   Intel Core i5-10210U / i7-10510U @ 1.60 GHz /1.80 GHz 4Core  |
+|   主板🎛️   | ✅    |                        Lenovo LNVNB161216                       |
+|   指纹🖐️   | ⛔    |                            指纹无法工作                           |
+|   GPU👾    | ⛔    |                    Nvidia GeForce MX250(屏蔽)                   |
+|   iGPU👾   | ✅    |                          Intel UHD 620                         |
+|   内存    | ✅    |                     内置4GB+可更换8GB DDR4 2666                    |
+|   硬盘    | ✅    |                           见 Benchmarks/Disks                       |
+|   屏幕🖥️   | ✅    |                 AUO353D/LGD05EC（14英寸） 1920x1080               |
+|   声卡🔊   | ✅    |                          Conexant CX8070                        |
+|   wifi🌐   | ✅    |                   Intel Wireless-AC 9560/DW1820A               |
+| Bluetooth | ✅    |                      DW1820A正常，AC 9560较不完善                  |
+|  读卡器🗂️  | ✅    |                 O2 Micro SD card reader（有可能不一样）            |
+|  触摸板🖐️  | ✅    |                         已运行在GPIO中断 Pin=50                   |
+|   HDMI    | ✅    |                        可输出4k30帧,和win表现一致                  |
+|  摄像头🎦  | ✅    |                         USB摄像头还是很好驱动的                    |
+|   睡眠😴   | ✅    |                             支持原生休眠                          |
 
 ## 目前状态：
 * 系统🌌：10.15.7运行正常，Big Sur 11.3 Beta 1运行正常(推荐macOS10.15.7。系统低于10.15.X触摸板跑不起来，系统低于10.15.4之前开机会卡顿)
