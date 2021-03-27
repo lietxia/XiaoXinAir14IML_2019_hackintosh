@@ -1,7 +1,6 @@
 # Lenovo XiaoXin Air-14 2019IML
 ![air14iml-sur](img/air14iml-sur.png)
-Screenshot app: https://github.com/lihaoyun6/capXDR-plugins/  
-The installer is in: app/capXDR.dmg  
+Screenshot app:/capXDR 
 Model：Lenovo-Air14IML (made by lietxia)  
 QQ group number：1032311345
 
