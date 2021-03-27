@@ -10,7 +10,7 @@ ENGLISH
 |      Info         | Status |                              Details                               |
 | :---------------: | :----: | :----------------------------------------------------------------: |
 | Computer model💻  |  ✅   |                    Lenovo XiaoXin Air14 IML 2019                    |
-|   System🌌        |  ✅   |                Catalina 10.15.7 / Big Sur 11.3 Beta 4              |
+|   System🌌        |  ✅   |                Catalina 10.15.7 / Big Sur 11.3 Beta 5              |
 |       CPU         |  ✅   |     Intel Core i5-10210U / i7-10510U @ 1.60 GHz /1.80 GHz 4Core     |
 |   Motherboard     |  ✅   |                           Lenovo LNVNB161216                        |
 |  Fingerprint🖐️    |  ⛔   |                      Fingerprint is unable to work                  |
@@ -29,7 +29,7 @@ ENGLISH
 |      Sleep😴      |  ✅    |                     Support native sleep.                          |
 
 ## Current Status：
-* System🌌：Works fine on both 10.15.7 and Big Sur 11.2 (20D53) (recommend macOS 10.15.7. It is system lower 10.15 that the trackpad won‘t work. System lower 10.15.4 may lag while startup)
+* System🌌：recommend macOS 10.15.7. It is system lower 10.15 that the trackpad won‘t work. System lower 10.15.4 may lag while startup
 * Disks🖴：If you are using Samsung PM981A, please consider to change. Or install by this way: http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
 * The CPU frequency is limited to 3.9GHz. [Add CPUFriend to maximum your performance.](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2021.02.26)
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
@@ -69,29 +69,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 2019/12/16 Version: CKME01WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/67174/FW-CKME01WW.exe <br /> 
 </details>
 
-### YogaSMC： `Experimental`
-* Normal: Fan three modes switch, microphone mute, flight mode, F10 switch screen, touchpad switch hint, keyboard backlight, Fn function key switch.
-* Abnormal: the camera has a hint, but it can't be turned off, the lock function can't be used, FN + Q can't work, the keyboard backlight will be displayed incorrectly when the power is plugged in, the control panel can't be entered randomly, and the battery temperature can't be read out.
-
-## Trackpad
-Use this way if rebuilding the cache touchpad still does not work:
-https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.05
-
-### Synchronize bluetooth link keys from macOS to windows
-https://github.com/lietxia/BT-LinkkeySync
-
-### Big Sur hidpi
-
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/dev/hidpi.sh)"
-
-### Catalina hidpi
-
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
-    
-### DW1820A Windows 10 driver
-https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
-
-### Changelog
+## Changelog
 * 2021-02-18 11:25
     * OpenCore added GUI, It is now possible to boot Windows
     * Clover updated to r5130, no longer need `DataHubDex.efi`
@@ -136,6 +114,30 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 ## Advice
 * Because current hibernate cannot wake up normally, in order to avoid affecting sleep, use  the terminal to turn off hibernate `sudo pmset -a hibernatemode 0`
 
+> XiaoXin AIR14-2019 i5-10210u QQ group number: 1032311345  
+
+### YogaSMC： `Experimental`
+* Normal: Fan three modes switch, microphone mute, flight mode, F10 switch screen, touchpad switch hint, keyboard backlight, Fn function key switch.
+* Abnormal: the camera has a hint, but it can't be turned off, the lock function can't be used, FN + Q can't work, the keyboard backlight will be displayed incorrectly when the power is plugged in, the control panel can't be entered randomly, and the battery temperature can't be read out.
+
+### Trackpad
+Use this way if rebuilding the cache touchpad still does not work:
+https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.05
+
+### Synchronize bluetooth link keys from macOS to windows
+https://github.com/lietxia/BT-LinkkeySync
+
+### Big Sur hidpi
+
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/dev/hidpi.sh)"
+
+### Catalina hidpi
+
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
+    
+### DW1820A Windows 10 driver
+https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
+
 ### Change DVMT and CFG Lock
 * You must unlock `CFG Lock` , otherwise, you can't use both OpenCore and Clover。 
 * We recommend to change `DVMT` into 64M, there's no damage to your computer. 
@@ -167,10 +169,7 @@ Refer to https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/DVMT
 * Offset : `0x3E`  
 * `01` to `00`
 
-## TIPS
-> XiaoXin AIR14-2019 i5-10210u QQ group number: 1032311345  
-
-### 1. Trackpad not working.
+### Trackpad not working.
 ~~Upgrading the system cause trackpad failures.~~  
 ~~The cache needs to be rebuilt to make the trackpad work normally. ~~  
 ~~Restart after running following commands.~~
@@ -181,26 +180,21 @@ killall Finder
 sudo kextcache -i /
 ```
 
-### 2. The audio card isn't working.
-AppleALC 1.5.1 and later doesn't have this issue anymore.  
-~~Switching from win to mac will cause the audio card fail to syart. At this time, you need to turn it off and turn it on again, and the audio card will recover~~  
-~~Consultation got the answer: win restart is warm boot, will skip hardware detection, directly restart into mac will have problems~~
+### The audio card isn't working.
+Switching from win to mac will cause the audio card fail to syart. At this time, you need to turn it off and turn it on again, and the audio card will recover  
+Consultation got the answer: win restart is warm boot, will skip hardware detection, directly restart into mac will have problems  
 
-* ~~Suggestion: switch from win to mac, do not restart, shut down first, and then turn on~~
-* ~~Restart from mac won't cause this.~~
+* Suggestion: switch from win to mac, do not restart, shut down first, and then turn on
+* Restart from mac won't cause this.
 
-### 3. The screen went black after entering the system (01.06 EFI)
-A bug of WhatEverGreen.kext  
-It is by resetting nvram or downgrade WhatEverGreen.kext that won't face this issue.
 
 ## How to make it better?
 * PrintScreen can't be used under mac. I map it to F13 and you can change the shortcut key of screenshot to F13
 * Turn on HiDPI (see HiDPI part)
 
-### SSDTs
+## SSDT
 | SSDTs                   | Info                                   | Necessary | Recommended | Optional |
 | ----------------------- | -------------------------------------- | --------- | ----------- | -------- |
-| ~~SSDT-OCPublic-Merge~~ | EC+RTC0+USBX+ALS0+MCHC                 |           |             | √        |
 | SSDT-SBUS-MCHC          | Fake BUS0, DVL0, MCHC device           |           | √           |          |
 | SSDT-EC-USBX            | Fake EC device, USB Power Patch        | √         |             |          |
 | SSDT-TPAD-Air14IML      | I2C Trachpad patch (AIR14IML only)     | √         |             |          |
@@ -211,14 +205,12 @@ It is by resetting nvram or downgrade WhatEverGreen.kext that won't face this is
 | SSDT-PNLFCFL            | Coffee Lake PNLF patch                 | √         |             |          |
 | SSDT-PR00               | X86 CPU Power Management (Enable XCPM) | √         |             |          |
 | SSDT-RMCF-Air14IML      | PS2 key mapping patch                  | √         |             |          |
-| ~~SSDT-UIAC~~           | Custom USB(No longer need)             |           | √           |          |
-| ~~SSDT-XSPI~~           | Fake XSPI device(No longer need)       |           |             | √        |
+| SSDT-UIAC               | Custom USB                             |           | √           |          |
 | SSDT-BATX-Air14IML      | Battery extra info                     |           |             | √        |
 | SSDT-AWAC               | “Fake” RTC timer                       |           | √           |          |
 | SSDT-ECRW               | YogaSMC EC accessibility               |           |             | √        |
-| ~~SSDT-RCSM~~           | YogaSMC Clamshell Mode patch           |           |             | √        |
 
-### Kexts
+## Kexts
 | Kexts                       | Info                  | Necessary | Optional |
 | --------------------------- | --------------------- | --------- | -------- |
 | AirportBrcmFixup.kext       | DW1820A Wi-Fi         |           | √        |
@@ -230,7 +222,6 @@ It is by resetting nvram or downgrade WhatEverGreen.kext that won't face this is
 | ~~NoTouchID.kext~~          | No TouchID            |           | √        |
 | SMCBatteryManager.kext      | SMC battery           | √         |          |
 | SMCProcessor.kext           | SMC-processor         | √         |          |
-| ~~SMCSuperIO.kext~~         | CPU fan               |           | √        |
 | VirtualSMC.kext             | SMC(important)        | √         |          |
 | VoodooI2C.kext              | Trackpad core         | √         |          |
 | VoodooI2CHID.kext           | HID trackpad          | √         |          |
@@ -244,6 +235,7 @@ It is by resetting nvram or downgrade WhatEverGreen.kext that won't face this is
 | YogaSMCAlter.kext           | YogaSMC               |           | √        |
 | RestrictEvents.kext         | Shield system daemons |           | √        |
 | NVMeFix.kext                | improve nvme SSD      |           | √        |
+| VerbStub.kext               | Microphone            |           | √        |
 
 ## Credits
 - [Acidanthera](https://github.com/acidanthera) for [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [other kexts](https://github.com/acidanthera).

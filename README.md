@@ -10,7 +10,7 @@ QQ群号：1032311345
 |   规格     |  状态  |                              详细信息                               |
 | :-------: | ------ | :-------------------------------------------------------------: |
 |   型号💻   | ✅    |                    Lenovo XiaoXin Air14 IML 2019                |
-|   系统🌌   | ✅    |               Catalina 10.15.7 / Big Sur 11.3 Beta 4            |
+|   系统🌌   | ✅    |               Catalina 10.15.7 / Big Sur 11.3 Beta 5            |
 |   CPU🎛️    | ✅    |   Intel Core i5-10210U / i7-10510U @ 1.60 GHz /1.80 GHz 4Core  |
 |   主板🎛️   | ✅    |                        Lenovo LNVNB161216                       |
 |   指纹🖐️   | ⛔    |                            指纹无法工作                           |
@@ -29,7 +29,7 @@ QQ群号：1032311345
 |   睡眠😴   | ✅    |                             支持原生休眠                          |
 
 ## 目前状态：
-* 系统🌌：10.15.7运行正常，Big Sur 11.3 Beta 1运行正常(推荐macOS10.15.7。系统低于10.15.X触摸板跑不起来，系统低于10.15.4之前开机会卡顿)
+* 系统🌌：推荐macOS10.15.7。系统低于10.15触摸板跑不起来，系统低于10.15.4之前开机会卡顿
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。或者按此方法安装系统 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
 * CPU频率被限制在3.9GHz。[使用CPUFriend发挥最大性能](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2021.02.26)
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
@@ -69,29 +69,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 2019/12/16 Version: CKME01WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/67174/FW-CKME01WW.exe <br /> 
 </details>
 
-### YogaSMC `Experimental`
-* 正常的：风扇三种模式切换、麦克风静音、飞行模式、F10切换屏幕、触摸板开关有提示、键盘背光、Fn功能键切换
-* 不正常：摄像头有提示，但是关不掉、锁定功能用不了、Fn+Q不能修改、拔插电源会错误显示键盘背光、控制面板随机进不去、电池温度读不出来 
-
-# 触摸板
-如果触摸板(重建缓存触摸板仍不行，使用此方法)  
-https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.05
-
-### macOS蓝牙与windows10同步
-https://github.com/lietxia/BT-LinkkeySync
-
-### Big Sur 开启hidpi（高分辨率）
-
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/dev/hidpi.sh)"
-
-### Catalina 开启hidpi（高分辨率）
-
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
-    
-### DW1820A WINDOWS10驱动(DRIVER)
-https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
-
-### 更新小记 (Changelog)
+## 更新小记
 * 2021-02-18 11:25
     * OpenCore添加了图形界面，修改设置可以引导Windows
     * Clover更新到r5130，不再需要`DataHubDex.efi`
@@ -133,7 +111,32 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 5. 安装成功后,把EFI换成这个 （可提前替换efi，安装过程一样）
 
 ## 建议
+
+> XiaoXin AIR14-2019 i5-10210u QQ群号: 1032311345  
+
 * 因目前休眠无法正常唤醒 , 为避免影响到睡眠 , 终端使用命令关闭休眠 `sudo pmset -a hibernatemode 0`
+
+### YogaSMC `Experimental`
+* 正常的：风扇三种模式切换、麦克风静音、飞行模式、F10切换屏幕、触摸板开关有提示、键盘背光、Fn功能键切换
+* 不正常：摄像头有提示，但是关不掉、锁定功能用不了、Fn+Q不能修改、拔插电源会错误显示键盘背光、控制面板随机进不去、电池温度读不出来 
+
+### 触摸板
+如果触摸板(重建缓存触摸板仍不行，使用此方法)  
+https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.05
+
+### macOS蓝牙与windows10同步
+https://github.com/lietxia/BT-LinkkeySync
+
+### Big Sur 开启hidpi（高分辨率）
+
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/dev/hidpi.sh)"
+
+### Catalina 开启hidpi（高分辨率）
+
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
+    
+### DW1820A WINDOWS10驱动(DRIVER)
+https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### 改DVMT和 CFG Lock
 * 必须解锁 `CFG Lock` 不然无法使用opencore clover。 
@@ -163,10 +166,7 @@ BIOS里的 `onekeybattery` 需要关闭，才能进隐藏BIOS
 * 偏移（offset） : `0x3E`
 * `01` to `00`
 
-## TIPS
-> XiaoXin AIR14-2019 i5-10210u QQ群号: 1032311345  
-
-### 1. 触摸板挂了
+### 触摸板挂了
 ~~升级系统之类或其他触摸板挂掉的情况, ~~
 ~~需要重建缓存 , 使触摸板正常工作 , 终端执行以下命令之后重启~~
 
@@ -176,22 +176,18 @@ killall Finder
 sudo kextcache -i /
 ```
 
-### 2. 声卡挂了
-AppleALC1.5.1没有这种问题了  
-~~从win直接重启切换到mac,会导致声卡挂掉,这时候需要关机,再开机,声卡就恢复了~~  
-~~咨询得到到回答:win的重启是热启动,会跳过硬件检测,直接win重启进黑苹果会出问题~~
-* ~~建议: 从win切换到mac,不要用重启,先关机,再开机~~
-* ~~mac重启mac,不会掉声卡~~
+### 声卡挂了 
+从win直接重启切换到mac,会导致声卡挂掉,这时候需要关机,再开机,声卡就恢复了  
+咨询得到到回答:win的重启是热启动,会跳过硬件检测,直接win重启进黑苹果会出问题  
+* 建议: 从win切换到mac,不要用重启,先关机,再开机
+* mac重启mac,不会掉声卡
 
 ## 如何更爽一点?
 * 截图键(PrintScreen PrtSC)在mac下是不能用的,我把他映射到F13,自己把截图快捷键改到F13即可(系统偏好设置  键盘  快捷键  截屏)
-* 开启hidpi 项目地址[这里](https://github.com/xzhih/one-key-hidpi) 使用方法:终端打命令 `bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"`
 
-
-### 热补丁
+## 热补丁
 | 补丁                    | 说明                            | 必备 | 建议 | 可选 |
 | ----------------------- | ------------------------------- | ---- | ---- | ---- |
-| ~~SSDT-OCPublic-Merge~~ | EC+RTC0+USBX+ALS0+MCHC          |      |      | √    |
 | SSDT-SBUS-MCHC.aml      | SBUS + MCHC                     |      | √    |      |
 | SSDT-EC-USBX.aml        | EC+USBX                         | √    |      |      |
 | SSDT-TPAD-Air14IML      | I2C触摸板补丁(AIR14IML专用)     | √    |      |      |
@@ -203,13 +199,11 @@ AppleALC1.5.1没有这种问题了
 | SSDT-PR00               | (X86)CPU电源管理补丁(开启XCPM)  | √    |      |      |
 | SSDT-RMCF-Air14IML      | PS2 按键映射补丁                | √    |      |      |
 | SSDT-UIAC               | 定制USB                         |      | √    |      |
-| ~~SSDT-XSPI~~           | 仿冒 XSPI 设备(不再推荐)        |      |      | √    |
 | SSDT-BATX-Air14IML      | 电池附加信息                    |      |      | √    |
 | SSDT-AWAC               | “伪” RTC时钟                    |      | √    |      |
 | SSDT-ECRW               | yogaSMC的EC访问补丁             |      |      | √    |
-| ~~SSDT-RCSM~~           | yogaSMC的Clamshell Mode所需补丁 |      |      | √    |
 
-### KEXT
+## KEXT
 | KEXT                                | 说明                  | 必备 | 可选 |
 | ----------------------------------- | --------------------- | ---- | ---- |
 | AirportBrcmFixup.kext               | dw1820_Wifi           |      | √    |
@@ -217,15 +211,12 @@ AppleALC1.5.1没有这种问题了
 | BrcmBluetoothInjector.kext          | dw1820蓝牙            |      | √    |
 | BrcmFirmwareData.kext               | dw1820蓝牙            |      | √    |
 | BrcmPatchRAM3.kext                  | dw1820蓝牙>=10.15     |      | √    |
-| ~~CPUFriend.kext~~                  | cpu变频               |      | √    |
-| ~~CPUFriendDataProvider.kext~~      | cpu变频数据           |      | √    |
-| ~~FakePCIID_Intel_HDMI_Audio.kext~~ | HDMI以及声卡          | √    |      |
-| ~~FakePCIID.kext~~                  | HDMI以及声卡          | √    |      |
+| CPUFriend.kext                      | cpu变频               |      | √    |
+| CPUFriendDataProvider.kext          | cpu变频数据           |      | √    |
 | Lilu.kext                           | 驱动扩展库(超重要)    | √    |      |
 | ~~NoTouchID.kext~~                  | 取消指纹(不再需要)    |      | √    |
 | SMCBatteryManager.kext              | SMC(超重要)           | √    |      |
 | SMCProcessor.kext                   | SMC-处理器            | √    |      |
-| ~~SMCSuperIO.kext~~                 | CPU-fan(无法读取)     |      | √    |
 | VirtualSMC.kext                     | SMC(超重要)           | √    |      |
 | VoodooI2C.kext                      | 触摸板-核心           | √    |      |
 | VoodooI2CHID.kext                   | HID类型触摸板         | √    |      |
