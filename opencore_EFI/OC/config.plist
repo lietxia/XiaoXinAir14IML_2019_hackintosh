@@ -323,8 +323,8 @@
 				<data>AAAAgA==</data>
 				<key>model</key>
 				<string>Intel UHD Graphics 620</string>
-				<key>rps-control</key>
-				<data>AQAAAA==</data>
+				<key>#AAPL00,override-no-connect</key>
+				<data></data>
 			</dict>
 		</dict>
 		<key>Delete</key>
