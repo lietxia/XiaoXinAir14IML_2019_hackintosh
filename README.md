@@ -7,26 +7,26 @@ QQ群号：1032311345
 中文  
 [ENGLISH](./README-en.md)
 
-|   规格     |  状态  |                              详细信息                               |
-| :-------: | ------ | :-------------------------------------------------------------: |
-|   型号💻   | ✅    |                    Lenovo XiaoXin Air14 IML 2019                |
-|   系统🌌   | ✅    |               Catalina 10.15.7 / Big Sur 11.3 Beta 5            |
-|   CPU🎛️    | ✅    |   Intel Core i5-10210U / i7-10510U @ 1.60 GHz /1.80 GHz 4Core  |
-|   主板🎛️   | ✅    |                        Lenovo LNVNB161216                       |
-|   指纹🖐️   | ⛔    |                            指纹无法工作                           |
-|   GPU👾    | ⛔    |                    Nvidia GeForce MX250(屏蔽)                   |
-|   iGPU👾   | ✅    |                          Intel UHD 620                         |
-|   内存    | ✅    |                     内置4GB+可更换8GB DDR4 2666                    |
-|   硬盘    | ✅    |                           见 Benchmarks/Disks                       |
-|   屏幕🖥️   | ✅    |                 AUO353D/LGD05EC（14英寸） 1920x1080               |
-|   声卡🔊   | ✅    |                          Conexant CX8070                        |
-|   wifi🌐   | ✅    |                   Intel Wireless-AC 9560/DW1820A               |
-| Bluetooth | ✅    |                      DW1820A正常，AC 9560较不完善                  |
-|  读卡器🗂️  | ✅    |                 O2 Micro SD card reader（有可能不一样）            |
-|  触摸板🖐️  | ✅    |                         已运行在GPIO中断 Pin=50                   |
-|   HDMI    | ✅    |                        可输出4k30帧,和win表现一致                  |
-|  摄像头🎦  | ✅    |                         USB摄像头还是很好驱动的                    |
-|   睡眠😴   | ✅    |                             支持原生休眠                          |
+|  规格   | 状态 |                详细信息                 |
+| :-----: | ---- | :-------------------------------------: |
+|  型号💻  | ✅    |      Lenovo XiaoXin Air14 IML 2019      |
+|  系统🌌  | ✅    | Catalina 10.15.7 / Big Sur 11.3 Beta 5  |
+|  CPU🎛️   | ✅    |    Intel Core i5-10210U / i7-10510U     |
+|  主板🎛️  | ✅    |           Lenovo LNVNB161216            |
+|  指纹🖐️  | ⛔    |              指纹无法工作               |
+|  GPU👾   | ⛔    |       Nvidia GeForce MX250(屏蔽)        |
+|  iGPU👾  | ✅    |              Intel UHD 620              |
+|  内存💳  | ✅    |       内置4GB+可更换8GB DDR4 2666       |
+|  硬盘💽  | ✅    |           见 Benchmarks/Disks           |
+|  屏幕🖥️  | ✅    |   AUO353D/LGD05EC（14英寸） 1920x1080   |
+|  声卡🔊  | ✅    |             Conexant CX8070             |
+|  wifi🌐  | ✅    |     Intel Wireless-AC 9560/DW1820A      |
+|  蓝牙🦷  | ✅    |      DW1820A正常，AC 9560较不完善       |
+| 读卡器🗂️ | ✅    | O2 Micro SD card reader（有可能不一样） |
+| 触摸板🖐️ | ✅    |         已运行在GPIO中断 Pin=50         |
+|  HDMI📺  | ✅    |       可输出4k30帧,和win表现一致        |
+| 摄像头🎦 | ✅    |         USB摄像头还是很好驱动的         |
+|  睡眠😴  | ✅    |              支持原生休眠               |
 
 ## 目前状态：
 * 系统🌌：推荐macOS10.15.7。系统低于10.15触摸板跑不起来，系统低于10.15.4之前开机会卡顿
@@ -70,6 +70,11 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
+* 2021-04-14 11:13
+    * 🆕 opencore更新到0.6.8 
+    * 🆕 clover更新到r5133
+    * 🆕 更新几个kext（不重要）
+
 * 2021-02-18 11:25
     * OpenCore添加了图形界面，修改设置可以引导Windows
     * Clover更新到r5130，不再需要`DataHubDex.efi`
@@ -186,51 +191,51 @@ sudo kextcache -i /
 * 截图键(PrintScreen PrtSC)在mac下是不能用的,我把他映射到F13,自己把截图快捷键改到F13即可(系统偏好设置  键盘  快捷键  截屏)
 
 ## 热补丁
-| 补丁                    | 说明                            | 必备 | 建议 | 可选 |
-| ----------------------- | ------------------------------- | ---- | ---- | ---- |
-| SSDT-SBUS-MCHC.aml      | SBUS + MCHC                     |      | √    |      |
-| SSDT-EC-USBX.aml        | EC+USBX                         | √    |      |      |
-| SSDT-TPAD-Air14IML      | I2C触摸板补丁(AIR14IML专用)     | √    |      |      |
-| SSDT-DMAC               | 仿冒 DMA 控制器                 |      |      | √    |
-| SSDT-GPRW               | 防秒醒:0D / 6D 睡了即醒补丁     | √    |      |      |
-| SSDT-PMC                | PMC 设备                        |      | √    |      |
-| SSDT-HPTE               | 屏蔽 HPET 补丁                  |      |      | √    |
-| SSDT-PNLFCFL            | Coffee Lake 亮度控制补丁        | √    |      |      |
-| SSDT-PR00               | (X86)CPU电源管理补丁(开启XCPM)  | √    |      |      |
-| SSDT-RMCF-Air14IML      | PS2 按键映射补丁                | √    |      |      |
-| SSDT-UIAC               | 定制USB                         |      | √    |      |
-| SSDT-BATX-Air14IML      | 电池附加信息                    |      |      | √    |
-| SSDT-AWAC               | “伪” RTC时钟                    |      | √    |      |
-| SSDT-ECRW               | yogaSMC的EC访问补丁             |      |      | √    |
+| 补丁               | 说明                           | 必备 | 建议 | 可选 |
+| ------------------ | ------------------------------ | ---- | ---- | ---- |
+| SSDT-SBUS-MCHC.aml | SBUS + MCHC                    |      | √    |      |
+| SSDT-EC-USBX.aml   | EC+USBX                        | √    |      |      |
+| SSDT-TPAD-Air14IML | I2C触摸板补丁(AIR14IML专用)    | √    |      |      |
+| SSDT-DMAC          | 仿冒 DMA 控制器                |      |      | √    |
+| SSDT-GPRW          | 防秒醒:0D / 6D 睡了即醒补丁    | √    |      |      |
+| SSDT-PMC           | PMC 设备                       |      | √    |      |
+| SSDT-HPTE          | 屏蔽 HPET 补丁                 |      |      | √    |
+| SSDT-PNLFCFL       | Coffee Lake 亮度控制补丁       | √    |      |      |
+| SSDT-PR00          | (X86)CPU电源管理补丁(开启XCPM) | √    |      |      |
+| SSDT-RMCF-Air14IML | PS2 按键映射补丁               | √    |      |      |
+| SSDT-UIAC          | 定制USB                        |      | √    |      |
+| SSDT-BATX-Air14IML | 电池附加信息                   |      |      | √    |
+| SSDT-AWAC          | “伪” RTC时钟                   |      | √    |      |
+| SSDT-ECRW          | yogaSMC的EC访问补丁            |      |      | √    |
 
 ## KEXT
-| KEXT                                | 说明                  | 必备 | 可选 |
-| ----------------------------------- | --------------------- | ---- | ---- |
-| AirportBrcmFixup.kext               | dw1820_Wifi           |      | √    |
-| AppleALC.kext                       | HDMI以及声卡          | √    |      |
-| BrcmBluetoothInjector.kext          | dw1820蓝牙            |      | √    |
-| BrcmFirmwareData.kext               | dw1820蓝牙            |      | √    |
-| BrcmPatchRAM3.kext                  | dw1820蓝牙>=10.15     |      | √    |
-| CPUFriend.kext                      | cpu变频               |      | √    |
-| CPUFriendDataProvider.kext          | cpu变频数据           |      | √    |
-| Lilu.kext                           | 驱动扩展库(超重要)    | √    |      |
-| ~~NoTouchID.kext~~                  | 取消指纹(不再需要)    |      | √    |
-| SMCBatteryManager.kext              | SMC(超重要)           | √    |      |
-| SMCProcessor.kext                   | SMC-处理器            | √    |      |
-| VirtualSMC.kext                     | SMC(超重要)           | √    |      |
-| VoodooI2C.kext                      | 触摸板-核心           | √    |      |
-| VoodooI2CHID.kext                   | HID类型触摸板         | √    |      |
-| VoodooPS2Controller.kext            | 键盘驱动              | √    |      |
-| WhateverGreen.kext                  | 核显驱动              | √    |      |
-| IntelBluetoothFirmware.kext         | AC9560蓝牙固件        |      | √    |
-| IntelBluetoothInjector.kext         | AC9560蓝牙            |      | √    |
-| AirportItlwm-Sur.kext               | AC9560 Wi-Fi Big Sur  |      | √    |
-| AirportItlwm-Cata.kext              | AC9560 Wi-Fi Catalina |      | √    |
-| YogaSMC.kext                        | YogaSMC               |      | √    |
-| YogaSMCAlter.kext                   | YogaSMC               |      | √    |
-| RestrictEvents.kext                 | 屏蔽一些系统加载项    |      | √    |
-| NVMeFix.kext                        | 改善nvme固态          |      | √    |
-| VerbStub.kext                       | 耳麦切换              |      | √    |
+| KEXT                        | 说明                  | 必备 | 可选 |
+| --------------------------- | --------------------- | ---- | ---- |
+| AirportBrcmFixup.kext       | dw1820_Wifi           |      | √    |
+| AppleALC.kext               | HDMI以及声卡          | √    |      |
+| BrcmBluetoothInjector.kext  | dw1820蓝牙            |      | √    |
+| BrcmFirmwareData.kext       | dw1820蓝牙            |      | √    |
+| BrcmPatchRAM3.kext          | dw1820蓝牙>=10.15     |      | √    |
+| CPUFriend.kext              | cpu变频               |      | √    |
+| CPUFriendDataProvider.kext  | cpu变频数据           |      | √    |
+| Lilu.kext                   | 驱动扩展库(超重要)    | √    |      |
+| ~~NoTouchID.kext~~          | 取消指纹(不再需要)    |      | √    |
+| SMCBatteryManager.kext      | SMC(超重要)           | √    |      |
+| SMCProcessor.kext           | SMC-处理器            | √    |      |
+| VirtualSMC.kext             | SMC(超重要)           | √    |      |
+| VoodooI2C.kext              | 触摸板-核心           | √    |      |
+| VoodooI2CHID.kext           | HID类型触摸板         | √    |      |
+| VoodooPS2Controller.kext    | 键盘驱动              | √    |      |
+| WhateverGreen.kext          | 核显驱动              | √    |      |
+| IntelBluetoothFirmware.kext | AC9560蓝牙固件        |      | √    |
+| IntelBluetoothInjector.kext | AC9560蓝牙            |      | √    |
+| AirportItlwm-Sur.kext       | AC9560 Wi-Fi Big Sur  |      | √    |
+| AirportItlwm-Cata.kext      | AC9560 Wi-Fi Catalina |      | √    |
+| YogaSMC.kext                | YogaSMC               |      | √    |
+| YogaSMCAlter.kext           | YogaSMC               |      | √    |
+| RestrictEvents.kext         | 屏蔽一些系统加载项    |      | √    |
+| NVMeFix.kext                | 改善nvme固态          |      | √    |
+| VerbStub.kext               | 耳麦切换              |      | √    |
 
 ## 鸣谢
 - [Acidanthera](https://github.com/acidanthera) 开发的 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 和 [其他驱动](https://github.com/acidanthera)

@@ -7,26 +7,26 @@ QQ group number：1032311345
 [中文](./README.md)  
 ENGLISH  
 
-|      Info         | Status |                              Details                               |
-| :---------------: | :----: | :----------------------------------------------------------------: |
-| Computer model💻  |  ✅   |                    Lenovo XiaoXin Air14 IML 2019                    |
-|   System🌌        |  ✅   |                Catalina 10.15.7 / Big Sur 11.3 Beta 5              |
-|       CPU         |  ✅   |     Intel Core i5-10210U / i7-10510U @ 1.60 GHz /1.80 GHz 4Core     |
-|   Motherboard     |  ✅   |                           Lenovo LNVNB161216                        |
-|  Fingerprint🖐️    |  ⛔   |                      Fingerprint is unable to work                  |
-|      GPU👾        |  ⛔   |                   Nvidia GeForce MX250 ( 2 GB )                     |
-|     IGPU👾        |  ✅   |                             Intel UHD 620                           |
-|     Memory        |  ✅    |  Internal 4GB 2666 + Changeable memory (I changed into 16GB 2666)  |
-|     Disks🖴       |  ✅    |                        See Benchmarks/Disks                         |
-|     Screen🖥️      |  ✅    |                AUO353D/LGD05EC ( 14-inches ) 1920x1080             |
-|   Audio Card🔊    |  ✅    |                          Conexant CX8070                           |
-|    Wireless🌐     |  ✅    |  Intel Wireless-AC 9560 (able to use, but I changed into DW1820A)  |
-|    Bluetooth       | ✅    |                 DW1820A works, AC9560 is not that perfect          |
-| SD card reader🗂️  |  ✅    |           O2 Micro SD card reader (probably different)             |
-|     TrackPad🖐️    |  ✅    |                   Works in GPIO mode with Pin=50                   |
-|        HDMI       |  ✅    |               able to output 4k@30fps, same as windows             |
-|      Camera🎦     |  ✅    |                it's pretty easy to drive USB camera                |
-|      Sleep😴      |  ✅    |                     Support native sleep.                          |
+|      Info       | Status |                    Details                     |
+| :-------------: | :----: | :--------------------------------------------: |
+| Computer model💻 |   ✅    |         Lenovo XiaoXin Air14 IML 2019          |
+|     System🌌     |   ✅    |     Catalina 10.15.7 / Big Sur 11.3 Beta 5     |
+|      CPU🎛️       |   ✅    |        Intel Core i5-10210U / i7-10510U        |
+|  Motherboard🎛️   |   ✅    |               Lenovo LNVNB161216               |
+|  Fingerprint🖐️   |   ⛔    |         Fingerprint is unable to work          |
+|      GPU👾       |   ⛔    |         Nvidia GeForce MX250 ( 2 GB )          |
+|      IGPU👾      |   ✅    |                 Intel UHD 620                  |
+|     Memory💳     |   ✅    | Internal 4GB 2666 + Changeable 8GB 2666 memory |
+|     Disks💽      |   ✅    |              See Benchmarks/Disks              |
+|     Screen🖥️     |   ✅    |    AUO353D/LGD05EC ( 14-inches ) 1920x1080     |
+|   Audio Card🔊   |   ✅    |                Conexant CX8070                 |
+|    Wireless🌐    |   ✅    |  Intel Wireless-AC 9560 / Dell Wireless 1820A  |
+|   Bluetooth🦷    |   ✅    |   DW1820A works, AC9560 is not that perfect    |
+| SD card reader🗂️ |   ✅    |  O2 Micro SD card reader (probably different)  |
+|    TrackPad🖐️    |   ✅    |         Works in GPIO mode with Pin=50         |
+|      HDMI📺      |   ✅    |    able to output 4k@30fps, same as windows    |
+|     Camera🎦     |   ✅    |      it's pretty easy to drive USB camera      |
+|     Sleep😴      |   ✅    |             Support native sleep.              |
 
 ## Current Status：
 * System🌌：recommend macOS 10.15.7. It is system lower 10.15 that the trackpad won‘t work. System lower 10.15.4 may lag while startup
@@ -70,6 +70,11 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
+* 2021-04-14 11:13
+    * 🆕 Opencore updated to 0.6.8 
+    * 🆕 Clover updated to r5133
+    * 🆕 Updated some kext (not important)
+
 * 2021-02-18 11:25
     * OpenCore added GUI, It is now possible to boot Windows
     * Clover updated to r5130, no longer need `DataHubDex.efi`
@@ -193,22 +198,22 @@ Consultation got the answer: win restart is warm boot, will skip hardware detect
 * Turn on HiDPI (see HiDPI part)
 
 ## SSDT
-| SSDTs                   | Info                                   | Necessary | Recommended | Optional |
-| ----------------------- | -------------------------------------- | --------- | ----------- | -------- |
-| SSDT-SBUS-MCHC          | Fake BUS0, DVL0, MCHC device           |           | √           |          |
-| SSDT-EC-USBX            | Fake EC device, USB Power Patch        | √         |             |          |
-| SSDT-TPAD-Air14IML      | I2C Trachpad patch (AIR14IML only)     | √         |             |          |
-| SSDT-DMAC               | Fake DMA controller                    |           |             | √        |
-| SSDT-GPRW               | Anti immediate wakeup: 0D/6D           | √         |             |          |
-| SSDT-PMC                | Fake PMC device                        |           | √           |          |
-| SSDT-HPTE               | Disable HPET patch                     |           |             | √        |
-| SSDT-PNLFCFL            | Coffee Lake PNLF patch                 | √         |             |          |
-| SSDT-PR00               | X86 CPU Power Management (Enable XCPM) | √         |             |          |
-| SSDT-RMCF-Air14IML      | PS2 key mapping patch                  | √         |             |          |
-| SSDT-UIAC               | Custom USB                             |           | √           |          |
-| SSDT-BATX-Air14IML      | Battery extra info                     |           |             | √        |
-| SSDT-AWAC               | “Fake” RTC timer                       |           | √           |          |
-| SSDT-ECRW               | YogaSMC EC accessibility               |           |             | √        |
+| SSDTs              | Info                                   | Necessary | Recommended | Optional |
+| ------------------ | -------------------------------------- | --------- | ----------- | -------- |
+| SSDT-SBUS-MCHC     | Fake BUS0, DVL0, MCHC device           |           | √           |          |
+| SSDT-EC-USBX       | Fake EC device, USB Power Patch        | √         |             |          |
+| SSDT-TPAD-Air14IML | I2C Trachpad patch (AIR14IML only)     | √         |             |          |
+| SSDT-DMAC          | Fake DMA controller                    |           |             | √        |
+| SSDT-GPRW          | Anti immediate wakeup: 0D/6D           | √         |             |          |
+| SSDT-PMC           | Fake PMC device                        |           | √           |          |
+| SSDT-HPTE          | Disable HPET patch                     |           |             | √        |
+| SSDT-PNLFCFL       | Coffee Lake PNLF patch                 | √         |             |          |
+| SSDT-PR00          | X86 CPU Power Management (Enable XCPM) | √         |             |          |
+| SSDT-RMCF-Air14IML | PS2 key mapping patch                  | √         |             |          |
+| SSDT-UIAC          | Custom USB                             |           | √           |          |
+| SSDT-BATX-Air14IML | Battery extra info                     |           |             | √        |
+| SSDT-AWAC          | “Fake” RTC timer                       |           | √           |          |
+| SSDT-ECRW          | YogaSMC EC accessibility               |           |             | √        |
 
 ## Kexts
 | Kexts                       | Info                  | Necessary | Optional |

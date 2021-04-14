@@ -1,3 +1,8 @@
+* 2021-04-14 11:13
+    * 🆕 Opencore updated to 0.6.8 
+    * 🆕 Clover updated to r5133
+    * 🆕 Updated some kext (not important)
+
 * 2021-02-18 11:25
     * OpenCore added GUI, It is now possible to boot Windows
     * Clover updated to r5130, no longer need `DataHubDex.efi`

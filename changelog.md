@@ -1,3 +1,8 @@
+* 2021-04-14 11:13
+    * 🆕 opencore更新到0.6.8 
+    * 🆕 clover更新到r5133
+    * 🆕 更新几个kext（不重要）
+
 * 2021-02-18 11:25
     * OpenCore添加了图形界面，修改设置可以引导Windows
     * Clover更新到r5130，不再需要`DataHubDex.efi`
