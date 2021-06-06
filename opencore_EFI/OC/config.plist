@@ -1227,7 +1227,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>alcid=15 msgbuf=1048576 brcmfx-country=#a brcmfx-aspm</string>
+				<string>alcid=15 msgbuf=1048576 brcmfx-country=#a brcmfx-aspm serverperfmode=1</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
