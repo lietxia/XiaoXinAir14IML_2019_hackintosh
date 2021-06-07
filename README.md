@@ -118,7 +118,8 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 ## 建议
 
 > XiaoXin AIR14-2019 i5-10210u QQ群号: 1032311345  
-
+> 【防止黑苹果间歇性断网-解决方案 感谢@Unstoppablesss】修改 系统偏好设置/电池/电源适配器/如果可能，使硬盘进入睡眠（修改为off）  
+> 如果硬盘进入休眠，保持wifi运转的EFI文件将停止工作
 * 因目前休眠无法正常唤醒 , 为避免影响到睡眠 , 终端使用命令关闭休眠 `sudo pmset -a hibernatemode 0`
 
 ### YogaSMC `Experimental`
