@@ -10,7 +10,7 @@ ENGLISH
 |      Info       | Status |                    Details                     |
 | :-------------: | :----: | :--------------------------------------------: |
 | Computer model💻 |   ✅    |         Lenovo XiaoXin Air14 IML 2019          |
-|     System🌌     |   ✅    |     Catalina 10.15.7 / Big Sur 11.3 Beta 5     |
+|     System🌌     |   ✅    |         Catalina/BigSur/Monterey Beta          |
 |      CPU🎛️       |   ✅    |        Intel Core i5-10210U / i7-10510U        |
 |  Motherboard🎛️   |   ✅    |               Lenovo LNVNB161216               |
 |  Fingerprint🖐️   |   ⛔    |         Fingerprint is unable to work          |
@@ -70,6 +70,11 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
+* 2021-06-10 08:20
+    * Opencore updated to 0.7.0
+    * Support for macOS 12 Monterey Beta (dw1820a Wi-Fi ✅. dw1820a Bluetooth ⛔. Intel Wi-Fi ⛔. Intel Bluetooth ⛔. Sleep and wake up ✅. Touchpad normal ✅) 
+    * Updated some kext
+
 * 2021-04-14 11:13
     * 🆕 Opencore updated to 0.6.8 
     * 🆕 Clover updated to r5133
@@ -117,6 +122,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 5. Change your EFI. (You can change before installation.)
 
 ## Advice
+* [Prevent intermittent hackintosh disconnections Thanks @Unstoppablesss] Modify System Preferences/Eneragy Saver/Power Adapter/Put hard disk to sleep when possible(modify to off)  
 * Because current hibernate cannot wake up normally, in order to avoid affecting sleep, use  the terminal to turn off hibernate `sudo pmset -a hibernatemode 0`
 
 > XiaoXin AIR14-2019 i5-10210u QQ group number: 1032311345  

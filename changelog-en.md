@@ -1,3 +1,8 @@
+* 2021-06-10 08:20
+    * Opencore updated to 0.7.0
+    * Support for macOS 12 Monterey Beta (dw1820a Wi-Fi ✅. dw1820a Bluetooth ⛔. Intel Wi-Fi ⛔. Intel Bluetooth ⛔. Sleep and wake up ✅. Touchpad normal ✅) 
+    * Updated some kext
+
 * 2021-04-14 11:13
     * 🆕 Opencore updated to 0.6.8 
     * 🆕 Clover updated to r5133

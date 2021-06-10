@@ -1,3 +1,8 @@
+* 2021-06-10 08:20
+    * opencore更新到0.7.0
+    * 支持macOS 12 Monterey Beta（dw1820a Wi-Fi✅。dw1820a蓝牙⛔。Intel Wi-Fi⛔。Intel蓝牙⛔。睡眠和唤醒✅。触摸板正常✅） 
+    * 更新几个kext
+
 * 2021-04-14 11:13
     * 🆕 opencore更新到0.6.8 
     * 🆕 clover更新到r5133
