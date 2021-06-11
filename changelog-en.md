@@ -1,3 +1,6 @@
+* 2021-06-11 20:42
+    * Support for macOS 12 Monterey Beta (dw1820a Wi-Fi ✅. dw1820a Bluetooth ⛔. Intel Wi-Fi ✅. Intel Bluetooth ⛔. Sleep and wake up ✅. Touchpad ✅. HDMI✅. Camera✅) 
+    
 * 2021-06-10 08:20
     * Opencore updated to 0.7.0
     * Support for macOS 12 Monterey Beta (dw1820a Wi-Fi ✅. dw1820a Bluetooth ⛔. Intel Wi-Fi ⛔. Intel Bluetooth ⛔. Sleep and wake up ✅. Touchpad normal ✅) 

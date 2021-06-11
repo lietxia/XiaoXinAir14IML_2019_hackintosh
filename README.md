@@ -10,7 +10,7 @@ QQ群号：1032311345
 |  规格   | 状态 |                详细信息                 |
 | :-----: | ---- | :-------------------------------------: |
 |  型号💻  | ✅    |      Lenovo XiaoXin Air14 IML 2019      |
-|  系统🌌  | ✅    |      Catalina/BigSur/Monterey Beta      |
+|  系统🌌  | ✅    |      Catalina/Big Sur/Monterey Beta      |
 |  CPU🎛️   | ✅    |    Intel Core i5-10210U / i7-10510U     |
 |  主板🎛️  | ✅    |           Lenovo LNVNB161216            |
 |  指纹🖐️  | ⛔    |              指纹无法工作               |
@@ -70,10 +70,14 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
+* 2021-06-11 20:41
+	* 支持macOS 12 Monterey Beta（dw1820a Wi-Fi✅。dw1820a蓝牙⛔。Intel Wi-Fi✅。Intel蓝牙⛔。睡眠和唤醒✅。触摸板✅。HDMI✅。摄像头✅）
+
 * 2021-06-10 08:20
     * opencore更新到0.7.0
     * 支持macOS 12 Monterey Beta（dw1820a Wi-Fi✅。dw1820a蓝牙⛔。Intel Wi-Fi⛔。Intel蓝牙⛔。睡眠和唤醒✅。触摸板✅。HDMI✅。摄像头✅） 
     * 更新几个kext
+
 * 2021-04-14 11:13
     * 🆕 opencore更新到0.6.8 
     * 🆕 clover更新到r5133
@@ -85,28 +89,6 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
     * 重新修改`SSDT-BATX-Air14IML.aml`，让其显示电池剩余可用时间
     * 重新添加`SSDT-UIAC.aml`(它可能影响睡眠?)
     * YogaSMC更新到1.4.3，新版YogaSMC的`SSDT-ECRW.aml`发生了变化，做了更新。
-  
-* 2021-02-11 14:22
-    * 删除clover的intel Wifi配置
-    * 改回用`WhatEverGreen`来屏蔽mx250 `disable-external-gpu`
-
-* 2021-02-10 12:00
-    * 修复使用`YogaSMC`之后KP
-    * 新增主题和开机音频
-
-> 测试发现还是没声
-
-* 2021-02-10 01:03
-    * 添加`SSDT-NDGP_OFF-Air14IML.aml`用来屏蔽独立显卡
-    * 触摸板`SSDT-TPAD-Air14IML.aml`改为GPIO中断模式，pin=`50`
-    * 修正`SSDT-BATX-Air14IML.aml`，让其显示电池剩余可用时间
-    * 更新`voodooi2c`到2.6.4
-    * 删掉不再需要的`SSDT-XSPI.aml`,`SSDT-UIAC.aml`,`SMCSuperIO.kext`,`NoTouchID.kext`
-    * 修正Clover不能引导BigSur的问题(需要选Preboot来引导bigSur)
-    * 小幅改动`ALCPlugFix`的`install.command`和`uninstall.command`脚本
-
-* 2021-02-05 08:20
-    * 缩减itlwm和蓝牙固件，博通没有变化 
 
 * 历史修改记录见[changelog.md](changelog.md)
 

@@ -1,3 +1,6 @@
+* 2021-06-11 20:41
+    * 支持macOS 12 Monterey Beta（dw1820a Wi-Fi✅。dw1820a蓝牙⛔。Intel Wi-Fi✅。Intel蓝牙⛔。睡眠和唤醒✅。触摸板✅。HDMI✅。摄像头✅）
+    
 * 2021-06-10 08:20
     * opencore更新到0.7.0
     * 支持macOS 12 Monterey Beta（dw1820a Wi-Fi✅。dw1820a蓝牙⛔。Intel Wi-Fi⛔。Intel蓝牙⛔。睡眠和唤醒✅。触摸板正常✅） 

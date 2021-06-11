@@ -10,7 +10,7 @@ ENGLISH
 |      Info       | Status |                    Details                     |
 | :-------------: | :----: | :--------------------------------------------: |
 | Computer model💻 |   ✅    |         Lenovo XiaoXin Air14 IML 2019          |
-|     System🌌     |   ✅    |         Catalina/BigSur/Monterey Beta          |
+|     System🌌     |   ✅    |         Catalina/Big Sur/Monterey Beta          |
 |      CPU🎛️       |   ✅    |        Intel Core i5-10210U / i7-10510U        |
 |  Motherboard🎛️   |   ✅    |               Lenovo LNVNB161216               |
 |  Fingerprint🖐️   |   ⛔    |         Fingerprint is unable to work          |
@@ -70,6 +70,9 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
+* 2021-06-11 20:42
+    * Support for macOS 12 Monterey Beta (dw1820a Wi-Fi ✅. dw1820a Bluetooth ⛔. Intel Wi-Fi ✅. Intel Bluetooth ⛔. Sleep and wake up ✅. Touchpad ✅. HDMI✅. Camera✅) 
+
 * 2021-06-10 08:20
     * Opencore updated to 0.7.0
     * Support for macOS 12 Monterey Beta (dw1820a Wi-Fi ✅. dw1820a Bluetooth ⛔. Intel Wi-Fi ⛔. Intel Bluetooth ⛔. Sleep and wake up ✅. Touchpad ✅. HDMI✅. Camera✅) 
@@ -86,28 +89,6 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
     * Re-modified `SSDT-BATX-Air14IML.aml` to show battery remaining available time
     * Re-add `SSDT-UIAC.aml` (it may affect sleep?)
     * YogaSMC updated to 1.4.3, Synchronized update of `SSDT-ECRW.aml` .
-
-* 2021-02-11 14:22
-    * Remove clover intel Wifi configuration
-    * Change back to use `WhatEverGreen` to disable mx250 `disable-external-gpu`
-  
-* 2021-02-10 12:00
-    * Fix OC KP while using `YogaSMC`.
-    * Add Theme and startup audio.
- 
-> Still no sound after testing.
-
-* 2021-02-10 01:03
-    * Add `SSDT-NDGP_OFF-Air14IML.aml` to block the Nvdia graphics card
-    * Touchpad `SSDT-TPAD-Air14IML.aml` changed to GPIO mode, pin=`50`
-    * Fixed `SSDT-BATX-Air14IML.aml` to show battery remaining available time
-    * Update `voodooi2c` to version 2.6.4
-    * Remove `SSDT-XSPI.aml`, `SSDT-UIAC.aml`, `SMCSuperIO.kext`, `NoTouchID.kext` which are no longer needed
-    * Fix the problem that Clover can't boot BigSur (need to choose Preboot to boot bigSur)
-    * Minor changes to `install.command` and `uninstall.command` scripts of `ALCPlugFix`.
-
-* 2021-02-05 08:20
-    * Reduce itlwm size, no changes for DW1820A.
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 
