@@ -878,42 +878,6 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>BundlePath</key>
-				<string>CPUFriend.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/CPUFriend</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>BundlePath</key>
-				<string>CPUFriendDataProvider.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -1322,9 +1286,9 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C020392004NP8PGJA</string>
+			<string>C02047802J900001M</string>
 			<key>ProcessorType</key>
-			<integer>1547</integer>
+			<integer>1793</integer>
 			<key>ROM</key>
 			<data>FWL70CHx</data>
 			<key>SpoofVendor</key>
@@ -1332,11 +1296,11 @@
 			<key>SystemMemoryStatus</key>
 			<string>Upgradable</string>
 			<key>SystemProductName</key>
-			<string>MacBookPro16,2</string>
+			<string>MacBookPro16,3</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DGPZHML7H</string>
+			<string>C02DQ0PCP3XY</string>
 			<key>SystemUUID</key>
-			<string>5D5BE436-5FCE-4CAD-B031-C48F83F5FAE7</string>
+			<string>51F5B9F8-A756-4AAF-823C-C058624FAC2D</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
@@ -1347,37 +1311,37 @@
 			<key>BIOSVersion</key>
 			<string>1554.100.64.0.0</string>
 			<key>BoardAssetTag</key>
-			<string></string>
+			<string>Base Board Asset Tag</string>
 			<key>BoardLocationInChassis</key>
 			<string>Part Component</string>
 			<key>BoardManufacturer</key>
 			<string></string>
 			<key>BoardProduct</key>
-			<string>Mac-5F9802EFE386AA28</string>
+			<string>Mac-E7203C0F68AA0004</string>
 			<key>BoardSerialNumber</key>
-			<string>C020392004NP8PGJA</string>
+			<string>C02047802J900001M</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
-			<string>MacBookPro16,2</string>
+			<string>MacBookPro16,3</string>
 			<key>ChassisAssetTag</key>
-			<string></string>
+			<string>Asset Tag#</string>
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02DGPZHML7H</string>
+			<string>C02DQ0PCP3XY</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
-			<string>Mac-5F9802EFE386AA28</string>
+			<string>Mac-E7203C0F68AA0004</string>
 			<key>FirmwareFeatures</key>
-			<data>bvCv/wAAAAA=</data>
+			<data>ZvCv/QAAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wAAAAA=</data>
 			<key>PlatformFeature</key>
-			<integer>58</integer>
+			<integer>50</integer>
 			<key>ProcessorType</key>
-			<integer>1547</integer>
+			<integer>1793</integer>
 			<key>SmcVersion</key>
 			<data></data>
 			<key>SystemFamily</key>
@@ -1385,13 +1349,13 @@
 			<key>SystemManufacturer</key>
 			<string></string>
 			<key>SystemProductName</key>
-			<string>MacBookPro16,2</string>
+			<string>MacBookPro16,3</string>
 			<key>SystemSKUNumber</key>
-			<string></string>
+			<string>System SKU#</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DD5ZDML7H</string>
+			<string>C02DQ0PCP3XY</string>
 			<key>SystemUUID</key>
-			<string>972EEF19-B867-436B-ABF9-A7A17BD021F1</string>
+			<string>51F5B9F8-A756-4AAF-823C-C058624FAC2D</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
