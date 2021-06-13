@@ -31,7 +31,6 @@ ENGLISH
 ## Current Status：
 * System🌌：recommend macOS 10.15.7. It is system lower 10.15 that the trackpad won‘t work. System lower 10.15.4 may lag while startup
 * Disks🖴：If you are using Samsung PM981A, please consider to change. Or install by this way: http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
-* The CPU frequency is limited to 3.9GHz. [Add CPUFriend to maximum your performance.](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2021.02.26)
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
 ## Related model
@@ -211,7 +210,6 @@ Consultation got the answer: win restart is warm boot, will skip hardware detect
 | BrcmFirmwareData.kext       | DW1820A bluetooth     |           | √        |
 | BrcmPatchRAM3.kext          | DW1820A bluetooth     |           | √        |
 | Lilu.kext                   | Kernel extension      | √         |          |
-| ~~NoTouchID.kext~~          | No TouchID            |           | √        |
 | SMCBatteryManager.kext      | SMC battery           | √         |          |
 | SMCProcessor.kext           | SMC-processor         | √         |          |
 | VirtualSMC.kext             | SMC(important)        | √         |          |
@@ -223,6 +221,7 @@ Consultation got the answer: win restart is warm boot, will skip hardware detect
 | IntelBluetoothInjector.kext | AC9560 Bluetooth      |           | √        |
 | AirportItlwm-Sur.kext       | AC9560 Wi-Fi Big Sur  |           | √        |
 | AirportItlwm-Cata.kext      | AC9560 Wi-Fi Catalina |           | √        |
+| AirportItlwm-Monterey.kext  | AC9560 Wi-Fi Monterey |           | √        |
 | YogaSMC.kext                | YogaSMC               |           | √        |
 | YogaSMCAlter.kext           | YogaSMC               |           | √        |
 | RestrictEvents.kext         | Shield system daemons |           | √        |

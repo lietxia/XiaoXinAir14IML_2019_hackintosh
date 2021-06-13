@@ -31,7 +31,6 @@ QQ群号：1032311345
 ## 目前状态：
 * 系统🌌：Catalina/BigSur/Monterey Beta。推荐Catalina 10.15.7/BigSur 11.4
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。或者按此方法安装系统 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
-* CPU频率被限制在3.9GHz。[使用CPUFriend发挥最大性能](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2021.02.26)
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
 ## 相关机型
@@ -199,30 +198,28 @@ sudo kextcache -i /
 | KEXT                        | 说明                  | 必备 | 可选 |
 | --------------------------- | --------------------- | ---- | ---- |
 | AirportBrcmFixup.kext       | dw1820_Wifi           |      | √    |
-| AppleALC.kext               | HDMI以及声卡          | √    |      |
+| AppleALC.kext               | HDMI以及声卡           | √    |      |
 | BrcmBluetoothInjector.kext  | dw1820蓝牙            |      | √    |
 | BrcmFirmwareData.kext       | dw1820蓝牙            |      | √    |
 | BrcmPatchRAM3.kext          | dw1820蓝牙>=10.15     |      | √    |
-| CPUFriend.kext              | cpu变频               |      | √    |
-| CPUFriendDataProvider.kext  | cpu变频数据           |      | √    |
-| Lilu.kext                   | 驱动扩展库(超重要)    | √    |      |
-| ~~NoTouchID.kext~~          | 取消指纹(不再需要)    |      | √    |
+| Lilu.kext                   | 驱动扩展库(超重要)      | √    |      |
 | SMCBatteryManager.kext      | SMC(超重要)           | √    |      |
 | SMCProcessor.kext           | SMC-处理器            | √    |      |
 | VirtualSMC.kext             | SMC(超重要)           | √    |      |
-| VoodooI2C.kext              | 触摸板-核心           | √    |      |
-| VoodooI2CHID.kext           | HID类型触摸板         | √    |      |
-| VoodooPS2Controller.kext    | 键盘驱动              | √    |      |
-| WhateverGreen.kext          | 核显驱动              | √    |      |
-| IntelBluetoothFirmware.kext | AC9560蓝牙固件        |      | √    |
-| IntelBluetoothInjector.kext | AC9560蓝牙            |      | √    |
+| VoodooI2C.kext              | 触摸板-核心            | √    |      |
+| VoodooI2CHID.kext           | HID类型触摸板          | √    |      |
+| VoodooPS2Controller.kext    | 键盘驱动               | √    |      |
+| WhateverGreen.kext          | 核显驱动               | √    |      |
+| IntelBluetoothFirmware.kext | AC9560蓝牙固件         |      | √    |
+| IntelBluetoothInjector.kext | AC9560蓝牙             |      | √    |
 | AirportItlwm-Sur.kext       | AC9560 Wi-Fi Big Sur  |      | √    |
 | AirportItlwm-Cata.kext      | AC9560 Wi-Fi Catalina |      | √    |
+| AirportItlwm-Monterey.kext  | AC9560 Wi-Fi Monterey |      | √    |
 | YogaSMC.kext                | YogaSMC               |      | √    |
 | YogaSMCAlter.kext           | YogaSMC               |      | √    |
-| RestrictEvents.kext         | 屏蔽一些系统加载项    |      | √    |
-| NVMeFix.kext                | 改善nvme固态          |      | √    |
-| VerbStub.kext               | 耳麦切换              |      | √    |
+| RestrictEvents.kext         | 屏蔽一些系统加载项       |      | √    |
+| NVMeFix.kext                | 改善nvme固态           |      | √    |
+| VerbStub.kext               | 耳麦切换               |      | √    |
 
 ## 鸣谢
 - [Acidanthera](https://github.com/acidanthera) 开发的 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 和 [其他驱动](https://github.com/acidanthera)
