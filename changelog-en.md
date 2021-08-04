@@ -1,3 +1,8 @@
+* 2021-08-04 17:53
+  * Support for macOS 12 Monterey Beta. Bluetooth✅（Known Issues:Keyboard malfunction after shutdown or reboot.）
+  * Opencore updated to 0.7.2
+  * Clover updated to v5138
+ 
 * 2021-06-11 20:42
     * Support for macOS 12 Monterey Beta (dw1820a Wi-Fi ✅. dw1820a Bluetooth ⛔. Intel Wi-Fi ✅. Intel Bluetooth ⛔. Sleep and wake up ✅. Touchpad ✅. HDMI✅. Camera✅) 
     

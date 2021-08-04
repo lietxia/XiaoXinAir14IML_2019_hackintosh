@@ -166,7 +166,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>brcmfx-country=#a alcid=15 brcmfx-aspm serverperfmode=1</string>
+		<string>brcmfx-country=#a alcid=15 brcmfx-aspm</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -189,7 +189,7 @@
 	<key>BootGraphics</key>
 	<dict>
 		<key>UIScale</key>
-		<integer>2</integer>
+		<integer>1</integer>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -335,8 +335,6 @@
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>KernelLapic</key>
-		<false/>
-		<key>KernelPm</key>
 		<false/>
 		<key>KextsToPatch</key>
 		<array>

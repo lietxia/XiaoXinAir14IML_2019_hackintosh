@@ -69,6 +69,11 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
+* 2021-08-04 17:53
+  * 支持macOS 12 Monterey Beta 蓝牙可用✅（已知问题：关机或重启后键盘⌨️失灵）
+  * 更新opencore到0.7.2
+  * 更新Clover到v5138
+
 * 2021-06-11 20:41
 	* 支持macOS 12 Monterey Beta（dw1820a Wi-Fi✅。dw1820a蓝牙⛔。Intel Wi-Fi✅。Intel蓝牙⛔。睡眠和唤醒✅。触摸板✅。HDMI✅。摄像头✅）
 

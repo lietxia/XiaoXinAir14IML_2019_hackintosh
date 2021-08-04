@@ -206,6 +206,8 @@
 			<false/>
 			<key>ResetLogoStatus</key>
 			<false/>
+			<key>SyncTableIds</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -248,7 +250,7 @@
 			<key>EnableForAll</key>
 			<false/>
 			<key>EnableSafeModeSlide</key>
-			<true/>
+			<false/>
 			<key>EnableWriteUnprotector</key>
 			<true/>
 			<key>ForceBooterSignature</key>
@@ -385,6 +387,42 @@
 				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/YogaSMCAlter</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>USBPorts.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>CpuTscSync.kext</string>
+				<key>Comment</key>
+				<string>CpuTscSync</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CpuTscSync</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -666,51 +704,15 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>BrcmBluetoothInjector.kext</string>
+				<string>FeatureUnlock.kext</string>
 				<key>Comment</key>
-				<string>DW1820A-Bluetooth</string>
+				<string>FeatureUnlock</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/FeatureUnlock</string>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
-				<key>MinKernel</key>
 				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>BundlePath</key>
-				<string>BrcmFirmwareData.kext</string>
-				<key>Comment</key>
-				<string>DW1820A-Bluetooth</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BrcmFirmwareData</string>
-				<key>MaxKernel</key>
-				<string>20.99.99</string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>BundlePath</key>
-				<string>BrcmPatchRAM3.kext</string>
-				<key>Comment</key>
-				<string>DW1820A-Bluetooth</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BrcmPatchRAM3</string>
-				<key>MaxKernel</key>
-				<string>20.99.99</string>
 				<key>MinKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -774,17 +776,71 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>IntelBluetoothFirmware.kext</string>
+				<string>BrcmBluetoothInjector.kext</string>
 				<key>Comment</key>
-				<string>IntelAC9560-BlueTooth</string>
+				<string>DW1820A-Bluetooth</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IntelBluetoothFirmware</string>
+				<string></string>
 				<key>MaxKernel</key>
 				<string>20.99.99</string>
 				<key>MinKernel</key>
-				<string>16.0</string>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>BlueToolFixup.kext</string>
+				<key>Comment</key>
+				<string>Bluetooth fix</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BlueToolFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>BrcmFirmwareData.kext</string>
+				<key>Comment</key>
+				<string>DW1820A-Bluetooth</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrcmFirmwareData</string>
+				<key>MaxKernel</key>
+				<string>20.99.99</string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>BrcmPatchRAM3.kext</string>
+				<key>Comment</key>
+				<string>DW1820A-Bluetooth</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrcmPatchRAM3</string>
+				<key>MaxKernel</key>
+				<string>20.99.99</string>
+				<key>MinKernel</key>
+				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -799,6 +855,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
+				<key>MaxKernel</key>
+				<string>20.99.99</string>
+				<key>MinKernel</key>
+				<string>16.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>IntelBluetoothFirmware.kext</string>
+				<key>Comment</key>
+				<string>IntelAC9560-BlueTooth</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IntelBluetoothFirmware</string>
 				<key>MaxKernel</key>
 				<string>20.99.99</string>
 				<key>MinKernel</key>
@@ -871,6 +945,42 @@
 				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/itlwm</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>CPUFriend.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CPUFriend</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>CPUFriendDataProvider.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1034,6 +1144,8 @@
 		</dict>
 		<key>Scheme</key>
 		<dict>
+			<key>CustomKernel</key>
+			<false/>
 			<key>FuzzyMatch</key>
 			<false/>
 			<key>KernelArch</key>
@@ -1132,7 +1244,7 @@
 			<key>AuthRestart</key>
 			<false/>
 			<key>BlacklistAppleUpdate</key>
-			<false/>
+			<true/>
 			<key>DmgLoading</key>
 			<string>Signed</string>
 			<key>EnablePassword</key>
@@ -1148,11 +1260,9 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Default</string>
+			<string>j160</string>
 			<key>Vault</key>
 			<string>Optional</string>
-			<key>##ScanPolicy</key>
-			<integer>0</integer>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -1239,7 +1349,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-lilubetaall alcid=15 brcmfx-country=#a brcmfx-aspm serverperfmode=1</string>
+				<string>alcid=15 brcmfx-country=#a brcmfx-aspm serverperfmode=1</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1286,9 +1396,9 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02047802J900001M</string>
+			<string>C020392004NP8PGJA</string>
 			<key>ProcessorType</key>
-			<integer>1793</integer>
+			<integer>1547</integer>
 			<key>ROM</key>
 			<data>FWL70CHx</data>
 			<key>SpoofVendor</key>
@@ -1296,11 +1406,11 @@
 			<key>SystemMemoryStatus</key>
 			<string>Upgradable</string>
 			<key>SystemProductName</key>
-			<string>MacBookPro16,3</string>
+			<string>MacBookPro16,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DQ0PCP3XY</string>
+			<string>C02DGPZHML7H</string>
 			<key>SystemUUID</key>
-			<string>51F5B9F8-A756-4AAF-823C-C058624FAC2D</string>
+			<string>5D5BE436-5FCE-4CAD-B031-C48F83F5FAE7</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
@@ -1311,37 +1421,37 @@
 			<key>BIOSVersion</key>
 			<string>1554.100.64.0.0</string>
 			<key>BoardAssetTag</key>
-			<string>Base Board Asset Tag</string>
+			<string></string>
 			<key>BoardLocationInChassis</key>
 			<string>Part Component</string>
 			<key>BoardManufacturer</key>
 			<string></string>
 			<key>BoardProduct</key>
-			<string>Mac-E7203C0F68AA0004</string>
+			<string>Mac-5F9802EFE386AA28</string>
 			<key>BoardSerialNumber</key>
-			<string>C02047802J900001M</string>
+			<string>C020392004NP8PGJA</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
-			<string>MacBookPro16,3</string>
+			<string>MacBookPro16,2</string>
 			<key>ChassisAssetTag</key>
-			<string>Asset Tag#</string>
+			<string></string>
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02DQ0PCP3XY</string>
+			<string>C02DGPZHML7H</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
-			<string>Mac-E7203C0F68AA0004</string>
+			<string>Mac-5F9802EFE386AA28</string>
 			<key>FirmwareFeatures</key>
-			<data>ZvCv/QAAAAA=</data>
+			<data>bvCv/wAAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wAAAAA=</data>
 			<key>PlatformFeature</key>
-			<integer>50</integer>
+			<integer>58</integer>
 			<key>ProcessorType</key>
-			<integer>1793</integer>
+			<integer>1547</integer>
 			<key>SmcVersion</key>
 			<data></data>
 			<key>SystemFamily</key>
@@ -1349,13 +1459,13 @@
 			<key>SystemManufacturer</key>
 			<string></string>
 			<key>SystemProductName</key>
-			<string>MacBookPro16,3</string>
+			<string>MacBookPro16,2</string>
 			<key>SystemSKUNumber</key>
-			<string>System SKU#</string>
+			<string></string>
 			<key>SystemSerialNumber</key>
-			<string>C02DQ0PCP3XY</string>
+			<string>C02DD5ZDML7H</string>
 			<key>SystemUUID</key>
-			<string>51F5B9F8-A756-4AAF-823C-C058624FAC2D</string>
+			<string>972EEF19-B867-436B-ABF9-A7A17BD021F1</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -1377,21 +1487,23 @@
 			<key>EnableJumpstart</key>
 			<true/>
 			<key>GlobalConnect</key>
-			<false/>
+			<true/>
 			<key>HideVerbose</key>
 			<true/>
 			<key>JumpstartHotPlug</key>
-			<false/>
+			<true/>
 			<key>MinDate</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 			<key>MinVersion</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 		</dict>
 		<key>AppleInput</key>
 		<dict>
 			<key>AppleEvent</key>
 			<string>Auto</string>
 			<key>CustomDelays</key>
+			<false/>
+			<key>GraphicsInputMirroring</key>
 			<false/>
 			<key>KeyInitialDelay</key>
 			<integer>0</integer>
@@ -1538,7 +1650,7 @@
 			<key>ReloadOptionRoms</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
-			<true/>
+			<false/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
