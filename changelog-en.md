@@ -1,3 +1,6 @@
+* 2021-08-07 07:44
+  * Fix `Ctrl`+`Enter` can't set the default system
+
 * 2021-08-04 17:53
   * Support for macOS 12 Monterey Beta. Bluetooth✅（Known Issues:Keyboard malfunction after shutdown or reboot.）
   * Opencore updated to 0.7.2

@@ -69,6 +69,9 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
+* 2021-08-07 07:44
+  * 修正`Ctrl`+`Enter`不能设置默认系统的问题
+
 * 2021-08-04 17:53
   * 支持macOS 12 Monterey Beta 蓝牙可用✅（已知问题：关机或重启后键盘⌨️失灵）
   * 更新opencore到0.7.2
