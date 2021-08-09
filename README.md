@@ -69,33 +69,21 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
+* 2021-08-09 22:20
+    * 添加USB鼠标OC界面支持
+    * 删除 CPUFriend， itlwm 和 USBPorts
+    * 修正 IntelBluetoothFirmware 的 MaxKernel 为 21.99.99
+    * 添加 DebugEnhancer
+    * 启用 Verbstub
+    * 更新 itlwm 驱动
+
 * 2021-08-07 07:44
-  * 修正`Ctrl`+`Enter`不能设置默认系统的问题
+    * 修正`Ctrl`+`Enter`不能设置默认系统的问题
 
 * 2021-08-04 17:53
-  * 支持macOS 12 Monterey Beta 蓝牙可用✅（已知问题：关机或重启后键盘⌨️失灵）
-  * 更新opencore到0.7.2
-  * 更新Clover到v5138
-
-* 2021-06-11 20:41
-	* 支持macOS 12 Monterey Beta（dw1820a Wi-Fi✅。dw1820a蓝牙⛔。Intel Wi-Fi✅。Intel蓝牙⛔。睡眠和唤醒✅。触摸板✅。HDMI✅。摄像头✅）
-
-* 2021-06-10 08:20
-    * opencore更新到0.7.0
-    * 支持macOS 12 Monterey Beta（dw1820a Wi-Fi✅。dw1820a蓝牙⛔。Intel Wi-Fi⛔。Intel蓝牙⛔。睡眠和唤醒✅。触摸板✅。HDMI✅。摄像头✅） 
-    * 更新几个kext
-
-* 2021-04-14 11:13
-    * 🆕 opencore更新到0.6.8 
-    * 🆕 clover更新到r5133
-    * 🆕 更新几个kext（不重要）
-
-* 2021-02-18 11:25
-    * OpenCore添加了图形界面，修改设置可以引导Windows
-    * Clover更新到r5130，不再需要`DataHubDex.efi`
-    * 重新修改`SSDT-BATX-Air14IML.aml`，让其显示电池剩余可用时间
-    * 重新添加`SSDT-UIAC.aml`(它可能影响睡眠?)
-    * YogaSMC更新到1.4.3，新版YogaSMC的`SSDT-ECRW.aml`发生了变化，做了更新。
+    * 支持macOS 12 Monterey Beta 蓝牙可用✅（已知问题：关机或重启后键盘⌨️失灵）
+    * 更新opencore到0.7.2
+    * 更新Clover到v5138
 
 * 历史修改记录见[changelog.md](changelog.md)
 

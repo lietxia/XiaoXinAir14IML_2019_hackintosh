@@ -69,43 +69,32 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
+* 2021-08-09 22:20
+    * Add USB mouse support
+    * Show pointer
+    * Delete CPUFriend, itlwm and USBPorts
+    * Change IntelBluetoothFirmware MaxKernel to 21.99.99
+    * Add DebugEnhancer.
+    * Enable Verbstub
+    * Update itlwm driver
+
 * 2021-08-07 07:44
-  * Fix `Ctrl`+`Enter` can't set the default system
+    * Fix `Ctrl`+`Enter` can't set the default system
 
 * 2021-08-04 17:53
-  * Support for macOS 12 Monterey Beta. Bluetooth✅（Known Issues:Keyboard malfunction after shutdown or reboot.）
-  * Opencore updated to 0.7.2
-  * Clover updated to v5138
-
-* 2021-06-11 20:42
-    * Support for macOS 12 Monterey Beta (dw1820a Wi-Fi ✅. dw1820a Bluetooth ⛔. Intel Wi-Fi ✅. Intel Bluetooth ⛔. Sleep and wake up ✅. Touchpad ✅. HDMI✅. Camera✅) 
-
-* 2021-06-10 08:20
-    * Opencore updated to 0.7.0
-    * Support for macOS 12 Monterey Beta (dw1820a Wi-Fi ✅. dw1820a Bluetooth ⛔. Intel Wi-Fi ⛔. Intel Bluetooth ⛔. Sleep and wake up ✅. Touchpad ✅. HDMI✅. Camera✅) 
-    * Updated some kext
-
-* 2021-04-14 11:13
-    * 🆕 Opencore updated to 0.6.8 
-    * 🆕 Clover updated to r5133
-    * 🆕 Updated some kext (not important)
-
-* 2021-02-18 11:25
-    * OpenCore added GUI, It is now possible to boot Windows
-    * Clover updated to r5130, no longer need `DataHubDex.efi`
-    * Re-modified `SSDT-BATX-Air14IML.aml` to show battery remaining available time
-    * Re-add `SSDT-UIAC.aml` (it may affect sleep?)
-    * YogaSMC updated to 1.4.3, Synchronized update of `SSDT-ECRW.aml` .
+    * Support for macOS 12 Monterey Beta. Bluetooth✅（Known Issues:Keyboard malfunction after shutdown or reboot.）
+    * Opencore updated to 0.7.2
+    * Clover updated to v5138
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 
 ## Installation
 1. If you are using OpenCore, Please use BIOS except for 1.0.2  (1.0.2 you need to turn off the Hyper-Threading to use OC.)
 2. Change BIOS settings
-    * https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
+      * https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
 3. Completely follow the method of Lenovo Xiaoxin Pro 13 to install.
-    * https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html
-    * https://www.bilibili.com/video/BV1A54y1X78F
+      * https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html
+      * https://www.bilibili.com/video/BV1A54y1X78F
 4. Change DVMT and CFG Lock.
 5. Change your EFI. (You can change before installation.)
 

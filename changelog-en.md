@@ -1,10 +1,19 @@
+* 2021-08-09 22:20
+    * Add USB mouse support
+    * Show pointer
+    * Delete CPUFriend, itlwm and USBPorts
+    * Change IntelBluetoothFirmware MaxKernel to 21.99.99
+    * Add DebugEnhancer.
+    * Enable Verbstub
+    * Update itlwm driver
+
 * 2021-08-07 07:44
-  * Fix `Ctrl`+`Enter` can't set the default system
+    * Fix `Ctrl`+`Enter` can't set the default system
 
 * 2021-08-04 17:53
-  * Support for macOS 12 Monterey Beta. Bluetooth✅（Known Issues:Keyboard malfunction after shutdown or reboot.）
-  * Opencore updated to 0.7.2
-  * Clover updated to v5138
+    * Support for macOS 12 Monterey Beta. Bluetooth✅（Known Issues:Keyboard malfunction after shutdown or reboot.）
+    * Opencore updated to 0.7.2
+    * Clover updated to v5138
  
 * 2021-06-11 20:42
     * Support for macOS 12 Monterey Beta (dw1820a Wi-Fi ✅. dw1820a Bluetooth ⛔. Intel Wi-Fi ✅. Intel Bluetooth ⛔. Sleep and wake up ✅. Touchpad ✅. HDMI✅. Camera✅) 

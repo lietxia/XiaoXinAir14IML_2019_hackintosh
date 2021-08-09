@@ -1,10 +1,18 @@
+* 2021-08-09 22:20
+    * 添加USB鼠标OC界面支持
+    * 删除 CPUFriend， itlwm 和 USBPorts
+    * 修正 IntelBluetoothFirmware 的 MaxKernel 为 21.99.99
+    * 添加 DebugEnhancer
+    * 启用 Verbstub
+    * 更新 itlwm 驱动
+
 * 2021-08-07 07:44
-  * 修正`Ctrl`+`Enter`不能设置默认系统的问题
+    * 修正`Ctrl`+`Enter`不能设置默认系统的问题
 
 * 2021-08-04 17:53
-  * 支持macOS 12 Monterey Beta 蓝牙可用✅（已知问题：关机或重启后键盘⌨️失灵）
-  * 更新opencore到0.7.2
-  * 更新Clover到v5138
+    * 支持macOS 12 Monterey Beta 蓝牙可用✅（已知问题：关机或重启后键盘⌨️失灵）
+    * 更新opencore到0.7.2
+    * 更新Clover到v5138
 
 * 2021-06-11 20:41
     * 支持macOS 12 Monterey Beta（dw1820a Wi-Fi✅。dw1820a蓝牙⛔。Intel Wi-Fi✅。Intel蓝牙⛔。睡眠和唤醒✅。触摸板✅。HDMI✅。摄像头✅）
