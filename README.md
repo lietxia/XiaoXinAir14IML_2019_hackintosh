@@ -7,29 +7,29 @@ QQ群号：1032311345
 中文  
 [ENGLISH](./README-en.md)
 
-|  规格   | 状态 |                详细信息                 |
-| :-----: | ---- | :-------------------------------------: |
+|   规格   | 状态  |                   详细信息                 |
+| :-----: | ---- | :---------------------------------------: |
 |  型号💻  | ✅    |      Lenovo XiaoXin Air14 IML 2019      |
-|  系统🌌  | ✅    |      Catalina/Big Sur/Monterey Beta      |
-|  CPU🎛️   | ✅    |    Intel Core i5-10210U / i7-10510U     |
+|  系统🌌  | ✅    |      Catalina/Big Sur/Monterey Beta     |
+|  CPU🎛️   | ✅    |    Intel Core i5-10210U / i7-10510U    |
 |  主板🎛️  | ✅    |           Lenovo LNVNB161216            |
-|  指纹🖐️  | ⛔    |              指纹无法工作               |
+|  指纹🖐️  | ⛔    |               指纹无法工作                |
 |  GPU👾   | ⛔    |       Nvidia GeForce MX250(屏蔽)        |
-|  iGPU👾  | ✅    |              Intel UHD 620              |
-|  内存💳  | ✅    |       内置4GB+可更换8GB DDR4 2666       |
+|  iGPU👾  | ✅    |              Intel UHD 620             |
+|  内存💳  | ✅    |         内置4GB+可更换8GB DDR4 2666       |
 |  硬盘💽  | ✅    |           见 Benchmarks/Disks           |
-|  屏幕🖥️  | ✅    |   AUO353D/LGD05EC（14英寸） 1920x1080   |
+|  屏幕🖥️  | ✅    |   AUO353D/LGD05EC（14英寸） 1920x1080    |
 |  声卡🔊  | ✅    |             Conexant CX8070             |
-|  wifi🌐  | ✅    |     Intel Wireless-AC 9560/DW1820A      |
-|  蓝牙🦷  | ✅    |      DW1820A正常，AC 9560较不完善       |
-| 读卡器🗂️ | ✅    | O2 Micro SD card reader（有可能不一样） |
-| 触摸板🖐️ | ✅    |         已运行在GPIO中断 Pin=50         |
-|  HDMI📺  | ✅    |       可输出4k30帧,和win表现一致        |
-| 摄像头🎦 | ✅    |         USB摄像头还是很好驱动的         |
-|  睡眠😴  | ✅    |              支持原生休眠               |
+|  wifi🌐  | ✅    |     Intel Wireless-AC 9560/DW1820A     |
+|  蓝牙🦷  | ✅    |            DW1820A正常，AC 9560          |
+| 读卡器🗂️ | ✅    |   O2 Micro SD card reader（有可能不一样）  |
+| 触摸板🖐️ | ✅    |          已运行在GPIO中断 Pin=50          |
+|  HDMI📺  | ✅    |       可输出4k30帧,和win表现一致          |
+| 摄像头🎦 | ✅    |           USB摄像头还是很好驱动的          |
+|  睡眠😴  | ✅    |                支持原生休眠               |
 
 ## 目前状态：
-* 系统🌌：Catalina/BigSur/Monterey Beta。推荐Catalina 10.15.7/BigSur 11.4
+* 系统🌌：Catalina/BigSur/Monterey Beta。推荐Catalina 10.15.7/BigSur 11.5.2 （Monterey关机后键盘会失灵，需要关机状态下长按开机键10秒以上即可恢复）
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。或者按此方法安装系统 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
@@ -90,11 +90,9 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 ## 安装方法
 1. 如果你使用openCore，BIOS请使用1.0.2之外的版本 （1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
 2. 改BIOS设置（推荐和必须的地方必须改） https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
-3. 完全按照 联想小新Pro13 的方法安装一次 
-    * https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html
-    * https://www.bilibili.com/video/BV1A54y1X78F
-4. 改DVMT和 CFG Lock（见下文，必须做）
-5. 安装成功后,把EFI换成这个 （可提前替换efi，安装过程一样）
+3. 改DVMT和 CFG Lock（见下文，必须做）
+4.   写入2021-08-12-XiaoXinAir14IML-3in1-installerV3.dmg [下载](https://pan.baidu.com/s/1bJoshSPtIPujapeKy1ONyA)(提取码：5fwr)
+5.   引导写入的镜像的第二个EFI分区，选择需要安装的系统即可。
 
 ## 建议
 
@@ -106,6 +104,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 ### YogaSMC `Experimental`
 * 正常的：风扇三种模式切换、麦克风静音、飞行模式、F10切换屏幕、触摸板开关有提示、键盘背光、Fn功能键切换
 * 不正常：摄像头有提示，但是关不掉、锁定功能用不了、Fn+Q不能修改、拔插电源会错误显示键盘背光、控制面板随机进不去、电池温度读不出来 
+* Monterey无法使用
 
 ### 触摸板
 如果触摸板(重建缓存触摸板仍不行，使用此方法)  
@@ -177,24 +176,25 @@ sudo kextcache -i /
 | ------------------ | ------------------------------ | ---- | ---- | ---- |
 | SSDT-SBUS-MCHC.aml | SBUS + MCHC                    |      | √    |      |
 | SSDT-EC-USBX.aml   | EC+USBX                        | √    |      |      |
-| SSDT-TPAD-Air14IML | I2C触摸板补丁(AIR14IML专用)    | √    |      |      |
-| SSDT-DMAC          | 仿冒 DMA 控制器                |      |      | √    |
-| SSDT-GPRW          | 防秒醒:0D / 6D 睡了即醒补丁    | √    |      |      |
-| SSDT-PMC           | PMC 设备                       |      | √    |      |
-| SSDT-HPTE          | 屏蔽 HPET 补丁                 |      |      | √    |
-| SSDT-PNLFCFL       | Coffee Lake 亮度控制补丁       | √    |      |      |
-| SSDT-PR00          | (X86)CPU电源管理补丁(开启XCPM) | √    |      |      |
-| SSDT-RMCF-Air14IML | PS2 按键映射补丁               | √    |      |      |
-| SSDT-UIAC          | 定制USB                        |      | √    |      |
-| SSDT-BATX-Air14IML | 电池附加信息                   |      |      | √    |
-| SSDT-AWAC          | “伪” RTC时钟                   |      | √    |      |
-| SSDT-ECRW          | yogaSMC的EC访问补丁            |      |      | √    |
+| SSDT-TPAD-Air14IML | I2C触摸板补丁(AIR14IML专用)      | √    |      |      |
+| SSDT-DMAC          | 仿冒 DMA 控制器                  |      |      | √    |
+| SSDT-GPRW          | 防秒醒:0D / 6D 睡了即醒补丁       | √    |      |      |
+| SSDT-PMC           | PMC 设备                        |      | √    |      |
+| SSDT-HPTE          | 屏蔽 HPET 补丁                  |      |      | √    |
+| SSDT-PNLFCFL       | Coffee Lake 亮度控制补丁         | √    |      |      |
+| SSDT-PR00          | (X86)CPU电源管理补丁(开启XCPM)    | √    |      |      |
+| SSDT-RMCF-Air14IML | PS2 按键映射补丁                 | √    |      |      |
+| SSDT-UIAC          | 定制USB                         |      | √    |      |
+| SSDT-BATX-Air14IML | 电池附加信息                     |      |      | √    |
+| SSDT-AWAC          | “伪” RTC时钟                    |      | √    |      |
+| SSDT-ECRW          | yogaSMC的EC访问补丁              |      |      | √    |
 
 ## KEXT
 | KEXT                        | 说明                  | 必备 | 可选 |
 | --------------------------- | --------------------- | ---- | ---- |
 | AirportBrcmFixup.kext       | dw1820_Wifi           |      | √    |
 | AppleALC.kext               | HDMI以及声卡           | √    |      |
+| BluetoolFixup.kext          | 修复Monterey 蓝牙       |     | √    |
 | BrcmBluetoothInjector.kext  | dw1820蓝牙            |      | √    |
 | BrcmFirmwareData.kext       | dw1820蓝牙            |      | √    |
 | BrcmPatchRAM3.kext          | dw1820蓝牙>=10.15     |      | √    |
@@ -206,6 +206,7 @@ sudo kextcache -i /
 | VoodooI2CHID.kext           | HID类型触摸板          | √    |      |
 | VoodooPS2Controller.kext    | 键盘驱动               | √    |      |
 | WhateverGreen.kext          | 核显驱动               | √    |      |
+| DebugEnhancer.kext          | 修复msgbuf卡EB         |      | √    |
 | IntelBluetoothFirmware.kext | AC9560蓝牙固件         |      | √    |
 | IntelBluetoothInjector.kext | AC9560蓝牙             |      | √    |
 | AirportItlwm-Sur.kext       | AC9560 Wi-Fi Big Sur  |      | √    |

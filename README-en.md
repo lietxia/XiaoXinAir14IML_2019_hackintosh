@@ -7,10 +7,10 @@ QQ group number：1032311345
 [中文](./README.md)  
 ENGLISH  
 
-|      Info       | Status |                    Details                     |
-| :-------------: | :----: | :--------------------------------------------: |
+|      Info        |  Status  |                    Details                     |
+| :--------------: | :------: | :--------------------------------------------: |
 | Computer model💻 |   ✅    |         Lenovo XiaoXin Air14 IML 2019          |
-|     System🌌     |   ✅    |         Catalina/Big Sur/Monterey Beta          |
+|     System🌌     |   ✅    |         Catalina/Big Sur/Monterey Beta         |
 |      CPU🎛️       |   ✅    |        Intel Core i5-10210U / i7-10510U        |
 |  Motherboard🎛️   |   ✅    |               Lenovo LNVNB161216               |
 |  Fingerprint🖐️   |   ⛔    |         Fingerprint is unable to work          |
@@ -29,7 +29,7 @@ ENGLISH
 |     Sleep😴      |   ✅    |             Support native sleep.              |
 
 ## Current Status：
-* System🌌：recommend macOS 10.15.7. It is system lower 10.15 that the trackpad won‘t work. System lower 10.15.4 may lag while startup
+* System🌌：Catalina 10.15.7 / Big Sur 11.5.2 / Monterey beta 5 ( Not recommended to use Monterey )
 * Disks🖴：If you are using Samsung PM981A, please consider to change. Or install by this way: http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
@@ -92,11 +92,9 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 1. If you are using OpenCore, Please use BIOS except for 1.0.2  (1.0.2 you need to turn off the Hyper-Threading to use OC.)
 2. Change BIOS settings
       * https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
-3. Completely follow the method of Lenovo Xiaoxin Pro 13 to install.
-      * https://blog.daliansky.net/Lenovo-Xiaoxin-PRO-13-2019-and-macOS-Catalina-Installation-Tutorial.html
-      * https://www.bilibili.com/video/BV1A54y1X78F
-4. Change DVMT and CFG Lock.
-5. Change your EFI. (You can change before installation.)
+3. Change DVMT and CFG Lock.
+4. Flash 2021-08-12-XiaoXinAir14IML-3in1-installerV3.dmg [Download here](https://pan.baidu.com/s/1bJoshSPtIPujapeKy1ONyA)(Password:5fwr)  
+5. Boot the Second EFI partition and choose the system you want to install.
 
 ## Advice
 * [Prevent intermittent hackintosh disconnections Thanks @Unstoppablesss] Modify System Preferences/Eneragy Saver/Power Adapter/Put hard disk to sleep when possible(modify to off)  
@@ -199,31 +197,33 @@ Consultation got the answer: win restart is warm boot, will skip hardware detect
 | SSDT-ECRW          | YogaSMC EC accessibility               |           |             | √        |
 
 ## Kexts
-| Kexts                       | Info                  | Necessary | Optional |
-| --------------------------- | --------------------- | --------- | -------- |
-| AirportBrcmFixup.kext       | DW1820A Wi-Fi         |           | √        |
-| AppleALC.kext               | HDMI & Audio          | √         |          |
-| BrcmBluetoothInjector.kext  | DW1820A bluetooth     |           | √        |
-| BrcmFirmwareData.kext       | DW1820A bluetooth     |           | √        |
-| BrcmPatchRAM3.kext          | DW1820A bluetooth     |           | √        |
-| Lilu.kext                   | Kernel extension      | √         |          |
-| SMCBatteryManager.kext      | SMC battery           | √         |          |
-| SMCProcessor.kext           | SMC-processor         | √         |          |
-| VirtualSMC.kext             | SMC(important)        | √         |          |
-| VoodooI2C.kext              | Trackpad core         | √         |          |
-| VoodooI2CHID.kext           | HID trackpad          | √         |          |
-| VoodooPS2Controller.kext    | Keyboard driver       | √         |          |
-| WhateverGreen.kext          | IGPU driver           | √         |          |
-| IntelBluetoothFirmware.kext | AC9560 Bluetooth      |           | √        |
-| IntelBluetoothInjector.kext | AC9560 Bluetooth      |           | √        |
-| AirportItlwm-Sur.kext       | AC9560 Wi-Fi Big Sur  |           | √        |
-| AirportItlwm-Cata.kext      | AC9560 Wi-Fi Catalina |           | √        |
-| AirportItlwm-Monterey.kext  | AC9560 Wi-Fi Monterey |           | √        |
-| YogaSMC.kext                | YogaSMC               |           | √        |
-| YogaSMCAlter.kext           | YogaSMC               |           | √        |
-| RestrictEvents.kext         | Shield system daemons |           | √        |
-| NVMeFix.kext                | improve nvme SSD      |           | √        |
-| VerbStub.kext               | Microphone            |           | √        |
+| Kexts                       | Info                   | Necessary | Optional |
+| --------------------------- | ---------------------- | --------- | -------- |
+| AirportBrcmFixup.kext       | DW1820A Wi-Fi          |           | √        |
+| AppleALC.kext               | HDMI & Audio           | √         |          |
+| BluetoolFixup.kext          | Fix Monterey Bluetooth |           | √        |
+| BrcmBluetoothInjector.kext  | DW1820A bluetooth      |           | √        |
+| BrcmFirmwareData.kext       | DW1820A bluetooth      |           | √        |
+| BrcmPatchRAM3.kext          | DW1820A bluetooth      |           | √        |
+| Lilu.kext                   | Kernel extension       | √         |          |
+| SMCBatteryManager.kext      | SMC battery            | √         |          |
+| SMCProcessor.kext           | SMC-processor          | √         |          |
+| VirtualSMC.kext             | SMC(important)         | √         |          |
+| VoodooI2C.kext              | Trackpad core          | √         |          |
+| VoodooI2CHID.kext           | HID trackpad           | √         |          |
+| VoodooPS2Controller.kext    | Keyboard driver        | √         |          |
+| WhateverGreen.kext          | IGPU driver            | √         |          |
+| DebugEnhancer.kext          | Fix msgbuf             |           | √        |
+| IntelBluetoothFirmware.kext | AC9560 Bluetooth       |           | √        |
+| IntelBluetoothInjector.kext | AC9560 Bluetooth       |           | √        |
+| AirportItlwm-Sur.kext       | AC9560 Wi-Fi Big Sur   |           | √        |
+| AirportItlwm-Cata.kext      | AC9560 Wi-Fi Catalina  |           | √        |
+| AirportItlwm-Monterey.kext  | AC9560 Wi-Fi Monterey  |           | √        |
+| YogaSMC.kext                | YogaSMC                |           | √        |
+| YogaSMCAlter.kext           | YogaSMC                |           | √        |
+| RestrictEvents.kext         | Shield system daemons  |           | √        |
+| NVMeFix.kext                | improve nvme SSD       |           | √        |
+| VerbStub.kext               | Microphone             |           | √        |
 
 ## Credits
 - [Acidanthera](https://github.com/acidanthera) for [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [other kexts](https://github.com/acidanthera).
