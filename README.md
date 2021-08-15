@@ -52,22 +52,22 @@ QQ群号：1032311345
 https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=78312
 <details>
 <summary>展开查看</summary>
-2021/07/23 BIOS Version: CKEC17WW https://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/83713/BIOS-CKCN17WW.exe <br />
+2021/07/23 BIOS Version: CKEC17WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/83713/BIOS-CKCN17WW.exe <br />
 2021/01/18 BIOS Version: CKCN16WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/78312/BIOS-CKCN16WW.exe <br />
-2020/07/24 BIOS Version: CKCN15WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/73409/BIOS-CKCN15WW.exe <br /> 
-2020/06/22 BIOS Version: CKCN14WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/72386/BIOS-CKCN14WW.exe <br />  
-2019/12/16 BIOS Version: CKCN12WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/67169/BIOS-CKCN12WW.exe <br />  
-2019/08/08 BIOS Version: CKCN11WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/60449/BIOS-CKCN11WW.exe <br />  
+2020/07/24 BIOS Version: CKCN15WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/73409/BIOS-CKCN15WW.exe <br />
+2020/06/22 BIOS Version: CKCN14WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/72386/BIOS-CKCN14WW.exe <br />
+2019/12/16 BIOS Version: CKCN12WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/67169/BIOS-CKCN12WW.exe <br />
+2019/08/08 BIOS Version: CKCN11WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/60449/BIOS-CKCN11WW.exe <br />
 </details>
 
 ## 微码
 https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 <details>
 <summary>展开查看</summary>
-2021/07/23 Version: CKME05WW https://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/83714/FW-CKME05WW.exe <br /> 
-2020/12/17 Version: CKME03WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/77695/FW-CKME03WW.exe <br /> 
+2021/07/23 Version: CKME05WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/83714/FW-CKME05WW.exe <br />
+2020/12/17 Version: CKME03WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/77695/FW-CKME03WW.exe <br />
 2020/06/23 Version: CKME02WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/72429/ME-CKME02WW.exe <br />
-2019/12/16 Version: CKME01WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/67174/FW-CKME01WW.exe <br /> 
+2019/12/16 Version: CKME01WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/67174/FW-CKME01WW.exe <br />
 </details>
 
 ## 更新小记
@@ -93,8 +93,8 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 1. 如果你使用openCore，BIOS请使用1.0.2之外的版本 （1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
 2. 改BIOS设置（推荐和必须的地方必须改） https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
 3. 改DVMT和 CFG Lock（见下文，必须做）
-4.   下载[balenaEtcher](https://www.balena.io/etcher/)，用它写入2021-08-12-XiaoXinAir14IML-3in1-installerV3.dmg [下载](https://pan.baidu.com/s/1bJoshSPtIPujapeKy1ONyA)(提取码：5fwr)
-5.   引导写入的镜像的第二个EFI分区，选择需要安装的系统即可。
+4. 下载[balenaEtcher](https://www.balena.io/etcher/)，用它写入[2021-08-12-XiaoXinAir14IML-3in1-installerV4.dmg](https://pan.baidu.com/s/1YcTgUlIYI2jj-saHEIeHJw)(提取码：8qnf)
+5. 引导写入的镜像的第二个EFI分区，选择需要安装的系统即可。
 
 ## 建议
 
