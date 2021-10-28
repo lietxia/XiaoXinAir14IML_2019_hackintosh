@@ -289,7 +289,7 @@
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>ProvideConsoleGop</key>
 		<true/>
@@ -403,33 +403,33 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>01/06/2021</string>
+		<string>09/05/2021</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP162.88Z.F000.B00.2101062056</string>
+		<string>MBP162.88Z.F000.B00.2109052209</string>
 		<key>Board-ID</key>
 		<string>Mac-5F9802EFE386AA28</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02052501CD0000FB</string>
+		<string>C020304014NP8PG1H</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
 		<string>MacBookPro16,2</string>
 		<key>ChassisAssetTag</key>
-		<string>Asset Tag#</string>
+		<string></string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x9</string>
 		<key>EfiVersion</key>
-		<string>1554.80.3.0.0</string>
+		<string>1715.40.12.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFDAFF066</string>
+		<string>0xFFAFF06E</string>
 		<key>FirmwareFeaturesMask</key>
 		<string>0xFFFFFF7F</string>
 		<key>LocationInChassis</key>
@@ -439,13 +439,13 @@
 		<key>Mobile</key>
 		<true/>
 		<key>PlatformFeature</key>
-		<string>0x32</string>
+		<string>0x3A</string>
 		<key>ProductName</key>
 		<string>MacBookPro16,2</string>
 		<key>SerialNumber</key>
-		<string>C02D507ZML7H</string>
+		<string>C02D40PUML7H</string>
 		<key>SmUUID</key>
-		<string>F500760C-7820-4101-887B-0C1DD1B4B62B</string>
+		<string>0C4C1AD5-806E-4FE5-AA70-A6C463EF2797</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

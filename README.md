@@ -71,6 +71,11 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
+* 2021-10-28 20:40
+    * 支持 macOS Monterey 12.0.1
+    * 更新opencore到0.7.5 
+    * 更新Clover到v5141 
+
 * 2021-08-09 22:20
     * 添加USB鼠标OC界面支持
     * 删除 CPUFriend， itlwm 和 USBPorts

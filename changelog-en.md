@@ -1,3 +1,8 @@
+* 2021-08-04 17:53
+    * Support for macOS Monterey 12.0.1 
+    * Opencore updated to 0.7.5
+    * Clover updated to v5141 
+
 * 2021-08-09 22:20
     * Add USB mouse support
     * Show pointer
