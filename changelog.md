@@ -1,3 +1,7 @@
+* 2021-11-09 23:00
+    * 支持 macOS Monterey 12.1
+    * 更新opencore到0.7.6 
+
 * 2021-10-28 20:40
     * 支持 macOS Monterey 12.0.1
     * 更新opencore到0.7.5 

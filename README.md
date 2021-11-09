@@ -29,7 +29,7 @@ QQ群号：1032311345
 |  睡眠😴  | ✅    |                支持原生休眠               |
 
 ## 目前状态：
-* 系统🌌：Catalina/BigSur/Monterey Beta。推荐Catalina 10.15.7/BigSur 11.5.2 （Monterey关机后键盘会失灵，需要关机状态下长按开机键10秒以上即可恢复）
+* 系统🌌：Catalina/BigSur/Monterey 12.1 Beta。推荐Catalina 10.15.7/BigSur 11.6 （Monterey关机后键盘会失灵，需要关机状态下长按开机键10秒以上即可恢复）
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。或者按此方法安装系统 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
@@ -71,6 +71,10 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
+* 2021-11-09 23:00
+    * 支持 macOS Monterey 12.1
+    * 更新opencore到0.7.6
+
 * 2021-10-28 20:40
     * 支持 macOS Monterey 12.0.1
     * 更新opencore到0.7.5 

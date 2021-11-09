@@ -1,3 +1,7 @@
+* 2021-11-09 23:00
+    * Support for macOS Monterey 12.1
+    * Opencore updated to 0.7.6
+
 * 2021-08-04 17:53
     * Support for macOS Monterey 12.0.1 
     * Opencore updated to 0.7.5

@@ -118,14 +118,6 @@
                     <key>Path</key>
                     <string>SSDT-ECRW.aml</string>
                 </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string>YogaSMC</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>SSDT-RCSM.aml</string>
-                </dict>
             </array>
             <key>Delete</key>
             <array/>
@@ -329,6 +321,10 @@
                     <data>AAgAAA==</data>
                     <key>framebuffer-patch-enable</key>
                     <data>AQAAAA==</data>
+                    <key>framebuffer-unifiedmem</key>
+                    <data>AAAAgA==</data>
+                    <key>model</key>
+                    <string>Intel UHD Graphics 620</string>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -344,29 +340,11 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.5.6 | Lilu</string>
+                    <string>V1.5.7 | Lilu</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/Lilu</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>BundlePath</key>
-                    <string>VirtualSMC.kext</string>
-                    <key>Comment</key>
-                    <string>V1.2.8 | SMC</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VirtualSMC</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -403,6 +381,24 @@
                     <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/YogaSMCAlter</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>VirtualSMC.kext</string>
+                    <key>Comment</key>
+                    <string>V1.2.8 | SMC</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/VirtualSMC</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -776,7 +772,7 @@
                     <key>BundlePath</key>
                     <string>BrcmBluetoothInjector.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.0 | DW1820A-Bluetooth</string>
+                    <string>V2.6.1 | DW1820A-Bluetooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -794,7 +790,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.0 | Bluetooth fix</string>
+                    <string>V2.6.1 | Bluetooth fix</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -812,7 +808,7 @@
                     <key>BundlePath</key>
                     <string>BrcmFirmwareData.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.0 | DW1820A-Bluetooth</string>
+                    <string>V2.6.1 | DW1820A-Bluetooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -830,7 +826,7 @@
                     <key>BundlePath</key>
                     <string>BrcmPatchRAM3.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.0 | DW1820A-Bluetooth</string>
+                    <string>V2.6.1 | DW1820A-Bluetooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -866,7 +862,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothInjector.kext</string>
                     <key>Comment</key>
-                    <string>V2.0.0 | IntelAC9560-BlueTooth</string>
+                    <string>V2.0.1 | IntelAC9560-BlueTooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -884,7 +880,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothFirmware.kext</string>
                     <key>Comment</key>
-                    <string>V2.0.0 | IntelAC9560-BlueTooth</string>
+                    <string>V2.0.1 | IntelAC9560-BlueTooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1311,13 +1307,6 @@
         <dict>
             <key>Add</key>
             <dict>
-                <key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
-                <dict>
-                    <key>DefaultBackgroundColor</key>
-                    <data>AAAAAA==</data>
-                    <key>UIScale</key>
-                    <data>AQ==</data>
-                </dict>
                 <key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
                 <dict>
                     <key>rtc-blacklist</key>
@@ -1647,6 +1636,8 @@
                 <false/>
                 <key>TextRenderer</key>
                 <string>BuiltinGraphics</string>
+                <key>UIScale</key>
+                <integer>1</integer>
                 <key>UgaPassThrough</key>
                 <false/>
             </dict>

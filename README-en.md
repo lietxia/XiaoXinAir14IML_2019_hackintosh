@@ -29,7 +29,7 @@ ENGLISH
 |     Sleep😴      |   ✅    |             Support native sleep.              |
 
 ## Current Status：
-* System🌌：Catalina 10.15.7 / Big Sur 11.5.2 / Monterey beta 5 ( Not recommended to use Monterey )
+* System🌌：Catalina 10.15.7 / Big Sur 11.6 / Monterey 12.1 beta ( Not recommended to use Monterey )
 * Disks🖴：If you are using Samsung PM981A, please consider to change. Or install by this way: http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
@@ -71,6 +71,10 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
+* 2021-11-09 23:00
+    * Support for macOS Monterey 12.1 
+    * Opencore updated to 0.7.6
+
 * 2021-08-04 17:53
     * Support for macOS Monterey 12.0.1 
     * Opencore updated to 0.7.5
