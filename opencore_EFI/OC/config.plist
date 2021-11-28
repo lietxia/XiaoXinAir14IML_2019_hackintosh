@@ -299,8 +299,6 @@
                 <dict>
                     <key>AAPL,ig-platform-id</key>
                     <data>AACbPg==</data>
-                    <key>AAPL,slot-name</key>
-                    <string>Internal@0,2,0</string>
                     <key>device-id</key>
                     <data>mz4AAA==</data>
                     <key>disable-external-gpu</key>
@@ -1626,6 +1624,8 @@
                 <false/>
                 <key>ProvideConsoleGop</key>
                 <true/>
+                <key>ReconnectGraphicsOnConnect</key>
+                <false/>
                 <key>ReconnectOnResChange</key>
                 <false/>
                 <key>ReplaceTabWithSpace</key>
