@@ -1,3 +1,9 @@
+* 2022-01-14 21:30
+    * 支持 macOS Monterey 12.2
+    * 更新opencore到0.7.7
+    * 更新itlwm
+    * 支持HEVC解码
+
 * 2021-11-09 23:00
     * 支持 macOS Monterey 12.1
     * 更新opencore到0.7.6 

@@ -1,3 +1,9 @@
+* 2022-01-14 21:30
+    * Support for macOS Monterey 12.2 
+    * Opencore updated to 0.7.7
+    * Update itlwm
+    * Enable HEVC decoding
+
 * 2021-11-09 23:00
     * Support for macOS Monterey 12.1
     * Opencore updated to 0.7.6

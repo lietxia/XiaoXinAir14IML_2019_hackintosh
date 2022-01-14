@@ -71,30 +71,11 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
-* 2021-11-09 23:00
-    * 支持 macOS Monterey 12.1
-    * 更新opencore到0.7.6
-
-* 2021-10-28 20:40
-    * 支持 macOS Monterey 12.0.1
-    * 更新opencore到0.7.5 
-    * 更新Clover到v5141 
-
-* 2021-08-09 22:20
-    * 添加USB鼠标OC界面支持
-    * 删除 CPUFriend， itlwm 和 USBPorts
-    * 修正 IntelBluetoothFirmware 的 MaxKernel 为 21.99.99
-    * 添加 DebugEnhancer
-    * 启用 Verbstub
-    * 更新 itlwm 驱动
-
-* 2021-08-07 07:44
-    * 修正`Ctrl`+`Enter`不能设置默认系统的问题
-
-* 2021-08-04 17:53
-    * 支持macOS 12 Monterey Beta 蓝牙可用✅（已知问题：关机或重启后键盘⌨️失灵）
-    * 更新opencore到0.7.2
-    * 更新Clover到v5138
+* 2022-01-14 21:30
+    * 支持 macOS Monterey 12.2
+    * 更新opencore到0.7.7
+    * 更新itlwm
+    * 支持HEVC解码
 
 * 历史修改记录见[changelog.md](changelog.md)
 
@@ -233,7 +214,7 @@ sudo kextcache -i /
 - [Acidanthera](https://github.com/acidanthera) 开发的 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 和 [其他驱动](https://github.com/acidanthera)
 - [Apple](https://www.apple.com) 开发的 [macOS](https://www.apple.com/macos)
 - [lietxia](https://github.com/lietxia) 维护EFI
-- [zxystd](https://github.com/zxystd) 开发的 [itlwm](https://github.com/OpenIntelWireless/zxystd)
+- [zxystd](https://github.com/zxystd) 开发的 [itlwm](https://github.com/OpenIntelWireless/itlwm)
 - [Bat.bat](https://github.com/williambj1) 开发的 [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) 和 [HeliPort](https://github.com/OpenIntelWireless/HeliPort)
 - [alexandred](https://github.com/alexandred) 开发的 [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C)
 - [athlonreg](https://github.com/athlonreg/) 开发的 [ALCPlugFix](https://github.com/athlonreg/AppleALC-ALCPlugFix) 来修复耳麦一体耳机的问题

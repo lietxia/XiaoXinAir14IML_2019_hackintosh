@@ -71,31 +71,11 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
-* 2021-11-09 23:00
-    * Support for macOS Monterey 12.1 
-    * Opencore updated to 0.7.6
-
-* 2021-08-04 17:53
-    * Support for macOS Monterey 12.0.1 
-    * Opencore updated to 0.7.5
-    * Clover updated to v5141 
-  
-* 2021-08-09 22:20
-    * Add USB mouse support
-    * Show pointer
-    * Delete CPUFriend, itlwm and USBPorts
-    * Change IntelBluetoothFirmware MaxKernel to 21.99.99
-    * Add DebugEnhancer.
-    * Enable Verbstub
-    * Update itlwm driver
-
-* 2021-08-07 07:44
-    * Fix `Ctrl`+`Enter` can't set the default system
-
-* 2021-08-04 17:53
-    * Support for macOS 12 Monterey Beta. Bluetooth✅（Known Issues:Keyboard malfunction after shutdown or reboot.）
-    * Opencore updated to 0.7.2
-    * Clover updated to v5138
+* 2022-01-14 21:30
+    * Support for macOS Monterey 12.2 
+    * Opencore updated to 0.7.7
+    * Update itlwm
+    * Enable HEVC decoding
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 
@@ -240,7 +220,7 @@ Consultation got the answer: win restart is warm boot, will skip hardware detect
 - [Acidanthera](https://github.com/acidanthera) for [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [other kexts](https://github.com/acidanthera).
 - [Apple](https://www.apple.com) for [macOS](https://www.apple.com/macos).
 - [lietxia](https://github.com/lietxia) for the whole EFI.
-- [zxystd](https://github.com/zxystd) for developing [itlwm](https://github.com/OpenIntelWireless/zxystd).
+- [zxystd](https://github.com/zxystd) for developing [itlwm](https://github.com/OpenIntelWireless/itlwm).
 - [Bat.bat](https://github.com/williambj1) for developing [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) and [HeliPort](https://github.com/OpenIntelWireless/HeliPort).
 - [alexandred](https://github.com/alexandred) for developing [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C).
 - [athlonreg](https://github.com/athlonreg/) for developing [ALCPlugFix](https://github.com/athlonreg/AppleALC-ALCPlugFix) to fix microphone switch issue.
