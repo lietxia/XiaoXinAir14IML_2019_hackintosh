@@ -84,7 +84,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 2. Change BIOS settings
       * https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
 3. Change DVMT and CFG Lock.
-4. Download [balenaEtcher](https://www.balena.io/etcher/), use it to flash [2021-08-12-XiaoXinAir14IML-3in1-installerV4.dmg](https://pan.baidu.com/s/1YcTgUlIYI2jj-saHEIeHJw)(Password：8qnf)  
+4. Download [balenaEtcher](https://www.balena.io/etcher/), use it to flash [2022-01-14-XiaoXinAir14IML-3in1-installerV6.dmg](https://pan.baidu.com/s/1pUuVZ_A3r1fxP_36RgR6oQ)(Password：gt57)  
 5. Boot the Second EFI partition and choose the system you want to install.
 
 ## Advice
