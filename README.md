@@ -10,7 +10,7 @@ QQ群号：1032311345
 |   规格   | 状态  |                   详细信息                 |
 | :-----: | ---- | :---------------------------------------: |
 |  型号💻  | ✅    |      Lenovo XiaoXin Air14 IML 2019      |
-|  系统🌌  | ✅    |      Catalina/Big Sur/Monterey Beta     |
+|  系统🌌  | ✅    |      Catalina/Big Sur/Monterey          |
 |  CPU🎛️   | ✅    |    Intel Core i5-10210U / i7-10510U    |
 |  主板🎛️  | ✅    |           Lenovo LNVNB161216            |
 |  指纹🖐️  | ⛔    |               指纹无法工作                |
@@ -71,11 +71,11 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
-* 2022-01-14 21:30
-    * 支持 macOS Monterey 12.2
-    * 更新opencore到0.7.7
-    * 更新itlwm
-    * 支持HEVC解码
+* 2022-03-19 10:30
+    * 支持macOS Monterey 12.3 
+    * Opencore 更新至0.7.8
+    * 更新 kexts
+    * 允许 GPU 在1.15GHz下满载
 
 * 历史修改记录见[changelog.md](changelog.md)
 

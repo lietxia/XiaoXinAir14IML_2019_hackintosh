@@ -1,3 +1,9 @@
+* 2022-03-19 10:30
+    * Support for macOS Monterey 12.3 
+    * Opencore updated to 0.7.8
+    * Update kexts
+    * Allow GPU to run at 1.15GHz
+
 * 2022-01-14 21:30
     * Support for macOS Monterey 12.2 
     * Opencore updated to 0.7.7

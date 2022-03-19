@@ -1,3 +1,9 @@
+* 2022-03-19 10:30
+    * 支持macOS Monterey 12.3 
+    * Opencore 更新至0.7.8
+    * 更新 kexts
+    * 允许 GPU 在1.15GHz下满载
+
 * 2022-01-14 21:30
     * 支持 macOS Monterey 12.2
     * 更新opencore到0.7.7

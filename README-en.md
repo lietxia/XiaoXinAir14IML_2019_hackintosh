@@ -10,7 +10,7 @@ ENGLISH
 |      Info        |  Status  |                    Details                     |
 | :--------------: | :------: | :--------------------------------------------: |
 | Computer model💻 |   ✅    |         Lenovo XiaoXin Air14 IML 2019          |
-|     System🌌     |   ✅    |         Catalina/Big Sur/Monterey Beta         |
+|     System🌌     |   ✅    |         Catalina/Big Sur/Monterey              |
 |      CPU🎛️       |   ✅    |        Intel Core i5-10210U / i7-10510U        |
 |  Motherboard🎛️   |   ✅    |               Lenovo LNVNB161216               |
 |  Fingerprint🖐️   |   ⛔    |         Fingerprint is unable to work          |
@@ -71,11 +71,11 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
-* 2022-01-14 21:30
-    * Support for macOS Monterey 12.2 
-    * Opencore updated to 0.7.7
-    * Update itlwm
-    * Enable HEVC decoding
+* 2022-03-19 10:30
+    * Support for macOS Monterey 12.3 
+    * Opencore updated to 0.7.8
+    * Update kexts
+    * Allow GPU to run at 1.15GHz
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 
