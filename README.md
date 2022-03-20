@@ -28,7 +28,8 @@ QQ群号：1032311345
 | 摄像头🎦 | ✅    |           USB摄像头还是很好驱动的          |
 |  睡眠😴  | ✅    |                支持原生休眠               |
 ```
-解决Monterey重启时，键盘失灵 BIOS -> BOOT
+解决Monterey重启时，键盘失灵：
+按F2进入BIOS -> BOOT
 boot mode = leguacy support
 boot priority = Leguacy First
 ```
