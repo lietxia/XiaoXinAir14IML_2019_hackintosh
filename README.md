@@ -28,12 +28,12 @@ QQ群号：1032311345
 | 摄像头🎦 | ✅    |           USB摄像头还是很好驱动的          |
 |  睡眠😴  | ✅    |                支持原生休眠               |
 ```
-解决键盘失灵 BIOS -> BOOT
+解决Monterey重启时，键盘失灵 BIOS -> BOOT
 boot mode = leguacy support
 boot priority = Leguacy First
 ```
 ## 目前状态：
-* 系统🌌：Catalina/BigSur/Monterey 12.1 Beta。推荐Catalina 10.15.7/BigSur 11.6 （Monterey关机后键盘会失灵，需要关机状态下长按开机键10秒以上即可恢复）
+* 系统🌌：Catalina/BigSur/Monterey 12.3。推荐Catalina 10.15.7/BigSur 11.6 （Monterey关机后键盘会失灵，需要关机状态下长按开机键10秒以上即可恢复）
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。或者按此方法安装系统 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
