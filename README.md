@@ -34,7 +34,7 @@ boot mode = leguacy support
 boot priority = Leguacy First
 ```
 ## 目前状态：
-* 系统🌌：Catalina/BigSur/Monterey 12.3。推荐Catalina 10.15.7/BigSur 11.6 （Monterey关机后键盘会失灵，需要关机状态下长按开机键10秒以上即可恢复）
+* 系统🌌：Catalina/BigSur/Monterey 12.3。推荐Catalina 10.15.7/BigSur 11.6 （不推荐使用Monterey）
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。或者按此方法安装系统 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
@@ -85,23 +85,21 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 * 历史修改记录见[changelog.md](changelog.md)
 
 ## 安装方法
-1. 如果你使用openCore，BIOS请使用1.0.2之外的版本 （1.0.2需要关掉超线程才能使用oc，BIOS 1.0.1/1.0.4/1.0.5都没问题）
+1. 如果你使用openCore，BIOS请使用1.0.2之外的版本 （1.0.2需要关掉超线程才能使用oc）
 2. 改BIOS设置（推荐和必须的地方必须改） https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
 3. 改DVMT和 CFG Lock（见下文，必须做）
 4. 下载[balenaEtcher](https://www.balena.io/etcher/)，用它写入[2022-01-14-XiaoXinAir14IML-3in1-installerV6.dmg](https://pan.baidu.com/s/1pUuVZ_A3r1fxP_36RgR6oQ)(提取码：gt57)
 5. 引导写入的镜像的第二个EFI分区，选择需要安装的系统即可。
 
-## 建议
-
-> XiaoXin AIR14-2019 i5-10210u QQ群号: 1032311345  
-> 【防止黑苹果间歇性断网-解决方案 感谢@Unstoppablesss】修改 系统偏好设置/节能/电源适配器/如果可能，使硬盘进入睡眠（修改为off）  
-> 如果硬盘进入休眠，保持wifi运转的EFI文件将停止工作
+## 建议  
+* 【防止黑苹果间歇性断网-解决方案 感谢@Unstoppablesss】修改 系统偏好设置/节能/电源适配器/如果可能，使硬盘进入睡眠（修改为off） 如果硬盘进入休眠，保持wifi运转的EFI文件将停止工作
 * 因目前休眠无法正常唤醒 , 为避免影响到睡眠 , 终端使用命令关闭休眠 `sudo pmset -a hibernatemode 0`
+
+> XiaoXin AIR14-2019 i5-10210u QQ群号: 1032311345
 
 ### YogaSMC `Experimental`
 * 正常的：风扇三种模式切换、麦克风静音、飞行模式、F10切换屏幕、触摸板开关有提示、键盘背光、Fn功能键切换
-* 不正常：摄像头有提示，但是关不掉、锁定功能用不了、Fn+Q不能修改、拔插电源会错误显示键盘背光、控制面板随机进不去、电池温度读不出来 
-* Monterey无法使用
+* 不正常：摄像头有提示，但是关不掉、锁定功能用不了、Fn+Q不能修改、拔插电源会错误显示键盘背光、电池温度读不出来 
 
 ### 触摸板
 如果触摸板(重建缓存触摸板仍不行，使用此方法)  
@@ -148,16 +146,6 @@ BIOS里的 `onekeybattery` 需要关闭，才能进隐藏BIOS
 * 区域（area） : `CpuSetup`
 * 偏移（offset） : `0x3E`
 * `01` to `00`
-
-### 触摸板挂了
-~~升级系统之类或其他触摸板挂掉的情况, ~~
-~~需要重建缓存 , 使触摸板正常工作 , 终端执行以下命令之后重启~~
-
-```
-sudo mount -uw /
-killall Finder
-sudo kextcache -i /
-```
 
 ### 声卡挂了 
 从win直接重启切换到mac,会导致声卡挂掉,这时候需要关机,再开机,声卡就恢复了  

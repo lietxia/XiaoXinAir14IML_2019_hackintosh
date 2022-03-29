@@ -27,9 +27,14 @@ ENGLISH
 |      HDMI📺      |   ✅    |    able to output 4k@30fps, same as windows    |
 |     Camera🎦     |   ✅    |      it's pretty easy to drive USB camera      |
 |     Sleep😴      |   ✅    |             Support native sleep.              |
-
+```
+A way to solve keyboard broken when reboot from macOS Monterey:
+Press F2 to enter BIOS -> BOOT
+boot mode = leguacy support
+boot priority = Leguacy First
+```
 ## Current Status：
-* System🌌：Catalina 10.15.7 / Big Sur 11.6 / Monterey 12.1 beta ( Not recommended to use Monterey )
+* System🌌：Catalina 10.15.7 / Big Sur 11.6 / Monterey 12.3 ( Not recommended to use Monterey )
 * Disks🖴：If you are using Samsung PM981A, please consider to change. Or install by this way: http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
@@ -95,7 +100,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 
 ### YogaSMC： `Experimental`
 * Normal: Fan three modes switch, microphone mute, flight mode, F10 switch screen, touchpad switch hint, keyboard backlight, Fn function key switch.
-* Abnormal: the camera has a hint, but it can't be turned off, the lock function can't be used, FN + Q can't work, the keyboard backlight will be displayed incorrectly when the power is plugged in, the control panel can't be entered randomly, and the battery temperature can't be read out.
+* Abnormal: the camera has a hint, but it can't be turned off, the lock function can't be used, FN + Q can't work, the keyboard backlight will be displayed incorrectly when the power is plugged in, and the battery temperature can't be read out.
 
 ### Trackpad
 Use this way if rebuilding the cache touchpad still does not work:
@@ -145,17 +150,6 @@ Refer to https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/DVMT
 * Area : `CpuSetup`  
 * Offset : `0x3E`  
 * `01` to `00`
-
-### Trackpad not working.
-~~Upgrading the system cause trackpad failures.~~  
-~~The cache needs to be rebuilt to make the trackpad work normally. ~~  
-~~Restart after running following commands.~~
-
-```
-sudo mount -uw /
-killall Finder
-sudo kextcache -i /
-```
 
 ### The audio card isn't working.
 Switching from win to mac will cause the audio card fail to syart. At this time, you need to turn it off and turn it on again, and the audio card will recover  
