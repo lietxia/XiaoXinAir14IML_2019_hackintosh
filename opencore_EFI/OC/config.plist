@@ -358,7 +358,7 @@
                     <key>Comment</key>
                     <string>V1.5.1 | YogaSMC</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/YogaSMC</string>
                     <key>MaxKernel</key>
@@ -376,7 +376,7 @@
                     <key>Comment</key>
                     <string>V1.5.1 | YogaSMC</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/YogaSMCAlter</string>
                     <key>MaxKernel</key>
@@ -794,7 +794,7 @@
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BlueToolFixup</string>
                     <key>MaxKernel</key>
-                    <string>21.99.99</string>
+                    <string>22.99.99</string>
                     <key>MinKernel</key>
                     <string>21.0</string>
                     <key>PlistPath</key>
@@ -884,7 +884,7 @@
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/IntelBluetoothFirmware</string>
                     <key>MaxKernel</key>
-                    <string>21.99.99</string>
+                    <string>22.99.99</string>
                     <key>MinKernel</key>
                     <string>16.0</string>
                     <key>PlistPath</key>
@@ -938,7 +938,7 @@
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/AirportItlwm</string>
                     <key>MaxKernel</key>
-                    <string>21.99.99</string>
+                    <string>22.99.99</string>
                     <key>MinKernel</key>
                     <string>21.0</string>
                     <key>PlistPath</key>
@@ -1086,6 +1086,8 @@
                 <false/>
                 <key>AppleXcpmForceBoost</key>
                 <false/>
+                <key>CustomPciSerialDevice</key>
+                <false/>
                 <key>CustomSMBIOSGuid</key>
                 <true/>
                 <key>DisableIoMapper</key>
@@ -1097,6 +1099,8 @@
                 <key>ExtendBTFeatureFlags</key>
                 <false/>
                 <key>ExternalDiskIcons</key>
+                <false/>
+                <key>ForceAquantiaEthernet</key>
                 <false/>
                 <key>ForceSecureBootScheme</key>
                 <false/>
@@ -1176,8 +1180,8 @@
                 <integer>0</integer>
                 <key>DisplayLevel</key>
                 <integer>0</integer>
-                <key>SerialInit</key>
-                <false/>
+                <key>LogModules</key>
+                <string></string>
                 <key>SysReport</key>
                 <false/>
                 <key>Target</key>
@@ -1206,11 +1210,7 @@
             </array>
             <key>Security</key>
             <dict>
-                <key>AllowNvramReset</key>
-                <true/>
                 <key>AllowSetDefault</key>
-                <true/>
-                <key>AllowToggleSip</key>
                 <true/>
                 <key>ApECID</key>
                 <integer>0</integer>
@@ -1236,6 +1236,13 @@
                 <string>j214k</string>
                 <key>Vault</key>
                 <string>Optional</string>
+            </dict>
+            <key>Serial</key>
+            <dict>
+                <key>Init</key>
+                <false/>
+                <key>Override</key>
+                <false/>
             </dict>
             <key>Tools</key>
             <array>
@@ -1315,7 +1322,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>alcid=15 brcmfx-country=#a brcmfx-aspm igfxrpsc=1</string>
+                    <string>alcid=15 brcmfx-country=#a brcmfx-aspm igfxrpsc=1 -lilubetall</string>
                     <key>csr-active-config</key>
                     <data>5wMAAA==</data>
                     <key>prev-lang:kbd</key>
