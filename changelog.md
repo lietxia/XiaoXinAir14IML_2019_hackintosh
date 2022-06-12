@@ -1,3 +1,7 @@
+* 2022-06-12 20:30
+    * 打开 AvoidRuntimeDefrag
+    * Opencore 更新到 0.8.2 开发版
+    * 更新驱动
 * 2022-06-12 13:10
     * 支持macOS Ventura.
     * Opencore 更新到 0.8.1

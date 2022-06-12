@@ -76,11 +76,10 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
-* 2022-06-12 13:10
-    * Support for macOS Ventura.
-    * Opencore updated to 0.8.1
+* 2022-06-12 20:30
+    * Reopen AvoidRuntimeDefrag
+    * Opencore updated to 0.8.2dev
     * Update kexts
-    * Change GPU model to UHD 630
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 

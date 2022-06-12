@@ -1,3 +1,8 @@
+* 2022-06-12 20:30
+    * Reopen AvoidRuntimeDefrag
+    * Opencore updated to 0.8.2dev
+    * Update kexts
+
 * 2022-06-12 13:10
     * Support for macOS Ventura.
     * Opencore updated to 0.8.1

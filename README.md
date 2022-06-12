@@ -76,11 +76,10 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
-* 2022-06-12 13:10
-    * 支持macOS Ventura.
-    * Opencore 更新到 0.8.1
+* 2022-06-12 20:30
+    * 打开 AvoidRuntimeDefrag
+    * Opencore 更新到 0.8.2 开发版
     * 更新驱动
-    * 修改 GPU 型号为 UHD 630
 
 * 历史修改记录见[changelog.md](changelog.md)
 
