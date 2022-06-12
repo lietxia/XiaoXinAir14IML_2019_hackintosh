@@ -203,24 +203,7 @@
         <key>Booter</key>
         <dict>
             <key>MmioWhitelist</key>
-            <array>
-                <dict>
-                    <key>Address</key>
-                    <integer>4275159040</integer>
-                    <key>Comment</key>
-                    <string>Haswell: SB_RCBA is a 0x4 page memory region, containing SPI_BASE at 0x3800 (SPI_BASE_ADDRESS)</string>
-                    <key>Enabled</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Address</key>
-                    <integer>4278190080</integer>
-                    <key>Comment</key>
-                    <string>Generic: PCI root is a 0x1000 page memory region used by some firmwares</string>
-                    <key>Enabled</key>
-                    <false/>
-                </dict>
-            </array>
+            <array/>
             <key>Patch</key>
             <array/>
             <key>Quirks</key>
@@ -228,7 +211,7 @@
                 <key>AllowRelocationBlock</key>
                 <false/>
                 <key>AvoidRuntimeDefrag</key>
-                <true/>
+                <false/>
                 <key>DevirtualiseMmio</key>
                 <false/>
                 <key>DisableSingleUser</key>
@@ -238,7 +221,7 @@
                 <key>DiscardHibernateMap</key>
                 <false/>
                 <key>EnableSafeModeSlide</key>
-                <false/>
+                <true/>
                 <key>EnableWriteUnprotector</key>
                 <true/>
                 <key>ForceBooterSignature</key>
@@ -322,7 +305,7 @@
                     <key>framebuffer-unifiedmem</key>
                     <data>AAAAgA==</data>
                     <key>model</key>
-                    <string>Intel UHD Graphics 620</string>
+                    <string>Intel UHD Graphics 630</string>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -770,7 +753,7 @@
                     <key>BundlePath</key>
                     <string>BrcmBluetoothInjector.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.1 | DW1820A-Bluetooth</string>
+                    <string>V2.6.3 | DW1820A-Bluetooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -788,7 +771,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.1 | Bluetooth fix</string>
+                    <string>V2.6.3 | Bluetooth fix</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -806,7 +789,7 @@
                     <key>BundlePath</key>
                     <string>BrcmFirmwareData.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.1 | DW1820A-Bluetooth</string>
+                    <string>V2.6.3 | DW1820A-Bluetooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -824,7 +807,7 @@
                     <key>BundlePath</key>
                     <string>BrcmPatchRAM3.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.1 | DW1820A-Bluetooth</string>
+                    <string>V2.6.3 | DW1820A-Bluetooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -944,6 +927,24 @@
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>AirportItlwm-Ventura.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0 | IntelAC9560-WiFi</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
             </array>
             <key>Block</key>
             <array/>
@@ -961,90 +962,9 @@
                 <string></string>
             </dict>
             <key>Force</key>
-            <array>
-                <dict>
-                    <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>BundlePath</key>
-                    <string>IO80211Family.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IO80211Family</string>
-                    <key>Identifier</key>
-                    <string>com.apple.iokit.IO80211Family</string>
-                    <key>MaxKernel</key>
-                    <string>19.99.99</string>
-                    <key>MinKernel</key>
-                    <string>19.0</string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-            </array>
+            <array/>
             <key>Patch</key>
             <array>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>Base</key>
-                    <string></string>
-                    <key>Comment</key>
-                    <string>DVMTpatch-10.15-10.15.1-10.15.2-10.15.3</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Find</key>
-                    <data>D4KnAwAA</data>
-                    <key>Identifier</key>
-                    <string>com.apple.driver.AppleIntelCFLGraphicsFramebuffer</string>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>MaxKernel</key>
-                    <string>19.3.0</string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>Replace</key>
-                    <data>D4IAAAAA</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>Base</key>
-                    <string></string>
-                    <key>Comment</key>
-                    <string>DVMTpatch-10.15.4</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Find</key>
-                    <data>D4KPAwAA</data>
-                    <key>Identifier</key>
-                    <string>com.apple.driver.AppleIntelCFLGraphicsFramebuffer</string>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string>19.4.0</string>
-                    <key>Replace</key>
-                    <data>D4IAAAAA</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                </dict>
                 <dict>
                     <key>Arch</key>
                     <string>Any</string>
@@ -1188,26 +1108,7 @@
                 <integer>3</integer>
             </dict>
             <key>Entries</key>
-            <array>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <false/>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>Name</key>
-                    <string>Win10</string>
-                    <key>Path</key>
-                    <string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,00-00-00-00-00-00-00-00)/HD(1,GPT,E6FE5038-05A6-4011-BA57-BEA90D1603A5,0x800,0x1BC800)/\EFI\BOOT\BOOTX64.EFI</string>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-            </array>
+            <array/>
             <key>Security</key>
             <dict>
                 <key>AllowSetDefault</key>
@@ -1274,7 +1175,7 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
                     <key>Name</key>
@@ -1294,7 +1195,7 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
                     <key>Name</key>
@@ -1322,7 +1223,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>alcid=15 brcmfx-country=#a brcmfx-aspm igfxrpsc=1 -lilubetall</string>
+                    <string>alcid=15 brcmfx-country=#a brcmfx-aspm igfxrpsc=1 -lilubetall vm_compressor=2</string>
                     <key>csr-active-config</key>
                     <data>5wMAAA==</data>
                     <key>prev-lang:kbd</key>
@@ -1333,11 +1234,6 @@
             </dict>
             <key>Delete</key>
             <dict>
-                <key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
-                <array>
-                    <string>DefaultBackgroundColor</string>
-                    <string>UIScale</string>
-                </array>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <array>
                     <string>boot-args</string>
@@ -1729,32 +1625,7 @@
                 <false/>
             </dict>
             <key>ReservedMemory</key>
-            <array>
-                <dict>
-                    <key>Address</key>
-                    <integer>268435456</integer>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Size</key>
-                    <integer>268435456</integer>
-                    <key>Type</key>
-                    <string>Reserved</string>
-                </dict>
-                <dict>
-                    <key>Address</key>
-                    <integer>569344</integer>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Size</key>
-                    <integer>4096</integer>
-                    <key>Type</key>
-                    <string>RuntimeCode</string>
-                </dict>
-            </array>
+            <array/>
         </dict>
     </dict>
 </plist>
