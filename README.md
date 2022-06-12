@@ -10,7 +10,7 @@ QQ群号：1032311345
 |   规格   | 状态  |                   详细信息                 |
 | :-----: | ---- | :---------------------------------------: |
 |  型号💻  | ✅    |      Lenovo XiaoXin Air14 IML 2019      |
-|  系统🌌  | ✅    |      Catalina/Big Sur/Monterey          |
+|  系统🌌  | ✅    |   Catalina/Big Sur/Monterey/Ventura     |
 |  CPU🎛️   | ✅    |    Intel Core i5-10210U / i7-10510U    |
 |  主板🎛️  | ✅    |           Lenovo LNVNB161216            |
 |  指纹🖐️  | ⛔    |               指纹无法工作                |
@@ -34,7 +34,7 @@ boot mode = leguacy support
 boot priority = Leguacy First
 ```
 ## 目前状态：
-* 系统🌌：Catalina/BigSur/Monterey 12.3。推荐Catalina 10.15.7/BigSur 11.6 （不推荐使用Monterey）
+* 系统🌌：Catalina/BigSur/Monterey/Ventura。推荐Catalina 10.15.7/BigSur 11.6.5 （不推荐使用Monterey/Ventura）
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。或者按此方法安装系统 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
@@ -76,11 +76,11 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
-* 2022-03-19 10:30
-    * 支持macOS Monterey 12.3 
-    * Opencore 更新至0.7.8
-    * 更新 kexts
-    * 允许 GPU 在1.15GHz下满载
+* 2022-06-12 13:10
+    * 支持macOS Ventura.
+    * Opencore 更新到 0.8.1
+    * 更新驱动
+    * 修改 GPU 型号为 UHD 630
 
 * 历史修改记录见[changelog.md](changelog.md)
 

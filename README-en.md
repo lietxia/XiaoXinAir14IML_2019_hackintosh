@@ -10,7 +10,7 @@ ENGLISH
 |      Info        |  Status  |                    Details                     |
 | :--------------: | :------: | :--------------------------------------------: |
 | Computer model💻 |   ✅    |         Lenovo XiaoXin Air14 IML 2019          |
-|     System🌌     |   ✅    |         Catalina/Big Sur/Monterey              |
+|     System🌌     |   ✅    |         Catalina/Big Sur/Monterey/Ventura      |
 |      CPU🎛️       |   ✅    |        Intel Core i5-10210U / i7-10510U        |
 |  Motherboard🎛️   |   ✅    |               Lenovo LNVNB161216               |
 |  Fingerprint🖐️   |   ⛔    |         Fingerprint is unable to work          |
@@ -34,7 +34,7 @@ boot mode = leguacy support
 boot priority = Leguacy First
 ```
 ## Current Status：
-* System🌌：Catalina 10.15.7 / Big Sur 11.6 / Monterey 12.3 ( Not recommended to use Monterey )
+* System🌌：Catalina 10.15.7 / Big Sur 11.6 / Monterey 12.5 / Ventura 13.0 ( Not recommended to use Monterey / Ventura )
 * Disks🖴：If you are using Samsung PM981A, please consider to change. Or install by this way: http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
@@ -76,11 +76,11 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
-* 2022-03-19 10:30
-    * Support for macOS Monterey 12.3 
-    * Opencore updated to 0.7.8
+* 2022-06-12 13:10
+    * Support for macOS Ventura.
+    * Opencore updated to 0.8.1
     * Update kexts
-    * Allow GPU to run at 1.15GHz
+    * Change GPU model to UHD 630
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 

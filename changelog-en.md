@@ -1,3 +1,9 @@
+* 2022-06-12 13:10
+    * Support for macOS Ventura.
+    * Opencore updated to 0.8.1
+    * Update kexts
+    * Change GPU model to UHD 630
+
 * 2022-03-19 10:30
     * Support for macOS Monterey 12.3 
     * Opencore updated to 0.7.8

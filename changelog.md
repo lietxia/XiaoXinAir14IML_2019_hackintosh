@@ -1,3 +1,9 @@
+* 2022-06-12 13:10
+    * 支持macOS Ventura.
+    * Opencore 更新到 0.8.1
+    * 更新驱动
+    * 修改 GPU 型号为 UHD 630
+
 * 2022-03-19 10:30
     * 支持macOS Monterey 12.3 
     * Opencore 更新至0.7.8
