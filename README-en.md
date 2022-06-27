@@ -1,5 +1,5 @@
 # Lenovo XiaoXin Air-14 2019IML
-![air14iml-sur](img/air14iml-mon.jpg)
+![air14iml-ven](img/air14iml-ven.png)
 Screenshot app:/capXDR 
 Model：Lenovo-Air14IML (made by lietxia)  
 QQ group number：1032311345
