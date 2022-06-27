@@ -35,7 +35,7 @@ boot priority = Leguacy First
 ```
 ## 目前状态：
 * 系统🌌：Catalina/BigSur/Monterey/Ventura。推荐Catalina 10.15.7/BigSur 11.6.5 （不推荐使用Monterey/Ventura）
-* 硬盘：如果你硬盘是三星PM981A，建议换掉。或者按此方法安装系统 http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
+* 硬盘：如果你硬盘是三星PM981A，建议换掉。
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
 ## 相关机型
@@ -83,7 +83,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 
 * 历史修改记录见[changelog.md](changelog.md)
 
-## 安装方法
+## [安装方法](https://www.bilibili.com/video/BV1C64y1q7r1/)
 1. 如果你使用openCore，BIOS请使用1.0.2之外的版本 （1.0.2需要关掉超线程才能使用oc）
 2. 改BIOS设置（推荐和必须的地方必须改） https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
 3. 改DVMT和 CFG Lock（见下文，必须做）

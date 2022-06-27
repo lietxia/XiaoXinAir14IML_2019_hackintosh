@@ -35,7 +35,7 @@ boot priority = Leguacy First
 ```
 ## Current Status：
 * System🌌：Catalina 10.15.7 / Big Sur 11.6 / Monterey 12.5 / Ventura 13.0 ( Not recommended to use Monterey / Ventura )
-* Disks🖴：If you are using Samsung PM981A, please consider to change. Or install by this way: http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1867021
+* Disks🖴：If you are using Samsung PM981A, please consider to change.
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
 ## Related model
@@ -83,7 +83,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 
-## Installation
+## [Installation](https://www.bilibili.com/video/BV1C64y1q7r1/)
 1. If you are using OpenCore, Please use BIOS except for 1.0.2  (1.0.2 you need to turn off the Hyper-Threading to use OC.)
 2. Change BIOS settings
       * https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
