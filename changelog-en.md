@@ -1,3 +1,7 @@
+* 2022-08-15 16:00
+    * Update Opencore to 0.8.3 
+    * Update Kexts
+
 * 2022-06-12 20:30
     * Reopen AvoidRuntimeDefrag
     * Opencore updated to 0.8.2dev

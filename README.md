@@ -76,9 +76,8 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
-* 2022-06-12 20:30
-    * 打开 AvoidRuntimeDefrag
-    * Opencore 更新到 0.8.2 开发版
+* 2022-08-15 16:00
+    * Opencore 更新到 0.8.3 
     * 更新驱动
 
 * 历史修改记录见[changelog.md](changelog.md)
@@ -213,3 +212,4 @@ BIOS里的 `onekeybattery` 需要关闭，才能进隐藏BIOS
 - [win1010525](https://github.com/win1010525) 翻译英文readme并制作AIO版本EFI
 - [sun19970908](https://github.com/sun19970908) 提供ALC节点，修改ALCPlugFix并测试CPUFriend
 - [stevezhengshiqi](https://github.com/stevezhengshiqi) 开发的 [one-key-cpufriend](https://github.com/stevezhengshiqi/one-key-cpufriend)
+- [SoMeone](https://user.qzone.qq.com/504674749/infocenter) 破解的隐藏 BIOS
