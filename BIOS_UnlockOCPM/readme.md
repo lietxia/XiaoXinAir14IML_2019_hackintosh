@@ -1,18 +1,23 @@
 ![2](Results/2.png)
+![3](Results/3.png)
+
+中文  
+[ENGLISH](./readme-en.md)
+
 ## 说明：
 * 本实验所涉及动作或行为可能导致电脑无法开机甚至损坏主板,请在了解风险后进行实验
 * 一定不要超频内存！！！
 	
-## 目的
+## 目的：
 	解锁OverClocking Performance Menu菜单及项目
 
-## 工具
+## 工具：
 * FPT H2OEZE SetupUtility_UnlockOCPM.ffs
  
 ## 引用：
 * 原文来自[百度贴吧](https://tieba.baidu.com/p/6118801225) 
 
-## 步骤
+## 步骤：
 1.手工关闭BIOSLOCK和关闭FLASH写保护,目的使能FPT工具刷BIOS
 	
 >	[隐藏BIOS](https://user-images.githubusercontent.com/50404193/104993733-3b1b4280-5a5e-11eb-8916-a977c8b0d54c.jpg)的Advanced下  
@@ -36,5 +41,5 @@
 > 如果报错了,把前面备份的backup.fd文件改成change.fd,执行change.bat恢复bios吧,放弃吧  
 	
 ## 后记：
-买了根3200MHz 16G条子,换上去后发现工作在2667,首先想到的是两根条子就低原则随了板载4G条子的频率，进BIOS @#¥%⋯⋯&*一顿操作没找到调整项，刷BIOS @#¥%⋯⋯&*一顿操作没效果  
+买了根3200MHz 16G条子,换上去后发现工作在2667,首先想到的是两根条子就低原则随了板载4G条子的频率，进BIOS @#¥%⋯⋯&一顿操作没找到调整项，刷BIOS @#¥%⋯⋯&*一顿操作没效果  
 于是,我又翻了一下主板参数, CPU内存控制支持最高2666,WTF!!!  
