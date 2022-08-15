@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+* {
+  text-decoration: none;
+}
+
+a {
+  color: #003399;
+}
+
+a:hover {
+  color: #FF9900;
+}
+
+html, body, div, span, hr, form, table, a, img {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}
+
+html {
+  top: 0px;
+  left: 0px;
+  font-family: "Arial", Times, serif;
+  font-size: 14px;
+}
+
+body {
+  top: 0px;
+  left: 0px;
+}
+
+hr {
+  margin-top: 30px;
+
+/*
+	display: list-item;
+	list-style: url(../Images/LineBG.png) inside;
+	filter: alpha(opacity=0);
+*/
+  height: 9px;
+  background-image: url('../Images/LineBG.png');
+  background-repeat: repeat-x;
+  border: none !important;
+/*
+  background: #fff url('../Images/LineBG.png') repeat-x scroll center;
+*/
+}
+
+/*
+input[type="text"] {
+  background-color: #CCCCFF;
+}
+*/
+
+#TopFrame {
+  border-top: 1px solid black;
+  height: 80px;
+ *height: 80px \9;
+  height: 80px \9;
+  background-image: url('../Images/TopRightBG2.png');
+  background-repeat: repeat-x;
+}
+
+#TopFrameCont {
+  width: 984px;
+  height: inherit;
+}
+
+#TopBoxLeft, #TopBoxRight {
+  height: inherit;
+ *height: 80px \9;
+  height: 80px \9;
+  display: inline-block;
+  float: left;
+}
+
+#TopBoxLeft {
+  width: 520px;
+  background-color: #ffffff;
+/*
+  background-image: url('../Images/TopLeftBG.png');
+  background-repeat: repeat-x;
+*/
+}
+
+#TopBoxRight {
+  width: 460px;
+  left: 520px;
+  background-image: url('../Images/TopRightBG.png');
+  background-repeat: no-repeat;
+}
+
+#InsydeLogo {
+  margin-right: 14px;
+  text-align: right;
+  font-family: "Verdana", Times, serif;
+}
+
+#AdminBar {
+  margin-top: 14px;
+  margin-left: 90px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #eeeeee;
+}
+
+#MidFrame {
+  background-image: url('../Images/MidFrameBG.png');
+  background-repeat: repeat-x;
+}
+
+#MainFrame {
+  position: relative;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../Images/MainFrameBG.png');
+  background-repeat: repeat-x;
+/*  min-height: 500px;*/
+}
+
+#MainFrameTopBorder {
+  height: 24px;
+/*  background-image: url('../Images/MainFrameBG.png'); */
+  background-repeat: repeat-x;
+}
+
+.MainFrameCorner {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background-repeat: no-repeat;
+}
+
+.MainFrameCornerLeft {
+  background-image: url('../Images/MainBGCornerL.png');
+  float: left;
+}
+
+.MainFrameCornerRight {
+  background-image: url('../Images/MainBGCornerR.png');
+  float: right;
+}
+
+
+/**
+* #MenuList and #MainContent attributes will be changed
+* depend on the needs of other pages
+*/
+#MenuList {
+  min-height: 400px;
+  display: inline-block;
+  position: absolute;
+  width: 240px;
+  /*
+   * The following is to make this box is dynamicaly adjust its height, and
+   * auto display the scroll when it is overflow with its parent's box.
+   * Attribute, top, left, bottom and overflow are relative with it's parent box.
+   */
+  height: auto;
+/*
+  overflow-x: hidden;
+  overflow-y: auto;
+*/
+  overflow: auto;
+  top: 24px;
+  left: 16px;
+  bottom: 20px;
+}
+
+.ContPage {
+  min-height: 400px;
+  margin-left: 260px;
+  width: 670px;
+  border: 1px solid #CCCCCC;
+  background-color: #ffffff;
+  padding: 16px;
+  padding-bottom: 30px;
+}
+
+#MainContent {
+}
+
+#Footer {
+  text-align: center;
+  height: 60px;
+  font-size: 14px;
+}
+
+#FixedBottomBar {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  height: 25px;
+  margin-top: -25px;
+  background-image: url('../Images/FixedBottomBg.png');
+  background-repeat: repeat-x;
+  vertical-align: middle; /* Not text, for block area or images */
+}
+
+#FixedBottomInfo {
+  height: inherit;
+  padding-top: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  background-image: url('../Images/FixedBottomInfoBg2.png');
+  background-repeat: repeat-x;
+  color: #cdcdcd;
+  font-size: 14px;
+ *height: 25px \9;
+  height: 25px \9;
+  float: right;
+  font-family: "Arial", Times, serif;
+}
+
+.Btn {
+  cursor: pointer;
+}
+
+.ClearBoth {
+  clear: both;
+}
+
+/*
+ * Tree nodes
+ */
+/*
+.SubMenu {
+  margin-left: 20px;
+  margin-top: 6px;
+  width: 360px;
+  left: 0px;
+  right: 0px;
+  overflow-x: auto; *//* If string is too long, show scroll*//*
+  overflow-y: hidden;
+}
+*/
+
+.MenuLevel1 {
+  margin-left: 40px;
+}
+
+.MenuLevel2 {
+  margin-left: 60px;
+}
+
+.MenuLevel3 {
+  margin-left: 80px;
+}
+
+.MenuLevel4 {
+  margin-left: 100px;
+}
+
+.Unused {
+  cursor: auto;
+  color: #bbbbbb;
+}
+
+.LinkNorColor {
+  color: #6699FF;
+}
+
+.TgtLinkColor {
+  color: #6633CC;
+}
+
+.LinkNorHvrColor {
+  color: #6633CC;
+}
+
+
+

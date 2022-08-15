@@ -1,0 +1,166 @@
+Chipset Name : GRANTLY PLATFORM Ver.05.04.21.0026,,,
+Category,Name,GUID,Description
+SioPilot3Pkg,,,
+Chipset Layer,\siopilot3pkg\siopilot3dxe\SioPilot3Dxe,187D41FF-A9B4-4017-8749-B934760C7626,Component description file for OemBadgingSupportDxe driver.
+WellsburgPkg,,,
+Chipset Layer,\wellsburgpkg\spi\runtimedxe\PchSpiRuntime,C194C6EA-B68C-4981-B64B-9BD271474B20,Component description file for the SPI Runtime driver.
+Chipset Layer,\wellsburgpkg\spi\smm\PchSpiSmm,27F4917B-A707-4AAD-9676-26DF168CBF0D,Component description file for the SPI SMM driver.
+Chipset Layer,\wellsburgpkg\serialgpio\dxe\PchSerialGpio,FC1B7640-3466-4C06-B1CC-1C935394B5C2,Component description file for the PCH serial GPIO driver.
+Chipset Layer,\wellsburgpkg\smarttimer\dxe\SmartTimer,90CB75DB-71FC-489D-AACF-943477EC7212,Component description file for 8254 Timer module cooperate with ACPI time counter.
+Chipset Layer,\wellsburgpkg\smmcontrol2\dxe\SmmControl2Dxe,BA31025C-4AA8-4CAE-98CA-BA12C6BC7D78,Component description file for SmmControl module.
+Chipset Layer,\wellsburgpkg\smbus\dxe\PchSmbusDxe,E052D8A6-224A-4C32-8D37-2E0AE162364D,Component description file for PchSmbus driver.
+Chipset Layer,\wellsburgpkg\smbus\smm\PchSmbusSmm,59287178-59B2-49CA-BC63-532B12EA2C53,Component description file for PchSmbus driver.
+Chipset Layer,\wellsburgpkg\legacyinterrupt\dxe\LegacyInterrupt,C1C418F9-591D-461C-82A2-B9CD96DFEA86,Component description file for LegacyBios module.
+Chipset Layer,\wellsburgpkg\reset\runtimedxe\PchReset,AF59F2F5-5E28-4E03-80E2-4727545AF811,Component description file for Pch Reset Runtime module.
+Chipset Layer,\wellsburgpkg\s3support\dxe\PchS3Support,C7EA9787-CA0A-43B4-B1E5-25EF87391F8D,Component description file for Pch Initialization driver.
+Chipset Layer,\wellsburgpkg\wdt\dxe\WdtDxe,5AAB83E5-F027-4CA7-BFD0-16358CC9E453,Component description file for the watchdog timer driver.
+Chipset Layer,\wellsburgpkg\pchinit\dxe\PchInitDxe,DE23ACEE-CF55-4FB6-AA77-984AB53DE823,Component description file for Pch Initialization driver.
+Chipset Layer,\wellsburgpkg\iotrap\smm\IoTrap,2374EDDF-F203-4FC0-A20E-61BAD73089D6,Component description file for the IoTrap BS_DRIVER.
+Chipset Layer,\wellsburgpkg\pchsmidispatcher\smm\PchSmiDispatcher,B0D6ED53-B844-43F5-BD2F-61095264E77E,Component description file for the Pch SMI Dispatch Handlers module.
+Chipset Layer,\wellsburgpkg\satacontroller\dxe\SataController,BB65942B-521F-4EC3-BAF9-A92540CF60D2,Component description file for PCH SATA controller Driver module.
+Chipset Layer,\wellsburgpkg\rtcwakeup\RtcWakeup,F3B38282-B951-4E2A-8DF5-DE01FC527AE4,Component description file for the RtcWakeup driver.
+Chipset Layer,\wellsburgpkg\pchinit\pei\PchInitPeim,FD236AE7-0791-48C4-B29E-29BDEEE1A83,Component description file for the PCH Init PEIM.
+Chipset Layer,\wellsburgpkg\wdt\pei\WdtPei,1D88C542-9DF7-424A-AA90-02B61F286938,Component description file for the watchdog driver.
+Chipset Layer,\wellsburgpkg\reset\pei\PchResetPeim,147B4839-5DBE-413F-917F-DFEB687C6312,Component description file for the Pch Reset PEIM.
+Chipset Layer,\wellsburgpkg\smbus\pei\PchSmbusArpDisabled,643DF777-F312-42ED-81CC-1B1F57E18AD6,Component description file for PchSmbus module. This version will NOT include ARP support.
+Chipset Layer,\wellsburgpkg\spi\pei\PchSpiPeim,AA652CB9-2D52-4624-9FAE-D4E58B67CA46,Component description file for the SPI PEIM.
+Chipset Layer,\wellsburgpkg\usb\pei\PchUsb,6B4FDBD2-47E1-4A09-BA8E-8E041F208B95,Component description file for PCH USB PEIM.
+Chipset Layer,\wellsburgpkg\s3support\s3\PchS3Peim,271DD6F2-54CB-45E6-8585-8C923C1AC706,Component description file for PchS3 PEIM.
+GrantleySocketPkg,,,
+Chipset Layer,\grantleysocketpkg\iio\iioinitdxe\IioInitDxe,63809859-F029-41C3-9F34-EEEB9EA787A5,Status Code Handler Driver which produces general handlers and hook them onto the DXE status code router.
+Chipset Layer,\grantleysocketpkg\iio\pcihostbridgedxe\PciHostBridge,D58EBCE1-AF26-488D-BE66-C164417F8C13,Component description file for PciHostBridge module.
+Chipset Layer,\grantleysocketpkg\iio\cpucsraccessdxe\CpuCsrAccess,06D20D84-A032-4E25-969A-346D255E46D1,Package declaration file for SocketPkg.
+Chipset Layer,\grantleysocketpkg\iio\cpucsraccessdxe\CpuCsrAccessSMM,870E0F5A-1981-45F6-AE26-0391425CC46F,Package declaration file for SocketPkg.
+Chipset Layer,\grantleysocketpkg\iio\iiosmm\IioSmm,AAD10051-5D94-4B9F-B778-E4555EE3CCCA,Component description file for the IioSmm module.
+Chipset Layer,\grantleysocketpkg\uncore\smmaccesssmm\SmmAccess,274F0C8F-9E57-41D8-9966-29CCD48D31C2,Component description file for SmmAccess module.
+Chipset Layer,\grantleysocketpkg\uncore\legacyregiondxe\LegacyRegion2,AA7B4695-00B4-4468-AD92-99370AC031C5,Component description file for LegacyRegion2 module.
+Chipset Layer,\grantleysocketpkg\uncore\memorysubclassdxe\MemorySubClass,6A3DEF38-0A45-4107-A74E-ABF2B8EAED86,Component description file for MemorySubClass driver.
+Chipset Layer,\grantleysocketpkg\cpu\cpuarchdxe\CpuArchDxe,62D171CB-78CD-4480-8678-C6A2A797A8DE,Component description file for CPU Arch DXE Driver.
+Chipset Layer,\grantleysocketpkg\cpu\cpumpdxe\CpuMpDxe,40BEAB40-CECE-4909-B133-20A413AE19E9,Component description file for CPU MP DXE Driver.
+Chipset Layer,\grantleysocketpkg\cpu\powermanagementdxe\PpmInitialize,3FFCAE95-23CF-4967-94F5-16352F68E43B,Component description file for CPU MP DXE Driver.
+Chipset Layer,\grantleysocketpkg\iio\smmruntimesmm\SmmRuntime,7C79AC8C-5E6C-4E3D-BA6F-C260EE7C172E,Component description file for SMM Runtime module.
+Chipset Layer,\grantleysocketpkg\acpi\platformvtddxe\PlatformVtdDxe,232517C7-9129-4515-AFCD-56E104773AB7,Component description file for PlatformVtdDxe module.
+Chipset Layer,\grantleysocketpkg\acpi\acpivtddxe\AcpiVTD,64A11188-5B86-4F59-A702-73365896E65E,Component description file for AcpiVTD module.
+Chipset Layer,\grantleysocketpkg\ras\dxe\raseventstringdxe\RasEventStringDxe,622ECDC3-483E-4EBE-B34C-EF28EE9E367B,Component description file for BiosEventStorage DXE driver.
+Chipset Layer,\grantleysocketpkg\ras\smm\mcbankerrorinjection\McBankErrorInjection,1B59CCDA-7DB2-4A55-AFC2-4364F824D288,Component description file for MCEJ module.
+Chipset Layer,\grantleysocketpkg\ras\smm\memras\MemRas,AE3356F4-F95B-404B-B1DE-64EB5D5E5BBE,Component description file for Mem RAS Support driver module.
+Chipset Layer,\grantleysocketpkg\ras\smm\quiescesupport\QuiesceSupport,E954929C-5BAC-4494-B963-3B23D4A13AD2,Component description file for Quiesce Support driver module.
+Chipset Layer,\grantleysocketpkg\ras\smm\smmerrorlog\SmmErrorLog,36026EFE-E214-4EDE-A5D3-85053890D4A1,Component description file for SMM Platform handler module.
+Chipset Layer,\grantleysocketpkg\uncore\pfatservicessmm\PfatServicesSmm,2FB433F5-C915-4FCE-B1BD-3CD12E02C4C3,Component description file for PFAT module.
+Chipset Layer,\grantleysocketpkg\ltsx\getsec\dxe\TxtDxe,FF917E22-A228-448D-BDAA-68EFCCDDA5D3,Component description file for TxtDxe module.
+Chipset Layer,\grantleysocketpkg\cpu\pismmcpudxesmm\PiSmmCpuDxeSmm,A3FF0EF5-0C28-42F5-B544-8C7DE1E80014,Agent Module to load other modules to deploy SMM Entry Vector for X86 CPU.
+Chipset Layer,\grantleysocketpkg\cpu\cpupei\CpuPei,01359D99-9446-456D-ADA4-50A711C03ADA,Implementation of CPU driver for PEI phase.
+Chipset Layer,\grantleysocketpkg\uncore\smmaccesspei\SmmAccessPei,B4E0CDFC-30CD-4B29-A445-B0AA95A532E4,Component description file for SmmAccessPei module.
+Chipset Layer,\grantleysocketpkg\iio\iioinitpei\IioDmiInitPeim,62EB9C56-A79C-4423-A7F0-891A345208CD,Component description file for IioDmiInitPeim module.
+Chipset Layer,\grantleysocketpkg\ltsx\getsec\pei\TxtPei,CA9D8617-D652-403B-B6C5-BA47570116AD,Component description file for LT PEI module.
+Chipset Layer,\grantleysocketpkg\uncore\uncoreinitpei\UncoreInitPeim,D71C8BA4-4AF2-4D0D-B1BA-F2409F0C20D3,Component description file forPlatformEarlyInit PEIM module.
+GrantleyChipsetPkg,,,
+Chipset Layer,\grantleychipsetpkg\platformtypedxe\PlatformType,2E6A521C-F697-402D-9774-98B2B7E140F3,Component description file for PlatformType module.
+Chipset Layer,\grantleychipsetpkg\restoremtrrdxe\RestoreMtrrDxe,F276BDEC-6C41-21E5-9E71-00A13807B45E,If plug memory > 16GB, Bios will calculate the MTRR setting value and push this value in Hob at PEI phase, Here the Bios will get the MTRR setting value from Hob to replace present MTRR value to the > 16GB setting.
+Chipset Layer,\grantleychipsetpkg\savememoryconfigsmm\SaveMemoryConfigSmm,34230E42-5982-476A-8D41-16A915F6580A,Component description file for UsbLegacyControl module.
+Chipset Layer,\grantleychipsetpkg\usblegacycontrolsmm\UsbLegacyControlSmm,88EA1FCB-3A5D-4ACF-A0B3-AACB36D4E90F,Component description file for UsbLegacyControl module.
+Chipset Layer,\grantleychipsetpkg\uefisetuputilitydxe\SetupUtility,FE3542FE-C1D3-4EF8-657C-8048606FF670,This is a sample driver which show how HII protocol, VFR and UNI files are used to create a driver which can be dipslayed and configured by a UEFI HII Form Browser.
+Chipset Layer,\grantleychipsetpkg\platformdxe\DxePlatform,74C83F3A-5EE3-4EB7-B945-702B839FB1A6,Component description file for Platform Policy Initialization driver.
+Chipset Layer,\grantleychipsetpkg\pciplatformdxe\PciPlatformDxe,70232FB4-81F4-49F6-AA05-51D99EBDC352,Component description file for PciPlatformDxe driver.
+Chipset Layer,\grantleychipsetpkg\platformsmm\SmmPlatform,E4D932F4-31C9-4075-8FA3-4030F7EB767A,Component description file for SmmPlatform driver.
+Chipset Layer,\grantleychipsetpkg\int15microcodesmm\Int15MicrocodeSmm,30806658-1E9C-4A13-971E-707A69E958C8,Component description file for Int15MicrocodeSmm driver.
+Chipset Layer,\grantleychipsetpkg\bbstablehookdxe\BbstableHook,CC043281-112F-441C-805D-6D8DB3659618,INF file for StopFileSystem Feature.
+Chipset Layer,\grantleychipsetpkg\csmint10blockdxe\CsmInt10Block,0583D694-AF8B-4BAA-9583-813CEDF40843,Block CSM INT10 after INT19.
+Chipset Layer,\grantleychipsetpkg\bioswriteprotectsmm\PchBiosWriteProtect,2EE81ACB-64B2-41AE-8635-7030D16C4AA8,Component description file for the PchBiosWriteProtect driver.
+Chipset Layer,\grantleychipsetpkg\biosregionlockdxe\BiosRegionLockDxe,BC05DC37-9DA0-4050-9728-F34DDB01E200,Component description file for the BiosRegionLockDxe driver.
+Chipset Layer,\grantleychipsetpkg\acpipccsupportdxe\AcpiPCCSupportDxe,87F03839-9B30-495E-BC58-AD65CAE7CEDF,Component description file for the AcpiPCCSupportDxe driver.
+Chipset Layer,\grantleychipsetpkg\acpimpstsupportsmm\AcpiMPSTSupportSmm,EFB19948-7E02-47B9-8706-FB8BBBEFCDC9,Component description file for the AcpiMPSTSupportSmm driver.
+Chipset Layer,\grantleychipsetpkg\chipsetsvcdxe\ChipsetSvcDxe,9B0FF2C0-E245-11E1-8EFF-D0DF9A35C106,Implement the driver of DxeChipsetSvc.
+Chipset Layer,\grantleychipsetpkg\chipsetsvcsmm\ChipsetSvcSmm,D359DE86-0A1B-47BC-95D2-1D1F8FFF0AD8,Implement the Driver of SmmChipsetSvc.
+Chipset Layer,\grantleychipsetpkg\commonchipset\setssidsviddxe\SetSsidSvidDxe,96BDEA61-C364-4513-B6B3-037E9AD54CE4,Component description file for SetSsidSvidDxe driver.
+Chipset Layer,\grantleychipsetpkg\commonchipset\aspmoverridedxe\AspmOverrideDxe,A8913EC1-C00C-4C3A-A245-077C0CA35738,Component description file for AspmOverrideDxe module.
+Chipset Layer,\insydemodulepkg\library\commonplatformlib\badgingsupportlib\OemBadgingSupportDxe,12AEDBEA-392D-4E2A-8789-5F6DC6B23661,Component description file for OemBadgingSupportDxe driver.
+Chipset Layer,\grantleychipsetpkg\commonchipset\speakerdxe\LegacySpeakerDxe,400B4476-3081-11D6-87ED-00062945C3B9,Component description file for LegacySpeakerDxe driver.
+Chipset Layer,\grantleychipsetpkg\platformpolicydxe\goppolicydxe\GopPolicyDxe,A52509C7-5ECD-42D1-85A2-46C37135D12D,Component description file for GopPolicyDxe driver.
+Chipset Layer,\grantleychipsetpkg\platformpolicydxe\pchpolicydxe\PchPolicyDxe,3BC42C6D-ABEC-41BA-8CCB-D8E0EF1CEF85,Component description file for PchPolicyDxe driver.
+Chipset Layer,\grantleychipsetpkg\platformpolicydxe\cpupolicydxe\CpuPolicyDxe,76A7B4FC-C8D5-462D-A4D2-6E88338A772,Component description file for Platform CPU Policy DXE Driver.
+Chipset Layer,\grantleychipsetpkg\pciclpdxe\PciClp,9213D88D-1D18-40EE-A94F-C3ADEC2E0FF1,Component description file for PciClp Driver.
+Chipset Layer,\grantleychipsetpkg\platformpolicydxe\acpipolicyinitdxe\AcpiPolicyInitDxe,B29B8EDA-5D39-4BD4-8658-1F55F6D60E5A,Component description file for the AcpiPolicyInit DXE driver.
+Chipset Layer,\grantleychipsetpkg\oemraseventservice\oemraseventstringdxe\OemRasEventStringDxe,A32ECDC3-4780-4EBE-444C-AF28EED33676,Component description file for BiosEventStorage DXE driver.
+Chipset Layer,\grantleychipsetpkg\oemraseventservice\oemraseventsmm\OemRasEventSmm,C1C62E13-36FE-4ECB-3E4E-E65610778F02,Component description file for OemRasEventSmm DXE driver.
+Chipset Layer,\grantleychipsetpkg\xhcismidispatcher\XhciSmiDispatcher,5FC364AD-4D63-4B80-B10C-0C8780ADA917,Component description file for XhciSmiDispatcher module.
+Chipset Layer,\grantleychipsetpkg\ihisismm\IhisiSmm,7B7B65B6-E350-4139-8FE4-665772D32A47,Component description file for IhisiSmm module.
+Chipset Layer,\grantleychipsetpkg\oemacpiplatformdxe\OemAcpiPlatform,9B182CEE-AED5-4D95-B2A9-A2CF6CDFEAA8,Component description file for OemAcpiPlatform module.
+Chipset Layer,\grantleychipsetpkg\preposthotkeydxe\PrePostHotkey,7DC20199-DE28-4A91-A89C-FF06F237352C,Component description file for PrePostHotkey module.
+Chipset Layer,\grantleychipsetpkg\platformresetruntimedxe\PlatformResetRuntimeDxe,0790DC86-F827-4590-A0E2-6B9F9F038DDB,Component description file for Platform Reset runtime driver.
+Chipset Layer,\grantleychipsetpkg\acpitablesdxe\dptf\dptfdxe\DptfDxe,918ABA30-3D8D-4BB5-B849-45CC4FC7DE7C,Component description file for Dptf module.
+Chipset Layer,\grantleychipsetpkg\spsme\sample\spspolicydxe\SpsPolicyDxe,D80EBC8A-578C-4A7A-A305-EBA6BD9D992F,Component description file for SpsPolicyDxe module.
+Chipset Layer,\grantleychipsetpkg\spsme\spsdxe\SpsDxe,CA5B0FA3-5009-466E-9497-C77DA34903A7,Component description file for Server Platform Services ME Driver in DXE phase.
+Chipset Layer,\grantleychipsetpkg\spsheci\spshecidxe\SpsHeciDxe,55E76644-78A5-4A82-A900-7126A5798892,Component description file for Heci DXE driver.
+Chipset Layer,\grantleychipsetpkg\spsheci\spshecismm\SpsHeciSmm,921CD783-3E22-4579-A71F-00D74197FCC,Component description file for Heci SMM driver.
+Chipset Layer,\grantleychipsetpkg\spsme\spsmefwupgradedxe\SpsMeFwUpgradeDxe,B5DEBF89-E32D-4B88-B43F-57854935EA8F,Component description file for Server Platform Services(SPS) ME Firmware Upgrade DXE driver.
+Chipset Layer,\grantleychipsetpkg\spsme\spsmefwupgradesmm\SpsMeFwUpgradeSmm,B103081B-02C6-4909-8B4D-A7B9280BB587,Component description file for Server Platform Services(SPS) ME Firmware Upgrade SMM driver.
+Chipset Layer,\grantleychipsetpkg\spsme\sample\spscollectordxe\SpsCpuInfoCollectorDxe,D0E82303-C09A-4B9B-A9A6-EB0634EA2DE9,Component description file for SpsCpuInfoCollectorDxe driver.
+Chipset Layer,\grantleychipsetpkg\variableeditdxe\VariableEditDxe,3F837872-2A07-4470-B8B7-9AC131360314,Component description file for Variable Editor Dxe driver.
+Chipset Layer,\grantleychipsetpkg\variableeditsmm\VariableEditSmm,84945A3D-49C8-4059-8F34-6A4532D32A47,Component description file for Variable Editor Callback Sync Smm.
+Chipset Layer,\grantleychipsetpkg\csm16hooksmm\Csm16HookSmm,D1F9F6EE-5CBF-4F19-948C-EA5EAA859985,Component description file for CSM16 INT19 hook function.
+Chipset Layer,\grantleychipsetpkg\fileselectuidxe\FileSelectUIDxe,5A4B57EC-7C99-45FD-A5B5-D0EAD877BB7F,Component description file for FileSelectUIDxe driver.
+Chipset Layer,\grantleychipsetpkg\ramdisk\ramdisk,96735D5D-4595-4183-B1D7-934CC402AA95,Component description file for IntelGopDriver.
+Chipset Layer,\grantleychipsetpkg\smbiosdynamicupdatedxe\SmbiosDynamicUpdateDxe,9096E786-12D9-449C-BA71-185FFFAA117B,Component description file for SmbiosDynamicUpdateDxe driver.
+Chipset Layer,\grantleychipsetpkg\pchahcipei\PchAhciPei,CE248B77-1179-4BC6-B324-9D2EDC4B976E,Component description file for PchAhciPei PEI module.
+Chipset Layer,\grantleychipsetpkg\pchufspei\PchUfsPei,28D68488-5A7C-49ad-8A21-552E26EFF2FF,Component description file for PchUfs PEIM.
+Chipset Layer,\grantleychipsetpkg\pchxhcipei\PchXhciPei,2ABCD64E-3CA2-4F4D-B903-21A1E3F61471,Component description file for PchXhci PEIM.
+Chipset Layer,\grantleychipsetpkg\softstrapspeim\SoftStrapsPeim,1988A1D8-04FC-4D68-B58D-636F36F30D82,Component description file for SoftStrapsPeim PEIM.
+Chipset Layer,\grantleychipsetpkg\platforminfopei\PlatformInfo,34CC6167-7AE7-403E-8AB2-23837F398A30,PlatformInfo PEIM.
+Chipset Layer,\grantleychipsetpkg\setupsyncpei\SetupSyncPei,995EAD4A-B9F6-444B-AAA2-50A19467A858,This PEIM is to sync some of Setup value to CMOS to check full reset condition.
+Chipset Layer,\grantleychipsetpkg\programgpiopei\ProgramGPIOPei,34E5798E-F44F-4526-A08C-39BCA6E8D7D5,Component description file for ProgramGpioPei PEIM.
+Chipset Layer,\grantleychipsetpkg\loaddefaultpei\LoadDefaultPei,9555CE1E-9D5A-4917-BDC9-51DE10C0483D,This PEIM provides Setup variable default values if Setup variable does not exist.
+Chipset Layer,\grantleychipsetpkg\insydeeventlogpolicypei\InsydeEventLogPolicyPei,6F183D67-C371-4B99-803E-79C0DF814D9E,Implement the PEIM of Pei Insyde Event Log Policy.
+Chipset Layer,\grantleychipsetpkg\memorytestnullpei\PeiMemoryTestNull,472C4729-94CA-46FA-88E3-76CC2EA0B7F9,Component description file for PeiMemoryTestNull module.
+Chipset Layer,\grantleychipsetpkg\platformpolicypei\policyclass1pei\PolicyClass1Pei,8BEEDB0D-A31A-0361-A312-5DC8574C65F1,Azalia controller initialize in PEI phase.
+Chipset Layer,\grantleychipsetpkg\platformpolicypei\policyclass1pei\PolicyClass2Pei,8BEEDB0D-A31A-0361-A312-5DC8574C65F2,Azalia controller initialize in PEI phase.
+Chipset Layer,\grantleychipsetpkg\platformpolicypei\policyclass1pei\PolicyClass4Pei,8BEEDB0D-A31A-0361-A312-5DC8574C65F4,Azalia controller initialize in PEI phase.
+Chipset Layer,\grantleychipsetpkg\chipsetsvcpei\ChipsetSvcPei,FB3D20EE-CB5D-45EE-BBAE-C5AAA9C0FDFA,Implement the PEIM of PeiChipsetSvc.
+Chipset Layer,\grantleychipsetpkg\smmcontrolpei\SmmControlPei,FF456B9C-0DC7-4682-9E92-0DE84B6E4067,Component description file for SmmControlPei module.
+Chipset Layer,\grantleychipsetpkg\commonchipset\installverbtablepei\InstallVerbTablePei,A56FAD72-A264-4370-85C5-00584654DCE2,Component description file for InstallVerbTablePei PEIM.
+Chipset Layer,\grantleychipsetpkg\spsme\sample\spspolicypei\SpsPolicyPei,C9256FD4-6626-46CD-8453-53ECF3AD588B,Component description file for SpsPolicyPei PEIM.
+Chipset Layer,\grantleychipsetpkg\spsme\spspei\SpsPei,E77B1EEA-3DE7-4FEB-8DAA-D890AF52AE52,Component description file for Server Platform Services ME Module in PEI phase.
+Chipset Layer,\grantleychipsetpkg\spsheci\spshecipei\SpsHeciPei,4862AFF3-667C-5458-B274-A1C62DF8BA80,Component description file for HeciInit module.
+InsydeIpmiPkg,,,
+Chipset Layer,\insydeipmipkg\ipmiinterfacedxesmm\IpmiInterfaceDxe,1EE72781-8221-4649-A0D1-FE9811540A5,H2O IPMI Interface module build description file for DXE phase.
+Chipset Layer,\insydeipmipkg\ipmiinterfacedxesmm\IpmiInterfaceSmm,66FB797D-3528-4648-BF9E-6FA3D7438DE,H2O IPMI Interface module build description file for SMM phase.
+Chipset Layer,\insydeipmipkg\ipmifrudxesmm\IpmiFruDxe,5C7FE7A6-73FA-42D4-98A3-9FE600352CE5,H2O IPMI FRU module build description file for DXE phase.
+Chipset Layer,\insydeipmipkg\ipmifrudxesmm\IpmiFruSmm,71655C11-C55F-4A46-90E4-42E72B962FDC,H2O IPMI FRU module build description file for SMM phase.
+Chipset Layer,\insydeipmipkg\ipmiseldatadxesmm\IpmiSelDataDxe,BAC1689C-41DB-4963-A408-C0C9C0274ABF,H2O IPMI SEL Data module build description file for DXE phase.
+Chipset Layer,\insydeipmipkg\ipmiseldatadxesmm\IpmiSelDataSmm,7EC1FF91-69D2-403D-B78F-415EE32573D2,H2O IPMI SEL Data module build description file for SMM phase.
+Chipset Layer,\insydeipmipkg\ipmiselinfodxesmm\IpmiSelInfoDxe,6306F3E6-CB4C-4737-AA4D-40D0473C2606,H2O IPMI SEL Info module build description file for DXE phase.
+Chipset Layer,\insydeipmipkg\ipmiselinfodxesmm\IpmiSelInfoSmm,F3F0E25C-9674-473A-9A86-B49CA4519070,H2O IPMI SEL Info module build description file for SMM phase.
+Chipset Layer,\insydeipmipkg\ipmimiscdxe\IpmiMiscDxe,0DE19141-7AEB-46CA-9F87-2D19FEBC99C3,H2O IPMI Misc module build description file for DXE phase.
+Chipset Layer,\insydeipmipkg\ipmimiscsmm\IpmiMiscSmm,E70F15ED-6E59-4ECD-B5C2-0F27B7FAE9FC,H2O IPMI Misc module build description file for SMM phase.
+Chipset Layer,\insydeipmipkg\ipmisdrdxesmm\IpmiSdrDxe,30B96290-6E4E-4026-9345-B3158C9EC061,H2O IPMI SDR module build description file for DXE phase.
+Chipset Layer,\insydeipmipkg\ipmisdrdxesmm\IpmiSdrSmm,3A923758-E897-408F-8863-FD593AB69AE0,H2O IPMI SDR module build description file for SMM phase.
+Chipset Layer,\insydeipmipkg\ipmiutilitydxe\IpmiUtilityDxe,65EE6275-CE35-42D1-803B-E7C500AE18A0,H2O IPMI Utility module build description file for DXE phase.
+Chipset Layer,\insydeipmipkg\ipmiinterfacepei\IpmiInterfacePei,B12CBABC-30A1-4223-9D95-E17CEBD8C667,H2O IPMI Interface module build description file for PEI phase.
+InsydeApeiPkg,,,
+Chipset Layer,\insydeapeipkg\whea\isplatformsupportwhea\IsPlatformSupportWheaDxe,1F4FD693-73FA-4374-9080-82C49A04618C,Component description file for IsPlatformSupportWhea driver.
+Chipset Layer,\insydeapeipkg\whea\wheasupport\WheaSupportDxe,39203C78-49FC-48C9-B883-B4A015D84BD3,Component description file for the WheaSupport driver.
+Chipset Layer,\insydeapeipkg\whea\wheaplatform\WheaPlatformSmm,D27F555B-93A5-43CF-A4F4-E7ECE60EDC15,Component description file for the WheaPlatform driver.
+Chipset Layer,\insydeapeipkg\whea\wheaerrorinject\WheaErrorInjectSmm,DF243C0E-95EA-428D-9AB2-B70666AAA08B,Component description file for the WheaErrorInject driver.
+Chipset Layer,\insydeapeipkg\whea\wheaerrorlog\WheaErrorLogSmm,CF2FF61B-19C5-40EE-80FF-8042151F9015,Component description file for Whea Error log driver.
+InsydeEventLogPkg,,,
+Chipset Layer,\insydeeventlogpkg\eventstorage\biosstorage\biosstoragedxe\BiosStorageKernelDxe,9CDA2EF0-EBCA-499C-A193-95B468625528,Implement the driver of BiosStorageKernelDxe.
+Chipset Layer,\insydeeventlogpkg\eventstorage\biosstorage\biosstoragedxe\BiosStorageChipsetDxe,95AD276A-7E8B-46A8-98F8-4C56F68C3590,Component description file for BiosStorageChipsetDxe driver.
+Chipset Layer,\insydeeventlogpkg\eventstorage\biosstorage\biosstoragesmm\BiosStorageKernelSmm,099E1F39-0102-43C3-8CEC-8E897B6562F7,Implement the driver of BiosStorageKernelSmm.
+Chipset Layer,\insydeeventlogpkg\eventstorage\biosstorage\biosstoragesmm\BiosStorageChipsetSmm,26942B3A-B873-49FF-A36D-E76D11F0C1FF,Component description file for BiosStorageChipset SMM driver.
+Chipset Layer,\insydeeventlogpkg\eventlog\eventlogdxe\EventLogDxe,9E039967-FB3B-4BE4-83AA-F72F309E481E,Component description file for EventLog DXE driver.
+Chipset Layer,\insydeeventlogpkg\eventlog\eventlogsmm\EventLogSmm,63722DE5-EC4A-4237-953F-5502246776B2,Component description file for EventLog SMM driver.
+Chipset Layer,\insydeeventlogpkg\eventstorage\memorystorage\memorystoragedxe\MemoryStorageKernelDxe,75C640C2-030E-4C57-81E2-532B1DD7339F,Component description file for MemoryStorageKernel DXE Driver.
+Chipset Layer,\insydeeventlogpkg\eventstorage\memorystorage\memorystoragedxe\MemoryStorageChipsetDxe,4CA8A1EF-D4DA-4212-9F4D-41638E68B6C1,Component description file for MemoryStorageChipset DXE Driver.
+Chipset Layer,\insydeeventlogpkg\eventstorage\memorystorage\memorystoragesmm\MemoryStorageKernelSmm,5A112448-0523-4621-B96C-CF32F6AEF3A4,Component description file for MemoryStorageKernel SMM Driver.
+Chipset Layer,\insydeeventlogpkg\eventstorage\memorystorage\memorystoragesmm\MemoryStorageChipsetSmm,82180E9E-FB32-4086-AB38-370BB29134E3,Component description file for MemoryStorageChipset driver.
+Chipset Layer,\insydeeventlogpkg\eventstorage\bmcselstorage\bmcseleventstoragedxe\BmcSelEventStorageDxe,2DA99E67-07F8-417B-BA59-F2049D57BDF2,Component description file for BmcSelEventStorage DXE driver.
+Chipset Layer,\insydeeventlogpkg\eventstorage\bmcselstorage\bmcseleventstoragesmm\BmcSelEventStorageSmm,74AC8A89-8CF5-49B7-A09D-97591610462E,Component description file for BmcSelEventStorage SMM driver.
+Chipset Layer,\insydeeventlogpkg\bmcselstringtranslationdxe\BmcSelStringTranslation,04FF74B4-FB2E-42CD-8930-CFB576839653,Component description file for BmcSelStringTranslation driver.
+Chipset Layer,\insydeeventlogpkg\eventlogviewerdxe\EventLogViewerDxe,3F3B80D6-6052-4A30-BD1E-5949FE4DBCD3,Component description file for Event Log Viewer DXE Driver.
+Chipset Layer,\insydeeventlogpkg\postmessage\postmessagedxe\PostMessageDxe,60C83BC9-89FB-48D5-8962-A5DCE1D4C0FE,Component description file for PostMessage DXE driver.
+Chipset Layer,insydeeventlogpkg\postmessage\postmessagesmm\PostMessageSmm,9FE10324-D10E-4CF2-99C4-F1B5A0B4732A,Component description file for PostMessage SMM driver.
+Chipset Layer,\insydeeventlogpkg\eventstorage\biosstorage\biosstoragepei\BiosStoragePei,650870ED-2F7D-4686-BE6E-2D0494F4B629,Implement the PEIM of Pei BIOS Storage.
+Chipset Layer,\insydeeventlogpkg\postmessage\postmessagepei\EventLogPei,8AB2F241-77FA-49C7-BD2C-FD71A743FD8,Implement the PEIM of Pei EventMessage.
+Chipset Layer,\insydeeventlogpkg\eventstorage\bmcselstorage\bmcselstoragepei\BmcSelStoragePei,C6269C22-1307-47A7-814C-53DA61763FAD,Implement the PEIM of Pei EventMessage.
+SioPilot3Pkg,,,
+Chipset Layer,\siopilot3pkg\siopilot3pei\SioPilot3Pei,21C7A9E9-41B4-4DC4-A946-8DE8EC416F1D,SIO Package Declaration file.

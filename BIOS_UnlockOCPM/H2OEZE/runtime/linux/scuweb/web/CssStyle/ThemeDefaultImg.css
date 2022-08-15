@@ -1,0 +1,24 @@
+
+#TopFrame {
+  background-image: url('../Images/TopRightBG2_green.png');
+}
+
+#TopBoxRight {
+  background-image: url('../Images/TopRightBG_green.png');
+}
+
+#MidFrame {
+  background-image: url('../Images/MidFrameBG_green.png');
+}
+
+#MainFrame {
+  background-image: url('../Images/MainFrameBG_green.png');
+}
+
+.MainFrameCornerLeft {
+  background-image: url('../Images/MainBGCornerL_green.png');
+}
+
+.MainFrameCornerRight {
+  background-image: url('../Images/MainBGCornerR_green.png');
+}

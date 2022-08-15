@@ -1,0 +1,32 @@
+[BIOS Image]
+F:\业余玩耍\Insyde BIOS\bios\FPT 14\WIN64\change.fd
+
+[Log]
+C:\Users\ROOT\Desktop\XIAOXIN AIR14 2019 BIOS解锁菜单\工具\H2OEZE\runtime\FstBiosImgInfoSimple.txt
+
+ FD   size:         11264k
+ FV00 size:         400k  (NvStorage)
+ FV00 freespace:    326k  (NvStorage)
+ FV01 size:         3684k  
+ FV01 freespace:    436k  
+ FV02 size:         1280k  
+ FV02 freespace:    979k  
+ FV03 size:         384k  
+ FV03 freespace:    383k  
+ FV04 size:         212k  
+ FV04 freespace:    18k  
+ FV05 size:         512k  
+ FV05 freespace:    374k  
+ FV06 size:         1024k  
+ FV06 freespace:    680k  
+ FV07 size:         20k  
+ FV07 freespace:    3k  
+ FV08 size:         544k  
+ FV08 freespace:    142k  
+ FV09 size:         252k  
+ FV09 freespace:    177k  
+ Microcode size:    1280k
+ Compiler version:  1600 (VC 10.0)
+ Bios image version:  CKCN19WW(V1.09)
+
+

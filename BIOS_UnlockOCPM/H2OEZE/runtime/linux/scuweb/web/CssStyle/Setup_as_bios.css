@@ -1,0 +1,651 @@
+@charset "utf-8";
+
+
+* {
+/*  font-family: arial;*/
+  line-height: 140%;
+  *line-height: 120%; /* IE */
+}
+
+html {
+/*  height: 100%; Background will only half on some browser */
+  padding: 0px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #000000;
+  *text-align: center; /* IE */
+  font-size: 14px;
+/*  height: 100%; Background will only half on some browser */
+}
+
+p {
+  margin: 0 auto;
+  padding: 0px;
+}
+
+div {
+  *margin: 0px;
+  margin: 0px \9;
+}
+
+form {
+  margin: 0 auto;
+  padding: 0px;
+}
+
+table {
+  border-collpase: 0px;
+}
+
+.ClearBoth {
+  clear: both;
+}
+
+a {
+  color: #000080;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+.DefaultFieldHeight {
+  height: 26px;
+}
+
+.DefaultFieldPaddingBot {
+  padding-bottom: 8px;
+}
+
+
+.MenuLink {
+  color: #eee8aa;
+}
+
+.MenuLinkField {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.TextOnly {
+  color: #373737;
+}
+
+.ThisPage {
+  background-color: #000000;
+}
+
+.OneLineField {
+  height: 28px;
+* height: 24px; /* IE */
+  height: 24px \9; /* IE 9 */
+}
+
+.FormSection {
+}
+
+.FormSectionTitle {
+  height: 30px;
+*  height: 24px; /* IE */
+}
+
+.FakeLink, .ToPopupTitle, .FormSectionTitle, .ExitBtn, .RefField {
+  color: #000080;
+}
+
+.FakeLink, .ToPopupTitle, .FormSectionTitle, .ExitBtn, .RefField, .LinkBtn {
+/*
+  text-decoration: underline;
+*/
+  cursor: pointer;
+}
+
+.FormSectionContent {
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.PasswordField {
+  width: 340px;
+*  width: 320px; /* IE */
+  float: left;
+}
+
+.AdditionalLink {
+}
+
+.SepPipe {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.SubSecTitle {
+  font-size: 16px;
+}
+
+
+.FramePadding {
+  padding-bottom: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 6px;
+}
+
+.FullHeight {
+  height: 100%;
+}
+
+#OuterFrame {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  border-width: 0px;
+  background-color: #20b2aa;
+}
+
+#Settings {
+  height: 20px;
+  font-size: 12px;
+  text-align: right;
+  background-color: #434343;
+  color: #ffffff;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+
+#TopFrame {
+  height: 110px;
+*  height: 94px; /* IE */
+  border-width: 0px;
+/*  border: 1px red solid;*/
+  *text-align: left; /* IE */
+}
+
+#Banner {
+/*  height: 66px;*/
+  border-width: 0px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+/*  padding-bottom: 6px;*/
+}
+
+#Menu {
+  background-color: #000080;
+  height: 30px;
+  border-width: 0px;
+  color: #676767;
+  font-size: 16px;
+  padding-top: 8px; 
+  *padding-top: 6px; /* IE */
+  *text-align: left; /* IE */
+}
+
+#MainFrame {
+  background-color: #dcdcdc;
+  padding-bottom: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 6px;
+  *text-align: left; /* IE */
+}
+
+#InnerFrame {
+  border-bottom-width: 2px;
+  border-left-width: 4px;
+  border-right-width: 4px;
+  border-top-width: 2px;
+  border-style: solid;
+  border-color: blue;
+}
+
+#InfoBody {
+  width: 620px;
+  color: #373737; 
+  font-weight: bold;
+  border-style: solid;
+  border-color: blue;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 4px;
+  border-top-width: 0px;
+  padding-top: 2px;
+  padding-left: 4px;
+}
+
+#HelpBody {
+  width: 300px;
+  color: blue;
+  padding: 6px;
+  font-weight: bold;
+}
+
+#InfoBody, #HelpBody {
+  float: left;
+}
+
+#BottomFrame {
+  border-width: 0px;
+  height: 60px;
+  background-color: inherit;
+  padding: 4px;
+  text-align: center;
+}
+
+.ExtendedList {
+  display: none;
+}
+
+.FormFrame {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  overflow: auto;
+}
+
+/*
+There is problem about this form, it can be set absolute position
+*/
+#MainInfo {
+  padding-top: 0px;
+  width: 610px;
+}
+
+#AdvancedInfo, #BootInfo, #ServerInfo, #SecurityInfo, #ExitInfo {
+  position: absolute;
+  padding-top: 0px;
+  width: 610px;
+/*  display: none;*/
+}
+
+#ExitInfo {
+  width: 500px;
+}
+
+.FullHeight {
+  height: 100%;
+}
+
+.PopupDisplayShow {
+  display: ;
+  z-index: 10;
+}
+
+.PopupDisplayNone {
+  display: none;
+  z-index: -1;
+}
+
+#InnerBody {
+  position: absolute;
+  margin: 0px;
+  padding-top: 4px;
+  width: 600px;
+}
+
+.ControlBar {
+  height: 30px;
+  border-bottom: 1px solid #676767;
+  margin-bottom: 16px;
+}
+
+.InnerTitle {
+  float: left;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
+.InnerBodyClose {
+  float: right;
+  color: #000000;
+  cursor: pointer;
+}
+
+.InnerBodyContent {
+  padding-left: 10px;
+  overflow: auto;
+}
+
+.DisplayField {
+  display: block;
+  visibility: visible;
+}
+
+.NonDisplayField {
+  display: none;
+  visibility: hidden;
+}
+
+#Systime, #EditSystime {
+  height: 60px;
+  color: #000080;
+/*  border: 1px red solid;*/
+}
+
+.TimeTitle {
+  float: left;
+  width: 330px;
+* width: 320px; /* IE */
+  width: 320px \9; /* IE 9 */
+}
+
+.TimeContentField {
+  cursor: pointer;
+  float: left;
+  height: 30px;
+* height: 24px; /* IE */
+  height: 24px \9; /* IE 9 */
+  width: 230px;
+}
+
+
+.PopupDisplayShow {
+  display: ;
+  z-index: 10;
+}
+
+.PopupDisplayNone {
+  display: none;
+  z-index: -1;
+}
+
+#PopupFrame, #PopupSubFrame {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  /* IE */
+/*  *position: relative;*/
+  *position: absolute;
+}
+
+.PopupBG {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #676767;
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  /* IE 8 */
+  filter: 'alpha(opacity=50)';
+  /* IE */
+  *position: absolute;
+  *filter: alpha(opacity = 50);
+  /* CSS3 standard */
+  opacity: 0.5;
+  /* for Mozilla, Firefox */
+  -moz-opacity: 0.5;
+  /* IE */
+  *rgba(67%,67%,67%,0.5);
+}
+
+.PopupInfoFrame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin:-100px 0px 0px -310px;
+/*
+  margin-left: auto;
+  margin-right: auto;
+*/
+  padding: 6px;
+  width: 620px;
+/*
+  border: solid 2px #dcdcdc;
+  background-color: #000080;
+  color: #dcdcdc;
+*/
+  border: solid 2px blue;
+  background-color: #dcdcdc;
+  text-align: left;
+}
+
+.PopupFrameTitle, .PopupMsgTitle {
+  float: left;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.PopupFrameClose {
+  float: right;
+  color: #000000;
+/*
+  text-decoration: underline;
+*/
+  cursor: pointer;
+}
+
+.PopupFrameContent {
+  padding-left: 20px;
+  overflow-y: auto;
+}
+
+.PopupMsgContent {
+  text-align: center;
+}
+
+.AnswerField {
+  margin-left: auto; 
+  margin-right: auto; 
+  *margin: 0px auto; /* IE 7 */
+  _margin: 0px auto; /* IE 6 */
+  width: 260px;
+  height: 30px;
+}
+
+.MsgYes {
+  float: left;
+}
+
+.MsgNo {
+  float: right;
+}
+
+.ConfirmField, .ActionField {
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center;
+  height: 30px;
+}
+
+.MsgYes, .MsgNo, #MsgOk, #ActStop {
+  cursor: pointer;
+  color: #ffffff;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 80px;
+  text-align: center;
+  border: #676767 2px solid;
+  background-color: blue;
+}
+
+#MsgOk, #ActStop {
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+#BootOrderTable {
+  position: relative;
+}
+
+.BootDeviceRow {
+  position: absolute;
+  height: 30px;
+*  height: 24px;
+  top: 0px;
+}
+
+.BootOrderControl {
+  text-align: center;
+  cursor: pointer;
+  color: #000080;
+  float: left;
+/*  border: 1px #676767 solid;*/
+  padding-left: 4px;
+/*  padding-right: 4px;*/
+}
+
+.ToolFunc {
+  display: inline-block;
+  margin-right: 10px;
+  width: 118px;
+  height: 35px;
+  padding-top: 8px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  background-image: url('../Images/RectangleBox2.png');
+  background-repeat: no-repeat;
+}
+
+.ToolFrame {
+  padding: 4px;
+}
+
+.RadioOption {
+  width: 100%;
+  display: inline-block;
+}
+
+#ToolPage {
+  width: 610px;
+}
+
+.ToolName {
+  float: left;
+  color: #000000;
+}
+
+.ToolClose {
+  float: right;
+  cursor: pointer;
+}
+
+#SettingContent {
+/*  width: 600px;*/
+  overflow: auto;
+  margin-bottom: 4px;
+}
+
+.ServerRebootTitle, .ServerForceTitle, .ServerFunctionTitle, .ServerIpTitle, .ServerPortTitle {
+  display: inline-block; 
+  text-align: center; 
+}
+
+.ServerRebootTitle, .ServerForceTitle {
+  width: 20px;
+}
+
+.ServerFunctionTitle {
+  width: 156px;
+  *width: 112px;
+  width: 112px \9;
+}
+
+.ServerIpTitle {
+  width: 194px;
+  *width: 182px;
+  width: 182px \9;
+  margin: 0px;
+}
+
+.ServerPortTitle {
+  width: 50px;
+}
+
+.ServerCtrlTitle {
+  width: 100px;
+}
+
+#FileUploadContent{
+  text-align: center; 
+  margin-top: 30px; 
+  margin-bottom: 20px; 
+  font-size:12px; 
+}
+
+
+.TitleField {
+/*  border: 1px red solid;*/
+  width: 330px;
+* width: 320px; /* IE */
+  width: 320px \9; /* IE 9 */
+}
+
+.ContentField {
+}
+
+.TitleField, .ContentField {
+  float: left;
+  height: 28px;
+* height: 24px; /* IE */
+  height: 24px \9; /* IE 9 */
+/*  font-size: 16px;*/
+/*  margin-bottom: 6px;*/
+/*  border-bottom-style: solid;
+  border-bottom-width: 1px;*/
+}
+
+.PopupTitle {
+}
+
+.NodeSectionDisplay {
+/*  border-width: 2px;
+  border-style: dashed;
+  padding-bottom: 6px;*/
+  border-color: #000080;
+/*  margin-bottom: 10px;*/
+}
+
+.Row {
+/*
+  margin-bottom: 6px;
+  vertical-align: middle;
+  height: 30px;
+*/
+  padding-top: 2px;
+  height: 28px;
+* height: 24px; /* IE */
+  height: 24px \9; /* IE 9 */
+}
+
+.TestBorder {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.clearfix:after { 
+  content: "."; 
+  visibility: hidden; 
+  display: block; 
+  height: 0; 
+  clear: both;
+}
+
+.EmptyDiv {
+}
+
+.TriangleImage {
+  display: inline-block; 
+  width: 12px;
+}
+
+.OneOfNumericColor {
+  color: #000080;
+}
+

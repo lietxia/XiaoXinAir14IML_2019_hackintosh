@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+#PopupWin {
+  top: 0;
+  left: 0;
+}
+
+#PopupBG {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #676767;
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  /* IE 8 */
+  filter: 'alpha(opacity=50)';
+  /* IE */
+  *position: absolute;
+  *filter: alpha(opacity = 50);
+  /* CSS3 standard */
+  opacity: 0.5;
+  /* for Mozilla, Firefox */
+  -moz-opacity: 0.5;
+  /* IE */
+  *rgba(67%,67%,67%,0.5);
+}
+
+#PopupMain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0px 0px -310px;
+  padding: 16px;
+  width: 600px;
+  border: solid 2px #0099CC;
+  background-color: #dcdcdc;
+  text-align: left;
+}
+
+#PopupTitle {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+/*
+  border-bottom: 1px dotted #676767;
+*/
+}
+
+.PopupTitleWithCloseBtn {
+  width: 570px;
+  width: 530px \9;
+}
+
+#PopupCloseBtn {
+  cursor: pointer;
+}
+
+#LoadingImg, #PopupCont {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#LoadingImg {
+}
+
+#PopupCont {
+  background-color: #e3e3e3;
+  padding: 10px;
+}
+
+#PopupCtrl {
+/*
+  border-top: 1px dotted #676767;
+*/
+  text-align: center;
+  margin-top: 10px;
+}
+
+#PopupCtrl button[type="button"] {
+  height: 32px;
+  width: 80px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+
+
+
+

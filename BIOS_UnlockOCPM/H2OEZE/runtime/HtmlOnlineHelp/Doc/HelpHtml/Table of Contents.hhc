@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Disclaimer">
+		<param name="Local" value="Disclaimer.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Introduction">
+		<param name="Local" value="Introduction\Introduction.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Using the Program">
+		<param name="Local" value="UsingTheProgram\main.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="File">
+			<param name="Local" value="UsingTheProgram\FileMenu.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Bios image">
+			<param name="Local" value="UsingTheProgram\BiosImageMenu.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Components">
+			<param name="Local" value="UsingTheProgram\ComponentsMenu.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Binary-Rom">
+			<param name="Local" value="UsingTheProgram\BinaryRomMenu.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Other">
+			<param name="Local" value="UsingTheProgram\OtherMenu.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Help">
+			<param name="Local" value="UsingTheProgram\HelpMenu.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Exercising the Example">
+		<param name="Local" value="UsingTheProgram\main.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Modify Logo">
+			<param name="Local" value="ExercisingTheExample\ModifyLogo.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Replace Module">
+			<param name="Local" value="ExercisingTheExample\ReplaceModule.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Insert Module">
+			<param name="Local" value="ExercisingTheExample\InsertModule.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Delete Module">
+			<param name="Local" value="ExercisingTheExample\DeleteModule.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Export Module">
+			<param name="Local" value="ExercisingTheExample\ExportModule.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Export Module List">
+			<param name="Local" value="ExercisingTheExample\ExportModuleList.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Replace FV">
+			<param name="Local" value="ExercisingTheExample\ReplaceFV.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Export FV List">
+			<param name="Local" value="ExercisingTheExample\ExportFVList.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Replace Option Rom">
+			<param name="Local" value="ExercisingTheExample\ReplaceOpRom.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Export Option Rom">
+			<param name="Local" value="ExercisingTheExample\ExportOpRom.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Export Option Rom List">
+			<param name="Local" value="ExercisingTheExample\ExportOpRomList.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Modify Microcode">
+			<param name="Local" value="ExercisingTheExample\ModifyiMicroCode.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Modify Default Settings of Setup Utility">
+			<param name="Local" value="ExercisingTheExample\ModifySetupMenuSettings.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Export Setup Menu Settings">
+			<param name="Local" value="ExercisingTheExample\ExportSetupMenuSettings.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Generate Logo FFS">
+			<param name="Local" value="ExercisingTheExample\GenerateLogoFfs.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Merge Factory Copy Section">
+			<param name="Local" value="ExercisingTheExample\MergeFactoryCopySection.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Command Line Interface">
+		<param name="Local" value="CommandLineInterface\main.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="replogo">
+			<param name="Local" value="CommandLineInterface\replogo.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="repmodule">
+			<param name="Local" value="CommandLineInterface\repmodule.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="insmodule">
+			<param name="Local" value="CommandLineInterface\insmodule.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="delmodule">
+			<param name="Local" value="CommandLineInterface\delmodule.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="repfv">
+			<param name="Local" value="CommandLineInterface\repfv.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="repoprom">
+			<param name="Local" value="CommandLineInterface\repoprom.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mergefc">
+			<param name="Local" value="CommandLineInterface\mergefc.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="genlogoffs">
+			<param name="Local" value="CommandLineInterface\genlogoffs.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="inslogo">
+			<param name="Local" value="CommandLineInterface\inslogo.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="repbiosver">
+			<param name="Local" value="CommandLineInterface\repbiosver.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="logopath">
+			<param name="Local" value="CommandLineInterface\logopath.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="logoindex">
+			<param name="Local" value="CommandLineInterface\logoindex.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="logoconvert">
+			<param name="Local" value="CommandLineInterface\logoconvert.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fvpath">
+			<param name="Local" value="CommandLineInterface\fvpath.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="modulepath">
+			<param name="Local" value="CommandLineInterface\modulepath.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="oprompath">
+			<param name="Local" value="CommandLineInterface\oprompath.htm">
+			</OBJECT>	
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="opromindex">
+			<param name="Local" value="CommandLineInterface\opromindex.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="biosver">
+			<param name="Local" value="CommandLineInterface\biosver.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="guid">
+			<param name="Local" value="CommandLineInterface\guid.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fcpath">
+			<param name="Local" value="CommandLineInterface\fcpath.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fvnum">
+			<param name="Local" value="CommandLineInterface\fvnum.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="out">
+			<param name="Local" value="CommandLineInterface\out.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="type">
+			<param name="Local" value="CommandLineInterface\type.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="delay">
+			<param name="Local" value="CommandLineInterface\delay.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

@@ -1,0 +1,7 @@
+Chipset Name : GRANTLY PLATFORM Ver.05.04.21.0026,,,
+Category,Name,GUID,Description
+GrantleyMultiBoardPkg,,,
+Platform/OEM Layer,\grantleymultiboardpkg\binary\serverenginespilot3gop\MUF20120229_V21,7B11873C-B8E0-4D5D-8E33-A53318AFB97E,Component description file for BmcGopDriver.
+Platform/OEM Layer,\grantleymultiboardpkg\binary\x540drv\X540Drv,7D012708-B063-4155-8E48-46143470D991,Component description file for BmcGopDriver.
+Platform/OEM Layer,\grantleymultiboardpkg\binary\uefiraid\3.8.0.1032\SataDriver,382F560D-17A9-4887-BD9C-EB439C1CC482,Component description file for include binary Intel(R) SATA RAID EFI Driver.
+Platform/OEM Layer,\grantleymultiboardpkg\binary\uefiraid\4.1.0.1046\sSataDriver,532A0583-ED10-4C81-8F11-BF22781E0698,Component description file for include binary Intel(R) SATA RAID EFI Driver.

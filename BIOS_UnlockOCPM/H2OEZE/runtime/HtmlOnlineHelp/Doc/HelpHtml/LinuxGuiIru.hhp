@@ -1,0 +1,13 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=..\LinuxGuiIRU.chm
+Contents file=Table of Contents.hhc
+Default topic=Disclaimer.htm
+Display compile progress=No
+Index file=Index.hhk
+Language=0x404 中文 (台灣)
+Title=LinuxGuiIru
+
+
+[INFOTYPES]
+

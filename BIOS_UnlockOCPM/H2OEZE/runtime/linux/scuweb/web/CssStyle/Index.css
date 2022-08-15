@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+.FuncBtn {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 30px;
+  width: 270px;
+  height: 70px;
+  background-image: url('../Images/RectangleBox3.png');
+  background-repeat: no-repeat;
+  text-align: center;
+  vertical-align: middle; /* Not text, for block area or images */
+}
+
+.SepareteLine {
+}
+
+span.ServerIp, span.ServerPort {
+  display: inline-block;
+  text-align: center;
+  padding-left: 4px;
+}
+
+span.ServerPort {
+  padding-left: 8px;
+}
+
+.ServerIp {
+  width: 200px;
+}
+
+.ServerPort {
+  width: 80px;
+}
+
+.SepPipe {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#ScanResult {
+  margin-top: 10px;
+}
+
+#SubTitleSection {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #efefef;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  margin-bottom: 12px;
+}
+
+#FunTitle {
+  display: inline-block;
+  width: 560px;
+}
+
+#FunBackBtn {
+  display: inline-block;
+  width: 60px;
+}
+
+

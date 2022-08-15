@@ -1,0 +1,15 @@
+[BIOS Image]
+C:\Users\danlo\Documents\Bios Modification\Dell\Bios\InsydeH2O_Dibbler_05.22.04.0011\05.22.04.0011.fd
+
+[Log]
+C:\Users\danlo\Documents\Bios Modification\Tools\InsydeH2O Tools\H2OEZE_x64\runtime\SndBiosImgInfoSimple.txt
+
+ FD   size:         8192k
+ FV00 size:         4096k  
+ FV00 freespace:    1173k  
+ FV01 size:         192k  (NvStorage)
+ FV01 freespace:    185k  (NvStorage)
+ Compiler version:  1600 (VC 10.0)
+ Bios image version:  05.22.04.0011
+
+

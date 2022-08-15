@@ -1,0 +1,216 @@
+Chipset Name : GRANTLY PLATFORM Ver.05.04.21.0026,,,
+Category,Name,GUID,Description
+MdeModulePkg,,,
+Kernel Layer,\mdemodulepkg\core\dxe\DxeCore,D6A2CB7F-6A18-4E2F-B43B-9920A733700A,This is core module in DXE phase. It provides an implementation of DXE Core that is compliant with DXE CIS.
+Kernel Layer,\mdemodulepkg\universal\reportstatuscoderouter\runtimedxe\ReportStatusCodeRouterRuntimeDxe,D93CE3D8-A7EB-4730-8C8E-CC466A9ECC3C,Report Status Code Router Driver which produces Report Stataus Code Handler Protocol and Status Code Runtime Protocol.
+Kernel Layer,\mdemodulepkg\universal\metronome\Metronome,C8339973-A563-4561-B858-D8476F9DEFC4,The user Entry Point for module Metronome. The user code starts with this function.
+Kernel Layer,\mdemodulepkg\core\runtimedxe\RuntimeDxe,B601F8C4-43B7-4784-95B1-F4226CB40CEE,This runtime module installs Runtime Architectural Protocol and registers CalculateCrc32 boot services table, SetVirtualAddressMap & ConvertPointer runtime services table.
+Kernel Layer,\mdemodulepkg\universal\watchdogtimerdxe\WatchdogTimer,F099D67F-71AE-4C36-B2A3-DCEB0EB2B7D8,Generic watchdog timer driver produceing Watchdog Timer Architectural Protocol using UEFI APIs.
+Kernel Layer,\mdemodulepkg\universal\acpi\firmwareperformancedatatabledxe\FirmwarePerformanceDxe,00160F8D-2B35-4df2-BBE0-B272A8D631F0,This module registers report status code listener to collect performance data for Firmware Basic Boot Performance Record and other boot performance records, and install FPDT to ACPI table.
+Kernel Layer,\mdemodulepkg\universal\devicepathdxe\DevicePathDxe,9B680FCE-AD6B-4F3A-B60B-F59899003443,This driver produces Device Path Utilities protocol and optionally DevicePahtToText and DevicePathFromText protocols based on feature flag PcdDevicePathSupportDevicePathToText & PcdDevicePathSupportDevicePathFromText respectively.
+Kernel Layer,\mdemodulepkg\universal\ebcdxe\EbcDxe,13AC6DD0-73D0-11D4-B06B-00AA00BD6DE7,This module implements EFI Byte Code (EBC) Virtual Machine that can provide platform and processor-independent mechanisms for loading and executing EFI device drivers.
+Kernel Layer,\mdemodulepkg\core\pismmcore\PiSmmIpl,2FA2A6DA-11D5-4DC3-999A-749648B03C56,This module provide an SMM CIS compliant implementation of SMM IPL.
+Kernel Layer,\mdemodulepkg\core\pismmcore\PiSmmCore,E94F54CD-81EB-47ED-AEC3-856F5DC157A9,This module provide an SMM CIS compliant implementation of SMM Core.
+Kernel Layer,\mdemodulepkg\universal\statuscodehandler\smm\StatusCodeHandlerSmm,79CD78D8-6EDC-4978-BD02-3299C387AB17,Status Code Handler Driver which produces general handlers and hook them onto the SMM status code router.
+Kernel Layer,\mdemodulepkg\universal\acpi\firmwareperformancedatatablesmm\FirmwarePerformanceSmm,044310AB-77FD-402A-AF1A-87D4120E7329,This module registers report status code listener to collect performance data for SMM boot performance records and S3 Suspend Performance Record.
+Kernel Layer,\mdemodulepkg\universal\acpi\s3savestatedxe\S3SaveStateDxe,BDCE85BB-FBAA-4F4E-9264-501A2C249581,Component description file for ScriptSave module.
+Kernel Layer,\mdemodulepkg\universal\lockbox\smmlockbox\SmmLockBox,33FB3535-F15E-4C17-B303-5EB94595ECB6,Component description file for LockBox SMM driver.
+Kernel Layer,\mdemodulepkg\universal\console\conplatformdxe\ConPlatformDxe,51CCF399-4FDF-4E55-A45B-E123F84D456A,Console Platfrom DXE Driver that specifies whether device can be used as console input/output device or error output device and update global variables accordingly.
+Kernel Layer,\mdemodulepkg\universal\printdxe\PrintDxe,79E4A61C-ED73-4312-94FE-E3E7563362A9,Print DXE driver that produces Print2 Protocol.
+Kernel Layer,\mdemodulepkg\universal\disk\diskiodxe\DiskIoDxe,6B38F7B4-AD98-40E9-9093-ACA2B5A253C4,Module that lays Disk I/O protocol on every Block I/O protocol.
+Kernel Layer,\mdemodulepkg\bus\scsi\scsibusdxe\ScsiBus,0167CCC4-D0F7-4F21-A3EF-9E64B7CDCE8B,SCSI bus driver. This driver scans all SCSI devices and creates a device handle for each of them. After this the driver installs the Device Path Protocol and SCSI I/O Protocol on these handles.
+Kernel Layer,\mdemodulepkg\core\pei\PeiCore,52C05B14-0B98-496C-BC3B-04B50211D680,PeiMain module is core module in PEI phase. It takes responsibilities of: 1) Initialize memory, PPI, image services etc, to establish PEIM runtime environment. 2) Dispatch PEIM from discovered FV. 3) Handoff control to DxeIpl to load DXE core and enter DXE phase.
+Kernel Layer,\mdemodulepkg\universal\pcd\pei\PcdPeim,9B3ADA4F-AE56-4C24-8DEA-F03B7558AE50,PCD PEIM produces PCD database to manage all dynamic PCD in PEI phase and install Pcd Ppi service.
+Kernel Layer,\mdemodulepkg\universal\reportstatuscoderouter\pei\ReportStatusCodeRouterPei,A3610442-E69F-4DF3-82CA-2360C4031A23, Report Status Code Router PEIM which produces Report Stataus Code Handler PPI and Status Code PPI.
+Kernel Layer,\mdemodulepkg\universal\acpi\firmwareperformancedatatablepei\FirmwarePerformancePei,ADF01BF6-47D6-495D-B95B-687777807214,This module register report status code listener to collect performance data for S3 Resume Performance Record on S3 resume boot path.
+Kernel Layer,\mdemodulepkg\universal\securitystubdxe\SecurityStubDxe,F80697E9-7FD6-4665-8646-88E33EF71DFC,This driver produces security2 and security architectural protocol based on SecurityManagementLib.
+Kernel Layer,\mdemodulepkg\universal\capsulepeiCapsulePei,C779F6D8-7113-4AA1-9648-EB1633C7D53B,Capsule update module supports EFI and UEFI.
+Kernel Layer,\mdemodulepkg\universal\pcatsinglesegmentpcicfg2pei\PcatSingleSegmentPciCfg2Pei,4F1F379F-2A62-48BB-AC34-D3F135C6E2B7,This driver installs Single Segment Pci Configuration 2 PPI to provide read, write and modify access to Pci configuration space in PEI phase. To follow PI specification, these services also support access to the unaligned Pci address.
+UefiCpuPkg,,,
+Kernel Layer,\ueficpupkg\cpuio2dxe\CpuIo2Dxe,A19B1FE7-C1BC-49F8-875F-54A5D542443F,This DXE driver produces of the CPU I/O 2 Protocol, as introduced by PI 1.2.
+Kernel Layer,\ueficpupkg\cpuio2smm\CpuIo2Smm,A47EE2D8-F60E-42FD-8E58-7BD65EE4C29,Module that produces the SMM CPU I/O 2 Protocol using the services of the I/O Library.
+PcAtChipsetPkg,,,
+Kernel Layer,\pcatchipsetpkg\8259interruptcontrollerdxe\Legacy8259,79CA4208-BBA1-4A9A-8456-E1E66A81484E,8259 Interrupt Controller driver.
+IA32FamilyCpuPkg,,,
+Kernel Layer,\ia32familycpupkg\pismmcommunication\PiSmmCommunicationSmm,E21F35A8-42FF-4050-82D6-93F7CDFA7073,This file contains an Intel Peripheral Driver and is licensed for Intel CPUs and chipsets under the terms of your license agreement with Intel or your vendor.
+IntelFrameworkModulePkg,,,
+Kernel Layer,\intelframeworkmodulepkg\universal\sectionextractiondxe\SectionExtractionDxe,801ADCA0-815E-46A4-84F7-657F53621A57,Section Extraction Dxe Driver produces framework section extract protocol.
+Kernel Layer,\intelframeworkmodulepkg\universal\cpuiodxe\CpuIoDxe,BAE7599F-3C6B-43B7-BDF0-9CE07AA91AA6,Module that produces the Framework CPU I/O Protocol using the services of the I/O Library.
+Kernel Layer,\intelframeworkmodulepkg\bus\isa\isabusdxe\IsaBusDxe,240612B5-A063-11D4-9A3A-0090273FC14D,Component description file for IsaBus module.
+Kernel Layer,\intelframeworkmodulepkg\universal\datahubdxe\DataHubDxe,53BCC14F-C24F-434C-B294-8ED2D4CC1860,This driver initializes and installs the Data Hub protocol.
+Kernel Layer,\intelframeworkmodulepkg\universal\datahubstderrdxe\DataHubStdErrDxe,CA515306-00CE-4032-874E-11B755FF6866,This driver takes DEBUG () info from Data Hub and writes it to StdErr if it exists.
+Kernel Layer,\intelframeworkmodulepkg\universal\console\vgaclassdxe\VgaClassDxe,BF89F10D-B205-474F-96E3-7A7BB1B4A407,VGA Class Driver that managers VGA devices and produces Simple Text Output Protocol.
+FatBinPkg,,,
+Kernel Layer,\fatbinpkg\enhancedfatdxe\Fat,961578FE-B6B7-44C3-AF35-6BC705CD2B1F,Binary FAT32 EFI Driver for IA32, X64, IPF and EBC arch.
+EdkShellBinPkg,,,
+Kernel Layer,\edkshellbinpkg\fullshell\Shell_Full,C57AD6B7-0515-40A8-9D21-551652854E37,Component description file for EFI Shell module.
+EdkCompatibilityPkg,,,
+Kernel Layer,\edkcompatibilitypkg\compatibility\smmaccess2onsmmaccessthunk\SmmAccess2OnSmmAccessThunk,98BBCDA4-18B4-46D3-BD1F-6A3A52D44CF8,Component description file for SMM Access2 Protocol on SMM Access Protocol Thunk driver.
+Kernel Layer,\edkcompatibilitypkg\compatibility\smmcontrol2onsmmcontrolthunk\SmmControl2OnSmmControlThunk,B55A4515-5895-4EA8-845B-75B7480F6502,Component description file for SMM Control2 Protocol on SMM Control Protocol Thunk driver.
+Kernel Layer,\edkcompatibilitypkg\compatibility\smmbaseonsmmbase2thunk\SmmBaseOnSmmBase2Thunk,21CCF0B7-246B-412C-A334-0B65A07B28DF,Component description file for SMM Base Protocol on SMM Base2 Protocol Thunk driver.
+Kernel Layer,\edkcompatibilitypkg\compatibility\smmbasehelper\SmmBaseHelper,8C87E0A0-B390-4BE3-819C-7C6C83CAE4EB,Component description file for SMM Base Helper SMM driver.
+Kernel Layer,\edkcompatibilitypkg\compatibility\bootscriptsaveons3savestatethunk\BootScriptSaveOnS3SaveStateThunk,062ACC82-1D1E-4F61-AA94-8B0C47236A3D,To implement Framework Boot Script Save protocol based on PI S3 Save State protocol.
+Kernel Layer,\edkcompatibilitypkg\compatibility\frameworkhiionuefihiithunk\FrameworkHiiOnUefiHiiThunk,AC3435BB-B1D3-4EF8-957C-8048606FF671,This module inits HII database and installs HII protocol based on the avaliable UEFI HII protocol found in the platform.
+Kernel Layer,\edkcompatibilitypkg\compatibility\printthunk\PrintThunk,3792FF94-8614-45ED-902B-1207BF1490A8,Module produces EDK gEfiPrintProtocolGuid for backward compatibility support.
+Kernel Layer,\edkcompatibilitypkg\compatibility\fvonfv2thunk\FvOnFv2Thunk,5007A40E-A5E0-44F7-86AE-662F9A91DA26,Module produce FV on top of FV2.
+Kernel Layer,\edkcompatibilitypkg\compatibility\readonlyvariableonreadonlyvariable2thunk\ReadOnlyVariableOnReadOnlyVariable2Thunk,0FDB764B-E669-4C69-83AC-5EDD99A2711E,Module produce EFI_PEI_READ_ONLY_VARIABLE_PPI on top of EFI_PEI_READ_ONLY_VARIABLE2_PPI.
+Kernel Layer,\edkcompatibilitypkg\compatibility\pcicfgonpcicfg2thunk\PciCfgOnPciCfg2Thunk,717886AB-C40A-44CF-9114-4119E84B0DC7,Module produce PciCfgPpi on top of PciCfgPpi2.
+Kernel Layer,\edkcompatibilitypkg\compatibility\acpivariablehobonsmramreservehobthunk\AcpiVariableHobOnSmramReserveHobThunk,49B7F3E1-6C08-4A5B-911C-E9E397ED4178,Component description file for AcpiVariableHob on SmramReservedHob Thunk driver.
+Kernel Layer,\edkcompatibilitypkg\compatibility\acpivariablehobonsmramreservehobthunk\DebugMaskPei,EB00DB50-C654-460F-8D7A-0E444FD32B45,Component description file for DebugMaskPei driver.
+Kernel Layer,\edkcompatibilitypkg\compatibility\mpservicesonframeworkmpservicesthunk\MpServicesOnFrameworkMpServicesThunk,51739E2A-A022-4D73-ADB9-91F0C9BC7142,Produces PI MP Services Protocol on top of Framework MP Services Protocol.
+InsydeCrPkg,,,
+Kernel Layer,\insydecrpkg\crhookdxe\CRHookDxe,9E62300C-E94F-41A6-A70C-D7E47577B38C,Component description file for CrHookDxe module.
+Kernel Layer,\insydecrpkg\crpolicydxe\CrPolicyDxe,DF25A013-3D50-4FAE-B3F2-BB97BB2401B5,Component description file for CrPolicy driver.
+Kernel Layer,\insydecrpkg\isaserialdxe\IsaSerialDxe,93B80003-9FB3-11D4-9A3A-0090273FC14D,Serial driver for standard UARTS on an ISA bus.
+Kernel Layer,\insydecrpkg\terminaldxe\TerminalDxe,9E863906-A40F-4875-977F-5B93FF237FC6,Component description file for Terminal module.
+Kernel Layer,\insydecrpkg\pciserialdxe\PciSerialDxe,A6CC6BC8-2ADA-46C3-BBA4-E99672CC9530,Component description file for PciSerialDxe driver.
+InsydeModulePkg,,,
+Kernel Layer,\insydemodulepkg\universal\statuscode\debugdriverdxe\DebugDriverDxe,7C380900-1B96-4615-978E-89E02E2C89D0,Component description file for DebugDriverDxe module.
+Kernel Layer,\insydemodulepkg\universal\pcdsmmdxe\PcdSmmDxe,80CF7257-87AB-47F9-A3FE-D50B76D89541,PCD DXE driver manage database contains all dynamic PCD entries and produce the implementation of PCD protocol.
+Kernel Layer,\insydemodulepkg\universal\statuscode\reportstatuscoderoutersmm\ReportStatusCodeRouterSmm,A6885402-D022-4B0E-A509-4711B90F2A39,Report Status Code Router Driver which produces Report Stataus Code Handler Protocol and Status Code Runtime Protocol.
+Kernel Layer,\insydemodulepkg\bus\isa\pcrtcruntimedxe\PcRtc,378D7B65-8DA9-4773-B6E4-A47826A833E1,PcRtc driver to install EFI_REAL_TIME_CLOCK_ARCH_PROTOCOL.
+Kernel Layer,\insydemodulepkg\universal\recovery\emupeigatedxe\EmuPeiGateDxe,26452F27-45DE-4A94-807A-0E6FDC1CB962,Fast recovery helper DXE driver.
+Kernel Layer,\insydemodulepkg\universal\security\tcg\memoryoverwritecontrol\TcgMor,AD416CE3-A483-45B1-94C2-4B4E4D575562,Component description file for Memory Overwrite Control driver.
+Kernel Layer,\insydemodulepkg\universal\security\tcg\treeconfigdxe\TrEEConfigDxe,8376BDCA-5E03-4735-951A-4A74141E5886,Component file for TrEE configuration module.
+Kernel Layer,\insydemodulepkg\universal\security\tcg\tcgdxe\TcgDxe,A5683620-7998-4BB2-A377-1C1E31E1E215,Component file for module TcgDxe. This module will produce TCG protocol and measure boot environment.
+Kernel Layer,\insydemodulepkg\universal\security\tcg\physicalpresencedxe\PhysicalPresenceDxe,96107C8E-9490-4767-9D0D-5590F1F6E1FC,Component file for PhysicalPresenceDxe driver.
+Kernel Layer,\insydemodulepkg\universal\security\tcg\tcgsmm\TcgSmm,42293093-76B9-4482-8C02-3BEFDEA9B35D,This driver implements TPM definition block in ACPI table and registers SMI callback functions for physical presence and MemoryClear to handle the requests from ACPI method.
+Kernel Layer,\insydemodulepkg\universal\console\jpegdecoderdxe\JpegDecoderDxe,2707E46D-DBD7-41C2-9C04-C9FDB8BAD86C,Component description file for JpegDecoder module.
+Kernel Layer,\insydemodulepkg\universal\console\tgadecoderdxe\TgaDecoderDxe,ADCCA887-5330-414A-81A1-5B578146A397,Component description file for TgaDecoder module.
+Kernel Layer,\insydemodulepkg\universal\console\pcxdecoderdxe\PcxDecoderDxe,A8F634A5-28F1-4456-A9D5-7E24B99BDB65,Component description file for PcxDecoder module.
+Kernel Layer,\insydemodulepkg\universal\console\gifdecoderdxe\GifDecoderDxe,1353DE63-B74A-4BEF-80FD-2C5CFA83040B,Component description file for GifDecoder module.
+Kernel Layer,\insydemodulepkg\universal\console\pngdecoderdxe\PngDecoderDxe,C1D5258B-F61A-4C02-9293-A005BEB3EAA1,Component description file for PngDecoder module.
+Kernel Layer,\insydemodulepkg\universal\bdsdxe\BdsDxe,FC5C7020-1A48-4198-9BE2-EAD5ABC8CF2F,BDSDxe module is core driver for BDS phase.
+Kernel Layer,\insydemodulepkg\universal\commonpolicy\bootoptionpolicydxe\BootOptionPolicyDxe,2D6BB83D-84A2-404A-B4CA-3E7AC0EFB3D2,Component description file for BootOptionPolicyDxe module.
+Kernel Layer,\insydemodulepkg\universal\firmwarevolume\ftwliteruntimedxe\FaultTolerantWriteLiteDxe,4C862FC6-0E54-4E36-8C8F-FF6F3167951F,Component description file for FtwLitRuntimeDxe module.
+Kernel Layer,\insydemodulepkg\universal\variable\variableruntimedxe\VariableRuntimeDxe,CBD2E4D5-7068-4FF5-B462-9822B4AD8D60,Component description file for VariableRuntimeDxe module.
+Kernel Layer,\insydemodulepkg\universal\variable\emuvariableruntimedxe\EmuVariableRuntimeDxe,02B01AD5-7E59-43E8-A6D8-238180613A5A,Component description file for EmuVariableRuntimeDxe module.
+Kernel Layer,\insydemodulepkg\universal\variable\variabledefaultupdatedxe\VariableDefaultUpdate,760F874E-B8CB-405E-AA32-A46AE2F3D680,Component description file for UnicodeCollation module.
+Kernel Layer,\insydemodulepkg\universal\monotoniccounterruntimedxe\MonotonicCounterRuntimeDxe,AD608272-D07F-4964-801E-7BD3B7888652,This module produces the UEFI boot service GetNextMonotonicCount() and runtime service GetNextHighMonotonicCount().
+Kernel Layer,\insydemodulepkg\universal\acpi\acpisupportdxe\AcpiSupportDxe,506533A6-E626-4500-B14F-17939C0E5B60,Component description file for AcpiSupportDxe module.
+Kernel Layer,\insydemodulepkg\universal\acpi\acpiplatformdxe\AcpiPlatform,CB933912-DF8F-4305-B1F9-7B44FA11395C,Component description file for AcpiPlatformDxe driver.
+Kernel Layer,\insydemodulepkg\universal\acpi\bootscriptexecutordxe\BootScriptExecutorDxe,FA20568B-548B-4B2B-81EF-1BA08D4A3CEC,This is a standalone Boot Script Executor. Standalone means it does not depends on any PEI or DXE service.
+Kernel Layer,\insydemodulepkg\universal\acpi\bootgraphicsresourcetabledxe\BootGraphicsResourceTableDxe,B8E62775-BB0A-43F0-A843-5BE8B14F8CCD,This module install ACPI Boot Graphics Resource Table (BGRT).
+Kernel Layer,\insydemodulepkg\universal\acpi\wpbtdxe\WpbtDxe,ED92EAE0-C31C-4824-8802-35595EFA8287,Component description file for WpbtDxe driver.
+Kernel Layer,\insydemodulepkg\universal\acpi\msdm\InstallMsdm,6903A447-CB4F-45F6-89A2-7E7E2F9EE14C,Install ACPI MSDM Table For OA 3.0.
+Kernel Layer,\insydemodulepkg\bus\isa\ps2keyboarddxe\Ps2KeyboardDxe,3DC82376-637B-40A6-A8FC-A565417F2C38,Ps2 Keyboard UEFI Driver which produce gEfiSimpleTextInProtocolGuid and gEfiSimpleTextInputExProtocolGuid protocol.
+Kernel Layer,\insydemodulepkg\bus\isa\ps2mousedxe\Ps2MouseDxe,202A2B0E-9A31-4812-B291-8747DF152439,Ps2 Mouse Driver.
+Kernel Layer,\insydemodulepkg\bus\pci\idebusdxe\IdeBusDxe,69FD8E47-A161-4550-B01A-5594CEB2B2B2,Component description file for IdeBus module.
+Kernel Layer,\insydemodulepkg\bus\pci\pcibusdxe\PciBusDxe,93B80004-9FB3-11D4-9A3A-0090273FC14D,Component description file for PciBus module.
+Kernel Layer,\insydemodulepkg\bus\pci\ahcibusdxe\AhciBusDxe,3ACC966D-8E33-45C6-B4FE-62724BCD15A9,Component description file for AHCI controller Driver module.
+Kernel Layer,\insydemodulepkg\bus\pci\ehcidxe\EhciDxe,BDFE430E-8F2A-4DB0-9991-6F856594777E,Component Description File For EhciDxe Module.
+Kernel Layer,\insydemodulepkg\bus\pci\xhcidxe\XhciDxe,356C2B12-3124-4451-BF66-B502D88A0074,Component description file for Xhci Dxe module.
+Kernel Layer,\insydemodulepkg\bus\usb\usbcoredxe\UsbCoreDxe,31FD7EAF-80A7-435E-8E0A-3F185F8667DD,Component description file for UsbCore Dxe module.
+Kernel Layer,\insydemodulepkg\bus\usb\usbbusdxe\UsbBusDxe,240612B7-A063-11D4-9A3A-0090273FC14D,Component description file for UsbBus Dxe module.
+Kernel Layer,\insydemodulepkg\bus\usb\usbbotdxe\UsbBotDxe,B40612B9-A063-11D4-9A3A-0090273FC14D,Component description file for UsbBot Dxe module.
+Kernel Layer,\insydemodulepkg\bus\usb\usbcbidxe\UsbCbiDxe,A3527D16-E6CC-42F5-BADB-BF3DE177742B,Component description file for UsbCbi Dxe module.
+Kernel Layer,\insydemodulepkg\bus\usb\usbmassstoragedxe\UsbMassStorageDxe,9FB4B4A7-42C0-4BCD-8540-9BCC6711F83E,Component description file for UsbMassStorage Dxe module.
+Kernel Layer,\insydemodulepkg\bus\usb\usbkbdxe\UsbKbDxe,2D2E62CF-9ECF-43B7-8219-94E7FC713DFE,USB Keyboard Driver that manages USB keyboard and produces Simple Text Input Protocol and Simple Text Input Ex Protocol.
+Kernel Layer,\insydemodulepkg\bus\usb\usbmousedxe\UsbMouseDxe,2D2E62AA-9ECF-43B7-8219-94E7FC713DFE,USB Mouse Driver that manages USB mouse and produces Simple Pointer Protocol.
+Kernel Layer,\insydemodulepkg\csm\usblegacysmm\UsbLegacySmm,EF33C296-F64C-4146-AD04-347899702C84,Component description file for UsbLegacy Smm module.
+Kernel Layer,\insydemodulepkg\universal\acpi\acpis3savedxe\AcpiS3SaveDxe,2BDED685-F733-455F-A840-43A22B791FB3,Component description file for AcpiS3Save module.
+Kernel Layer,\insydemodulepkg\universal\firmwarevolume\fvbservicesruntimedxe\FvbServicesRuntimeDxe,BDFE5FAA-2A35-44BB-B17A-8084D4E2B9E9,Component description file for Nt32 Fimware Volume Block DXE driver module.
+Kernel Layer,\insydemodulepkg\universal\firmwarevolume\fwblockservicesmm\FwBlockServiceSmm,74D936FA-D8BD-4633-B64D-6424BDD23D24,Component description file for FwBlockServiceSmm module.
+Kernel Layer,\insydemodulepkg\universal\firmwarevolume\flashdevicefvbruntimedxe\FlashDeviceFvbRuntimeDxe,B0C2372B-9393-4CBC-9CAF-53913C9DCE2,Component description file for FvbServicesRuntimeDxe module.
+Kernel Layer,\insydemodulepkg\universal\commonpolicy\pcihotplugdxe\PciHotPlugDxe,1967DD9B-B72C-4328-8C80-D4ACFC83FDF8,Component description file for PciHotPlug module.
+Kernel Layer,\insydemodulepkg\universal\acpi\acpicallbackssmm\AcpiCallbacksSmm,4FB2CE1F-1A3A-42E3-BD0C-7B84F954189A,Component description file for SmmAcpiCallbacks module.
+Kernel Layer,\insydemodulepkg\universal\userinterface\setupmousedxe\SetupMouseDxe,06B5947E-FF53-457D-98BC-C5ABC777FD5A,Component description file for SetupMouse Module.
+Kernel Layer,\insydemodulepkg\universal\console\monitorkeydxe\MonitorKeyDxe,27BEDA18-AE2B-43C2-AF6B-74952441DE28,Monitory Key In Dxe Phase.
+Kernel Layer,\insydemodulepkg\universal\smbios\pnpruntimedxe\PnpRuntimeDxe,A368D636-4C77-4B50-AAE8-F99E2DA40440,Component description file for PnpRuntimeDxe module.
+Kernel Layer,\insydemodulepkg\universal\smbios\pnpsmm\PnpSmm,CC1BAA36-11EB-45CC-9ADC-7565E273AC70,Component description file for PnpSmm module.
+Kernel Layer,\insydemodulepkg\universal\commonpolicy\commonsmicallbacksmm\CommonSmiCallBackSmm,6069277B-246B-45D5-BD6D-81820E10C11F,Component description file for CommonSmiCallBackSmm module.
+Kernel Layer,\insydemodulepkg\universal\smbios\smbiosdxe\SmbiosDxe,F9D88642-0737-49BC-81B5-6889CD57D9EA,This driver initializes and installs the SMBIOS protocol.
+Kernel Layer,\insydemodulepkg\universal\userinterface\hiidatabasedxe\HiiDatabase,348C4D62-BFBD-4882-9ECE-C80BB1C4783B,The DXE driver produces HII protocols defined in UEFI HII 2.1 specificatin.
+Kernel Layer,\insydemodulepkg\universal\security\syspassworddxe\SysPassword,42FCB444-B881-49D8-A6E9-5A1695FC9F3E,System password driver.
+Kernel Layer,\insydemodulepkg\universal\security\storagesecuritycommanddxe\StorageSecurityCommandDxe,70D57D67-7F05-494D-A014-B75D7345B700,This module will produce StorageSecurityCommand protocol.
+Kernel Layer,\insydemodulepkg\universal\security\cryptoserviceruntimedxe\CryptoServiceRuntimeDxe,4AC99A7C-1DCF-4A51-8F06-5EEDFE8A8864,Component description file for CryptoService module.
+Kernel Layer,\insydemodulepkg\universal\security\rngdxe\RngDxe,40155DB7-F2F6-4F7E-8BA8-A3466D4EF5FE,Component description file for Rng interpreter.
+Kernel Layer,\insydemodulepkg\universal\userinterface\setupbrowserdxe\SetupBrowser,4F921013-4F71-4C6C-BCF8-419B2B801932,Component description file for SetupBrowserDxe module.
+Kernel Layer,\insydemodulepkg\universal\userinterface\fonts\truetypedecoderdxe\TrueTypeDecoderDxe,531AED6E-3DEE-45EB-8DF1-B70ADB1F885D,Component description file for TTF font driver.
+Kernel Layer,\insydemodulepkg\universal\userinterface\unicodecollationdxe\UnicodeCollationDxe,B273CC44-E62A-41DC-9CAD-BDB4235459D8,Component description file for UnicodeCollation module.
+Kernel Layer,\insydemodulepkg\universal\isaacpidxe\IsaAcpi,38A0EC22-FBE7-4911-8BC1-176E0D6C1DBD,Component description file for PCAT ISA ACPI driver.
+Kernel Layer,\insydemodulepkg\universal\console\consplitterdx\ConSplitterDxe,408EDCEC-CF6D-477C-A5A8-B4844E3DE281,This driver provides multi console supports.
+Kernel Layer,\insydemodulepkg\universal\console\vgadriverpolicydxe\VgaDriverPolicyDxe,B5F33FB5-66D5-4901-BAF1-F0C774FC6588,Component description file for Vga Driver Policy.
+Kernel Layer,\insydemodulepkg\universal\console\edidoverridedxe\EdidOverrideDxe,2818256A-6BDB-4871-993C-95315854012E,Component description file for EdidOverride driver.
+Kernel Layer,\insydemodulepkg\universal\disk\partitiondxe\PartitionDxe,1FA1F39E-FEFF-4AAE-BD7B-38A070A3B609,Modules that produces the logic Block I/O protocol for every partition.
+Kernel Layer,\insydemodulepkg\universal\memorytest\genericmemorytestdxe\GenericMemoryTestDxe,EEC9BC9A-2907-4D59-8B86-D1EC67DE62E1,Component description file for Generic memory test module.
+Kernel Layer,\insydemodulepkg\universal\commonpolicy\commonpciplatformdxe\CommonPciPlatformDxe,B7358BEB-6A52-4D50-98F9-7EDD70B4B320,Component description file for CommonPciPlatformDxe driver.
+Kernel Layer,\insydemodulepkg\csm\legacybiosdxe\LegacyBiosDxe,F122A15C-C10B-4D54-8F48-60F4F06DD1AD,Legacy Bios Module to support CSM.
+Kernel Layer,\insydemodulepkg\csm\biosthunk\keyboarddxe\KeyboardDxe,5479662B-6AE4-49E8-A6BD-6DE4B625811F,Component description file for BiosKeyboard module.
+Kernel Layer,\insydemodulepkg\csm\biosthunk\blockiodxe\BlockIoDxe,4495E47E-42A9-4007-8C17-B6664F909D04,Component description file for BlockIoDxe module.
+Kernel Layer,\insydemodulepkg\csm\biosthunk\int15servicesmm\Int15ServiceSmm,7D4E94A9-269A-47A1-80F0-2B0EB42F7B4B,Component description file for Int15ServiceSmm module.
+Kernel Layer,\insydemodulepkg\csm\biosthunk\videodxe\BiosVideoDxe,0B04B2ED-861C-42CD-A22F-C3AAFACCB896,Component description file for Video driver based on legacy bios.
+Kernel Layer,\insydemodulepkg\universal\commonpolicy\legacybiosplatformdxe\LegacyBiosPlatformDxe,F84CFFF4-511E-41C8-B829-519F5152F444,Component description file for LegacyBiosPlatformDxe driver.
+Kernel Layer,\insydemodulepkg\csm\atalegacysmm\AtaLegacySmm,396E583B-D2DD-45F6-86E8-119885777CDE,Component description file for AtaLegacy module.
+Kernel Layer,\insydemodulepkg\bus\scsi\scsidiskdxe\ScsiDisk,0A66E322-3740-4CCE-AD62-BD172CECCA35,Scsi Disk driver. This driver detects the Scsi disk media and installs Block I/O Protocol on the device handle that holds the SCSI I/O Portocol.
+Kernel Layer,\insydemodulepkg\universal\security\biosprotectdxe\BiosProtectDxe,C7D4F4E3-DAEA-40B0-8846-F4CAF3135CE8,This driver registers event to enable BIOS region protection before boot to OS.
+Kernel Layer,\insydemodulepkg\universal\irsi\irsiregistrationruntimedxe\IrsiRegistrationRuntimeDxe,E8DDEB8B-82D7-4B6E-A2B4-D5EAEC2B8976,Component description file for IrsiRegistrationRuntimeDxe module.
+Kernel Layer,\insydemodulepkg\universal\irsi\irsiruntimedxe\IrsiRuntimeDxe,BA118F88-5B65-4584-9C5A-C2D087F6ED1E,Component description file for IrsiRuntimeDxe module.
+Kernel Layer,\insydemodulepkg\universal\firmwarevolume\firmwaremanagementruntimedxe\SystemFirmwareManagementRuntimeDxe,B795675E-7583-4F98-AC6A-F9DDBBCC32E8,Component description file for SystemFirmwareManagementRuntimeDxe module.
+Kernel Layer,\insydemodulepkg\universal\capsuleupdate\capsuleruntimedxe\CapsuleRuntimeDxe,42857F0A-13F2-4B21-8A23-53D3F714B840,Capsule Runtime Driver produces two UEFI capsule runtime services.
+Kernel Layer,\insydemodulepkg\universal\capsuleupdate\capsuleloadertriggerdxe\CapsuleLoaderTriggerDxe,C62CEB80-FB40-4A46-A5E5-C1D997C36DFC,Component Description for CapsuleLoaderTriggerDxe Driver.
+Kernel Layer,\insydemodulepkg\universal\firmwarevolume\variableregioninfodxe\VariableRegionInfoDxe,78D19E50-2B62-407F-9F49-C652A4124002,Component description file for VariableRegionInfoDxe module.
+Kernel Layer,\insydemodulepkg\universal\disk\delayuefiraidoprom\DelayUefiRaidOprom,13863F79-D94B-4205-BB0F-E4E06AAA5A4E,Delay UEFI RAID OpROM driver.
+Kernel Layer,\insydemodulepkg\universal\userinterface\setuputilityapp\SetupUtilityApp,3935B0A1-A182-4887-BC56-675528E78877,Component description file for Setup Utility Application.
+Kernel Layer,\insydemodulepkg\universal\multiconfigupdatedxe\MultiConfigUpdateDxe,D2B6C80A-FAFE-4512-835D-50D136540AAA,Update SMBios Driver build description file for DXE phase.
+Kernel Layer,\insydemodulepkg\universal\ihisiservicessmm\IhisiServicesSmm,87C2106E-8790-459D-BD44-2EF32A68C3F9,Component description file for IhisiSmm module.
+Kernel Layer,\insydemodulepkg\bus\pci\idebuspei\IdeBusPei,B7A5041A-78BA-49E3-B73B-54C757811FB6,Component description file for IdeBusPei module.
+Kernel Layer,\insydemodulepkg\bus\pci\ahcibuspei\AhciBusPei,4AA65902-3ED3-43b3-A52B-FC1D6C077AE4,Component description file for AhciBusPei module.
+Kernel Layer,\insydemodulepkg\universal\recovery\fatpei\FatPei,3D17205B-4C49-47e2-8157-864CD3D80DBD,Component description file for FatPei module.
+Kernel Layer,\insydemodulepkg\universal\recovery\cdexpresspei\CdExpressPei,31E147A6-D39A-4147-9DA3-BEFD4D523243,Component description file for PeiCdExpress module.
+Kernel Layer,\insydemodulepkg\universal\security\secureflash\firmwareauthenticationpei\FirmwareAuthenticationPei,F04D6DBD-1200-4C74-9EC9-B306C9EB0F38,Firmware Authentication PEIM.
+Kernel Layer,\insydemodulepkg\bus\pci\ehcipei\EhciPei,9A5D7D47-CF0C-451c-8E4B-B051EFC3CEDB,Component description file for Ehci PEIM.
+Kernel Layer,\insydemodulepkg\bus\pci\xhcipei\XhciPei,091AAEA3-09A9-40f6-9864-0139388A9F8C,Component description file for Xhci PEIM.
+Kernel Layer,\insydemodulepkg\bus\usb\usbbuspei\UsbBusPei,8401A045-6F70-4505-8471-7015B40355E3,Component description file for UsbBus PEI module.
+Kernel Layer,\insydemodulepkg\bus\usb\usbmassstoragepei\UsbMassStoragePei,BA25E07A-E253-442C-90FF-B4C92FAD6990,Component description file for UsbMassStorage PEI module.
+Kernel Layer,\insydemodulepkg\universal\misc\firmwarerevisionsyncpei\FirmwareRevisionSyncPei,C2239ACD-21D0-4CB0-B7DB-6D35EE7B0CC1,Component description file for FirmwareRevisionSync PEIM.
+Kernel Layer,\insydemodulepkg\universal\variable\setupdataproviderpei\SetupDataProviderPei,B937BAC9-B41B-4914-BC32-72410400F9DE,This PEIM provides Setup variable default values if Setup variable does not exist.
+Kernel Layer,\insydemodulepkg\universal\commonpolicy\platformstage1pei\PlatformStage1Pei,A85027FC-0E09-4FA9-A407-CAD206FB4F1,Component description file for PlatformStage1Pei PEIM.
+Kernel Layer,\insydemodulepkg\universal\commonpolicy\platformstage2pei\PlatformStage2Pei,1191BBF5-DCB9-44F4-827E-95359744C987,Component description file for PlatformStage2Pei PEIM.
+Kernel Layer,\insydemodulepkg\bus\smbus\progclkgenpeim\ProgClkGenPeim,FDB3B9A7-1E82-4C77-9C6C-4305C851F253,Component description file for ProgClkGen driver.
+Kernel Layer,\insydemodulepkg\bus\isa\ps2keyboardpei\Ps2KeyboardPei,67C63A11-F89D-4500-8270-D9DB251EB2AF,Component description file for Ps2KeyboardPei driver.
+Kernel Layer,\insydemodulepkg\universal\acpi\s3restoreacpipei\S3RestoreAcpiPei,4DE01DE6-7CBB-4786-9F2A-9B9C7C97AC06,Component description file for S3RestoreAcpiPei module.
+Kernel Layer,\insydemodulepkg\universal\security\tcg\treeconfigpei\TrEEConfigPei,3AE3D6F0-6483-45D6-9395-303C9789208D,Component file for TrEE configuration module.
+Kernel Layer,\insydemodulepkg\universal\acpi\s3resume2pei\S3Resume2Pei,89E549B0-7CFE-449D-9BA3-10D8B2312D71,S3 Resume Module: This module works with StandAloneBootScriptExecutor to S3 resume to OS. This module will excute the boot script saved during last boot and after that, control is passed to OS waking up handler.
+Kernel Layer,\insydemodulepkg\core\dxeiplpeim\DxeIpl,86D70125-BAA3-4296-A62F-602BEBBB9081,Last PEIM executed in PEI phase to load DXE Core from a Firmware Volume.
+Kernel Layer,\insydemodulepkg\universal\variable\variablepei\PeiVariable,34C8C28F-B61C-45A2-8F2E-89E46BECC63B,Component description file for Variable PEI module.
+Kernel Layer,\insydemodulepkg\universal\fileaccess\fileaccesspei\FileAccessPei,C2E5D736-0771-42AC-B99F-1B7F1CA5610,Component description file for FatPei module.
+InsydeFrameworkModulePkg,,,
+Kernel Layer,\insydeframeworkmodulepkg\compatibility\peismbus2onpeismbusthunk\PeiSmbus2OnPeiSmbusThunk,7726CDF8-737F-4B09-A254-FA396C6225C1,Component description file for PeiSmbus2OnPeiSmbusThunk module.
+Kernel Layer,\insydeframeworkmodulepkg\compatibility\fvfileloaderonloadfilethunFvFileLoaderOnLoadFileThunk,6CDDBF28-89AC-4E01-9692-616B8A1009C8,Module produce Framework EFI_PEI_FV_FILE_LOADER_PPI top of EFI_PEI_LOAD_FILE_PPI.
+Kernel Layer,\insydeframeworkmodulepkg\compatibility\smmusbdispatch2onsmmusbdispatchthunk\SmmUsbDispatch2OnSmmUsbDispatchThunk,EE1BB93E-54C5-4B17-9496-A20085950561,Component description file for SmmUsbDispatch2OnSmmUsbDispatchThunk module.
+Kernel Layer,\insydeframeworkmodulepkg\compatibility\pismbiosrecordondatahubrecordthunk\Datahub2SmbiosThunk,9F8B12CF-E796-408F-9D59-3ACDDC0AFBE3,This thunk driver register a filter for DataHub protocol, once a data hub record is added via EFI_DATA_HUB_PROTOCOL->LogData(), this filter will be invoked to translate the datahub record to SMBIOS record.
+Kernel Layer,\insydeframeworkmodulepkg\compatibility\smmswdispatch2onsmmswdispatchthunk\SmmSwDispatch2OnSmmSwDispatchThunk,1410C6AC-9F4B-495B-9C23-8A5AEB0165E9,Component description file for SMM SwDispatch2 Protocol on SMM SwDispatch Protocol Thunk driver.
+Kernel Layer,\insydeframeworkmodulepkg\compatibility\pismmstatuscodethunk\PiSmmStatusCodeThunk,14FF38A8-ACBA-4228-A7D7-A73260C7559B,PI SMM Status Code Protocol on Framework SMM Status Code Protocol Thunk driver.
+Kernel Layer,\insydeframeworkmodulepkg\compatibility\dxeoemservicesthunk\DxeOemServicesThunk,0F43CAAB-A14D-463B-BFF2-185CC0D5AEA5,Component description file for DxeOemServicesThunk module.
+Kernel Layer,\insydeframeworkmodulepkg\compatibility\smmoemservicesthunk\SmmOemServicesThunk,696D180A-77E0-46CD-A830-2D5BA71BE188,Component description file for SmmOemServicesThunk module.
+Kernel Layer,\insydeframeworkmodulepkg\platform\generic\fastrecovery\pei\emupeihelper\EmuPeiHelper,E2FC5838-16A9-4ED7-96E0-9A75F5AF711D,Component description file for EmuPeiHelper module.
+Kernel Layer,\insydeframeworkmodulepkg\compatibility\peioemservicesthunk\PeiOemServicesThunk,DB482EFC-88E9-4E17-976B-A3C2CBF86554,Component description file for PeiOemServicesThunk module.
+InsydeNetworkPkg,,,
+Kernel Layer,\insydenetworkpkg\drivers\networklockerdxe\NetworkLockerDxe,C613EC78-63ED-4B93-ACD4-54B3D4CCC268,When user enable PxeToLan.
+Kernel Layer,\insydenetworkpkg\drivers\dhcpdummydxe\DhcpDummyDxe,9C7CCB02-9154-4864-9E4B-DC0487E37660,This driver will install, DHCP4_SERVICE_BINDING_PROTOCOL, DHCP6_SERVICE_BINDING_PROTOCOL. When the real DHCP4 and DHCP6 not dispatch but has loaded.
+Kernel Layer,\insydenetworkpkg\drivers\pxedummydxe\PxeDummyDxe,F0F1588E-9028-4EB8-8031-F233B48EA0B7,This driver will install fake, EFI_PXE_BASE_CODE_PROTOCOL.
+Kernel Layer,\insydenetworkpkg\drivers\snpdxe\SnpDxe,E1CEE6E3-6C42-4A4F-916E-38385290A556,Component description file for SNP module.
+Kernel Layer,\insydenetworkpkg\drivers\dpcdxe\DpcDxe,A210F973-229D-4F4D-AA37-9895E6C9EABA,Component description file for DPC module.
+Kernel Layer,\insydenetworkpkg\drivers\mnpdxe\MnpDxe,025BBFC7-E6A9-4B8B-82AD-6815A1AEAF4A,Component description file for Mnp module.
+Kernel Layer,\insydenetworkpkg\drivers\ip4dxe\Ip4Dxe,9FB1A1F3-3B71-4324-B39A-745CBB015FFF,Component name for module Ip4.
+Kernel Layer,\insydenetworkpkg\drivers\ip4configdxe\Ip4ConfigDxe,26841BDE-920A-4E7A-9FBE-637F477143A6,Component name for module Ip4Config.
+Kernel Layer,\insydenetworkpkg\drivers\udp4dxe\Udp4Dxe,6D6963AB-906D-4A65-A7CA-BD40E5D6AF2B,Component name for module Udp4.
+Kernel Layer,\insydenetworkpkg\drivers\dhcp4dxe\Dhcp4Dxe,94734718-0BBC-47FB-96A5-EE7A5AE6A2AD,Component name for module Dhcp4.
+Kernel Layer,\insydenetworkpkg\drivers\mtftp4dxe\Mtftp4Dxe,0BB51CDD-A750-442F-A15E-7DEADFBA30FF,Component name for module Mtftp4.
+Kernel Layer,\insydenetworkpkg\drivers\arpdxe\ArpDxe,529D3F93-E8E9-4E73-B1E1-BDF6A9D50113,Component description file for ARP module.
+Kernel Layer,\insydenetworkpkg\drivers\ip6dxe\Ip6Dxe,5BEDB5CC-D830-4EB2-8742-2D4CC9B54F2C,Component description file for Ip6 module.
+Kernel Layer,\insydenetworkpkg\drivers\udp6dx\Udp6Dxe,40008162-93D0-48F2-80DA-7E32F4C98F8B,Component description file for Udp6 module.
+Kernel Layer,\insydenetworkpkg\drivers\dhcp6dxe\Dhcp6Dxe,94E24C26-80FA-427D-80FB-E374E9E9BF85,Component description file for Dhcp6 module.
+Kernel Layer,\insydenetworkpkg\drivers\mtftp6dxe\Mtftp6Dxe,2EC499F9-0337-4DA1-91CA-6BC4E8C03DA2,Component description file for Mtftp6 module.
+Kernel Layer,\insydenetworkpkg\drivers\uefipxebcdxe\UefiPxeBcDxe,AE724F8D-62C6-4638-A065-0138F47B6D23,Component name for module PxeBc.
+Kernel Layer,\insydenetworkpkg\drivers\tcpdxe\TcpDxe,FC6F3967-AAA8-47D7-837F-A1CD442E7572,Component description file for Tcp module.
+Kernel Layer,\insydenetworkpkg\drivers\iscsidxe\IScsiDxe,86CDDF93-4872-4597-8AF9-A35AE4D3725F,Component description file for IScsi module.
+UefiCpuPkg,,,
+Kernel Layer,\ueficpupkg\cpuiopei\CpuIoPei,AE265864-CF5D-41A8-913D-71C155E76442,This PEIM produces of the CPU I/O PPI.
+Kernel Layer,\ueficpupkg\resetvector\vtf0\bin\ResetVector,1BA0062E-C779-4582-8566-336AE8F78F0, This is the first module taking control of the platform upon power-on/reset.
+IA32FamilyCpuPkg,,,
+Kernel Layer,\ia32familycpupkg\pismmcommunication\PiSmmCommunicationPei,1C8B7F78-1699-40E6-AF33-9B995D16B043,Component description file for PI SMM Communication PEIM.
+SecurityPkg,,,
+Kernel Layer,\securitypkg\tcg\physicalpresencepei\PhysicalPresencePei,4FE772E8-FE3E-4086-B638-8C493C490488,Component description file for physical presence PEI module.
+Kernel Layer,\securitypkg\tcg\tcgpei\TcgPei,2BE1E4A6-6505-43B3-9FFC-A3C8330E0432,This module will initialize TPM device and measure FVs in PEI phase.

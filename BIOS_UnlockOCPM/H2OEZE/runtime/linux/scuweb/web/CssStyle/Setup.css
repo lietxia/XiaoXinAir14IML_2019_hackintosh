@@ -1,0 +1,509 @@
+@charset "utf-8";
+
+
+/**
+* #MenuList and #MainContent attributes will be changed
+* depend on the needs of other pages
+*/
+/* Replace same attributes in Common.css */
+#MenuList {
+/*  width: 200px;*/
+  width: 160px; /* width: 240 with tree mode */
+}
+
+.LinkMenu {
+  margin-bottom: 0.3em;
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
+/* Replace same attributes in Common.css */
+.ContPage {
+  width: 750px; /* Width is 670 when it's tree mode */
+  margin-left: 180px; /* Width of #MenuList + 20px */
+}
+
+#MainContent {
+}
+
+
+/**
+* The following style is customized
+*/
+
+.MenuLink {
+/*
+  color: #eee8aa;
+*/
+}
+
+.MenuLinkField {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.TextOnly {
+  color: #373737;
+}
+
+.ThisPage {
+}
+
+.OneLineField {
+}
+
+.OneLineFieldEx {
+/*  height: 14px; remove to avoid wording issue */
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+/* * height: 12px; remove to avoid wording issue */ /* IE */
+* padding-bottom: 6px;
+/*  height: 12px \9; remove to avoid wording issue */ /* IE 9 */
+  padding-bottom: 6px\9;
+}
+
+.FormSection {
+}
+
+.ToPopupTitle, .ExitBtn {
+  color: #000080;
+}
+
+.ToPopupTitle, .ExitBtn, .LinkBtn {
+/*
+  text-decoration: underline;
+*/
+  cursor: pointer;
+}
+
+.FormSectionContent {
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.AdditionalLink {
+}
+
+.SepPipe {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.FramePadding {
+  padding-bottom: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 6px;
+}
+
+.FullHeight {
+  height: 100%;
+}
+
+#OuterFrame {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  border-width: 0px;
+  background-color: #20b2aa;
+}
+
+#Settings {
+  height: 20px;
+  font-size: 12px;
+  text-align: right;
+  background-color: #434343;
+  color: #ffffff;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+
+#InnerFrame {
+/*
+  border-bottom-width: 2px;
+  border-left-width: 4px;
+  border-right-width: 4px;
+  border-top-width: 2px;
+  border-style: solid;
+  border-color: blue;
+*/
+}
+
+#InfoBody {
+/*
+  width: 620px;
+  color: #373737;
+  font-weight: bold;
+  border-style: solid;
+  border-color: blue;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 4px;
+  border-top-width: 0px;
+  padding-top: 2px;
+  padding-left: 4px;
+*/
+}
+
+#HelpBody {
+  color: blue;
+  padding: 6px;
+  font-weight: bold;
+}
+
+#InfoBody, #HelpBody {
+}
+
+#BottomFrame {
+  border-width: 0px;
+  height: 60px;
+  background-color: inherit;
+  padding: 4px;
+  text-align: center;
+}
+
+.ExtendedList {
+  display: none;
+}
+
+/*
+There is problem about this form, it can be set absolute position
+*/
+#MainInfo {
+}
+
+#AdvancedInfo, #BootInfo, #ServerInfo, #SecurityInfo, #ExitInfo {
+}
+
+#ExitInfo {
+}
+
+.PopupDisplayShow {
+  display: ;
+  z-index: 10;
+}
+
+.PopupDisplayNone {
+  display: none;
+  z-index: -1;
+}
+
+#InnerBody {
+/*  position: absolute;*/
+  margin: 0px;
+  padding-top: 4px;
+}
+
+.ControlBar {
+  height: 30px;
+  border-bottom: 1px solid #676767;
+  margin-bottom: 16px;
+}
+
+.InnerTitle {
+/* It's not necessary when InnerBodyClose has float attribute
+  display: inline-block;
+  width: 600px;
+*/
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
+.InnerBodyClose {
+  display: inline-block;
+  color: #000000;
+  cursor: pointer;
+  float: right;
+}
+
+.InnerBodyContent {
+  padding-left: 10px;
+}
+
+.DisplayField {
+  display: block;
+  visibility: visible;
+}
+
+.NonDisplayField {
+  display: none;
+  visibility: hidden;
+}
+
+#Systime, #EditSystime {
+  height: 60px;
+  color: #000080;
+/*  border: 1px red solid;*/
+}
+
+.TimeTitle {
+  display: inline-block;
+  height: 24px;
+* height: 24px; /* IE */
+  height: 24px \9; /* IE 9 */
+}
+
+.TimeContentField {
+  display: inline-block;
+  cursor: pointer;
+  height: 24px;
+* height: 24px; /* IE */
+  height: 24px \9; /* IE 9 */
+}
+
+.PopupDisplayShow {
+  display: ;
+  z-index: 10;
+}
+
+.PopupDisplayNone {
+  display: none;
+  z-index: -1;
+}
+
+#BootOrderTable, #BootTypeOrderTable, .PasswordTable {
+  position: relative;
+  background-color: #F5FAFF;
+  margin-bottom: 6px;
+  border: 1px dashed 	#8AB8E6;
+  padding: 4px;
+}
+
+.SectionTitle {
+  color: #0F141A;
+  display: inline-block;
+  position: absolute;
+  height: 24px;
+* height: 24px; /* IE */
+  height: 24px \9; /* IE 9 */
+  width: 100%;
+  top: 0px;
+  font-weight: bold;
+}
+
+.BootDeviceRow {
+  display: inline-block;
+  position: absolute;
+  height: 24px;
+* height: 24px; /* IE */
+  height: 24px \9; /* IE 9 */
+  top: 0px;
+}
+
+.BootOrderControl {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  color: #000080;
+  padding-left: 4px;
+}
+
+.ToolFunc {
+  display: inline-block;
+  margin-right: 10px;
+  width: 118px;
+  height: 35px;
+  padding-top: 8px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  background-image: url('../Images/RectangleBox2.png');
+  background-repeat: no-repeat;
+}
+
+.MngFrame {
+  padding: 4px;
+}
+
+.RadioOption {
+  width: 100%;
+  display: inline-block;
+}
+
+.MPageName {
+  display: inline-block;
+  width: 620px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#SettingContent {
+/*  width: 600px;*/
+  overflow: auto;
+  margin-bottom: 4px;
+}
+
+.ServerRebootTitle, .ServerForceTitle, .ServerFunctionTitle, .ServerIpTitle, .ServerPortTitle {
+  display: inline-block;
+  text-align: center;
+}
+
+.ServerRebootTitle, .ServerForceTitle {
+  width: 20px;
+}
+
+.ServerFunctionTitle {
+  width: 156px;
+  *width: 112px;
+  width: 112px \9;
+}
+
+.ServerIpTitle {
+  width: 194px;
+  *width: 182px;
+  width: 182px \9;
+  margin: 0px;
+}
+
+.ServerPortTitle {
+  width: 50px;
+}
+
+.ServerCtrlTitle {
+  width: 100px;
+}
+
+#FileUploadContent{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size:12px;
+}
+
+.PopupTitle {
+}
+
+
+.TitleField, .ContentField {
+  display: inline-block;
+}
+
+.TimeTitle, .TitleField {
+/*  border: 1px red solid;*/
+  width: 360px;
+* width: 340px; /* IE */
+  width: 340px \9; /* IE 9 */
+}
+
+.ContentField {
+}
+
+/*
+ * Do not set Row class any style, or it may may other style crash
+ */
+.Row {
+}
+
+.TxtRow {
+/* FF, Chrome*/
+  padding-top: 6px;
+  padding-bottom: 6px;
+/* IE */
+* padding-bottom: 6px;  /* IE */
+/** height: 12px; remove to avoid wording issue *//* IE */
+/* IE 9 */
+  padding-bottom: 6px \9; /* IE 9 */
+/*  height: 12px \9; remove to avoid wording issue *//* IE 9 */
+}
+
+.InputRow {
+/* FF, Chrome*/
+  padding-top: 4px;
+  padding-bottom: 4px;
+/* IE */
+* padding-bottom: 4px;  /* IE */
+/** height: 16px; remove to avoid wording issue *//* IE */
+/* IE 9 */
+  padding-bottom: 4px \9; /* IE 9 */
+/*  height: 16px \9; remove to avoid wording issue *//* IE 9 */
+}
+
+.Row:hover {
+  background-color: #DADAFF;
+}
+
+.InputRow ContentField {
+  padding-top: 2px;
+  font-size: 10px;
+}
+
+.TestBorder {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.EmptyDiv {
+}
+
+.TriangleImage {
+}
+
+.OneOfNumericColor {
+  color: #000080;
+}
+
+.MngSectionField {
+  border: 1px solid #ababab;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.HelpField {
+}
+
+.HelpContent {
+  display: none;
+}
+
+.HelpPopMsg {
+  position: absolute;
+  background-color: #fefefe;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding: 6px;
+  border: 1px dashed #6633CC;
+/*
+  width: 670px;
+*/
+  width: 66%;
+}
+
+#HelpMsgSwitch {
+  height: inherit;
+  padding-top: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 14px;
+ *height: 25px \9;
+  height: 25px \9;
+  float: right;
+  font-family: "Arial", Times, serif;
+}
+
+.PasswordTitle {
+  color: #0F141A;
+  display: inline-block;
+  height: 24px;
+* height: 24px; /* IE */
+  height: 24px \9; /* IE 9 */
+  width: 100%;
+  font-weight: bold;
+}

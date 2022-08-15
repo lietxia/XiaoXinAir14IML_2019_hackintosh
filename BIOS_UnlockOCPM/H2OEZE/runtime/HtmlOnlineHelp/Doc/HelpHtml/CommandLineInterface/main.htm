@@ -1,0 +1,407 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:st1="urn:schemas-microsoft-com:office:smarttags"><head><title>main</title>
+
+<meta name="GENERATOR" content="MSHTML 8.00.6001.18975">
+<meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type"></head>
+<body style="background-color: rgb(255, 255, 255);">
+<h1 align="center">Command Line Interface</h1>
+<p><span style="" lang="EN-US"><font face="Calibri">The H2OEZE application supports both GUI and
+Command Line. You can automate it with batch scripts or from other
+programs. All commands and parameters are specified with <b style="">-command:parameter</b>.
+You MUST use double quotes to encapsulate the parameter text with
+spaces.<o:p></o:p></font></span></p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><o:p><font face="Calibri">&nbsp;</font></o:p></span></p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Refer
+to&nbsp;the following table&nbsp;to get all the available
+commands and the following sections to know what these commands are for.</font></span></p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal" align="center"><span style="" lang="EN-US"></span>&nbsp;</p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal" align="center"><span style="" lang="EN-US">
+<table style="border: medium none ; margin-top: auto; margin-bottom: auto; border-collapse: collapse;" class="MsoTableGrid" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr style="">
+<td style="border: 1pt solid black; padding: 0cm 5.4pt; background-color: silver;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">Command<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: solid solid solid none; border-color: black black black rgb(240, 240, 240); border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; background-color: silver;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">Description<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">replogo<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><font face="Calibri">Specify the
+input bios image to do logo replacement</font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">repmodule<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Replace
+a module<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">insmodule<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Insert
+a module<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">delmodule<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Delete
+a module<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">repfv<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Replace
+firmware volume<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">repoprom<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><font face="Calibri">Specify the
+input bios image to do Option ROM replacement <o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">mergefc<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Merge
+the Factory Copy data<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">genlogoffs<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Generate
+a logo module<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">inslogo<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Insert
+a logo module<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><span style="" lang="EN-US"><font face="Calibri">repbiosver</font></span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><span style="" lang="EN-US"><span style="" lang="EN-US"><font face="Calibri">Specify
+the input bios image to do bios version&nbsp; replacement</font></span></span></span><span style="" lang="EN-US"><span style="" lang="EN-US"></span></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">logopath<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Specify
+the logo file path<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">logoindex<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><font face="Calibri">Specify the
+index of to-be-replaced target logo<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">logoconvert<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><font face="Calibri">Specify
+whether to keep original image's dimension or to use new image's </font></span><span lang="EN-US"><span lang="EN-US"><font face="Calibri">dimension</font></span></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">fvpath<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Specify
+the firmware volume file path<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">modulepath<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Specify
+the module (DXE/ORG/PEI) file path<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">oprompath<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Specify
+the&nbsp;</font></span>Option ROM <span style="" lang="EN-US"><font face="Calibri"> file path<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">opromindex<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><font face="Calibri">Specify the
+index of to-be-replaced target Option ROM<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><span style="" lang="EN-US"><font face="Calibri">biosver</font></span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><span style="" lang="EN-US"><font face="Calibri">Specify
+the new bios version</font></span></span><span style="" lang="EN-US"><span style="" lang="EN-US"></span></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">guid<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Specify
+the GUID<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">fcpath<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Specify
+the Factory Copy file path<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">fvnum<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Specify
+the number of firmware volume (zero-based)<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">out<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Specify
+the bios image's output file path<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">type<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Specify
+the EDK type or version<o:p></o:p></font></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt; text-align: center;" class="MsoNormal" align="center"><span style="" lang="EN-US"><font face="Calibri">delay<o:p></o:p></font></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri">Specify
+the delay time after completely running the commands<o:p></o:p></font></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</span></p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span style="" lang="EN-US"></span><span lang="EN-US"><o:p>&nbsp;</o:p></span></p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><font face="Calibri">Example:</font></span></p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><o:p><font face="Calibri">&nbsp;</font></o:p></span></p>
+<p style="margin: 0cm 0cm 0pt; background: rgb(230, 230, 230) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>-delmodule:Image1.fd -guid:35B898CA-B<st1:chmetcnv w:st="on" tcsc="0" numbertype="1" negative="False" hasspace="False" sourcevalue="6" unitname="a">6A</st1:chmetcnv>9-49CE<st1:chmetcnv w:st="on" tcsc="0" numbertype="1" unitname="C" sourcevalue="8" hasspace="False" negative="True">-8C</st1:chmetcnv>72-904735CC49B7
+-out:DelImage1.fd<o:p></o:p></font></span></p>
+<p style="margin: 0cm 0cm 0pt; background: rgb(230, 230, 230) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>-repoprom:PD3X64.fd -oprompath:TS36461.020 -opromindex:1 <o:p></o:p></font></span></p>
+<p style="margin: 0cm 0cm 0pt; background: rgb(230, 230, 230) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" class="MsoNormal"><span style="" lang="EN-US"><font face="Calibri"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>-repfv:Image2.fd -fvpath:FVRECOVERY.fv -fvnum:2
+-out:RepFvImage2.fd</font></span></p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><font face="Calibri"><b style=""><span lang="EN-US"><br>
+Error Return Code<o:p></o:p></span></b></font></p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><font face="Calibri">After a
+command is called, the following return code is available.<br>
+</font></span></p>
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">
+<table style="border: medium none ; border-collapse: collapse; width: 716px; height: 378px;" class="MsoTableGrid" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr style="">
+<td style="border: 1pt solid black; padding: 0cm 5.4pt; background: rgb(204, 204, 204) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Return Code<o:p></o:p></span></p>
+</td>
+<td style="border-style: solid solid solid none; border-color: black black black rgb(240, 240, 240); border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; background: rgb(204, 204, 204) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Description<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">00h</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Function completed successfully<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">01h</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Load BIOS image failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">02h</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Replace module failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">03h</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Insert module failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">04h</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Delete module failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">05h</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Replace Micro code failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">06h</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Append Micro code failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">07h</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Delete Micro code failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">08h</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Replace logo failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">09h</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Replace Fv failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">0Ah</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Replace OpROM failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">0Bh</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Generate logo ffs file failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">0Ch</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Merge factory copy failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">0Dh</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Merge variable store and factory copy region
+failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">0Eh</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Save bios image failed<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="">
+<td style="border-style: none solid solid; border-color: rgb(240, 240, 240) black black; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US"><span lang="EN-US">0Fh</span></span></p>
+</td>
+<td style="border-style: none solid solid none; border-color: rgb(240, 240, 240) black black rgb(240, 240, 240); border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; background-color: transparent;" valign="top">
+<p style="margin: 0cm 0cm 0pt;" class="MsoNormal"><span lang="EN-US">Replace bios version failed<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</span></p>
+</body></html>

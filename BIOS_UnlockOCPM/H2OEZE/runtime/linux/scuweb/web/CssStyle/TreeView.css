@@ -1,0 +1,135 @@
+#MenuList input + label + ul {
+  display: none;
+}
+#MenuList input:checked + label + ul {
+  display: block;
+}
+#MenuList input {
+  position: absolute;
+  opacity: 0;
+}
+#MenuList input:checked:not(:disabled) + label + ul {
+  display: block;
+}
+#MenuList input:disabled + label {
+  cursor: default;
+  opacity: 0.6;
+}
+#MenuList label::before {
+  content: "";
+  width: 16px;
+  margin: 0 22px 0 0;
+  vertical-align: middle;
+  background: url("/Images/icons.png") no-repeat;
+  background-position: 0 -32px;
+}
+#MenuList input:checked + label::before {
+  background-position: 0 -16px;
+}
+#MenuList ul,
+#MenuList li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#MenuList input {
+  position: absolute;
+  opacity: 0;
+}
+#MenuList {
+  font: normal 12px "Segoe UI", Arial, Sans-serif;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+#MenuList a {
+  margin-left: 18px;
+  padding-left: 21px;
+  display: inline-block;
+  color: #000;
+  min-height: 18px;
+  line-height: 18px;
+  vertical-align: middle;
+  text-decoration: none;
+  background: url("/Images/document.png") no-repeat;
+}
+#MenuList a:hover {
+  color: #00f;
+  text-decoration: none;
+}
+#MenuList input + label + ul {
+  margin: 0 0 0 18px;
+}
+#MenuList input ~ ul {
+  display: none;
+}
+#MenuList label,
+#MenuList label::before {
+  cursor: pointer;
+  background: url("/Images/icons.png") no-repeat;
+}
+#MenuList input:disabled + label {
+  cursor: default;
+  opacity: 0.6;
+}
+#MenuList input:checked:not(:disabled) ~ ul {
+  display: block;
+}
+#MenuList label,
+#MenuList label::before {
+  display: inline-block;
+  min-height: 18px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+#MenuList label {
+  background-position: 18px 0;
+}
+#MenuList label::before {
+  content: "";
+  width: 16px;
+  margin: 0 22px 0 0;
+  vertical-align: middle;
+  background-position: 0 -32px;
+}
+#MenuList input:checked + label::before {
+  background-position: 0 -16px;
+}
+#MenuList label:hover {
+  color: #00f;
+}
+
+.TreeNode input {
+  display: none;
+}
+
+.TreeTitle,
+.TreeTitle::before {
+  background: url("/Images/icons.png") no-repeat;
+}
+
+.SubMenu {
+  display: block;
+  min-width: 200px;
+}
+
+/*
+.TreeTitle {
+  content: "";
+  padding-left: 22px;
+  vertical-align: middle;
+  background-position: 0px -32px;
+}
+
+.SubMenu input:checked + label::before {
+  background-position: 0 -16px;
+}
+*/
+
+
+
+
+
+
+
+

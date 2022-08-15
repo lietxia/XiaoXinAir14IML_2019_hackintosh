@@ -1,0 +1,28 @@
+Insyde H2OEZE Release Note
+
+
+--------------------------------------------------------------------------------
+Release Version 100.00.03.04 07-07-2016 (Kernel version required: 03.62.10, 03.72.10, 05.02.10 and later)
+--------------------------------------------------------------------------------
+Update:
+- Fix memory leak caused by "Generate logo FFS".
+- [Console] Add friendly description for the case if the parameter is incorrect.
+- Replace wxComboBox with wxOwnerDrawnComboBox to change the color of item.
+- Modification is not allowed if the Module/FV/Logo/OpROM locate in the signed area.
+- Change structure design in "Replace Logo".
+- Fix hang-up issues caused by "1st BIOS image detailed information".
+- Enlarge FV while freespace is not enough to insert a module into a compressed FV.
+- Keep only BIOS related info in detailed information.
+
+--------------------------------------------------------------------------------
+Release Version 100.00.03.02 02-23-2016 (Kernel version required: 03.62.10, 03.72.10, 05.02.10 and later)
+--------------------------------------------------------------------------------
+Update:
+- Add "Compare with 2nd BIOS image" function.
+- The same GUID of module can exist in different FV.
+- [Console] Add "Factory copy merge" function.
+- [Console] Prevent the invalid parameters result in incorrect operations.
+- [Console] Add FV num parameter to "Delete module" function.
+- [Console] Show error messages accroding to the responding error code.
+- Fix "Main" tab could be closed in "Compare with snd BIOS image".
+- Change copy right to 2016 in "Update default". 
