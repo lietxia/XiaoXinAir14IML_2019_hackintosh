@@ -9,7 +9,7 @@ ENGLISH
 * Do not overclock the memory!!!
 
 ## Purpose:
-	Unlock the overclocking performance menu menu and items
+	Unlock the overclocking performance menu  
 
 ## Tools:
 * FPT H2OEZE SetupUtility_UnlockOCPM.ffs
