@@ -321,7 +321,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.1 | Lilu</string>
+                    <string>V1.6.2 | Lilu</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -393,7 +393,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.0 | GPU Driver</string>
+                    <string>V1.6.1 | GPU Driver</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -411,7 +411,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.3 | Sound</string>
+                    <string>V1.7.4 | Sound</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -555,7 +555,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.7 | PS2Controller</string>
+                    <string>V2.2.9 | PS2Controller</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -573,7 +573,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.7 | Keyboard</string>
+                    <string>V2.2.9 | Keyboard</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -591,7 +591,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.7</string>
+                    <string>V2.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -609,7 +609,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.7</string>
+                    <string>V2.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -627,7 +627,7 @@
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.5 | RestrictEvents</string>
+                    <string>V1.0.8 | RestrictEvents</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -825,7 +825,7 @@
                     <key>BundlePath</key>
                     <string>DebugEnhancer.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.5</string>
+                    <string>V1.0.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -843,7 +843,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothInjector.kext</string>
                     <key>Comment</key>
-                    <string>V2.0.1 | IntelAC9560-BlueTooth</string>
+                    <string>V2.1.0 | IntelAC9560-BlueTooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -861,7 +861,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothFirmware.kext</string>
                     <key>Comment</key>
-                    <string>V2.0.1 | IntelAC9560-BlueTooth</string>
+                    <string>V2.1.0 | IntelAC9560-BlueTooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
