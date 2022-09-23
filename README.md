@@ -86,7 +86,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 1. 如果你使用openCore，BIOS请使用1.0.2之外的版本 （1.0.2需要关掉超线程才能使用oc）
 2. 改BIOS设置（推荐和必须的地方必须改） https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
 3. 改DVMT和 CFG Lock（见下文，必须做）
-4. 下载[balenaEtcher](https://www.balena.io/etcher/)，用它写入[2022-01-14-XiaoXinAir14IML-3in1-installerV6.dmg](https://pan.baidu.com/s/1pUuVZ_A3r1fxP_36RgR6oQ)(提取码：gt57)
+4. 下载[balenaEtcher](https://www.balena.io/etcher/)，用它写入:[2022-06-19-XiaoXinAir14IML-4in1-installerV7.dmg](https://pan.baidu.com/s/1cYWvpfH9B0i6_Y0BnfAA0w?pwd=q27r)(提取码：q27r)
 5. 引导写入的镜像的第二个EFI分区，选择需要安装的系统即可。
 
 ## 建议  
