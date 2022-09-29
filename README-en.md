@@ -27,14 +27,9 @@ ENGLISH
 |      HDMI📺      |   ✅    |    able to output 4k@30fps, same as windows    |
 |     Camera🎦     |   ✅    |      it's pretty easy to drive USB camera      |
 |     Sleep😴      |   ✅    |             Support native sleep.              |
-```
-A way to solve keyboard broken when reboot from macOS Monterey:
-Press F2 to enter BIOS -> BOOT
-boot mode = leguacy support
-boot priority = Leguacy First
-```
+
 ## Current Status：
-* System🌌：Catalina 10.15.7 / Big Sur 11.6 / Monterey 12.5 / Ventura 13.0 ( Not recommended to use Monterey / Ventura )
+* System🌌：Catalina 10.15.7 / Big Sur 11.6 / Monterey 12.5 / Ventura 13.0 / Monterey 12.7 ( Not recommended to use Ventura )
 * Disks🖴：If you are using Samsung PM981A, please consider to change.
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
@@ -76,6 +71,11 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
+* 2022-09-27 12:00
+    * Update Opencore to 0.8.4
+    * Update Kexts
+    * Add boot-args `agdpmod=vit9696` to solve hdmi output problem
+    * Update beta PS2 keyboard kext, add boot-args `kbd_fixdisable=1` to solve macos12+ keyboard malfunction
 * 2022-08-15 16:00
     * Update Opencore to 0.8.3 
     * Update Kexts

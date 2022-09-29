@@ -27,14 +27,9 @@ QQ群号：1032311345
 |  HDMI📺  | ✅    |       可输出4k30帧,和win表现一致          |
 | 摄像头🎦 | ✅    |           USB摄像头还是很好驱动的          |
 |  睡眠😴  | ✅    |                支持原生休眠               |
-```
-解决Monterey重启时，键盘失灵（缺点：开机变慢）
-按F2进入BIOS -> BOOT
-boot mode = leguacy support
-boot priority = Leguacy First
-```
+
 ## 目前状态：
-* 系统🌌：Catalina/BigSur/Monterey/Ventura。推荐Catalina 10.15.7/BigSur 11.6.5 （不推荐使用Monterey/Ventura）
+* 系统🌌：Catalina/BigSur/Monterey/Ventura。推荐Catalina 10.15.7/BigSur 11.6.5/Monterey 12.7 （不推荐使用Ventura）
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
@@ -76,6 +71,12 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
+* 2022-09-27 12:00
+    * Opencore 更新到 0.8.4 
+    * 更新驱动
+    * 添加启动参数 `agdpmod=vit9696` 解决hdmi输出
+    * 更新测试版PS2键盘驱动，添加启动参数 `kbd_fixdisable=1` 解决macos12以上键盘失灵
+  
 * 2022-08-15 16:00
     * Opencore 更新到 0.8.3 
     * 更新驱动
