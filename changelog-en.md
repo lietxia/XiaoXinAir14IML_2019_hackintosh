@@ -1,3 +1,6 @@
+* 2022-09-30 12:00
+    * Modify `SSDT-UIAC.aml` to prevent redundant devices under windows.
+
 * 2022-09-27 12:00
     * Update Opencore to 0.8.4
     * Update Kexts

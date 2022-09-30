@@ -71,14 +71,14 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
+* 2022-09-30 12:00
+    * Modify `SSDT-UIAC.aml` to prevent redundant devices under windows.
+
 * 2022-09-27 12:00
     * Update Opencore to 0.8.4
     * Update Kexts
     * Add boot-args `agdpmod=vit9696` to solve hdmi output problem
     * Update beta PS2 keyboard kext, add boot-args `kbd_fixdisable=1` to solve macos12+ keyboard malfunction
-* 2022-08-15 16:00
-    * Update Opencore to 0.8.3 
-    * Update Kexts
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 

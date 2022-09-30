@@ -71,15 +71,14 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
+* 2022-09-30 12:00
+    * 修改`SSDT-UIAC.aml`防止windows下出现多余设备。
+
 * 2022-09-27 12:00
     * Opencore 更新到 0.8.4 
     * 更新驱动
     * 添加启动参数 `agdpmod=vit9696` 解决hdmi输出
     * 更新测试版PS2键盘驱动，添加启动参数 `kbd_fixdisable=1` 解决macos12以上键盘失灵
-  
-* 2022-08-15 16:00
-    * Opencore 更新到 0.8.3 
-    * 更新驱动
 
 * 历史修改记录见[changelog.md](changelog.md)
 
