@@ -33,6 +33,10 @@ QQ群号：1032311345
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
+## 备注
+* 拆机需要6号的6角螺丝。螺丝拿下来之后，用不用的银行卡，慢慢从屏幕那一侧慢慢拆开 https://www.bilibili.com/video/BV1X341157kf/  
+* 如果要买【圆口转USB type转接器】，注意【圆口直径4毫米，孔直径1.7毫米】https://img2cdn.clubstatic.lenovo.com.cn/pic/21379436621882/0
+
 ## 相关机型
 * [小新Pro13（i5-10210U / i7-10710U）](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
 * [小新13IML](https://github.com/sun19970908/XiaoXin13IML_2020_hackintosh)
