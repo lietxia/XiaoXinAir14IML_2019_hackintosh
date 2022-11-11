@@ -40,7 +40,7 @@ QQ群号：1032311345
 
 ## macOS12恢复台+EFI(u盘格式化FAT32，然后解压这个到根目录)
 * 百度网盘（提取码: ggtj） https://pan.baidu.com/s/10RP9a_UNlNt1Y4ul_62Mpw?pwd=ggtj 
-* 天翼网盘（访问码：qrv4）https://cloud.189.cn/web/share?code=qquQB3by6rmu
+* 天翼网盘（访问码：0ufg）https://cloud.189.cn/web/share?code=QvayQb2UBbMv
 * 123网盘 https://www.123pan.com/s/IvKKVv-jqeHh
 
 ## 相关机型
