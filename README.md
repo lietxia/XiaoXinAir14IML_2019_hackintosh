@@ -33,11 +33,6 @@ QQ群号：1032311345
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
-## 备注
-* 拆机需要6号的6角螺丝。螺丝拿下来之后，用不用的银行卡，慢慢从屏幕那一侧慢慢拆开 https://www.bilibili.com/video/BV1X341157kf/  
-* 如果要买【圆口转USB type转接器】，注意【圆口直径4毫米，孔直径1.7毫米】  
-![IMG](img/pd+luosi.png)
-
 ## macOS12恢复台+EFI(u盘格式化FAT32，然后解压这个到根目录)
 * 百度网盘（提取码: ggtj） https://pan.baidu.com/s/10RP9a_UNlNt1Y4ul_62Mpw?pwd=ggtj 
 * 天翼网盘（访问码：0ufg）https://cloud.189.cn/web/share?code=QvayQb2UBbMv
@@ -210,6 +205,11 @@ BIOS里的 `onekeybattery` 需要关闭，才能进隐藏BIOS
 | RestrictEvents.kext         | 屏蔽一些系统加载项       |      | √    |
 | NVMeFix.kext                | 改善nvme固态           |      | √    |
 | VerbStub.kext               | 耳麦切换               |      | √    |
+
+## 备注
+* 拆机需要6号的6角螺丝。螺丝拿下来之后，用不用的银行卡，慢慢从屏幕那一侧慢慢拆开 https://www.bilibili.com/video/BV1X341157kf/  
+* 如果要买【圆口转USB type转接器】，注意【圆口直径4毫米，孔直径1.7毫米】  
+![IMG](img/pd+luosi.png)
 
 ## 鸣谢
 - [Acidanthera](https://github.com/acidanthera) 开发的 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 和 [其他驱动](https://github.com/acidanthera)
