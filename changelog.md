@@ -1,3 +1,6 @@
+* 2022-12-17 18:00
+    * Bug修复和改进
+ 
 * 2022-11-12 14:00
     * 新增`SSDT-PTSWAKTTS.aml`，以及选项`_PTS to ZPTS(1,N)`+`_WAK to ZWAK(1,S)`，取消WEG的`disable-external-gpu`屏蔽显卡方法。用于【修复睡眠唤醒】，详情 https://github.com/daliansky/OC-little/tree/master/20-SSDT%E5%B1%8F%E8%94%BD%E7%8B%AC%E6%98%BE%E6%96%B9%E6%B3%95
     * 更新opencore到0.8.6 

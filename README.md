@@ -29,14 +29,9 @@ QQ群号：1032311345
 |  睡眠😴  | ✅    |                支持原生休眠               |
 
 ## 目前状态：
-* 系统🌌：Catalina/BigSur/Monterey/Ventura。推荐Catalina 10.15.7/BigSur 11.6.5/Monterey 12.7 （不推荐使用Ventura）
+* 系统🌌：Catalina/BigSur/Monterey/Ventura。推荐Catalina 10.15.7/BigSur 11.7/Monterey 12.6.3 （不推荐使用Ventura）
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
-
-## macOS12恢复台+EFI(u盘格式化FAT32，然后解压这个到根目录)
-* 百度网盘（提取码: ggtj） https://pan.baidu.com/s/10RP9a_UNlNt1Y4ul_62Mpw?pwd=ggtj 
-* 天翼网盘（访问码：0ufg）https://cloud.189.cn/web/share?code=QvayQb2UBbMv
-* 123网盘 https://www.123pan.com/s/IvKKVv-jqeHh
 
 ## 相关机型
 * [小新Pro13（i5-10210U / i7-10710U）](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
@@ -57,7 +52,9 @@ QQ群号：1032311345
 https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=78312
 <details>
 <summary>展开查看</summary>
-2021/07/23 BIOS Version: CKEC17WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/83713/BIOS-CKCN17WW.exe <br />
+2022/05/13 BIOS Version: CKCN19WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/94976/BIOS-CKCN19WW.exe <br />
+2022/03/18 BIOS Version: CKCN18WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/92231/BIOS-CKCN18WW.exe <br />
+2021/07/23 BIOS Version: CKCN17WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/83713/BIOS-CKCN17WW.exe <br />
 2021/01/18 BIOS Version: CKCN16WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/78312/BIOS-CKCN16WW.exe <br />
 2020/07/24 BIOS Version: CKCN15WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/73409/BIOS-CKCN15WW.exe <br />
 2020/06/22 BIOS Version: CKCN14WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/72386/BIOS-CKCN14WW.exe <br />
@@ -76,47 +73,37 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
-* 2022-11-12 14:00
-    * 新增`SSDT-PTSWAKTTS.aml`，以及选项`_PTS to ZPTS(1,N)`+`_WAK to ZWAK(1,S)`，取消WEG的`disable-external-gpu`屏蔽显卡方法。用于【修复睡眠唤醒】，详情 https://github.com/daliansky/OC-little/tree/master/20-SSDT%E5%B1%8F%E8%94%BD%E7%8B%AC%E6%98%BE%E6%96%B9%E6%B3%95
-    * 更新opencore到0.8.6 
-    * 更新 kext
-
-* 2022-09-30 12:00
-    * 修改`SSDT-UIAC.aml`防止windows下出现多余设备。
-
-* 2022-09-27 12:00
-    * Opencore 更新到 0.8.4 
-    * 更新驱动
-    * 添加启动参数 `agdpmod=vit9696` 解决hdmi输出
-    * 更新测试版PS2键盘驱动，添加启动参数 `kbd_fixdisable=1` 解决macos12以上键盘失灵
+* 2022-12-17 18:00
+    * Bug修复和其他改进
 
 * 历史修改记录见[changelog.md](changelog.md)
 
-## [安装方法](https://www.bilibili.com/video/BV1C64y1q7r1/)
+## [安装方法（适用于4G以上U盘）](https://www.bilibili.com/video/BV1C64y1q7r1/)
 1. 如果你使用openCore，BIOS请使用1.0.2之外的版本 （1.0.2需要关掉超线程才能使用oc）
 2. 改BIOS设置（推荐和必须的地方必须改） https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
 3. 改DVMT和 CFG Lock（见下文，必须做）
 4. 下载[balenaEtcher](https://www.balena.io/etcher/)，用它写入:[2022-06-19-XiaoXinAir14IML-4in1-installerV7.dmg](https://pan.baidu.com/s/1cYWvpfH9B0i6_Y0BnfAA0w?pwd=q27r)(提取码：q27r)
 5. 引导写入的镜像的第二个EFI分区，选择需要安装的系统即可。
 
+### macOS12恢复台+EFI（u盘格式化FAT32，然后解压这个到根目录）（适用于1G/2G U盘）
+* [百度网盘](https://pan.baidu.com/s/10RP9a_UNlNt1Y4ul_62Mpw?pwd=ggtj)（提取码: ggtj）
+* [天翼网盘](https://cloud.189.cn/web/share?code=QvayQb2UBbMv
+)（访问码：0ufg）
+* [123网盘](https://www.123pan.com/s/IvKKVv-jqeHh)
+
 ## 建议  
-* 【防止黑苹果间歇性断网-解决方案 感谢@Unstoppablesss】修改 系统偏好设置/节能/电源适配器/如果可能，使硬盘进入睡眠（修改为off） 如果硬盘进入休眠，保持wifi运转的EFI文件将停止工作
+* 【防止黑苹果间歇性断网-解决方案 感谢@Unstoppablesss】修改 系统偏好设置/节能/电源适配器/如果可能，使硬盘进入睡眠（修改为off）
 * 因目前休眠无法正常唤醒 , 为避免影响到睡眠 , 终端使用命令关闭休眠 `sudo pmset -a hibernatemode 0`
 
-> XiaoXin AIR14-2019 i5-10210u QQ群号: 1032311345
 
-### YogaSMC `Experimental`
+### YogaSMC `实验性支持`
 * 正常的：风扇三种模式切换、麦克风静音、飞行模式、F10切换屏幕、触摸板开关有提示、键盘背光、Fn功能键切换
-* 不正常：摄像头有提示，但是关不掉、锁定功能用不了、Fn+Q不能修改、拔插电源会错误显示键盘背光、电池温度读不出来 
-
-### 触摸板
-如果触摸板(重建缓存触摸板仍不行，使用此方法)  
-https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.05
+* 不正常：摄像头有提示，但是关不掉、锁定功能用不了、Fn+Q不能修改、拔插电源会错误显示键盘背光、电池温度读不出来、不能调整充电速度 
 
 ### macOS蓝牙与windows10同步
 https://github.com/lietxia/BT-LinkkeySync
 
-### Big Sur 开启hidpi（高分辨率）
+### Big Sur 及以上开启hidpi（高分辨率）
 
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/dev/hidpi.sh)"
 
@@ -128,32 +115,32 @@ https://github.com/lietxia/BT-LinkkeySync
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### 改DVMT和 CFG Lock
-* 必须解锁 `CFG Lock` 不然无法使用opencore clover。 
-* 建议解锁 `DVMT` 让显存大小变成64M，没有什么坏处。 
+> 必须解锁 `CFG Lock` 不然无法使用opencore clover。   
+> 建议解锁 `DVMT` 让显存大小变成64M，没有什么坏处。 
 
-#### 推荐方法: 进隐藏BIOS  
-BIOS里的 `onekeybattery` 需要关闭，才能进隐藏BIOS  
-- 隐藏BIOS进入姿势
-  - 电源键开机 → F2进入正常BIOS → 电源键关机 → 然后顺序按下下列键
-    - `F4` → `4` → `R` → `F` → `V`
-    - `F5` → `5` → `T` → `G` → `B`
-    - `F6` → `6` → `Y` → `H` → `N`
-  - 电源键开机 → F2进入隐藏BIOS , 如不成功请加快手速再次尝试
-- 推荐设置选项
-  - `Advanced` → `Power & Performance` → `CPU - Power Management Control` → `CPU Lock Configuration` → `CFG Lock` → `Disabled`
-  - `Advanced` → `System Agent (SA) Configuration` → `Graphics Configuration` → `DVMT Pre-Allocated` → `64M`
+* 推荐方法: 进隐藏BIOS  
+  - BIOS里的 `onekeybattery` 需要关闭，才能进隐藏BIOS  
+  - 隐藏BIOS进入姿势
+     - 电源键开机 → F2进入正常BIOS → 电源键关机 → 然后顺序按下下列键
+     - `F4` → `4` → `R` → `F` → `V`
+     - `F5` → `5` → `T` → `G` → `B`
+     - `F6` → `6` → `Y` → `H` → `N`
+     - 电源键开机 → F2进入隐藏BIOS , 如不成功请加快手速再次尝试
+  - 推荐设置选项
+     - `Advanced` → `Power & Performance` → `CPU - Power Management Control` → `CPU Lock Configuration` → `CFG Lock` → `Disabled`
+     - `Advanced` → `System Agent (SA) Configuration` → `Graphics Configuration` → `DVMT Pre-Allocated` → `64M`
 
-#### 备用方法: windows直接改
-参考 https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/DVMT  
-`DVMT`：  
-* 区域（area） : `SaSetup`
-* 偏移（offset） : `0x107`
-* `01` to `02`
+* 备用方法: windows直接改  
+  - 参考 https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/DVMT  
+  - `DVMT`：  
+     * 区域（area） : `SaSetup`
+     * 偏移（offset） : `0x107`
+     * `01` to `02`
 
-`CFG LOCK`：  
-* 区域（area） : `CpuSetup`
-* 偏移（offset） : `0x3E`
-* `01` to `00`
+  - `CFG LOCK`：  
+     * 区域（area） : `CpuSetup`
+     * 偏移（offset） : `0x3E`
+     * `01` to `00`
 
 ### 声卡挂了 
 从win直接重启切换到mac,会导致声卡挂掉,这时候需要关机,再开机,声卡就恢复了  
@@ -212,7 +199,7 @@ BIOS里的 `onekeybattery` 需要关闭，才能进隐藏BIOS
 | VerbStub.kext               | 耳麦切换               |      | √    |
 
 ## 备注
-* 拆机需要6号的6角螺丝。螺丝拿下来之后，用不用的银行卡，慢慢从屏幕那一侧慢慢拆开 https://www.bilibili.com/video/BV1X341157kf/  
+* 拆机需要6号的6角螺丝刀。螺丝拿下来之后，用不用的银行卡，慢慢从屏幕那一侧慢慢拆开 https://www.bilibili.com/video/BV1X341157kf/  
 * 如果要买【圆口转USB type转接器】，注意【圆口直径4毫米，孔直径1.7毫米】  
 ![IMG](img/pd+luosi.png)
 

@@ -1,6 +1,6 @@
 # Lenovo XiaoXin Air-14 2019IML
 ![air14iml-ven](img/air14iml-ven.png)
-Screenshot app:/capXDR 
+Screenshot app: /capXDR 
 Model：Lenovo-Air14IML (made by lietxia)  
 QQ group number：1032311345
 
@@ -29,7 +29,7 @@ ENGLISH
 |     Sleep😴      |   ✅    |             Support native sleep.              |
 
 ## Current Status：
-* System🌌：Catalina 10.15.7 / Big Sur 11.6 / Monterey 12.5 / Ventura 13.0 / Monterey 12.7 ( Not recommended to use Ventura )
+* System🌌：Catalina 10.15.7 / Big Sur 11.7 / Monterey 12.6.3 / Ventura 13.1 ( Not recommended to use Ventura )
 * Disks🖴：If you are using Samsung PM981A, please consider to change.
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
@@ -52,6 +52,8 @@ ENGLISH
 https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=78312
 <details>
 <summary>Details</summary>
+2022/05/13 BIOS Version: CKCN19WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/94976/BIOS-CKCN19WW.exe <br />
+2022/03/18 BIOS Version: CKCN18WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/92231/BIOS-CKCN18WW.exe <br />
 2021/07/23 BIOS Version: CKEC17WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/83713/BIOS-CKCN17WW.exe <br />
 2021/01/18 BIOS Version: CKCN16WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/78312/BIOS-CKCN16WW.exe <br />
 2020/07/24 BIOS Version: CKCN15WW http://newdriverdl.lenovo.com.cn/newlenovo/alldriversupload/73409/BIOS-CKCN15WW.exe <br />
@@ -71,23 +73,12 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
-* 2022-09-27 12:00
-    * Add `ssdt-ptswaktts.aml` , with the option `_PTS to ZPTS(1,N)`+`_WAK to ZWAK(1,S)` , cancels WEG `disable-external-gpu` methods. For `Fix sleep wakeup`, details https://github.com/5T33Z0/OC-Little-Translated/tree/main/11_Graphics/GPU/Disabling_unsupported_GPUs
-    * Update Opencore to 0.8.6
-    * Update Kexts
-
-* 2022-09-30 12:00
-    * Modify `SSDT-UIAC.aml` to prevent redundant devices under windows.
-
-* 2022-09-27 12:00
-    * Update Opencore to 0.8.4
-    * Update Kexts
-    * Add boot-args `agdpmod=vit9696` to solve hdmi output problem
-    * Update beta PS2 keyboard kext, add boot-args `kbd_fixdisable=1` to solve macos12+ keyboard malfunction
+* 2022-12-17 18:00
+    * Bug fixes and improvements
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 
-## [Installation](https://www.bilibili.com/video/BV1C64y1q7r1/)
+## [Installation (For U-Disks larger than 4GB)](https://www.bilibili.com/video/BV1C64y1q7r1/)
 1. If you are using OpenCore, Please use BIOS except for 1.0.2  (1.0.2 you need to turn off the Hyper-Threading to use OC.)
 2. Change BIOS settings
       * https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
@@ -95,28 +86,27 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 4. Download [balenaEtcher](https://www.balena.io/etcher/), use it to flash [2022-06-19-XiaoXinAir14IML-4in1-installerV7.dmg](https://pan.baidu.com/s/1cYWvpfH9B0i6_Y0BnfAA0w?pwd=q27r)(Password：q27r)  
 5. Boot the Second EFI partition and choose the system you want to install.
 
+### macOS12 recovery+EFI (format your u-disk with FAT32, then unzip this package)(suitable for 1G/2G U-disk)
+* [Baidu Netdisk](https://pan.baidu.com/s/10RP9a_UNlNt1Y4ul_62Mpw?pwd=ggtj ) (Password: ggtj) 
+* [Tianyi Netdisk](https://cloud.189.cn/web/share?code=QvayQb2UBbMv) (Password: 0ufg) 
+* [123 Netdisk](https://www.123pan.com/s/IvKKVv-jqeHh)
+
 ## Advice
 * [Prevent intermittent hackintosh disconnections Thanks @Unstoppablesss] Modify System Preferences/Eneragy Saver/Power Adapter/Put hard disk to sleep when possible(modify to off)  
-* Because current hibernate cannot wake up normally, in order to avoid affecting sleep, use  the terminal to turn off hibernate `sudo pmset -a hibernatemode 0`
-
-> XiaoXin AIR14-2019 i5-10210u QQ group number: 1032311345  
+* Because current hibernate cannot wake up normally, in order to avoid affecting sleep, use  the terminal to turn off hibernate `sudo pmset -a hibernatemode 0` 
 
 ### YogaSMC： `Experimental`
 * Normal: Fan three modes switch, microphone mute, flight mode, F10 switch screen, touchpad switch hint, keyboard backlight, Fn function key switch.
-* Abnormal: the camera has a hint, but it can't be turned off, the lock function can't be used, FN + Q can't work, the keyboard backlight will be displayed incorrectly when the power is plugged in, and the battery temperature can't be read out.
-
-### Trackpad
-Use this way if rebuilding the cache touchpad still does not work:
-https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/2020.04.05
+* Abnormal: the camera has a hint, but it can't be turned off, the lock function can't be used, FN + Q can't work, the keyboard backlight will be displayed incorrectly when the power is plugged in, the battery temperature can't be read out, and you can't switch the charging speed in the system.
 
 ### Synchronize bluetooth link keys from macOS to windows
 https://github.com/lietxia/BT-LinkkeySync
 
-### Big Sur hidpi
+### Hi-DPI (Big Sur and upper)
 
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/dev/hidpi.sh)"
 
-### Catalina hidpi
+### Catalina Hi-DPI
 
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
     
@@ -124,35 +114,32 @@ https://github.com/lietxia/BT-LinkkeySync
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### Change DVMT and CFG Lock
-* You must unlock `CFG Lock` , otherwise, you can't use both OpenCore and Clover。 
-* We recommend to change `DVMT` into 64M, there's no damage to your computer. 
+> You must unlock `CFG Lock` , otherwise, you can't use both OpenCore and Clover.  
+> We recommend to change `DVMT` into 64M, there's no damage to your computer. 
 
-#### Recommend: get into hidden BIOS  
-You need to disable`onekeybattery`in the BIOS to enter hidden bios.  
+* Recommend: get into hidden BIOS   
+  - The way to enter hidden BIOS
+    - Switch off the `OneKeyBattery`
+    - Press following buttons with your computer closed.
+       - `F4` → `4` → `R` → `F` → `V`
+       - `F5` → `5` → `T` → `G` → `B`
+       - `F6` → `6` → `Y` → `H` → `N`
+       - Power on → Press F2, speed up if failed.
+ - Change the following settings.
+     - `Advanced` → `Power & Performance` → `CPU - Power Management Control` → `CPU Lock Configuration` → `CFG Lock` → `Disabled`
+     - `Advanced` → `System Agent (SA) Configuration` → `Graphics Configuration` → `DVMT Pre-Allocated` → `64M`
 
-- The way to enter hidden BIOS
-  - Press following buttons with your computer closed.
-    - `F4` → `4` → `R` → `F` → `V`
-    - `F5` → `5` → `T` → `G` → `B`
-    - `F6` → `6` → `Y` → `H` → `N`
-  - Power on → Press F2, speed up if failed.
-- Change the following settings.
-  - `Advanced` → `Power & Performance` → `CPU - Power Management Control` → `CPU Lock Configuration` → `CFG Lock` → `Disabled`
-  - `Advanced` → `System Agent (SA) Configuration` → `Graphics Configuration` → `DVMT Pre-Allocated` → `64M`
+* Backup solution: change in Windows
+  * Refer to https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/DVMT  
+  * `DVMT`：  
+     * Area : `SaSetup`
+     * Offset : `0x107`
+     * `01` to `02`
 
-#### Backup solution: change in Windows
-Refer to https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/DVMT  
-`DVMT`：  
-
-* Area : `SaSetup`
-* Offset : `0x107`
-* `01` to `02`
-
-`CFG LOCK`：  
-
-* Area : `CpuSetup`  
-* Offset : `0x3E`  
-* `01` to `00`
+  * `CFG LOCK`：  
+     * Area : `CpuSetup`  
+     * Offset : `0x3E`  
+     * `01` to `00`
 
 ### The audio card isn't working.
 Switching from win to mac will cause the audio card fail to syart. At this time, you need to turn it off and turn it on again, and the audio card will recover  
@@ -212,6 +199,11 @@ Consultation got the answer: win restart is warm boot, will skip hardware detect
 | RestrictEvents.kext         | Shield system daemons  |           | √        |
 | NVMeFix.kext                | improve nvme SSD       |           | √        |
 | VerbStub.kext               | Microphone             |           | √        |
+
+## Notes
+* You need a T6 screwdriver to disassemble the machine. After the screws are removed, use the unused card and carefully disassemble it from the other side of the screen https://www.bilibili.com/video/BV1X341157kf/  
+* If you wan't to buy a type-c cable, you should buy one with 4mm diameter, and the hole diameter is 1.7mm  
+![IMG](img/pd+luosi.png)
 
 ## Credits
 - [Acidanthera](https://github.com/acidanthera) for [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [other kexts](https://github.com/acidanthera).

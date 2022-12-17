@@ -1,4 +1,7 @@
-* 2022-09-27 12:00
+* 2022-12-17 18:00
+    * Bug fixes and improvements.
+ 
+* 2022-11-12 14:00
     * Add `ssdt-ptswaktts.aml` , with the option `_PTS to ZPTS(1,N)`+`_WAK to ZWAK(1,S)` , cancels WEG `disable-external-gpu` methods. For `Fix sleep wakeup`, details https://github.com/5T33Z0/OC-Little-Translated/tree/main/11_Graphics/GPU/Disabling_unsupported_GPUs
     * Update Opencore to 0.8.6
     * Update Kexts
