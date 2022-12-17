@@ -945,7 +945,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothInjector.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | IntelAC9560-BlueTooth</string>
+                    <string>V2.2.0 | Intel-BlueTooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -963,7 +963,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothFirmware.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | IntelAC9560-BlueTooth</string>
+                    <string>V2.2.0 | Intel-BlueTooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -977,11 +977,29 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>IntelBTPatcher.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0 | Intel-BlueTooth</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IntelBTPatcher</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
                     <string>x86_64</string>
                     <key>BundlePath</key>
                     <string>AirportItlwm-Catalina.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | IntelAC9560-WiFi</string>
+                    <string>V2.2.0 | Intel-WiFi</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -999,7 +1017,7 @@
                     <key>BundlePath</key>
                     <string>AirportItlwm-BigSur.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | IntelAC9560-WiFi</string>
+                    <string>V2.2.0 | Intel-WiFi</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1017,7 +1035,7 @@
                     <key>BundlePath</key>
                     <string>AirportItlwm-Monterey.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | IntelAC9560-WiFi</string>
+                    <string>V2.2.0 | Intel-WiFi</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1035,7 +1053,7 @@
                     <key>BundlePath</key>
                     <string>AirportItlwm-Ventura.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | IntelAC9560-WiFi</string>
+                    <string>V2.2.0 | Intel-WiFi</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
