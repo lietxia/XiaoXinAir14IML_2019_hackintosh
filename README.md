@@ -7,29 +7,29 @@ QQ群号：1032311345
 中文  
 [ENGLISH](./README-en.md)
 
-|   规格   | 状态  |                   详细信息                 |
-| :-----: | ---- | :---------------------------------------: |
-|  型号💻  | ✅    |      Lenovo XiaoXin Air14 IML 2019      |
-|  系统🌌  | ✅    |   Catalina/Big Sur/Monterey/Ventura     |
-|  CPU🎛️   | ✅    |    Intel Core i5-10210U / i7-10510U    |
-|  主板🎛️  | ✅    |           Lenovo LNVNB161216            |
-|  指纹🖐️  | ⛔    |               指纹无法工作                |
-|  GPU👾   | ⛔    |       Nvidia GeForce MX250(屏蔽)        |
-|  iGPU👾  | ✅    |              Intel UHD 620             |
-|  内存💳  | ✅    |         内置4GB+可更换8GB DDR4 2666       |
-|  硬盘💽  | ✅    |           见 Benchmarks/Disks           |
-|  屏幕🖥️  | ✅    |   AUO353D/LGD05EC（14英寸） 1920x1080    |
-|  声卡🔊  | ✅    |             Conexant CX8070             |
-|  wifi🌐  | ✅    |     Intel Wireless-AC 9560/DW1820A     |
-|  蓝牙🦷  | ✅    |            DW1820A正常，AC 9560          |
-| 读卡器🗂️ | ✅    |   O2 Micro SD card reader（有可能不一样）  |
-| 触摸板🖐️ | ✅    |          已运行在GPIO中断 Pin=50          |
-|  HDMI📺  | ✅    |       可输出4k30帧,和win表现一致          |
-| 摄像头🎦 | ✅    |           USB摄像头还是很好驱动的          |
-|  睡眠😴  | ✅    |                支持原生休眠               |
+|   规格   | 状态  |                       详细信息                      |
+| :-----: | ---- | :------------------------------------------------: |
+|  型号💻  | ✅    |          Lenovo XiaoXin Air14 IML 2019           |
+|  系统🌌  | ✅    |        Catalina/Big Sur/Monterey/Ventura         |
+|  CPU🎛️   | ✅    |         Intel Core i5-10210U / i7-10510U        |
+|  主板🎛️  | ✅    |                 Lenovo LNVNB161216               |
+|  指纹🖐️  | ⛔    |                      指纹无法工作                  |
+|  GPU👾   | ⛔    |              Nvidia GeForce MX250(屏蔽)          |
+|  iGPU👾  | ✅    |                   Intel UHD 620                 |
+|  内存💳  | ✅    |               内置4GB+可更换的8GB DDR4 2666        |
+|  硬盘💽  | ✅    |                  见 Benchmarks/Disks             |
+|  屏幕🖥️  | ✅    |         AUO353D/LGD05EC（14英寸） 1920x1080       |
+|  声卡🔊  | ✅    |                   Conexant CX8070                |
+|  wifi🌐  | ✅    |            Intel Wireless-AC 9560/DW1820A       |
+|  蓝牙🦷  | ✅    |             Intel Wireless-AC 9560/DW1820A       |
+| 读卡器🗂️ | ✅    |  O2 Micro 读卡器（不可驱动） / Realtek 读卡器（可驱动）|
+| 触摸板🖐️ | ✅    |                 已运行在GPIO中断 Pin=50             |
+|  HDMI📺  | ✅    |              可输出4k30帧,和win表现一致            |
+| 摄像头🎦 | ✅    |                 USB摄像头还是很好驱动的             |
+|  睡眠😴  | ✅    |                     支持原生睡眠                   |
 
 ## 目前状态：
-* 系统🌌：Catalina/BigSur/Monterey/Ventura。推荐Catalina 10.15.7/BigSur 11.7/Monterey 12.6.3 （不推荐使用Ventura）
+* 系统🌌：Catalina / BigSur / Monterey / Ventura （推荐 Catalina / Big Sur / Monterey ）（不推荐使用Ventura）
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
@@ -73,15 +73,16 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
-* 2022-12-17 18:00
-    * Bug修复和其他改进
+* 2023-02-22 12:00
+    * 更新OC和Kexts
+    * 可能修复了背光问题 
 
 * 历史修改记录见[changelog.md](changelog.md)
 
 ## [安装方法（适用于4G以上U盘）](https://www.bilibili.com/video/BV1C64y1q7r1/)
 1. 如果你使用openCore，BIOS请使用1.0.2之外的版本 （1.0.2需要关掉超线程才能使用oc）
 2. 改BIOS设置（推荐和必须的地方必须改） https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/wiki/bios
-3. 改DVMT和 CFG Lock（见下文，必须做）
+3. 改DVMT和 CFG Lock（见后文，推荐做）
 4. 下载[balenaEtcher](https://www.balena.io/etcher/)，用它写入:[2022-06-19-XiaoXinAir14IML-4in1-installerV7.dmg](https://pan.baidu.com/s/1cYWvpfH9B0i6_Y0BnfAA0w?pwd=q27r)(提取码：q27r)
 5. 引导写入的镜像的第二个EFI分区，选择需要安装的系统即可。
 

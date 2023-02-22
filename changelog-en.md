@@ -1,3 +1,7 @@
+* 2023-02-22 12:00
+    * Update Opencore and kexts.
+    * Fix backlight (maybe)
+
 * 2022-12-17 18:00
     * Bug fixes and improvements.
  

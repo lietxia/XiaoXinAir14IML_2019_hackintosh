@@ -22,14 +22,14 @@ ENGLISH
 |   Audio Card🔊   |   ✅    |                Conexant CX8070                 |
 |    Wireless🌐    |   ✅    |  Intel Wireless-AC 9560 / Dell Wireless 1820A  |
 |   Bluetooth🦷    |   ✅    |   DW1820A works, AC9560 is not that perfect    |
-| SD card reader🗂️ |   ✅    |  O2 Micro SD card reader (probably different)  |
+| SD card reader🗂️ |   ✅    |    O2 Micro （doesn't work）/ Realtek （working）  |
 |    TrackPad🖐️    |   ✅    |         Works in GPIO mode with Pin=50         |
 |      HDMI📺      |   ✅    |    able to output 4k@30fps, same as windows    |
 |     Camera🎦     |   ✅    |      it's pretty easy to drive USB camera      |
 |     Sleep😴      |   ✅    |             Support native sleep.              |
 
 ## Current Status：
-* System🌌：Catalina 10.15.7 / Big Sur 11.7 / Monterey 12.6.3 / Ventura 13.1 ( Not recommended to use Ventura )
+* System🌌：Catalina / Big Sur / Monterey / Ventura ( Not recommended to use Ventura )
 * Disks🖴：If you are using Samsung PM981A, please consider to change.
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
@@ -73,8 +73,9 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
-* 2022-12-17 18:00
-    * Bug fixes and improvements
+* 2023-02-22 12:00
+    * Update Opencore and kexts.
+    * Fix backlight (maybe)
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 
