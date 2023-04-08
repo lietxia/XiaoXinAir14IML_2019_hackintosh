@@ -22,7 +22,7 @@ ENGLISH
 |   Audio Card🔊   |   ✅    |                Conexant CX8070                 |
 |    Wireless🌐    |   ✅    |  Intel Wireless-AC 9560 / Dell Wireless 1820A  |
 |   Bluetooth🦷    |   ✅    |   DW1820A works, AC9560 is not that perfect    |
-| SD card reader🗂️ |   ✅    |    O2 Micro （doesn't work）/ Realtek （working）  |
+| SD card reader🗂️ |   ✅    |    O2 Micro （working）/ Realtek （working）  |
 |    TrackPad🖐️    |   ✅    |         Works in GPIO mode with Pin=50         |
 |      HDMI📺      |   ✅    |    able to output 4k@30fps, same as windows    |
 |     Camera🎦     |   ✅    |      it's pretty easy to drive USB camera      |
