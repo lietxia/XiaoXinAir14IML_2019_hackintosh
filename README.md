@@ -22,7 +22,7 @@ QQ群号：1032311345
 |  声卡🔊  | ✅    |                   Conexant CX8070                |
 |  wifi🌐  | ✅    |            Intel Wireless-AC 9560/DW1820A       |
 |  蓝牙🦷  | ✅    |             Intel Wireless-AC 9560/DW1820A       |
-| 读卡器🗂️ | ✅    |  O2 Micro 读卡器（不可驱动） / Realtek 读卡器（可驱动）|
+| 读卡器🗂️ | ✅    |  O2 Micro 读卡器（可驱动） / Realtek 读卡器（可驱动）|
 | 触摸板🖐️ | ✅    |                 已运行在GPIO中断 Pin=50             |
 |  HDMI📺  | ✅    |              可输出4k30帧,和win表现一致            |
 | 摄像头🎦 | ✅    |                 USB摄像头还是很好驱动的             |
