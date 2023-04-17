@@ -33,7 +33,7 @@ ENGLISH
 * Disks🖴：If you are using Samsung PM981A, please consider to change.
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
-## Related model
+## Related models
 * [XiaoXin Pro13 (i5-10210U / i7-10710U)](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
 * [XiaoXin13 IML](https://github.com/sun19970908/XiaoXin13IML_2020_hackintosh)
 * [XiaoXin Air13 IWL (i5-8265U / i7-8565U)](https://github.com/daliansky/Lenovo-Air13-IWL-Hackintosh)
@@ -47,6 +47,7 @@ ENGLISH
 * [Lenovo-Ideapad-S540-15IWL (i5-8265U)](https://github.com/IvanAleksandrov94/Lenovo-s340-s540-Big-Sur-OpenCore-i5-8265u)
 * [Lenovo-Ideapad-S540-14IML (i5-10210U)](https://github.com/marianopela/Lenovo-Ideapad-S540-14IML-Hackintosh)
 * [Lenovo-Ideapad-S540-14IWL (i5-8265U)](https://github.com/Hasodikis/Lenovo-Ideapad-s540-14IWL---Hackintosh)
+* [Lenovo-Ideapad-S540-14IML (i5-10210U / i7-10510U)](https://github.com/mandresve/Lenovo-IdeaPad-S540-Hackintosh)
 
 ## BIOS 
 https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=78312
@@ -218,3 +219,4 @@ Consultation got the answer: win restart is warm boot, will skip hardware detect
 - [sun19970908](https://github.com/sun19970908) for providing codec, modify ALCPlugFix and test CPUFriend.
 - [stevezhengshiqi](https://github.com/stevezhengshiqi) for [one-key-cpufriend](https://github.com/stevezhengshiqi/one-key-cpufriend)
 - [SoMeone](https://user.qzone.qq.com/504674749/infocenter) for modifying BIOS
+- [mandresve](https://about.me/mandresve) for O2 Card Reader Support & Voltageshift underclock enable and testing.
