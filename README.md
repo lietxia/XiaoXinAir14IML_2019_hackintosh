@@ -29,7 +29,7 @@ QQ群号：1032311345
 |  睡眠😴  | ✅    |                     支持原生睡眠                   |
 
 ## 目前状态：
-* 系统🌌：Catalina / BigSur / Monterey / Ventura （推荐 Catalina / Big Sur / Monterey ）（不推荐使用Ventura）
+* 系统🌌：Catalina / BigSur / Monterey / Ventura
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
@@ -47,6 +47,7 @@ QQ群号：1032311345
 * [Lenovo-Ideapad-S540-15IWL（i5-8265U）](https://github.com/IvanAleksandrov94/Lenovo-s340-s540-Big-Sur-OpenCore-i5-8265u)
 * [Lenovo-Ideapad-S540-14IML（i5-10210U）](https://github.com/marianopela/Lenovo-Ideapad-S540-14IML-Hackintosh)
 * [Lenovo-Ideapad-S540-14IWL（i5-8265U）](https://github.com/Hasodikis/Lenovo-Ideapad-s540-14IWL---Hackintosh)
+* [Lenovo-Ideapad-S540-14IML (i5-10210U / i7-10510U)](https://github.com/mandresve/Lenovo-IdeaPad-S540-Hackintosh)
 
 ## BIOS 
 https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=78312
@@ -216,3 +217,4 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 - [sun19970908](https://github.com/sun19970908) 提供ALC节点，修改ALCPlugFix并测试CPUFriend
 - [stevezhengshiqi](https://github.com/stevezhengshiqi) 开发的 [one-key-cpufriend](https://github.com/stevezhengshiqi/one-key-cpufriend)
 - [SoMeone](https://user.qzone.qq.com/504674749/infocenter) 破解的隐藏 BIOS
+- [mandresve](https://about.me/mandresve) 对O2读卡器的支持和Voltageshift超频的启用和测试。
