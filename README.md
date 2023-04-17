@@ -29,7 +29,7 @@ QQ群号：1032311345
 |  睡眠😴  | ✅    |                     支持原生睡眠                   |
 
 ## 目前状态：
-* 系统🌌：Catalina / BigSur / Monterey / Ventura （推荐 Catalina / Big Sur / Monterey ）（不推荐使用Ventura）
+* 系统🌌：Catalina / BigSur / Monterey / Ventura
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
