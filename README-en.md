@@ -29,7 +29,7 @@ ENGLISH
 |     Sleep😴      |   ✅    |             Support native sleep.              |
 
 ## Current Status：
-* System🌌：Catalina / Big Sur / Monterey / Ventura ( Not recommended to use Ventura )
+* System🌌：Catalina / Big Sur / Monterey / Ventura
 * Disks🖴：If you are using Samsung PM981A, please consider to change.
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
