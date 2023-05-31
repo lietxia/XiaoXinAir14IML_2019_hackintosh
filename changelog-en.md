@@ -1,3 +1,7 @@
+* 2023-06-01 02:00
+    * Update Opencore and kexts.
+    * Hide Opencore boot items
+
 * 2023-02-22 12:00
     * Update Opencore and kexts.
     * Fix backlight (maybe)
