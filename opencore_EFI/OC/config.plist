@@ -387,7 +387,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.5 | Lilu</string>
+                    <string>V1.6.6 | Lilu</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -441,7 +441,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.1 | SMC</string>
+                    <string>V1.3.2 | SMC</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -459,7 +459,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.4 | GPU Driver</string>
+                    <string>V1.6.5 | GPU Driver</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -477,7 +477,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.2 | Sound</string>
+                    <string>V1.8.3 | Sound</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -531,7 +531,7 @@
                     <key>BundlePath</key>
                     <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.1 | Battery</string>
+                    <string>V1.3.2 | Battery</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -549,7 +549,7 @@
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.1 | Prosessor</string>
+                    <string>V1.3.2 | Prosessor</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -657,7 +657,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.5 | PS2Controller</string>
+                    <string>V2.3.6 | PS2Controller</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -675,7 +675,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.5 | Keyboard</string>
+                    <string>V2.3.6 | Keyboard</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -693,7 +693,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.5</string>
+                    <string>V2.3.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -711,7 +711,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.5</string>
+                    <string>V2.3.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -729,7 +729,7 @@
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.1 | RestrictEvents</string>
+                    <string>V1.1.2 | RestrictEvents</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -765,7 +765,7 @@
                     <key>BundlePath</key>
                     <string>NVMeFix.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.0 | NVMeFix</string>
+                    <string>V1.1.1 | NVMeFix</string>
                     <key>Enabled</key>
                     <false/>
                     <key>ExecutablePath</key>
@@ -783,7 +783,7 @@
                     <key>BundlePath</key>
                     <string>FeatureUnlock.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.4 | FeatureUnlock</string>
+                    <string>V1.1.5 | FeatureUnlock</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -801,7 +801,7 @@
                     <key>BundlePath</key>
                     <string>AirportBrcmFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.1.7 | DW1820A-WIFI</string>
+                    <string>V2.1.8 | DW1820A-WIFI</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -879,7 +879,7 @@
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BlueToolFixup</string>
                     <key>MaxKernel</key>
-                    <string>22.99.99</string>
+                    <string>23.99.99</string>
                     <key>MinKernel</key>
                     <string>21.0</string>
                     <key>PlistPath</key>
@@ -927,7 +927,7 @@
                     <key>BundlePath</key>
                     <string>DebugEnhancer.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.7 | Debugger</string>
+                    <string>V1.0.8 | Debugger</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -945,67 +945,13 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothInjector.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | Intel-BlueTooth</string>
+                    <string>V2.3.0 | Intel-BlueTooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
                     <string></string>
                     <key>MaxKernel</key>
                     <string>20.99.99</string>
-                    <key>MinKernel</key>
-                    <string>16.0</string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>BundlePath</key>
-                    <string>IntelBluetoothFirmware.kext</string>
-                    <key>Comment</key>
-                    <string>V2.2.0 | Intel-BlueTooth</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelBluetoothFirmware</string>
-                    <key>MaxKernel</key>
-                    <string>22.99.99</string>
-                    <key>MinKernel</key>
-                    <string>16.0</string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>IntelBTPatcher.kext</string>
-                    <key>Comment</key>
-                    <string>V2.2.0 | Intel-BlueTooth</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelBTPatcher</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>BundlePath</key>
-                    <string>AirportItlwm-Catalina.kext</string>
-                    <key>Comment</key>
-                    <string>V2.2.0 | Intel-WiFi</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AirportItlwm</string>
-                    <key>MaxKernel</key>
-                    <string>19.99.99</string>
                     <key>MinKernel</key>
                     <string>19.0</string>
                     <key>PlistPath</key>
@@ -1015,17 +961,35 @@
                     <key>Arch</key>
                     <string>x86_64</string>
                     <key>BundlePath</key>
-                    <string>AirportItlwm-BigSur.kext</string>
+                    <string>IntelBluetoothFirmware.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | Intel-WiFi</string>
+                    <string>V2.3.0 | Intel-BlueTooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AirportItlwm</string>
+                    <string>Contents/MacOS/IntelBluetoothFirmware</string>
                     <key>MaxKernel</key>
-                    <string>20.99.99</string>
+                    <string></string>
                     <key>MinKernel</key>
-                    <string>20.0</string>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>IntelBTPatcher.kext</string>
+                    <key>Comment</key>
+                    <string>V2.3.0 | Intel-BlueTooth</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IntelBTPatcher</string>
+                    <key>MaxKernel</key>
+                    <string>23.99.99</string>
+                    <key>MinKernel</key>
+                    <string>19.0</string>
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
@@ -1035,7 +999,7 @@
                     <key>BundlePath</key>
                     <string>AirportItlwm-Monterey.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | Intel-WiFi</string>
+                    <string>V2.2.0 | Intel-Wi-Fi</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1051,9 +1015,27 @@
                     <key>Arch</key>
                     <string>x86_64</string>
                     <key>BundlePath</key>
+                    <string>AirportItlwm-BigSur.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0 | Intel-Wi-Fi</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string>20.99.99</string>
+                    <key>MinKernel</key>
+                    <string>20.0</string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
                     <string>AirportItlwm-Ventura.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | Intel-WiFi</string>
+                    <string>V2.2.0 | Intel-Wi-Fi</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1062,6 +1044,24 @@
                     <string>22.99.99</string>
                     <key>MinKernel</key>
                     <string>22.0</string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>AirportItlwm-Catalina.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0 | Intel-Wi-Fi</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string>19.99.99</string>
+                    <key>MinKernel</key>
+                    <string>19.0</string>
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
