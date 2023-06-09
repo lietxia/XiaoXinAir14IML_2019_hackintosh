@@ -1380,7 +1380,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>alcid=15 brcmfx-country=#a brcmfx-aspm igfxrpsc=1 -allow_sidecar_ipad agdpmod=vit9696 kbd_fixdisable=1 -igfxblr</string>
+                    <string>alcid=15 brcmfx-country=#a brcmfx-aspm igfxrpsc=1 -allow_sidecar_ipad agdpmod=vit9696 kbd_fixdisable=1 -igfxblr -lilubetaall</string>
                     <key>csr-active-config</key>
                     <data>5wMAAA==</data>
                     <key>prev-lang:kbd</key>
