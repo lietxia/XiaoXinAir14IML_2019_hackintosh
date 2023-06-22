@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>20A241123</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>CtlnaSDXC</string>
+	<key>CFBundleGetInfoString</key>
+	<string>1.9.0, Copyright Apple Inc. 2009-2020</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.driver.CtlnaSDXC</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>CtlnaSDXC</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.9.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1.9.0</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>12E6178j</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>11.6.1</string>
+	<key>DTSDKBuild</key>
+	<string>20G219</string>
+	<key>DTSDKName</key>
+	<string>macosx11.6internal</string>
+	<key>DTXcode</key>
+	<string>1240</string>
+	<key>DTXcodeBuild</key>
+	<string>12E6178j</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>CtlnaSDXC</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.CtlnaSDXC</string>
+			<key>IONameMatch</key>
+			<array>
+				<string>pci14e4,16bc</string>
+			</array>
+			<key>IOClass</key>
+			<string>CtlnaSDXC</string>
+			<key>IOPCIPauseCompatible</key>
+			<true/>
+			<key>IOPCITunnelCompatible</key>
+			<true/>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>Protocol Characteristics</key>
+			<dict>
+				<key>Physical Interconnect</key>
+				<string>Secure Digital</string>
+				<key>Physical Interconnect Location</key>
+				<string>Internal</string>
+			</dict>
+			<key>IOProbeScore</key>
+			<integer>6000</integer>
+		</dict>
+		<key>CtlnaSDXCBlockStorageDevice</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.CtlnaSDXC</string>
+			<key>Device Characteristics</key>
+			<dict>
+				<key>Product Name</key>
+				<string>Built In SDXC Reader</string>
+				<key>Vendor Name</key>
+				<string>Apple</string>
+			</dict>
+			<key>IOClass</key>
+			<string>CtlnaSDXCBlockStorageDevice</string>
+			<key>IOMediaIcon</key>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.apple.iokit.IOSCSIArchitectureModelFamily</string>
+				<key>IOBundleResourceFile</key>
+				<string>SD.icns</string>
+			</dict>
+			<key>IOProviderClass</key>
+			<string>CtlnaSDXCSlot</string>
+		</dict>
+	</dict>
+	<key>LSMinimumSystemVersion</key>
+	<string>11.6</string>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>2.0.0</string>
+		<key>com.apple.iokit.IOReportFamily</key>
+		<string>1.0</string>
+		<key>com.apple.iokit.IOStorageFamily</key>
+		<string>1.2.7</string>
+		<key>com.apple.kpi.bsd</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>9.0.0</string>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Local-Root</string>
+</dict>
+</plist>
