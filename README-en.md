@@ -74,13 +74,8 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
-* 2023-06-01 02:00
-    * Update Opencore and kexts.
-    * Hide Opencore boot items
-
-* 2023-02-22 12:00
-    * Update Opencore and kexts.
-    * Fix backlight (maybe)
+* 2023-08-07 23:05
+    * Support macOS Somoma.
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 
@@ -100,6 +95,13 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 ## Advice
 * [Prevent intermittent hackintosh disconnections Thanks @Unstoppablesss] Modify System Preferences/Eneragy Saver/Power Adapter/Put hard disk to sleep when possible(modify to off)  
 * Because current hibernate cannot wake up normally, in order to avoid affecting sleep, use  the terminal to turn off hibernate `sudo pmset -a hibernatemode 0` 
+
+### VoltageShift `Highly dangerous`
+* Advantage：Undervolt the CPU to gain more efficiency and make the machine cooler
+* Method：
+    * 1.Follow BIOS_UnlockOCPM‘s readme to unlock `Overclocking Performance Menu` `Extremely dangerous, please backup your BIOS`
+    * 2.Switch `Advanced` → `Overclocking Performance Menu` → `Overclocking Feature` → `Enabled`
+    * 3.Undervolt in macOS with VoltageShift
 
 ### YogaSMC： `Experimental`
 * Normal: Fan three modes switch, microphone mute, flight mode, F10 switch screen, touchpad switch hint, keyboard backlight, Fn function key switch.
@@ -155,7 +157,7 @@ Consultation got the answer: win restart is warm boot, will skip hardware detect
 * Restart from mac won't cause this.
 
 
-## How to make it better?
+### How to make it better?
 * PrintScreen can't be used under mac. I map it to F13 and you can change the shortcut key of screenshot to F13
 * Turn on HiDPI (see HiDPI part)
 
@@ -176,35 +178,6 @@ Consultation got the answer: win restart is warm boot, will skip hardware detect
 | SSDT-BATX-Air14IML | Battery extra info                     |           |             | √        |
 | SSDT-AWAC          | “Fake” RTC timer                       |           | √           |          |
 | SSDT-ECRW          | YogaSMC EC accessibility               |           |             | √        |
-
-## Kexts
-| Kexts                       | Info                   | Necessary | Optional |
-| --------------------------- | ---------------------- | --------- | -------- |
-| AirportBrcmFixup.kext       | DW1820A Wi-Fi          |           | √        |
-| AppleALC.kext               | HDMI & Audio           | √         |          |
-| BluetoolFixup.kext          | Fix Monterey Bluetooth |           | √        |
-| BrcmBluetoothInjector.kext  | DW1820A bluetooth      |           | √        |
-| BrcmFirmwareData.kext       | DW1820A bluetooth      |           | √        |
-| BrcmPatchRAM3.kext          | DW1820A bluetooth      |           | √        |
-| Lilu.kext                   | Kernel extension       | √         |          |
-| SMCBatteryManager.kext      | SMC battery            | √         |          |
-| SMCProcessor.kext           | SMC-processor          | √         |          |
-| VirtualSMC.kext             | SMC(important)         | √         |          |
-| VoodooI2C.kext              | Trackpad core          | √         |          |
-| VoodooI2CHID.kext           | HID trackpad           | √         |          |
-| VoodooPS2Controller.kext    | Keyboard driver        | √         |          |
-| WhateverGreen.kext          | IGPU driver            | √         |          |
-| DebugEnhancer.kext          | Fix msgbuf             |           | √        |
-| IntelBluetoothFirmware.kext | AC9560 Bluetooth       |           | √        |
-| IntelBluetoothInjector.kext | AC9560 Bluetooth       |           | √        |
-| AirportItlwm-Sur.kext       | AC9560 Wi-Fi Big Sur   |           | √        |
-| AirportItlwm-Cata.kext      | AC9560 Wi-Fi Catalina  |           | √        |
-| AirportItlwm-Monterey.kext  | AC9560 Wi-Fi Monterey  |           | √        |
-| YogaSMC.kext                | YogaSMC                |           | √        |
-| YogaSMCAlter.kext           | YogaSMC                |           | √        |
-| RestrictEvents.kext         | Shield system daemons  |           | √        |
-| NVMeFix.kext                | improve nvme SSD       |           | √        |
-| VerbStub.kext               | Microphone             |           | √        |
 
 ## Notes
 * You need a T6 screwdriver to disassemble the machine. After the screws are removed, use the unused card and carefully disassemble it from the other side of the screen https://www.bilibili.com/video/BV1X341157kf/  

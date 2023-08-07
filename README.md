@@ -74,12 +74,8 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
-* 2023-06-01 02:00
-    * 更新OC和Kexts
-    * 隐藏Opencore引导项
-* 2023-02-22 12:00
-    * 更新OC和Kexts
-    * 可能修复了背光问题 
+* 2023-08-07 23:05
+    * 支持macOS Somoma.
 
 * 历史修改记录见[changelog.md](changelog.md)
 
@@ -100,6 +96,13 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 * 【防止黑苹果间歇性断网-解决方案 感谢@Unstoppablesss】修改 系统偏好设置/节能/电源适配器/如果可能，使硬盘进入睡眠（修改为off）
 * 因目前休眠无法正常唤醒 , 为避免影响到睡眠 , 终端使用命令关闭休眠 `sudo pmset -a hibernatemode 0`
 
+
+### VoltageShift `高度危险`
+* 用途：降压获得更高能效，可以显著降低温度或提升一定功耗下的性能
+* 方法：
+    * 1.遵循BIOS_UnlockOCPM的指示解开超频菜单 `极度危险，务必备份BIOS`
+    * 2.打开 `Advanced` → `Overclocking Performance Menu` → `Overclocking Feature` → `Enabled`
+    * 3.在macOS中使用VoltageShift进行修改
 
 ### YogaSMC `实验性支持`
 * 正常的：风扇三种模式切换、麦克风静音、飞行模式、F10切换屏幕、触摸板开关有提示、键盘背光、Fn功能键切换
@@ -153,7 +156,7 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 * 建议: 从win切换到mac,不要用重启,先关机,再开机
 * mac重启mac,不会掉声卡
 
-## 如何更爽一点?
+### 如何更爽一点?
 * 截图键(PrintScreen PrtSC)在mac下是不能用的,我把他映射到F13,自己把截图快捷键改到F13即可(系统偏好设置  键盘  快捷键  截屏)
 
 ## 热补丁
@@ -174,34 +177,7 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 | SSDT-AWAC          | “伪” RTC时钟                   |      | √    |      |
 | SSDT-ECRW          | yogaSMC的EC访问补丁            |      |      | √    |
 
-## KEXT
-| KEXT                        | 说明                  | 必备 | 可选 |
-| --------------------------- | --------------------- | ---- | ---- |
-| AirportBrcmFixup.kext       | dw1820_Wifi           |      | √    |
-| AppleALC.kext               | HDMI以及声卡          | √    |      |
-| BluetoolFixup.kext          | 修复Monterey 蓝牙     |      | √    |
-| BrcmBluetoothInjector.kext  | dw1820蓝牙            |      | √    |
-| BrcmFirmwareData.kext       | dw1820蓝牙            |      | √    |
-| BrcmPatchRAM3.kext          | dw1820蓝牙>=10.15     |      | √    |
-| Lilu.kext                   | 驱动扩展库(超重要)    | √    |      |
-| SMCBatteryManager.kext      | SMC(超重要)           | √    |      |
-| SMCProcessor.kext           | SMC-处理器            | √    |      |
-| VirtualSMC.kext             | SMC(超重要)           | √    |      |
-| VoodooI2C.kext              | 触摸板-核心           | √    |      |
-| VoodooI2CHID.kext           | HID类型触摸板         | √    |      |
-| VoodooPS2Controller.kext    | 键盘驱动              | √    |      |
-| WhateverGreen.kext          | 核显驱动              | √    |      |
-| DebugEnhancer.kext          | 修复msgbuf卡EB        |      | √    |
-| IntelBluetoothFirmware.kext | AC9560蓝牙固件        |      | √    |
-| IntelBluetoothInjector.kext | AC9560蓝牙            |      | √    |
-| AirportItlwm-Sur.kext       | AC9560 Wi-Fi Big Sur  |      | √    |
-| AirportItlwm-Cata.kext      | AC9560 Wi-Fi Catalina |      | √    |
-| AirportItlwm-Monterey.kext  | AC9560 Wi-Fi Monterey |      | √    |
-| YogaSMC.kext                | YogaSMC               |      | √    |
-| YogaSMCAlter.kext           | YogaSMC               |      | √    |
-| RestrictEvents.kext         | 屏蔽一些系统加载项    |      | √    |
-| NVMeFix.kext                | 改善nvme固态          |      | √    |
-| VerbStub.kext               | 耳麦切换              |      | √    |
+
 
 ## 备注
 * 拆机需要6号的6角螺丝刀。螺丝拿下来之后，用不用的银行卡，慢慢从屏幕那一侧慢慢拆开 https://www.bilibili.com/video/BV1X341157kf/  

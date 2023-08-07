@@ -1,3 +1,6 @@
+* 2023-08-07 23:05
+    * Support macOS Somoma.
+
 * 2023-06-01 02:00
     * Update Opencore and kexts.
     * Hide Opencore boot items
