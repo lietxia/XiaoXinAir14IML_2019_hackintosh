@@ -9,7 +9,7 @@ ENGLISH
 * Do not overclock the memory!!!
 
 ## Purpose:
-	Unlock the overclocking performance menu  
+* Unlock the overclocking performance menu  
 
 ## Tools:
 * FPT H2OEZE SetupUtility_UnlockOCPM.ffs
@@ -44,7 +44,7 @@ ENGLISH
 > If an error is reported, flash the backup.fd file previously backed up, and execute change.bat to restore BIOS, then give up or ask for further assistance.    
 
 ## Postscript:
-I bought a 3200mhz 16g memory and found that it works at 2667 after replacing it.  
+* I bought a 3200mhz 16g memory and found that it works at 2667 after replacing it.  
 The first thing I thought of was that the second memory is low-frequency, and the borad adjust the frequency according to the frequency of on-board 4G memory.  
 So I entered the BIOS and @#¥%*&, but failed to find the section , then I edited the BIOS and @#¥%, but it did not work either.  
 I looked up the motherboard parameters again. The CPU memory control only supports 2666, WTF!!!
