@@ -181,7 +181,7 @@ Consultation got the answer: win restart is warm boot, will skip hardware detect
 
 ## Notes
 * You need a T6 screwdriver to disassemble the machine. After the screws are removed, use the unused card and carefully disassemble it from the other side of the screen https://www.bilibili.com/video/BV1X341157kf/  
-* If you wan't to buy a type-c cable, you should buy one with 4mm diameter, and the hole diameter is 1.7mm  
+* If you want to buy a type-c cable, you should buy one with 4mm diameter, and the hole diameter is 1.7mm  
 ![IMG](img/pd+luosi.png)
 
 ## Credits
