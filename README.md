@@ -1,6 +1,6 @@
 # 联想小新 Air-14 2019IML
 ![air14iml-ven](img/air14iml-ven.png)
-截图软件：/capXDR 
+截图软件：/capXDR  
 模板：Lenovo-Air14IML (我做的)  
 QQ群号：1032311345
 
