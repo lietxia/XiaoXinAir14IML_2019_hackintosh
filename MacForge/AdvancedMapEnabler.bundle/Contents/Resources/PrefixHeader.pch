@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  AdvancedMapEnabler
+//
+//  Created by Thatchapon Unprasert on 18/7/2564 BE.
+//
+//
+
+#ifndef AdvancedMapEnabler_PrefixHeader_pch
+#define AdvancedMapEnabler_PrefixHeader_pch
+
+#import <Cocoa/Cocoa.h>
+#import "ZKSwizzle.h"
+
+#endif
+
