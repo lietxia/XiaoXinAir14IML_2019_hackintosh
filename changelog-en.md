@@ -1,3 +1,7 @@
+* 2023-11-29 16:00
+    * Support macOS Somoma OTA.
+    * Use MacForge to add functions which are Apple Silicon only.
+
 * 2023-08-07 23:05
     * Support macOS Somoma.
 

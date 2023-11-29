@@ -10,15 +10,15 @@ QQ群号：1032311345
 |  规格   | 状态 |                       详细信息                       |
 | :-----: | ---- | :--------------------------------------------------: |
 |  型号💻  | ✅    |            Lenovo XiaoXin Air14 IML 2019             |
-|  系统🌌  | ✅    |          Catalina/Big Sur/Monterey/Ventura           |
+|  系统🌌  | ✅    |          Catalina/Big Sur/Monterey/Ventura/Sonoma     |
 |  CPU🎛️   | ✅    |           Intel Core i5-10210U / i7-10510U           |
 |  主板🎛️  | ✅    |                  Lenovo LNVNB161216                  |
 |  指纹🖐️  | ⛔    |                     指纹无法工作                     |
 |  GPU👾   | ⛔    |              Nvidia GeForce MX250(屏蔽)              |
 |  iGPU👾  | ✅    |                    Intel UHD 620                     |
-|  内存💳  | ✅    |            内置4GB+可更换的8GB DDR4 2666             |
+|  内存💳  | ✅    |            内置4GB+可更换的32GB DDR4 2666             |
 |  硬盘💽  | ✅    |                 见 Benchmarks/Disks                  |
-|  屏幕🖥️  | ✅    |         AUO353D/LGD05EC（14英寸） 1920x1080          |
+|  屏幕🖥️  | ✅    |    AUO353D/LGD05EC（14英寸） 1920x1080 60~75Hz(超频)    |
 |  声卡🔊  | ✅    |                   Conexant CX8070                    |
 |  wifi🌐  | ✅    |            Intel Wireless-AC 9560/DW1820A            |
 |  蓝牙🦷  | ✅    |            Intel Wireless-AC 9560/DW1820A            |
@@ -29,7 +29,7 @@ QQ群号：1032311345
 |  睡眠😴  | ✅    |                     支持原生睡眠                     |
 
 ## 目前状态：
-* 系统🌌：Catalina / BigSur / Monterey / Ventura
+* 系统🌌：Catalina / BigSur / Monterey / Ventura / Sonoma
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。
 * 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
@@ -74,8 +74,9 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## 更新小记
-* 2023-08-07 23:05
-    * 支持macOS Somoma.
+* 2023-11-29 16:00
+    * 支持macOS Somoma OTA
+    * 使用MacForge来增加M系列独占的高级地图功能
 
 * 历史修改记录见[changelog.md](changelog.md)
 
@@ -98,7 +99,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 
 
 ### VoltageShift `高度危险`
-* 用途：降压获得更高能效，可以显著降低温度或提升一定功耗下的性能
+* 用途：降压获得更高能效，可以显著降低温度或提升一定功耗下的性能（约50%）
 * 方法：
     * 1.遵循BIOS_UnlockOCPM的指示解开超频菜单 `极度危险，务必备份BIOS`
     * 2.打开 `Advanced` → `Overclocking Performance Menu` → `Overclocking Feature` → `Enabled`
@@ -150,14 +151,12 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
      * 偏移（offset） : `0x3E`
      * `01` to `00`
 
-### 声卡挂了 
-从win直接重启切换到mac,会导致声卡挂掉,这时候需要关机,再开机,声卡就恢复了  
-咨询得到到回答:win的重启是热启动,会跳过硬件检测,直接win重启进黑苹果会出问题  
-* 建议: 从win切换到mac,不要用重启,先关机,再开机
-* mac重启mac,不会掉声卡
-
+### MacForge 
+* 用途：增加M系列独占的高级地图功能
+* 方法：运行/macforge/install.command
+    
 ### 如何更爽一点?
-* 截图键(PrintScreen PrtSC)在mac下是不能用的,我把他映射到F13,自己把截图快捷键改到F13即可(系统偏好设置  键盘  快捷键  截屏)
+* 截图键(PrintScreen PrtSC)在mac下是不能用的,我把他映射到F13,自己把截图快捷键改到F13即可(系统偏好设置-键盘-快捷键-截屏)
 
 ## 热补丁
 | 补丁               | 说明                           | 必备 | 建议 | 可选 |
@@ -197,3 +196,5 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 - [stevezhengshiqi](https://github.com/stevezhengshiqi) 开发的 [one-key-cpufriend](https://github.com/stevezhengshiqi/one-key-cpufriend)
 - [SoMeone](https://user.qzone.qq.com/504674749/infocenter) 破解的隐藏 BIOS
 - [mandresve](https://about.me/mandresve) 对O2读卡器的支持和Voltageshift超频的启用和测试。
+- [PoomSmart](https://github.com/PoomSmart) 开发的 [AdvancedMapEnabler](https://github.com/PoomSmart/AdvancedMapEnabler)
+- [MacEnhance](https://github.com/MacEnhance/) 开发的 [MacForge](https://github.com/MacEnhance/MacForge)

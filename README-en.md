@@ -7,29 +7,29 @@ QQ group number：1032311345
 [中文](./README.md)  
 ENGLISH  
 
-|      Info        |  Status  |                    Details                     |
-| :--------------: | :------: | :--------------------------------------------: |
-| Computer model💻 |   ✅    |         Lenovo XiaoXin Air14 IML 2019          |
-|     System🌌     |   ✅    |         Catalina/Big Sur/Monterey/Ventura      |
-|      CPU🎛️       |   ✅    |        Intel Core i5-10210U / i7-10510U        |
-|  Motherboard🎛️   |   ✅    |               Lenovo LNVNB161216               |
-|  Fingerprint🖐️   |   ⛔    |         Fingerprint is unable to work          |
-|      GPU👾       |   ⛔    |         Nvidia GeForce MX250 ( 2 GB )          |
-|      IGPU👾      |   ✅    |                 Intel UHD 620                  |
-|     Memory💳     |   ✅    | Internal 4GB 2666 + Changeable 8GB 2666 memory |
-|     Disks💽      |   ✅    |              See Benchmarks/Disks              |
-|     Screen🖥️     |   ✅    |    AUO353D/LGD05EC ( 14-inches ) 1920x1080     |
-|   Audio Card🔊   |   ✅    |                Conexant CX8070                 |
-|    Wireless🌐    |   ✅    |  Intel Wireless-AC 9560 / Dell Wireless 1820A  |
-|   Bluetooth🦷    |   ✅    |   DW1820A works, AC9560 is not that perfect    |
-| SD card reader🗂️ |   ✅    |    O2 Micro （working）/ Realtek （working）  |
-|    TrackPad🖐️    |   ✅    |         Works in GPIO mode with Pin=50         |
-|      HDMI📺      |   ✅    |    able to output 4k@30fps, same as windows    |
-|     Camera🎦     |   ✅    |      it's pretty easy to drive USB camera      |
-|     Sleep😴      |   ✅    |             Support native sleep.              |
+|      Info        |  Status  |                         Details                        |
+| :--------------: | :------: | :----------------------------------------------------: |
+| Computer model💻 |   ✅    |              Lenovo XiaoXin Air14 IML 2019             |
+|     System🌌     |   ✅    |          Catalina/Big Sur/Monterey/Ventura/Sonoma      |
+|      CPU🎛️       |   ✅    |              Intel Core i5-10210U / i7-10510U          |
+|  Motherboard🎛️   |   ✅    |                     Lenovo LNVNB161216                 |
+|  Fingerprint🖐️   |   ⛔    |              Fingerprint is unable to work             |
+|      GPU👾       |   ⛔    |              Nvidia GeForce MX250 ( 2 GB )             |
+|      IGPU👾      |   ✅    |                      Intel UHD 620                     |
+|     Memory💳     |   ✅    |         Internal 4GB 2666 + Changeable 32GB 2666       |
+|     Disks💽      |   ✅    |                     See Benchmarks/Disks               |
+|     Screen🖥️     |   ✅    |  AUO353D/LGD05EC ( 14-inches ) 1920x1080 60~75Hz(OC)   |
+|   Audio Card🔊   |   ✅    |                       Conexant CX8070                  |
+|    Wireless🌐    |   ✅    |                Intel Wireless-AC 9560 / DW1820A        |
+|   Bluetooth🦷    |   ✅    |                Intel Wireless-AC 9560 / DW1820A        |
+| SD card reader🗂️ |   ✅    |                      O2 Micro / Realtek                |
+|    TrackPad🖐️    |   ✅    |                 Works in GPIO mode with Pin=50         |
+|      HDMI📺      |   ✅    |          able to output 4k@30fps, same as windows      |
+|     Camera🎦     |   ✅    |           it's pretty easy to drive USB camera         |
+|     Sleep😴      |   ✅    |                   Support native sleep.                |
 
 ## Current Status：
-* System🌌：Catalina / Big Sur / Monterey / Ventura
+* System🌌：Catalina / Big Sur / Monterey / Ventura / Sonoma
 * Disks🖴：If you are using Samsung PM981A, please consider to change.
 * Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
@@ -74,8 +74,9 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
-* 2023-08-07 23:05
-    * Support macOS Somoma.
+* 2023-11-29 16:00
+    * Support macOS Somoma OTA.
+    * Use MacForge to add functions which are Apple Silicon only.
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 
@@ -149,12 +150,9 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
      * Offset : `0x3E`  
      * `01` to `00`
 
-### The audio card isn't working.
-Switching from win to mac will cause the audio card fail to syart. At this time, you need to turn it off and turn it on again, and the audio card will recover  
-Consultation got the answer: win restart is warm boot, will skip hardware detection, directly restart into mac will have problems  
-
-* Suggestion: switch from win to mac, do not restart, shut down first, and then turn on
-* Restart from mac won't cause this.
+### MacForge 
+* Advantage: Add functions which are Apple Silicon only
+* Installation: run /macforge/install.command
 
 
 ### How to make it better?
@@ -197,3 +195,5 @@ Consultation got the answer: win restart is warm boot, will skip hardware detect
 - [stevezhengshiqi](https://github.com/stevezhengshiqi) for [one-key-cpufriend](https://github.com/stevezhengshiqi/one-key-cpufriend)
 - [SoMeone](https://user.qzone.qq.com/504674749/infocenter) for modifying BIOS
 - [mandresve](https://about.me/mandresve) for O2 Card Reader Support & Voltageshift underclock enable and testing.
+- [PoomSmart](https://github.com/PoomSmart) for [AdvancedMapEnabler](https://github.com/PoomSmart/AdvancedMapEnabler)
+- [MacEnhance](https://github.com/MacEnhance/) for [MacForge](https://github.com/MacEnhance/MacForge)

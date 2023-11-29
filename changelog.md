@@ -1,3 +1,7 @@
+* 2023-11-29 16:00
+    * 支持macOS Somoma OTA
+    * 使用MacForge来增加M系列独占的高级地图功能
+
 * 2023-08-07 23:05
     * 支持macOS Somoma.
 
