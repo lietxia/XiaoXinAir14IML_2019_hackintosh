@@ -1,7 +1,7 @@
 # Lenovo XiaoXin Air-14 2019IML
-![air14iml-ven](img/air14iml-ven.png)
-Screenshot app: /capXDR 
-Model：Lenovo-Air14IML (made by lietxia)  
+![air14iml-ven](img/air14iml-ven.webp)
+Screenshot app: [capXDR](https://github.com/lihaoyun6/capXDR-plugins)  
+Model：Lenovo-Air14IML
 QQ group number：1032311345
 
 [中文](./README.md)  
@@ -180,7 +180,7 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 ## Notes
 * You need a T6 screwdriver to disassemble the machine. After the screws are removed, use the unused card and carefully disassemble it from the other side of the screen https://www.bilibili.com/video/BV1X341157kf/  
 * If you want to buy a type-c cable, you should buy one with 4mm diameter, and the hole diameter is 1.7mm  
-![IMG](img/pd+luosi.png)
+![IMG](img/pd+luosi.webp)
 
 ## Credits
 - [Acidanthera](https://github.com/acidanthera) for [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [other kexts](https://github.com/acidanthera).
