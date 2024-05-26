@@ -1,7 +1,7 @@
 # 联想小新 Air-14 2019IML
-![air14iml-ven](img/air14iml-ven.png)
-截图软件：/capXDR  
-模板：Lenovo-Air14IML (我做的)  
+![air14iml-ven](img/air14iml-ven.webp)
+截图软件：[capXDR](https://github.com/lihaoyun6/capXDR-plugins)  
+模板：Lenovo-Air14IML
 QQ群号：1032311345
 
 中文  
@@ -181,7 +181,7 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 ## 备注
 * 拆机需要6号的6角螺丝刀。螺丝拿下来之后，用不用的银行卡，慢慢从屏幕那一侧慢慢拆开 https://www.bilibili.com/video/BV1X341157kf/  
 * 如果要买【圆口转USB type转接器】，注意【圆口直径4毫米，孔直径1.7毫米】  
-![IMG](img/pd+luosi.png)
+![IMG](img/pd+luosi.webp)
 
 ## 鸣谢
 - [Acidanthera](https://github.com/acidanthera) 开发的 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 和 [其他驱动](https://github.com/acidanthera)
