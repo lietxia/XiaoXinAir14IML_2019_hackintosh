@@ -74,9 +74,9 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 </details>
 
 ## Changelog
-* 2023-11-29 16:00
-    * Support macOS Somoma OTA.
-    * Use MacForge to add functions which are Apple Silicon only.
+* 2024-05-26 10:30
+    * Support macOS Somoma 14.4+
+    * Update Opencore and Kexts.
 
 * See [changelog-en.md](changelog-en.md) for the history of changes
 

@@ -1,3 +1,7 @@
+* 2024-05-26 10:30
+    * 支持macOS Somoma 14.4+
+    * 更新Opencore和Kexts.
+
 * 2023-11-29 16:00
     * 支持macOS Somoma OTA
     * 使用MacForge来增加M系列独占的高级地图功能
