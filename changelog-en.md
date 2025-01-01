@@ -169,7 +169,7 @@
     * Update to OpenCore 0.6.3, update kexts.
     * This EFI is for DW1820a. If it's AC9560, it can't be driven by this EFI. It needs to be changed. I'll find someone to change it.
 
-> win1010525 have made an AIO version to drive AC9560.  
+> [Celestial紗雪](https://github.com/CelestialSayuki) have made an AIO version to drive AC9560.  
 > Clover branch have re-updated since 2021-01-16.
 
 * 2020-08-07 10:15
