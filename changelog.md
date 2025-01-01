@@ -172,7 +172,7 @@
     * OpenCore更新到0.6.3，各类kext更新到最新。
     * 这个EFI是针对网卡换成DW1820A的，如果是原装intel网卡，用这个EFI网卡不能驱动，需要改一下，过一阵找人改一个。
 
-> win1010525 发布的AIO版本通用
+> [Celestial紗雪](https://github.com/CelestialSayuki) 发布的AIO版本通用
 > 自从2021-01-16开始，Clover已经重新更新了
 
 * 2020-08-07 10:15
