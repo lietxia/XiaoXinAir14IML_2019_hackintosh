@@ -280,6 +280,8 @@
                 <false/>
                 <key>AvoidRuntimeDefrag</key>
                 <true/>
+                <key>ClearTaskSwitchBit</key>
+                <false/>
                 <key>DevirtualiseMmio</key>
                 <false/>
                 <key>DisableSingleUser</key>
@@ -389,7 +391,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.8 | Lilu</string>
+                    <string>V1.7.0 | Lilu</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -443,7 +445,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.3 | SMC</string>
+                    <string>V1.3.5 | SMC</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -461,7 +463,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.7 | GPU Driver</string>
+                    <string>V1.6.9 | GPU Driver</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -479,7 +481,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.9.1 | Sound</string>
+                    <string>V1.9.4 | Sound</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -497,7 +499,7 @@
                     <key>BundlePath</key>
                     <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.3 | Battery</string>
+                    <string>V1.3.5 | Battery</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -515,7 +517,7 @@
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.3 | Prosessor</string>
+                    <string>V1.3.5 | Prosessor</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -533,7 +535,7 @@
                     <key>BundlePath</key>
                     <string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.4</string>
+                    <string>V1.1.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -587,7 +589,7 @@
                     <key>BundlePath</key>
                     <string>VoodooI2C.kext</string>
                     <key>Comment</key>
-                    <string>V2.8 | I2C</string>
+                    <string>V2.9.1 | I2C</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -623,7 +625,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.6 | PS2Controller</string>
+                    <string>V2.3.7 | PS2Controller</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -641,7 +643,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.6 | Keyboard</string>
+                    <string>V2.3.7 | Keyboard</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -659,7 +661,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.6</string>
+                    <string>V2.3.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -677,7 +679,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.6</string>
+                    <string>V2.3.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -695,7 +697,7 @@
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.4 | RestrictEvents</string>
+                    <string>V1.1.5 | RestrictEvents</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -749,7 +751,7 @@
                     <key>BundlePath</key>
                     <string>FeatureUnlock.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.6 | FeatureUnlock</string>
+                    <string>V1.1.7 | FeatureUnlock</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -893,7 +895,7 @@
                     <key>BundlePath</key>
                     <string>DebugEnhancer.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.9 | Debugger</string>
+                    <string>V1.1.0 | Debugger</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1926,6 +1928,8 @@
                 <false/>
             </dict>
             <key>ReservedMemory</key>
+            <array/>
+            <key>Unload</key>
             <array/>
         </dict>
     </dict>
