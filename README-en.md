@@ -24,14 +24,14 @@ ENGLISH
 |   Bluetooth🦷    |   ✅    |                Intel Wireless-AC 9560 / DW1820A        |
 | SD card reader🗂️ |   ✅    |                      O2 Micro / Realtek                |
 |    TrackPad🖐️    |   ✅    |                 Works in GPIO mode with Pin=50         |
-|      HDMI📺      |   ✅    |          able to output 4k@30fps, same as windows      |
-|     Camera🎦     |   ✅    |           it's pretty easy to drive USB camera         |
+|      HDMI📺      |   ✅    |                       1.4 4k@30fps                     |
+|     Camera🎦     |   ✅    |                          Works                         |
 |     Sleep😴      |   ✅    |                   Support native sleep.                |
 
 ## Current Status：
-* System🌌：Catalina / Big Sur / Monterey / Ventura / Sonoma
+* System🌌：Catalina / Big Sur / Monterey / Ventura / Sonoma (Sequoia is not planned.)
 * Disks🖴：If you are using Samsung PM981A, please consider to change.
-* Audio Card🔊：Success with layout-id 15, no plosive [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
+* Audio Card🔊：Success with layout-id 15. [Headsets_with_Microphone](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1)
 
 ## Related models
 * [XiaoXin Pro13 (i5-10210U / i7-10710U)](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
@@ -88,11 +88,6 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 4. Download [balenaEtcher](https://www.balena.io/etcher/), use it to flash [2022-06-19-XiaoXinAir14IML-4in1-installerV7.dmg](https://pan.baidu.com/s/1cYWvpfH9B0i6_Y0BnfAA0w?pwd=q27r)(Password：q27r)  
 5. Boot the Second EFI partition and choose the system you want to install.
 
-### macOS12 recovery+EFI (format your u-disk with FAT32, then unzip this package)(suitable for 1G/2G U-disk)
-* [Baidu Netdisk](https://pan.baidu.com/s/10RP9a_UNlNt1Y4ul_62Mpw?pwd=ggtj ) (Password: ggtj) 
-* [Tianyi Netdisk](https://cloud.189.cn/web/share?code=QvayQb2UBbMv) (Password: 0ufg) 
-* [123 Netdisk](https://www.123pan.com/s/IvKKVv-jqeHh)
-
 ## Advice
 * [Prevent intermittent hackintosh disconnections Thanks @Unstoppablesss] Modify System Preferences/Eneragy Saver/Power Adapter/Put hard disk to sleep when possible(modify to off)  
 * Because current hibernate cannot wake up normally, in order to avoid affecting sleep, use  the terminal to turn off hibernate `sudo pmset -a hibernatemode 0` 
@@ -111,7 +106,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 ### Synchronize bluetooth link keys from macOS to windows
 https://github.com/lietxia/BT-LinkkeySync
 
-### Hi-DPI (Big Sur and upper)
+### Hi-DPI (Big Sur and upper, laggy)
 
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/dev/hidpi.sh)"
 
@@ -123,7 +118,7 @@ https://github.com/lietxia/BT-LinkkeySync
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### Change DVMT and CFG Lock
-> You must unlock `CFG Lock` , otherwise, you can't use both OpenCore and Clover.  
+> You must unlock `CFG Lock` , otherwise, you can't use OpenCore.  
 > We recommend to change `DVMT` into 64M, there's no damage to your computer. 
 
 * Recommend: get into hidden BIOS   
@@ -156,8 +151,7 @@ https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 
 ### How to make it better?
-* PrintScreen can't be used under mac. I map it to F13 and you can change the shortcut key of screenshot to F13
-* Turn on HiDPI (see HiDPI part)
+* PrintScreen can't be used under mac. I mapped it to F13 and you can change the shortcut key of screenshot to F13
 
 ## SSDT
 | SSDTs              | Info                                   | Necessary | Recommended | Optional |

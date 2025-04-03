@@ -22,16 +22,16 @@ QQ群号：1032311345
 |  声卡🔊  | ✅    |                   Conexant CX8070                    |
 |  wifi🌐  | ✅    |            Intel Wireless-AC 9560/DW1820A            |
 |  蓝牙🦷  | ✅    |            Intel Wireless-AC 9560/DW1820A            |
-| 读卡器🗂️ | ✅    | O2 Micro 读卡器（可驱动） / Realtek 读卡器（可驱动） |
-| 触摸板🖐️ | ✅    |               已运行在GPIO中断 Pin=50                |
-|  HDMI📺  | ✅    |              可输出4k30帧,和win表现一致              |
-| 摄像头🎦 | ✅    |               USB摄像头还是很好驱动的                |
-|  睡眠😴  | ✅    |                     支持原生睡眠                     |
+| 读卡器🗂️ | ✅    |            O2 Micro 读卡器 / Realtek 读卡器             |
+| 触摸板🖐️ | ✅    |                 已运行在GPIO中断 Pin=50                 |
+|  HDMI📺  | ✅    |               可输出4k30帧,和win表现一致              |
+| 摄像头🎦 | ✅    |                 USB摄像头还是很好驱动的                |
+|  睡眠😴  | ✅    |                      支持原生睡眠                     |
 
 ## 目前状态：
-* 系统🌌：Catalina / BigSur / Monterey / Ventura / Sonoma
+* 系统🌌：Catalina / BigSur / Monterey / Ventura / Sonoma （Sequoia暂无适配计划）
 * 硬盘：如果你硬盘是三星PM981A，建议换掉。
-* 声卡🔊：仿冒layout-id 15成功，无爆音 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
+* 声卡🔊：仿冒layout-id 15成功 [耳麦一体耳机需要这个](https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh/releases/tag/0.0.1) 
 
 ## 相关机型
 * [小新Pro13（i5-10210U / i7-10710U）](https://github.com/daliansky/XiaoXinPro-13-hackintosh)
@@ -87,12 +87,6 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 4. 下载[balenaEtcher](https://www.balena.io/etcher/)，用它写入:[2022-06-19-XiaoXinAir14IML-4in1-installerV7.dmg](https://pan.baidu.com/s/1cYWvpfH9B0i6_Y0BnfAA0w?pwd=q27r)(提取码：q27r)
 5. 引导写入的镜像的第二个EFI分区，选择需要安装的系统即可。
 
-### macOS12恢复台+EFI（u盘格式化FAT32，然后解压这个到根目录）（适用于1G/2G U盘）
-* [百度网盘](https://pan.baidu.com/s/10RP9a_UNlNt1Y4ul_62Mpw?pwd=ggtj)（提取码: ggtj）
-* [天翼网盘](https://cloud.189.cn/web/share?code=QvayQb2UBbMv
-)（访问码：0ufg）
-* [123网盘](https://www.123pan.com/s/IvKKVv-jqeHh)
-
 ## 建议  
 * 【防止黑苹果间歇性断网-解决方案 感谢@Unstoppablesss】修改 系统偏好设置/节能/电源适配器/如果可能，使硬盘进入睡眠（修改为off）
 * 因目前休眠无法正常唤醒 , 为避免影响到睡眠 , 终端使用命令关闭休眠 `sudo pmset -a hibernatemode 0`
@@ -112,7 +106,7 @@ https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=77695
 ### macOS蓝牙与windows10同步
 https://github.com/lietxia/BT-LinkkeySync
 
-### Big Sur 及以上开启hidpi（高分辨率）
+### Big Sur 及以上开启hidpi（高分辨率，较卡）
 
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/dev/hidpi.sh)"
 
@@ -124,7 +118,7 @@ https://github.com/lietxia/BT-LinkkeySync
 https://www.dell.com/support/home/zh-cn/drivers/driversdetails?driverid=98wfd
 
 ### 改DVMT和 CFG Lock
-> 必须解锁 `CFG Lock` 不然无法使用opencore clover。   
+> 必须解锁 `CFG Lock` 不然无法使用Opencore   
 > 建议解锁 `DVMT` 让显存大小变成64M，没有什么坏处。 
 
 * 推荐方法: 进隐藏BIOS  
