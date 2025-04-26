@@ -1,3 +1,6 @@
+* 2025-04-26 9:20
+    * Update Opencore and Kexts.
+    
 * 2024-05-26 10:30
     * Support macOS Somoma 14.4+
     * Update Opencore and Kexts.

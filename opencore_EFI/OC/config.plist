@@ -445,7 +445,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.5 | SMC</string>
+                    <string>V1.3.6 | SMC</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -499,7 +499,7 @@
                     <key>BundlePath</key>
                     <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.5 | Battery</string>
+                    <string>V1.3.6 | Battery</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -517,7 +517,7 @@
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.5 | Prosessor</string>
+                    <string>V1.3.6 | Prosessor</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -823,7 +823,7 @@
                     <key>BundlePath</key>
                     <string>BrcmBluetoothInjector.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.9 | DW1820A-Bluetooth</string>
+                    <string>V2.7.0 | DW1820A-Bluetooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -841,7 +841,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.9 | Bluetooth fix</string>
+                    <string>V2.7.0 | Bluetooth fix</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -859,7 +859,7 @@
                     <key>BundlePath</key>
                     <string>BrcmFirmwareData.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.9 | DW1820A-Bluetooth</string>
+                    <string>V2.7.0 | DW1820A-Bluetooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -877,7 +877,7 @@
                     <key>BundlePath</key>
                     <string>BrcmPatchRAM3.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.9 | DW1820A-Bluetooth</string>
+                    <string>V2.7.0 | DW1820A-Bluetooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1205,7 +1205,7 @@
                 <key>CustomPciSerialDevice</key>
                 <false/>
                 <key>CustomSMBIOSGuid</key>
-                <true/>
+                <false/>
                 <key>DisableIoMapper</key>
                 <false/>
                 <key>DisableIoMapperMapping</key>
@@ -1274,7 +1274,7 @@
                 <key>LauncherPath</key>
                 <string>Default</string>
                 <key>PickerAttributes</key>
-                <integer>17</integer>
+                <integer>145</integer>
                 <key>PickerAudioAssist</key>
                 <false/>
                 <key>PickerMode</key>
@@ -1336,7 +1336,7 @@
                 <key>ScanPolicy</key>
                 <integer>0</integer>
                 <key>SecureBootModel</key>
-                <string>j214k</string>
+                <string>Disabled</string>
                 <key>Vault</key>
                 <string>Optional</string>
             </dict>
@@ -1375,74 +1375,7 @@
                 <false/>
             </dict>
             <key>Tools</key>
-            <array>
-                <dict>
-                    <key>Arguments</key>
-                    <string>Shutdown</string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string>Perform shutdown</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>FullNvramAccess</key>
-                    <false/>
-                    <key>Name</key>
-                    <string>Shutdown</string>
-                    <key>Path</key>
-                    <string>ResetSystem.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>FullNvramAccess</key>
-                    <false/>
-                    <key>Name</key>
-                    <string>UEFI Shell</string>
-                    <key>Path</key>
-                    <string>OpenShell.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>FullNvramAccess</key>
-                    <false/>
-                    <key>Name</key>
-                    <string>CleanNvram</string>
-                    <key>Path</key>
-                    <string>CleanNvram.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-            </array>
+            <array/>
         </dict>
         <key>NVRAM</key>
         <dict>
@@ -1460,7 +1393,7 @@
                     <key>boot-args</key>
                     <string>alcid=15 brcmfx-country=#a brcmfx-aspm igfxrpsc=1 -allow_sidecar_ipad agdpmod=vit9696 kbd_fixdisable=1 -igfxblt -igfxbls revpatch=sbvmm</string>
                     <key>csr-active-config</key>
-                    <data>5wMAAA==</data>
+                    <data>AwgAAA==</data>
                     <key>prev-lang:kbd</key>
                     <data>emgtSGFuczoyNTI=</data>
                     <key>run-efi-updater</key>
@@ -1496,13 +1429,13 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>C02911902J9N9PR1F</string>
+                <string>C02115300CDN9PR1F</string>
                 <key>MaxBIOSVersion</key>
                 <true/>
                 <key>ProcessorType</key>
                 <integer>1793</integer>
                 <key>ROM</key>
-                <data>FWL70CHx</data>
+                <data>lQMwOeh3</data>
                 <key>SpoofVendor</key>
                 <false/>
                 <key>SystemMemoryStatus</key>
@@ -1510,9 +1443,9 @@
                 <key>SystemProductName</key>
                 <string>MacBookPro16,1</string>
                 <key>SystemSerialNumber</key>
-                <string>C02YF0F5MD6N</string>
+                <string>C02FK0ZVMD6N</string>
                 <key>SystemUUID</key>
-                <string>A21A551E-7EE9-456A-A093-525988217CEE</string>
+                <string>C080501E-62AD-43B2-8F8E-76E007F83F5A</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -1521,7 +1454,7 @@
             <key>UpdateSMBIOS</key>
             <true/>
             <key>UpdateSMBIOSMode</key>
-            <string>Custom</string>
+            <string>TryOverwrite</string>
             <key>UseRawUuidEncoding</key>
             <false/>
         </dict>
